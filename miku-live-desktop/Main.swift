@@ -5,6 +5,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     var window: NSWindow!
     var web: WKWebView!
     var pendingImport: String?
+    var settingsReloadPhase = 0
     let appName = "MIKU Archive"
     func applicationDidFinishLaunching(_ notification: Notification) {
         let config = WKWebViewConfiguration()
@@ -14,8 +15,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         web.navigationDelegate = self
         web.uiDelegate = self
         web.allowsBackForwardNavigationGestures = false
+        if !CommandLine.arguments.contains("--self-test") { setAppearance(UserDefaults.standard.string(forKey:"archiveTheme") ?? "auto") }
         window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1320, height: 900), styleMask: [.titled, .closable, .miniaturizable, .resizable], backing: .buffered, defer: false)
-        window.title = "MIKU Archive · 我的 Live 收藏馆"
+        window.title = "MIKU Archive · Live 图鉴"
         window.minSize = NSSize(width: 720, height: 580)
         window.contentView = web
         window.setFrameAutosaveName("MikuArchiveWindow")
@@ -34,6 +36,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         let appItem = NSMenuItem(); menu.addItem(appItem)
         let appMenu = NSMenu(); appItem.submenu = appMenu
         appMenu.addItem(withTitle: "关于 MIKU Archive", action: #selector(about), keyEquivalent: "")
+        appMenu.addItem(withTitle: "设置…", action: #selector(settings), keyEquivalent: ",")
         appMenu.addItem(.separator())
         appMenu.addItem(withTitle: "隐藏 MIKU Archive", action: #selector(NSApplication.hide(_:)), keyEquivalent: "h")
         appMenu.addItem(withTitle: "退出 MIKU Archive", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
@@ -53,7 +56,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         help.submenu?.addItem(withTitle: "打开网页版", action: #selector(openWebsite), keyEquivalent: "")
         NSApp.mainMenu = menu
     }
-    @objc func about() { alert("MIKU Archive 1.3", "初音未来 Live 图鉴与影像收藏\n离线可用 · 仅收藏完整 Live\n非官方个人收藏工具") }
+    @objc func settings() { web.evaluateJavaScript("if(typeof openSettings==='function')openSettings()") }
+    func setAppearance(_ theme: String) {
+        NSApp.appearance = theme == "light" ? NSAppearance(named:.aqua) : theme == "dark" ? NSAppearance(named:.darkAqua) : nil
+    }
+    @objc func about() {
+        let info=Bundle.main.infoDictionary ?? [:]
+        let version=info["CFBundleShortVersionString"] as? String ?? ""
+        let build=info["CFBundleVersion"] as? String ?? ""
+        alert("MIKU Archive \(version)", "构建 \(build)\n初音未来 Live 图鉴与影像档案\n离线可用 · 非官方个人工具")
+    }
     @objc func helpInfo() { alert("收藏与备份", "图鉴观看标记与收藏修改自动保存在本应用中，与网页版独立。\n\n从网页迁入：在网页导出 JSON，再通过本应用的「文件 → 导入收藏备份」合并。\n\n建议定期导出备份。删除应用数据或更换 Mac 前请备份。\n\n资料更新需手动核实；官方来源链接将在浏览器中打开。未确认正式 BD 的演出保留「待核实」。") }
     @objc func zoomIn() { web.pageZoom = min(1.8, web.pageZoom + 0.1) }
     @objc func zoomOut() { web.pageZoom = max(0.6, web.pageZoom - 0.1) }
@@ -64,6 +76,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if CommandLine.arguments.contains("--self-test") {
+            if settingsReloadPhase == 1 { DispatchQueue.main.asyncAfter(deadline:.now()+0.5) {self.checkSettingsAfterReload()}; return }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { self.runSelfTest() }
         }
         web.evaluateJavaScript("""
@@ -73,6 +86,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         """)
     }
     func runSelfTest() {
+        let appVersion=Bundle.main.object(forInfoDictionaryKey:"CFBundleShortVersionString") as? String ?? ""
         web.evaluateJavaScript("""
         (() => {
           if(!atlasCatalog || atlasCatalog.events.length<168) throw Error('atlas catalog');
@@ -140,6 +154,37 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             const style=getComputedStyle(document.getElementById(id));const a=lum(style.color),b=lum(style.backgroundColor);
             if((Math.max(a,b)+.05)/(Math.min(a,b)+.05)<4.5)throw Error('control contrast '+id);
           }
+          if(APP_INFO.version!=='\(appVersion)')throw Error('single app version');
+          document.getElementById('settings-open').click();
+          if(!document.getElementById('settings-dialog').open||!document.getElementById('settings-version').textContent.includes(APP_INFO.version))throw Error('settings entry/version');
+          for(const theme of ['light','dark']) {
+            document.getElementById('settings-theme').value=theme;
+            document.getElementById('settings-theme').dispatchEvent(new Event('change'));
+            if(document.documentElement.dataset.theme!==theme||JSON.parse(localStorage.getItem(settingsKey)).theme!==theme)throw Error('saved theme');
+            for(const id of ['settings-theme','settings-close','settings-open','atlas-add']) {
+              const style=getComputedStyle(document.getElementById(id)),a=lum(style.color),b=lum(style.backgroundColor);
+              if((Math.max(a,b)+.05)/(Math.min(a,b)+.05)<4.5)throw Error('theme control contrast '+theme+' '+id);
+            }
+          }
+          updateSettings({theme:'auto'});
+          for(const dark of [true,false]) {
+            Object.defineProperty(systemTheme,'matches',{value:dark,configurable:true});systemTheme.dispatchEvent(new Event('change'));
+            if(document.documentElement.dataset.theme!==(dark?'dark':'light'))throw Error('automatic theme listener');
+          }
+          delete systemTheme.matches;applyAppearance();
+          document.getElementById('settings-close').click();
+          document.dispatchEvent(new KeyboardEvent('keydown',{key:',',metaKey:true}));
+          if(!document.getElementById('settings-dialog').open)throw Error('settings shortcut');
+          document.getElementById('settings-close').click();
+          document.getElementById('atlas-series').value='魔法未来';atlasView='timeline';document.getElementById('atlas-sort').value='old';render();rememberBrowseState(true);
+          const remembered=JSON.parse(localStorage.getItem(browseKey));
+          if(remembered.atlasView!=='timeline'||remembered.filters['atlas-series']!=='魔法未来')throw Error('browse persistence');
+          document.getElementById('atlas-series').value='';atlasView='cards';restoreBrowseState();
+          if(atlasView!=='timeline'||document.getElementById('atlas-sort').value!=='old'||document.getElementById('atlas-series').value!=='魔法未来')throw Error('browse restoration');
+          updateSettings({remember:false,defaultView:'series',defaultSort:'new'});
+          if(localStorage.getItem(browseKey)!==null)throw Error('disabled browser memory');
+          restoreBrowseState();if(atlasView!=='series'||document.getElementById('atlas-sort').value!=='new')throw Error('default browser settings');
+          updateSettings({...defaultSettings,theme:'light'});document.getElementById('atlas-series').value='';atlasView='cards';render();
           const editID=atlasCatalog.events[0].id;
           editCatalogEvent(editID);document.querySelector('#catalog-form [name="venue"]').value='TEST VENUE';document.getElementById('catalog-form').requestSubmit();
           if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE') throw Error('event edit');
@@ -174,10 +219,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(!document.querySelector('progress')) throw Error('series progress');
           view='all';render();
           setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
-          return 'PASS: chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
+          const previewTheme=\(CommandLine.arguments.contains("--preview-dark") ? "'dark'" : CommandLine.arguments.contains("--preview-auto") ? "'auto'" : "'light'");
+          updateSettings({theme:previewTheme});
+          if(\(CommandLine.arguments.contains("--preview-settings") ? "true" : "false"))openSettings();
+          return 'PASS: settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
+            if CommandLine.arguments.contains("--test-restart") && self.settingsReloadPhase == 0 {
+                self.settingsReloadPhase = 1
+                self.web.evaluateJavaScript("""
+                updateSettings({theme:'dark',remember:true});atlasView='timeline';document.getElementById('atlas-sort').value='old';document.getElementById('atlas-series').value='魔法未来';document.getElementById('atlas-search').value='2026';render();window.scrollTo(0,180);rememberBrowseState(true);
+                """) {_,error in
+                    if let error=error {print(error);exit(1)}
+                    self.web.reload()
+                }
+                return
+            }
             if let index=CommandLine.arguments.firstIndex(of:"--capture-preview"),index+1<CommandLine.arguments.count {
                 let path=CommandLine.arguments[index+1]
                 DispatchQueue.main.asyncAfter(deadline:.now()+0.3) {
@@ -189,10 +247,28 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             } else {print(value ?? "No result");exit(0)}
         }
     }
+    func checkSettingsAfterReload() {
+        web.evaluateJavaScript("""
+        (()=>{
+          if(appSettings.theme!=='dark'||document.documentElement.dataset.theme!=='dark')throw Error('theme after reload');
+          if(atlasView!=='timeline'||!atlasMode||document.getElementById('atlas-series').value!=='魔法未来'||document.getElementById('atlas-sort').value!=='old'||document.getElementById('atlas-search').value!=='2026')throw Error('filters after reload');
+          if(Math.abs(window.scrollY-180)>10)throw Error('position after reload '+window.scrollY);
+          if(data.filter(r=>r.collected==='已收集').length!==13)throw Error('collection after reload');
+          return 'PASS: actual WebKit reload restored theme, view, search, series, ordering, scroll and collection';
+        })()
+        """) {value,error in
+            if let error=error {print("FAIL: \((error as NSError).userInfo)");exit(1)}
+            print(value ?? "PASS");exit(0)
+        }
+    }
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         guard let body = message.body as? [String: Any], let action = body["action"] as? String else { return }
         if action == "export", let payload = body["payload"] as? String { writeBackup(payload) }
         if action == "import" { importBackup() }
+        if action == "theme", let value=body["value"] as? String, ["auto","light","dark"].contains(value) {
+            setAppearance(value)
+            if !CommandLine.arguments.contains("--self-test") {UserDefaults.standard.set(value,forKey:"archiveTheme")}
+        }
     }
     @objc func exportBackup() { web.evaluateJavaScript("document.getElementById('export').click()") }
     func writeBackup(_ text: String) {
@@ -248,7 +324,7 @@ if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(name
 app.delegate = delegate
 // Keep JavaScript confirmations and error dialogs available in the native window.
 if CommandLine.arguments.contains("--check-resources") {
-    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
+    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","app-info.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
     print("Bundled resources OK"); exit(0)
 }
 app.run()

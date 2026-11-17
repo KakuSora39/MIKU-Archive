@@ -25,6 +25,11 @@ def run(*args):
 
 
 def main():
+    app_info = json.loads((ROOT / 'app-info.json').read_text(encoding='utf-8'))
+    import re
+    if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', app_info['version']):
+        raise ValueError('App version must use X.X.X')
+    (ROOT / 'miku-live-archive/dist/app-info.js').write_text('// Generated from app-info.json; edit the root manifest.\nconst APP_INFO = ' + json.dumps(app_info, ensure_ascii=False) + ';\n', encoding='utf-8')
     BINARY.mkdir(parents=True, exist_ok=True)
     RESOURCES.mkdir(parents=True, exist_ok=True)
     web = RESOURCES / 'Web'
@@ -53,8 +58,8 @@ def main():
         'CFBundleIdentifier': 'local.sora.mikuarchive',
         'CFBundleExecutable': 'MIKUArchive',
         'CFBundlePackageType': 'APPL',
-        'CFBundleShortVersionString': '1.3',
-        'CFBundleVersion': '5',
+        'CFBundleShortVersionString': app_info['version'],
+        'CFBundleVersion': str(app_info['build']),
         'LSMinimumSystemVersion': '13.0',
         'NSHighResolutionCapable': True,
         'CFBundleIconFile': 'AppIcon',

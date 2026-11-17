@@ -288,8 +288,11 @@ $("file").onchange = async (e) => {
   }
 };
 function render() {
+  const navTop=$('nav').scrollTop;
   if (atlasMode) renderAtlas();
   else renderCollection();
+  $('nav').scrollTop=navTop;
+  rememberBrowseState();
 }
 async function init() {
   try {
@@ -300,6 +303,7 @@ async function init() {
     atlasCatalog = await loadCatalog();
     initAtlas();
     options();
+    initSettings();
     render();
   } catch (e) {
     $("atlas-content").textContent = "图鉴加载失败，请刷新或检查资源文件。";

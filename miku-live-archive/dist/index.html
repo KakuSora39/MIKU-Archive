@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>MIKU ARCHIVE · 我的 Live 收藏馆</title
+  ><link rel="stylesheet" href="style.css" />
+  <body>
+    <aside>
+      <a class="brand" href="#"
+        >✳
+        <span
+          >MIKU<span class="thin">ARCHIVE</span
+          ><small>初音未来 Live 演出图鉴</small></span
+        ></a
+      >
+      <div class="side-label">LIVE ENCYCLOPEDIA / 演出档案</div>
+      <nav id="nav"></nav>
+      <div class="side-bottom">
+        <span class="dot"></span> 只收藏完整 Live
+        <p>不单独收集单曲字幕封装</p>
+        <small>01 / YOUR OWN LITTLE UNIVERSE</small>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <span>COLLECTION / <b id="crumb">总览</b></span
+        ><span class="save" id="save">● 本机自动保存</span>
+      </header>
+      <section class="heading">
+        <div>
+          <div class="eyebrow">EVERY STAGE, A MEMORY.</div>
+          <h1 id="title">每一次登台，<br />都是未来的足迹。</h1>
+          <p>
+            初音未来 Live 图鉴 · 我的演出与影像档案<span class="sub"
+              >从 2013 年的第一束光，到下一次相遇。</span
+            >
+          </p>
+        </div>
+        <div class="orb">
+          <div class="disc">39<small>LIVE ARCHIVE</small></div>
+          <span class="orbit-label">MIKU / LIVE / MEMORIES</span>
+        </div>
+      </section>
+      <section id="stats" class="stats"></section>
+      <section class="snow-banner">
+        <div>
+          <span class="pill">❄ SNOW MIKU WATCH</span>
+          <h2>下一场雪，札幌见。</h2>
+          <p>SNOW MIKU LIVE! 2027 · 02.05 — 02.07 · Zepp Sapporo</p>
+          <small>活动已公布 · 正式 BD 发行待核实</small>
+        </div>
+        <button id="snow">进入雪未来专区 ↗</button>
+      </section>
+      <section id="snow-panel" hidden>
+        <h2>❄ SNOW MIKU LIVE 持续追踪</h2>
+        <p>
+          2027 公演已确认；2028
+          记录仅作后续追踪占位。活动举办与正式影像发行分别记录。
+        </p>
+        <p>
+          <a
+            href="https://snowmiku.com/2027/event-live.html"
+            target="_blank"
+            rel="noopener"
+            >2027 官方公演公告 ↗</a
+          >
+          ·
+          <a
+            href="https://snowmiku.com/2027/info-news.html"
+            target="_blank"
+            rel="noopener"
+            >官方最新消息 ↗</a
+          >
+        </p>
+        <p class="muted">
+          维护方式：打开官方消息 → 核实完整影像 / BD 公告 →
+          编辑记录、来源与核实日期。本页面不在后台自动抓取。
+        </p>
+      </section>
+      <div class="workspace-switch" role="group" aria-label="功能切换"><button id="mode-atlas" class="primary">✳ Live 图鉴</button><button id="mode-collection">▣ BD / 影像收藏</button></div>
+      <section id="atlas" aria-label="Live 演出图鉴">
+        <div class="section-top"><div><h2>每一场 Live，都有自己的位置。</h2><p class="muted">专场、巡演、线上与联动 · 以演出为中心，不以是否发行 BD 为收录条件</p></div><div class="actions"><button id="atlas-export">↓ 导出全部记录</button><button id="atlas-sources">资料来源与范围</button></div></div>
+        <div class="filters"><input id="atlas-search" placeholder="搜索演出、城市、场馆…" aria-label="搜索图鉴"><select id="atlas-year" aria-label="图鉴年份"></select><select id="atlas-series" aria-label="图鉴系列"></select><select id="atlas-kind" aria-label="演出形式"></select><select id="atlas-personal" aria-label="我的图鉴标记"><option value="">所有标记</option><option value="wishlist">想看</option><option value="watched">已看</option><option value="unmarked">未标记</option></select><select id="atlas-sort" aria-label="排序"><option value="new">年份从新到旧</option><option value="old">年份从旧到新</option></select></div>
+        <div class="tabs"><button data-atlas-view="cards" class="selected">演出卡片</button><button data-atlas-view="timeline">年份年表</button><button data-atlas-view="series">系列总览</button><span id="atlas-result" aria-live="polite"></span></div><p class="muted" id="atlas-scope"></p><div id="atlas-content"></div>
+      </section>
+      <section class="library" id="collection-library" hidden>
+        <div class="section-top">
+          <div>
+            <h2 id="lib-title">我的收藏库 <span>LIVE LIBRARY</span></h2>
+            <p id="count"></p>
+          </div>
+          <div class="actions">
+            <button id="export">↓ 导出备份</button
+            ><button id="import">↑ 导入</button
+            ><button class="primary" id="add">＋ 添加演出</button>
+          </div>
+        </div>
+        <div class="filters">
+          <input
+            id="search"
+            placeholder="⌕ 搜索演出、备注或版本…"
+            aria-label="搜索"
+          /><select id="year" aria-label="年份">
+            <option value="">全部年份</option></select
+          ><select id="series" aria-label="系列">
+            <option value="">全部系列</option></select
+          ><select id="status" aria-label="收藏状态">
+            <option value="">全部收藏状态</option>
+            <option>已收集</option>
+            <option>未收集</option>
+            <option>待确认</option>
+            <option>标记缺失</option></select
+          ><select id="bd" aria-label="BD 状态">
+            <option value="">全部 BD 状态</option>
+            <option>有</option>
+            <option>无</option>
+            <option>待核实</option></select
+          ><select id="download" aria-label="下载状态">
+            <option value="">全部下载状态</option>
+            <option>已下载</option>
+            <option>未下载</option>
+            <option>待确认</option>
+          </select>
+        </div>
+        <div class="tabs">
+          <button data-view="all" class="selected">全部项目</button
+          ><button data-view="gaps">待补清单</button
+          ><button data-view="verify">待核实</button
+          ><button data-view="progress">系列进度</button
+          ><span id="result"></span>
+        </div>
+        <div id="content"></div>
+      </section>
+      <footer>
+        MIKU ARCHIVE
+        <span
+          >影像目录基线 2026.11.16 · 收藏状态来自你的记录 ·
+          进度仅统计已发行且确认有 BD 的条目</span
+        ><small
+          >收藏数据保存在当前浏览器；请定期导出 JSON
+          备份，跨设备可导入。演出目录来源与收录范围见图鉴说明；资料可持续完善。</small
+        >
+      </footer>
+    </main>
+    <dialog id="editor">
+      <form id="form">
+        <div class="section-top">
+          <h2>编辑收藏记录</h2>
+          <button type="button" id="close">✕</button>
+        </div>
+        <div id="fields"></div>
+        <p class="muted">
+          仅在有官方或发行商证据时确认 BD；保持完整 Live 收藏偏好。
+        </p>
+        <div class="actions">
+          <button type="button" id="delete">删除条目</button
+          ><button class="primary" type="submit">保存记录</button>
+        </div>
+      </form>
+    </dialog>
+    <input id="file" type="file" accept="application/json" hidden />
+    <dialog id="atlas-detail" aria-labelledby="detail-title"><div id="atlas-detail-body"></div><div class="actions"><button id="detail-close">关闭</button></div></dialog>
+    <script src="atlas.js"></script><script src="app.js"></script>
+  </body>
+</html>

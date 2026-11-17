@@ -1,0 +1,115 @@
+# 数据补充：Vocawiki + MikuTime（2026-11-17）
+
+本次仅修改 `/Users/sora/创作/MIKU-Archive-source`。
+
+- 对照 Vocawiki 逐场表 #1–136；新增三行对应的演出已存在，因此只补城市、场馆与来源，没有重复建档。保留前期官方日期更正。
+- MikuTime 静态 JSON 端点本次返回 403，通过其公开链接的 talisein/songbot 源码读取 75 条巡演事实索引；快照及内容 SHA 保存于 `scripts/references/mikutime-concert-index.json`，未复制项目程序或歌单内容。
+- `scripts/enrich_catalog.py` 合并新增线索。已存在的城市站不重复新增巡演卡片，详情用 tourRefs 展示巡演范围；未知日期仅以“社区数据，待核实”补充。
+- Rewind（2022-06-05）与 Rewind+（2022-11-06）分开建档。旧 87 号条目保持 id，原有观看标记不丢失。
+- 新增 Piapro 角色关联演出有独立分类，不表示初音未来本人参演。
+- `python3 scripts/build_catalog.py` 可从本地快照重新生成目录，不联网。更换快照后应重新核对去重和日期冲突。
+- 本轮仅维护 Live 图鉴，不据此修改任何 BD 发行或收藏状态。
+
+---
+
+# 1.1 更新：以 Live 演出图鉴为主体
+
+本次修改直接基于当前项目文件夹。默认首页已改为 Live 图鉴；原有 BD / 影像收藏通过页面顶部按钮进入。
+
+- 图鉴初始收录 168 条，包含萌娘百科公开镜像逐场表 #1–133 全部条目、系列年度项目及原有官方来源线索。城市站与年度项目的收录层级在详情中区分。
+- 卡片 / 年表 / 系列总览，支持年份、系列、演出形式、关键词及个人标记筛选。
+- 详情展示日期、城市、场馆、来源、复核状态和关联影像；已看、想看与个人备注独立保存，不自动推断到场或 BD 收藏状态。
+- 新增 `miku-live-archive/dist/catalog.json`（演出目录）及 `atlas.js`（图鉴功能）。`scripts/build_catalog.py` 保存目录整理与生成规则，可重新生成 catalog.json；手工修订时也应同步该脚本，以免重建时丢失。
+- 原 BD 数据键保持 `miku-archive-v1`；图鉴标记用 `miku-atlas-progress-v1`。新版 JSON 备份包含两类记录，也兼容旧版仅含 BD 的备份。
+- 目录直接加载，因此老用户也能看到新图鉴，无需清除原有收藏。
+- 原站正文无法读取，本次使用公开镜像；没有将镜像等同于最新官方完整名单。2023/2024 魔法未来东京日期、2017 EXPO 马来西亚日期已按官方资料更正；其余未逐场复核。
+- 2025 等部分项目仅建年度档案，后续可补充城市场次。图鉴不声称穷尽所有历史活动。
+- 沿用下方编译命令，输出 `build/MIKU Archive.app`。`--self-test` 已扩展到图鉴目录、标记、备份兼容与旧收藏回归检查。
+- 本次不包含参展票根管理、自动联网更新或跨设备同步；“已看过”不能作为“已到场”的记录。
+
+---
+
+# MIKU Archive 源代码
+
+这是当前初音未来 Live / BD 收藏管理器的完整项目源码，可自行修改、重新编译。桌面版采用 Swift + AppKit + WKWebView；收藏界面采用原生 HTML、CSS、JavaScript，没有 React、Electron 或第三方运行时。Python 仅负责构建。初始数据保存在 JSON 中。
+
+## 文件结构
+
+```text
+miku-live-archive/dist/
+  index.html       页面结构、中文文案、筛选控件与编辑表单容器
+  style.css        配色、字体、布局与窄屏适配
+  app.js           收藏数据、筛选、编辑、统计、导入与导出逻辑
+  seed.json        首次启动的 51 条目录数据及官方来源
+miku-live-desktop/
+  Main.swift       原生窗口、菜单、WebKit、文件对话框及网页通信
+  Icon.swift       应用图标绘制
+  build.py         构建离线 .app、生成图标并进行本机签名
+```
+
+网页源码已重新排版，方便阅读；功能与已交付版本一致。源码包不含账户凭据、Sites Git 元数据或个人收藏备份。
+
+## 修改入口
+
+- 修改界面文字：`index.html`；部分动态文案位于 `app.js` 的 `render()`。
+- 修改颜色、字号与布局：`style.css`，主色在 `:root`。
+- 修改收藏筛选与进度算法：`app.js` 的 `eligible()`、`render()`。
+- 修改编辑字段：`app.js` 的 `fields` 数组；新增字段时同步考虑初始数据及导入校验。
+- 修改初始目录：`seed.json`。`id` 必须唯一且稳定；导入合并依赖它。
+- 修改菜单、原生导入导出、外部链接行为：`Main.swift`。
+- 修改图标：`Icon.swift`。
+
+## 编译桌面应用
+
+当前构建目标是 Apple Silicon（M 系列）Mac，macOS 13 或更高版本。
+需要 Python 3 和 Apple Command Line Tools；无需安装 Node.js 或 Python 第三方库。
+
+首次缺少编译工具时，在终端运行：
+
+```sh
+xcode-select --install
+```
+
+进入本 README 所在的项目文件夹后运行：
+
+```sh
+python3 miku-live-desktop/build.py
+open "build/MIKU Archive.app"
+```
+
+产物为 `build/MIKU Archive.app`。脚本从网页源码生成离线资源、编译 Swift、生成图标并验证本机签名。签名为本机临时签名，未做 Apple Developer 分发签名或公证。
+
+如要支持 Intel Mac，请将构建脚本的目标架构改为 `x86_64-apple-macos13.0`，并在相应环境验证。当前源码未提供 Windows 或手机应用构建。
+
+## 本地预览网页
+
+```sh
+python3 -m http.server 8391 --directory miku-live-archive/dist
+```
+
+在浏览器打开 `http://localhost:8391/`。完成后在终端按 Control-C 停止。
+网页用 HTTP 加载 `seed.json`；桌面构建会将种子数据嵌入 JavaScript，以便离线使用。请修改源码目录，不要直接修改 `.app` 内的生成文件。
+
+## 收藏数据与更新
+
+- 收藏保存在 WebKit / 浏览器的 `localStorage`，键为 `miku-archive-v1`。
+- 桌面应用与网站的数据独立保存，没有云端同步或后台自动抓取。
+- `seed.json` 只用于首次初始化。修改它不会覆盖用户已有收藏。
+- 更新或替换应用前，请在应用中导出 JSON；有疑问时可通过备份重新导入。
+- 保持应用标识 `local.sora.mikuarchive`、存储键与安装路径稳定，避免存储位置变化。
+- 应用内“已收集”和“已下载”独立；进度分母目前只统计“确认有 BD 且发行状态含已发行”的条目。
+- 如需让新的目录条目进入已有收藏，可以在界面手动新增，或准备 schema 1 的备份并导入。相同 id 会以备份记录替换，因此先导出当前备份。
+- BD 未确认保持“待核实”；追踪占位不代表活动已公布。只收藏完整 Live，不单独收集单曲字幕封装。
+
+## 自检
+
+```sh
+"build/MIKU Archive.app/Contents/MacOS/MIKUArchive" --check-resources
+"build/MIKU Archive.app/Contents/MacOS/MIKUArchive" --self-test
+```
+
+自检使用临时 WebKit 数据，不修改正常收藏。检查初始目录 51 条 / 已收集 13 条、编辑、本地保存、雪未来筛选和系列进度。若修改了初始数据数量，请同步修改 `Main.swift` 的 `runSelfTest()` 基线。
+
+原站地址：https://miku-live-archive-sora.sorara39.chatgpt.site
+
+修改本地源码不会自动更新已发布 Sites；发布需要单独操作。本源码包主要用于自行维护和构建桌面版。

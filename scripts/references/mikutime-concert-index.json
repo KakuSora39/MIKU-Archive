@@ -1,0 +1,607 @@
+{
+  "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm",
+  "sha": "9b5cb03c4596d288e4b46a97e068b83adbd34d30",
+  "checked": "2026-11-17",
+  "concerts": [
+    {
+      "series": "MIKUFES",
+      "name": "Miku FES'09 (Summer); Hatsune Miku's 2nd Anniversary",
+      "tour": "MIKUFES09",
+      "date": "2009-08-31",
+      "last_date": null,
+      "vocadbId": 2522
+    },
+    {
+      "series": "MIKUSGIVINGS_DAY",
+      "name": "Miku's Thanksgiving Festival; 39's Giving Day",
+      "tour": "SANKYUGD",
+      "date": "2010-03-09",
+      "last_date": null,
+      "vocadbId": 2520
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku Live Party 2011 「MikuPa♪」 -39's THANK's LIVE IN TOKYO-",
+      "tour": "MP2011Tokyo",
+      "date": "2011-03-09",
+      "last_date": null,
+      "vocadbId": 2523
+    },
+    {
+      "series": "MIKUNOPOLIS",
+      "name": "MIKUNOPOLIS in LOS ANGELES -Happy to meet you! I'm HATSUNE MIKU-",
+      "tour": "Mikunopolis",
+      "date": "2011-07-02",
+      "last_date": null,
+      "vocadbId": 2521
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku Live Party 2011 「MikuPa♪」 -39's THANK's LIVE IN SAPPORO-",
+      "tour": "MP2011Sapporo",
+      "date": "2011-08-17",
+      "last_date": null,
+      "vocadbId": 2526
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku Live Party 2011 「MikuPa♪」 -39's THANK's LIVE IN SINGAPORE-",
+      "tour": "MP2011SG",
+      "date": "2011-11-11",
+      "last_date": null,
+      "vocadbId": 2527
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku Live Party 2012 「MikuPa♪」",
+      "tour": "MP2012Tokyo",
+      "date": "2012-03-08",
+      "last_date": null,
+      "vocadbId": 4056
+    },
+    {
+      "series": "MIKUSGIVINGS_DAY",
+      "name": "Miku's Final Big Thanksgiving Day Concert",
+      "tour": "SANKYUGDF",
+      "date": "2012-03-09",
+      "last_date": null,
+      "vocadbId": 1413
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku's First Concert in Hong Kong & Taiwan 「MikuPa♪」",
+      "tour": "MP2012HKTW",
+      "date": "2012-10-02",
+      "last_date": "2012-10-06",
+      "vocadbId": 2524
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku Live Party 2013 in Sapporo 「MikuPa♪」",
+      "tour": "MP2013Sapporo",
+      "date": "2013-02-09",
+      "last_date": "2013-02-10",
+      "vocadbId": 2510
+    },
+    {
+      "series": "MIKUPA",
+      "name": "Hatsune Miku Live Party 2013 in Kansai 「MikuPa♪」 -39's Spring the 3rd Synthesis-",
+      "tour": "MP2013Kansai",
+      "date": "2013-03-09",
+      "last_date": null,
+      "vocadbId": 2511
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2013",
+      "tour": "MM2013",
+      "date": "2013-08-30",
+      "last_date": null,
+      "vocadbId": 2519
+    },
+    {
+      "series": "NO_SERIES",
+      "name": "Lady Gaga's artRAVE: The ARTPOP Ball",
+      "tour": "GAGA",
+      "date": "2014-05-04",
+      "last_date": "2014-06-03",
+      "vocadbId": 7124
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2014 in Indonesia",
+      "tour": "ME2014IN",
+      "date": "2014-05-28",
+      "last_date": "2014-05-29",
+      "vocadbId": 1939
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2014",
+      "tour": "MM2014",
+      "date": "2014-08-30",
+      "last_date": "2014-09-20",
+      "vocadbId": 2517
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2014 in LOS ANGELES and NEW YORK",
+      "tour": "ME2014LANY",
+      "date": "2014-10-11",
+      "last_date": "2014-10-18",
+      "vocadbId": 1937
+    },
+    {
+      "series": "SNOW_MIKU",
+      "name": "SNOW MIKU LIVE! 2015 Presents MIKU EXPO Live Set",
+      "tour": "SM2015",
+      "date": "2015-02-07",
+      "last_date": "2015-02-08",
+      "vocadbId": 3792
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2015 in SHANGHAI",
+      "tour": "ME2015",
+      "date": "2015-06-26",
+      "last_date": "2015-06-27",
+      "vocadbId": 1940
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2015",
+      "tour": "MM2015",
+      "date": "2015-09-04",
+      "last_date": "2015-09-06",
+      "vocadbId": 2514
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2016 Japan Tour",
+      "tour": "ME2016JP",
+      "date": "2016-03-23",
+      "last_date": "2016-04-10",
+      "vocadbId": 1399
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "tour": "ME2016NA",
+      "date": "2016-04-23",
+      "last_date": "2016-06-04",
+      "vocadbId": 1859
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2016 in TAIWAN",
+      "tour": "ME2016TW",
+      "date": "2016-06-25",
+      "last_date": "2016-06-26",
+      "vocadbId": 1941
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2016",
+      "tour": "MM2016",
+      "date": "2016-09-09",
+      "last_date": "2016-09-11",
+      "vocadbId": 1398
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2016 CHINA TOUR",
+      "tour": "ME2016CN",
+      "date": "2016-12-03",
+      "last_date": "2016-12-11",
+      "vocadbId": 1943
+    },
+    {
+      "series": "KODO",
+      "name": "Hatsune Miku x Kodo Taiko Performing Arts Ensemble 2017",
+      "tour": "KODO2017",
+      "date": "2017-03-04",
+      "last_date": "2017-03-05",
+      "vocadbId": 2947
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2017",
+      "tour": "MM2017",
+      "date": "2017-09-01",
+      "last_date": "2017-09-03",
+      "vocadbId": 1397
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "MIKU WITH YOU 2017 SHANGHAI",
+      "tour": "MWY2017",
+      "date": "2017-11-25",
+      "last_date": null,
+      "vocadbId": 1619
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2017 in MALAYSIA",
+      "tour": "ME2017MY",
+      "date": "2017-12-16",
+      "last_date": null,
+      "vocadbId": 1584
+    },
+    {
+      "series": "SNOW_MIKU",
+      "name": "SNOW MIKU LIVE! 2018",
+      "tour": "SM2018",
+      "date": "2018-02-09",
+      "last_date": "2018-02-10",
+      "vocadbId": 1618
+    },
+    {
+      "series": "KODO",
+      "name": "Hatsune Miku × Kodo Taiko Special Live 2018",
+      "tour": "KODO2018",
+      "date": "2018-06-02",
+      "last_date": "2018-06-03",
+      "vocadbId": 2948
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2018 USA & MEXICO",
+      "tour": "ME2018NA",
+      "date": "2018-06-29",
+      "last_date": "2018-07-19",
+      "vocadbId": 1673
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2018",
+      "tour": "MM2018",
+      "date": "2018-08-25",
+      "last_date": "2018-09-02",
+      "vocadbId": 1561
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "MIKU WITH YOU 2018",
+      "tour": "MWY2018",
+      "date": "2018-10-13",
+      "last_date": "2018-10-28",
+      "vocadbId": 2085
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2018 EUROPE",
+      "tour": "ME2018EU",
+      "date": "2018-12-01",
+      "last_date": "2018-12-08",
+      "vocadbId": 1854
+    },
+    {
+      "series": "SNOW_MIKU",
+      "name": "SNOW MIKU LIVE! 2019",
+      "tour": "SM2019",
+      "date": "2019-02-09",
+      "last_date": "2019-02-10",
+      "vocadbId": 2422
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2019 Taiwan & Hong Kong",
+      "tour": "ME2019TWHK",
+      "date": "2019-05-11",
+      "last_date": "2019-07-27",
+      "vocadbId": 2489
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2019",
+      "tour": "MM2019",
+      "date": "2019-08-09",
+      "last_date": "2019-09-01",
+      "vocadbId": 2515
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "MIKU WITH YOU 2019",
+      "tour": "MWY2019",
+      "date": "2019-11-01",
+      "last_date": "2019-11-24",
+      "vocadbId": 3752
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2020 EUROPE",
+      "tour": "ME2020EU",
+      "date": "2020-01-11",
+      "last_date": "2020-01-28",
+      "vocadbId": 2786
+    },
+    {
+      "series": "NICONICO",
+      "name": "Nico Nico Net Chokaigi 2020 Natsu ✕ HATSUNE MIKU LIVE - UNTITLED 0 -",
+      "tour": "ZERO",
+      "date": "2020-08-09",
+      "last_date": null,
+      "vocadbId": 2939
+    },
+    {
+      "series": "GALAXY",
+      "name": "Hatsune Miku GALAXY LIVE 2020",
+      "tour": "GALAXY2020",
+      "date": "2020-09-26",
+      "last_date": null,
+      "vocadbId": 2952
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2020",
+      "tour": "MM2020",
+      "date": "2020-11-28",
+      "last_date": "2020-12-20",
+      "vocadbId": 2758
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "HATSUNE MIKU WITH YOU 2020",
+      "tour": "MWY2020",
+      "date": "2020-12-25",
+      "last_date": null,
+      "vocadbId": 3250
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2021 Online",
+      "tour": "ME2021",
+      "date": "2021-06-06",
+      "last_date": null,
+      "vocadbId": 3224
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2021",
+      "tour": "MM2021",
+      "date": "2021-10-22",
+      "last_date": "2021-11-07",
+      "vocadbId": 3305
+    },
+    {
+      "series": "GALAXY",
+      "name": "Hatsune Miku GALAXY LIVE 2021",
+      "tour": "GALAXY2021",
+      "date": "2021-12-18",
+      "last_date": null,
+      "vocadbId": 3979
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "HATSUNE MIKU WITH YOU 2021",
+      "tour": "MWY2021",
+      "date": "2021-12-25",
+      "last_date": null,
+      "vocadbId": 4058
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO Rewind",
+      "tour": "MEREWIND",
+      "date": "2022-06-05",
+      "last_date": null,
+      "vocadbId": 4114
+    },
+    {
+      "series": "ANNIVERSARY",
+      "name": "Kagamine Rin・Len Happy 14th Birthday Party 「Two You☆★」",
+      "tour": "KAGA14",
+      "date": "2022-07-07",
+      "last_date": "2022-07-08",
+      "vocadbId": 4161
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 10th Anniversary in Tokyo & Osaka",
+      "tour": "MM2022",
+      "date": "2022-08-12",
+      "last_date": "2022-09-04",
+      "vocadbId": 4233
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO Rewind+",
+      "tour": "MEREWINDPLUS",
+      "date": "2022-11-06",
+      "last_date": null,
+      "vocadbId": 4490
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 10th Anniversary in Sapporo",
+      "tour": "MM10Sapporo",
+      "date": "2023-02-04",
+      "last_date": "2023-02-05",
+      "vocadbId": 4235
+    },
+    {
+      "series": "JAPAN_TOUR",
+      "name": "Hatsune Miku JAPAN TOUR 2023 ~THUNDERBOLT~",
+      "tour": "Thunderbolt",
+      "date": "2023-02-23",
+      "last_date": "2023-03-25",
+      "vocadbId": 4765
+    },
+    {
+      "series": "KODO",
+      "name": "Hatsune Miku × Kodo Taiko Special Live 2023",
+      "tour": "KODO2023",
+      "date": "2023-06-03",
+      "last_date": "2023-06-04",
+      "vocadbId": 5910
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2023",
+      "tour": "MM2023",
+      "date": "2023-08-11",
+      "last_date": "2023-09-03",
+      "vocadbId": 6045
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2023 VR",
+      "tour": "ME2023VR",
+      "date": "2023-11-11",
+      "last_date": null,
+      "vocadbId": 5751
+    },
+    {
+      "series": "ANNIVERSARY",
+      "name": "MK15th project MEIKO＆KAITO Online Concert",
+      "tour": "MK15",
+      "date": "2024-02-24",
+      "last_date": null,
+      "vocadbId": 6539
+    },
+    {
+      "series": "MIKUFES",
+      "name": "Miku FES'24 (Spring) ~Happy 16th Birthday~",
+      "tour": "MIKUFES24",
+      "date": "2024-03-31",
+      "last_date": null,
+      "vocadbId": 6986
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2024 North America",
+      "tour": "ME2024NA",
+      "date": "2024-04-04",
+      "last_date": "2024-05-21",
+      "vocadbId": 6516
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "HATSUNE MIKU WITH YOU 2024",
+      "tour": "MWY2024",
+      "date": "2024-07-13",
+      "last_date": "2024-07-28",
+      "vocadbId": 7673
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2024",
+      "tour": "MM2024",
+      "date": "2024-08-17",
+      "last_date": "2024-10-14",
+      "vocadbId": 7214
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2024 Europe",
+      "tour": "ME2024EU",
+      "date": "2024-10-26",
+      "last_date": "2024-11-02",
+      "vocadbId": 7266
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2024 New Zealand & Australia",
+      "tour": "ME2024NZAU",
+      "date": "2024-11-15",
+      "last_date": "2024-11-26",
+      "vocadbId": 7765
+    },
+    {
+      "series": "JAPAN_TOUR",
+      "name": "Hatsune Miku JAPAN LIVE TOUR 2025 ~BLOOMING~",
+      "tour": "Blooming",
+      "date": "2025-04-19",
+      "last_date": "2025-05-31",
+      "vocadbId": 8380
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2025",
+      "tour": "MM2025",
+      "date": "2025-08-01",
+      "last_date": "2025-08-31",
+      "vocadbId": 8768
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2025 ASIA",
+      "tour": "ME2025",
+      "date": "2025-11-05",
+      "last_date": "2025-11-30",
+      "vocadbId": 9341
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "MIKU WITH YOU 2025",
+      "tour": "MWY2025",
+      "date": "2025-12-20",
+      "last_date": "2025-12-21",
+      "vocadbId": 9644
+    },
+    {
+      "series": "NO_SERIES",
+      "name": "Hatsune Miku LAWSON 50th Anniversary Special LIVE",
+      "tour": "LAWSON",
+      "date": "2026-01-17",
+      "last_date": "2026-01-18",
+      "vocadbId": 9642
+    },
+    {
+      "series": "NO_SERIES",
+      "name": "DecoMiku LIVE starring Hatsune Miku 『Hello』",
+      "tour": "DECO",
+      "date": "2026-02-14",
+      "last_date": null,
+      "vocadbId": 9401
+    },
+    {
+      "series": "NO_SERIES",
+      "name": "Pokémon feat. Hatsune Miku VOLTAGE Live!",
+      "tour": "VOLTAGE",
+      "date": "2026-03-20",
+      "last_date": "2026-03-22",
+      "vocadbId": 9613
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2026 NORTH AMERICA",
+      "tour": "ME2026NA",
+      "date": "2026-04-12",
+      "last_date": "2026-05-19",
+      "vocadbId": 9811
+    },
+    {
+      "series": "MAGICAL_MIRAI",
+      "name": "Hatsune Miku Magical Mirai 2026",
+      "tour": "MM2026",
+      "date": "2026-07-24",
+      "last_date": "2026-08-30",
+      "vocadbId": 12251
+    },
+    {
+      "series": "MIKU_WITH_YOU",
+      "name": "MIKU WITH YOU 2026",
+      "tour": "MWY2026",
+      "date": "2026-10-31",
+      "last_date": "2026-12-26",
+      "vocadbId": 13120
+    },
+    {
+      "series": "MIKU_EXPO",
+      "name": "HATSUNE MIKU EXPO 2026 EUROPE",
+      "tour": "ME2026EU",
+      "date": "2026-11-12",
+      "last_date": "2026-11-25",
+      "vocadbId": 12222
+    },
+    {
+      "series": "SNOW_MIKU",
+      "name": "SNOW MIKU LIVE! 2027",
+      "tour": "SM2027",
+      "date": "2027-02-05",
+      "last_date": "2027-02-07",
+      "vocadbId": 13226
+    }
+  ]
+}

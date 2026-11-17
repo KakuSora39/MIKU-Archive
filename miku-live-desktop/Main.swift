@@ -53,7 +53,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         help.submenu?.addItem(withTitle: "打开网页版", action: #selector(openWebsite), keyEquivalent: "")
         NSApp.mainMenu = menu
     }
-    @objc func about() { alert("MIKU Archive 1.1.1", "初音未来 Live 图鉴与影像收藏\n离线可用 · 仅收藏完整 Live\n非官方个人收藏工具") }
+    @objc func about() { alert("MIKU Archive 1.3", "初音未来 Live 图鉴与影像收藏\n离线可用 · 仅收藏完整 Live\n非官方个人收藏工具") }
     @objc func helpInfo() { alert("收藏与备份", "图鉴观看标记与收藏修改自动保存在本应用中，与网页版独立。\n\n从网页迁入：在网页导出 JSON，再通过本应用的「文件 → 导入收藏备份」合并。\n\n建议定期导出备份。删除应用数据或更换 Mac 前请备份。\n\n资料更新需手动核实；官方来源链接将在浏览器中打开。未确认正式 BD 的演出保留「待核实」。") }
     @objc func zoomIn() { web.pageZoom = min(1.8, web.pageZoom + 0.1) }
     @objc func zoomOut() { web.pageZoom = max(0.6, web.pageZoom - 0.1) }
@@ -79,9 +79,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(atlasCatalog.events.filter(e=>e.sourceIndex).length!==133) throw Error('source table coverage');
           document.getElementById('atlas-series').value='SNOW MIKU LIVE';render();
           if(!document.getElementById('atlas-content').textContent.includes('2027')) throw Error('atlas snow filter');
-          if(atlasCatalog.tourRecords.length!==75) throw Error('tour index coverage');
+          if(atlasCatalog.tourRecords.length!==73) throw Error('tour index coverage');
           if(!atlasCatalog.events.some(e=>e.id==='mikutime-MEREWIND')) throw Error('Rewind June');
           if(!atlasCatalog.events.find(e=>e.sourceIndex===87).tourRefs.some(t=>t.tour==='MEREWINDPLUS')) throw Error('Rewind plus');
+          if(atlasBaseline.length!==195 || atlasCatalog.events.length!==195) throw Error('reviewed CSV baseline');
+          if(!atlasCatalog.events.some(e=>e.series==='未来有你'&&e.year===2025)) throw Error('MWY visibility');
+          if(atlasCatalog.events.some(e=>['mikutime-KAGA14','mikutime-MK15'].includes(e.id))) throw Error('reviewed scope');
+          const editID=atlasCatalog.events[0].id;
+          editCatalogEvent(editID);document.querySelector('#catalog-form [name="venue"]').value='TEST VENUE';document.getElementById('catalog-form').requestSubmit();
+          if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE') throw Error('event edit');
+          document.getElementById('atlas-detail').close();
+          const editsBackup=createBackup();atlasEdits={};applyCatalogEdits();mergeBackup(editsBackup);
+          if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE') throw Error('event edit import');
+          const marksBefore=JSON.stringify(atlasProgress);mergeBackup({schema:1,records:data});
+          if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE'||JSON.stringify(atlasProgress)!==marksBefore) throw Error('legacy backup compatibility');
+          editCatalogEvent(null);document.querySelector('#catalog-form [name="name"]').value='自建测试 Live';document.querySelector('#catalog-form [name="series"]').value='测试系列';document.getElementById('catalog-form').requestSubmit();
+          if(atlasCatalog.events.length!==196) throw Error('custom event');document.getElementById('atlas-detail').close();
+          saveCatalogEdits({});refreshAtlasOptions();
           const testID=atlasCatalog.events[0].id;
           showAtlasEvent(testID);document.getElementById('detail-watched').checked=true;document.getElementById('detail-save').click();
           if(!JSON.parse(localStorage.getItem(atlasKey))[testID].watched) throw Error('atlas marks save');
@@ -104,7 +118,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           document.getElementById('series').value='';view='progress';render();
           if(!document.querySelector('progress')) throw Error('series progress');
           view='all';render();
-          return 'PASS: '+atlasCatalog.events.length+' events, 75 tours, Rewind separation, 133 stable IDs, marks, backup/import, legacy 51 records/13 owned';
+          return 'PASS: '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription)"); exit(1) }
@@ -169,7 +183,7 @@ app.setActivationPolicy(.regular)
 app.delegate = delegate
 // Keep JavaScript confirmations and error dialogs available in the native window.
 if CommandLine.arguments.contains("--check-resources") {
-    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
+    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
     print("Bundled resources OK"); exit(0)
 }
 app.run()

@@ -1,3 +1,28 @@
+# 1.3：使用已审阅 CSV，支持后续自行修订
+
+本轮只在 `main` 修改和提交。主图鉴初始为你审阅的 **195 条记录**，包含城市站、年度项目、巡演及边界活动；这不是 195 场已确认演出的统计。信息未齐不会隐藏，未来有你各年度保留。未引入已退回的“仅显示官方核实”筛选。
+
+## 两种修改方式
+
+1. **应用中修改**：打开演出详情 → 编辑演出资料。可改名称、年份、系列、类型、时间、城市、场馆、层级、官网、辅助来源、核实说明和资料备注。首页可新增 Live；已有条目可恢复 CSV 底稿，新增条目可删除。个人观看标记独立保留。
+2. **维护项目底稿**：编辑 `scripts/references/live-catalog.csv`，保留已有记录的 id 不变，新增 id 必须唯一。运行 `python3 scripts/build_catalog.py` 生成 catalog.json，然后重新编译。CSV 及生成结果纳入 Git。
+
+应用内的修订与新增保存到本机 `miku-atlas-edits-v1`，不会自动写回源码 CSV 或 Git。更新底稿后，本机同编号修订优先；想采用新底稿内容可在编辑弹窗选择“恢复 CSV 资料”。完整 JSON 备份包含演出资料修订、新增记录、观看标记与 BD 收藏；兼容旧备份，导入旧备份不会清除新增字段。
+
+## 数据文件
+
+- `scripts/references/live-catalog.csv`：本次你已审阅的 195 条底稿，后续目录维护的主要入口。
+- `scripts/references/catalog-links.json`：稳定 id 与旧 BD 记录、原表编号、巡演索引的关系。
+- `miku-live-archive/dist/catalog.json`：自动生成，请优先修改 CSV 再生成，避免下次覆盖。
+- `miku-live-archive/dist/catalog-editor.js`：本机修订、新增、恢复及校验。
+- 旧 enrich_catalog.py 及 MikuTime 快照保留作历史参考，当前构建目录不再调用旧合并脚本。
+
+资料里的官网链接是参考入口，不自动代表每个字段已被官方确认；具体核实程度保存在核实说明中。不根据歌单或缺少官网链接推断 BD 或实际举办状态。
+
+检查：`python3 scripts/test_catalog.py`。编译：`python3 miku-live-desktop/build.py`。修改初始条目数量后需同步原生自检的数量基线。
+
+---
+
 # 数据补充：Vocawiki + MikuTime（2026-11-17）
 
 本次仅修改 `/Users/sora/创作/MIKU-Archive-source`。

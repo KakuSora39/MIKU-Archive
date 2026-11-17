@@ -80,7 +80,7 @@
       </section>
       <div class="workspace-switch" role="group" aria-label="功能切换"><button id="mode-atlas" class="primary">✳ Live 图鉴</button><button id="mode-collection">▣ BD / 影像收藏</button></div>
       <section id="atlas" aria-label="Live 演出图鉴">
-        <div class="section-top"><div><h2>每一场 Live，都有自己的位置。</h2><p class="muted">专场、巡演、线上与联动 · 以演出为中心，不以是否发行 BD 为收录条件</p></div><div class="actions"><button id="atlas-export">↓ 导出全部记录</button><button id="atlas-sources">资料来源与范围</button></div></div>
+        <div class="section-top"><div><h2>每一场 Live，都有自己的位置。</h2><p class="muted">专场、巡演、线上与联动 · 以演出为中心，不以是否发行 BD 为收录条件</p></div><div class="actions"><button id="atlas-add" class="primary">＋ 新增 Live</button><button id="atlas-export">↓ 导出全部记录</button><button id="atlas-sources">资料来源与范围</button></div></div>
         <div class="filters"><input id="atlas-search" placeholder="搜索演出、城市、场馆…" aria-label="搜索图鉴"><select id="atlas-year" aria-label="图鉴年份"></select><select id="atlas-series" aria-label="图鉴系列"></select><select id="atlas-kind" aria-label="演出形式"></select><select id="atlas-personal" aria-label="我的图鉴标记"><option value="">所有标记</option><option value="wishlist">想看</option><option value="watched">已看</option><option value="unmarked">未标记</option></select><select id="atlas-sort" aria-label="排序"><option value="new">年份从新到旧</option><option value="old">年份从旧到新</option></select></div>
         <div class="tabs"><button data-atlas-view="cards" class="selected">演出卡片</button><button data-atlas-view="timeline">年份年表</button><button data-atlas-view="series">系列总览</button><span id="atlas-result" aria-live="polite"></span></div><p class="muted" id="atlas-scope"></p><div id="atlas-content"></div>
       </section>
@@ -161,6 +161,7 @@
     </dialog>
     <input id="file" type="file" accept="application/json" hidden />
     <dialog id="atlas-detail" aria-labelledby="detail-title"><div id="atlas-detail-body"></div><div class="actions"><button id="detail-close">关闭</button></div></dialog>
-    <script src="atlas.js"></script><script src="app.js"></script>
+    <dialog id="catalog-editor" aria-labelledby="catalog-editor-title"><form id="catalog-form"><h2 id="catalog-editor-title">编辑演出资料</h2><p class="muted">资料修订保存在本机，与个人观看备注、BD 收藏分别保存。导出备份可迁移到其他设备。</p><div id="catalog-fields"></div><p id="catalog-error" role="alert"></p><div class="actions"><button type="button" id="catalog-close">取消</button><button type="button" id="catalog-reset">恢复 CSV 资料</button><button type="submit" class="primary">保存演出资料</button></div></form></dialog>
+    <script src="atlas.js"></script><script src="catalog-editor.js"></script><script src="app.js"></script>
   </body>
 </html>

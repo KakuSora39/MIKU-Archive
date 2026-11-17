@@ -1,0 +1,2725 @@
+{
+  "afa-2009": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-001": {
+    "sourceIndex": 1,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-002": {
+    "sourceIndex": 2,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MIKUFES09",
+        "name": "Miku FES'09 (Summer); Hatsune Miku's 2nd Anniversary",
+        "date": "2009-08-31",
+        "last_date": null,
+        "vocadbId": 2522,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-003": {
+    "sourceIndex": 3,
+    "collectionIds": [
+      "28"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SANKYUGD",
+        "name": "Miku's Thanksgiving Festival; 39's Giving Day",
+        "date": "2010-03-09",
+        "last_date": null,
+        "vocadbId": 2520,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-004": {
+    "sourceIndex": 4,
+    "collectionIds": [
+      "29"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2011Tokyo",
+        "name": "Hatsune Miku Live Party 2011 「MikuPa♪」 -39's THANK's LIVE IN TOKYO-",
+        "date": "2011-03-09",
+        "last_date": null,
+        "vocadbId": 2523,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-005": {
+    "sourceIndex": 5,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Mikunopolis",
+        "name": "MIKUNOPOLIS in LOS ANGELES -Happy to meet you! I'm HATSUNE MIKU-",
+        "date": "2011-07-02",
+        "last_date": null,
+        "vocadbId": 2521,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-006": {
+    "sourceIndex": 6,
+    "collectionIds": [
+      "29"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2011Sapporo",
+        "name": "Hatsune Miku Live Party 2011 「MikuPa♪」 -39's THANK's LIVE IN SAPPORO-",
+        "date": "2011-08-17",
+        "last_date": null,
+        "vocadbId": 2526,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-007": {
+    "sourceIndex": 7,
+    "collectionIds": [
+      "29"
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-008": {
+    "sourceIndex": 8,
+    "collectionIds": [
+      "29"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2011SG",
+        "name": "Hatsune Miku Live Party 2011 「MikuPa♪」 -39's THANK's LIVE IN SINGAPORE-",
+        "date": "2011-11-11",
+        "last_date": null,
+        "vocadbId": 2527,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-009": {
+    "sourceIndex": 9,
+    "collectionIds": [
+      "30"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2012Tokyo",
+        "name": "Hatsune Miku Live Party 2012 「MikuPa♪」",
+        "date": "2012-03-08",
+        "last_date": null,
+        "vocadbId": 4056,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-010": {
+    "sourceIndex": 10,
+    "collectionIds": [
+      "30"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2012Tokyo",
+        "name": "Hatsune Miku Live Party 2012 「MikuPa♪」",
+        "date": "2012-03-08",
+        "last_date": null,
+        "vocadbId": 4056,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-011": {
+    "sourceIndex": 11,
+    "collectionIds": [
+      "30"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SANKYUGDF",
+        "name": "Miku's Final Big Thanksgiving Day Concert",
+        "date": "2012-03-09",
+        "last_date": null,
+        "vocadbId": 1413,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-012": {
+    "sourceIndex": 12,
+    "collectionIds": [
+      "30"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SANKYUGDF",
+        "name": "Miku's Final Big Thanksgiving Day Concert",
+        "date": "2012-03-09",
+        "last_date": null,
+        "vocadbId": 1413,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-013": {
+    "sourceIndex": 13,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-014": {
+    "sourceIndex": 14,
+    "collectionIds": [
+      "30"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2012HKTW",
+        "name": "Hatsune Miku's First Concert in Hong Kong & Taiwan 「MikuPa♪」",
+        "date": "2012-10-02",
+        "last_date": "2012-10-06",
+        "vocadbId": 2524,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-015": {
+    "sourceIndex": 15,
+    "collectionIds": [
+      "30"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2012HKTW",
+        "name": "Hatsune Miku's First Concert in Hong Kong & Taiwan 「MikuPa♪」",
+        "date": "2012-10-02",
+        "last_date": "2012-10-06",
+        "vocadbId": 2524,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "appearance-2013": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-016": {
+    "sourceIndex": 16,
+    "collectionIds": [
+      "31"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2013Sapporo",
+        "name": "Hatsune Miku Live Party 2013 in Sapporo 「MikuPa♪」",
+        "date": "2013-02-09",
+        "last_date": "2013-02-10",
+        "vocadbId": 2510,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-017": {
+    "sourceIndex": 17,
+    "collectionIds": [
+      "32"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MP2013Kansai",
+        "name": "Hatsune Miku Live Party 2013 in Kansai 「MikuPa♪」 -39's Spring the 3rd Synthesis-",
+        "date": "2013-03-09",
+        "last_date": null,
+        "vocadbId": 2511,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-018": {
+    "sourceIndex": 18,
+    "collectionIds": [
+      "1"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2013",
+        "name": "Hatsune Miku Magical Mirai 2013",
+        "date": "2013-08-30",
+        "last_date": null,
+        "vocadbId": 2519,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "appearance-2014": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "mikutime-GAGA": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "GAGA",
+        "name": "Lady Gaga's artRAVE: The ARTPOP Ball",
+        "date": "2014-05-04",
+        "last_date": "2014-06-03",
+        "vocadbId": 7124,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "moegirl-stage-019": {
+    "sourceIndex": 19,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2014IN",
+        "name": "HATSUNE MIKU EXPO 2014 in Indonesia",
+        "date": "2014-05-28",
+        "last_date": "2014-05-29",
+        "vocadbId": 1939,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-020": {
+    "sourceIndex": 20,
+    "collectionIds": [
+      "2"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2014",
+        "name": "Hatsune Miku Magical Mirai 2014",
+        "date": "2014-08-30",
+        "last_date": "2014-09-20",
+        "vocadbId": 2517,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-021": {
+    "sourceIndex": 21,
+    "collectionIds": [
+      "2"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2014",
+        "name": "Hatsune Miku Magical Mirai 2014",
+        "date": "2014-08-30",
+        "last_date": "2014-09-20",
+        "vocadbId": 2517,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-022": {
+    "sourceIndex": 22,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2014LANY",
+        "name": "HATSUNE MIKU EXPO 2014 in LOS ANGELES and NEW YORK",
+        "date": "2014-10-11",
+        "last_date": "2014-10-18",
+        "vocadbId": 1937,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-023": {
+    "sourceIndex": 23,
+    "collectionIds": [
+      "15"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2014LANY",
+        "name": "HATSUNE MIKU EXPO 2014 in LOS ANGELES and NEW YORK",
+        "date": "2014-10-11",
+        "last_date": "2014-10-18",
+        "vocadbId": 1937,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-024": {
+    "sourceIndex": 24,
+    "collectionIds": [
+      "23"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SM2015",
+        "name": "SNOW MIKU LIVE! 2015 Presents MIKU EXPO Live Set",
+        "date": "2015-02-07",
+        "last_date": "2015-02-08",
+        "vocadbId": 3792,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-025": {
+    "sourceIndex": 25,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2015",
+        "name": "HATSUNE MIKU EXPO 2015 in SHANGHAI",
+        "date": "2015-06-26",
+        "last_date": "2015-06-27",
+        "vocadbId": 1940,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-026": {
+    "sourceIndex": 26,
+    "collectionIds": [
+      "3"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2015",
+        "name": "Hatsune Miku Magical Mirai 2015",
+        "date": "2015-09-04",
+        "last_date": "2015-09-06",
+        "vocadbId": 2514,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-027": {
+    "sourceIndex": 27,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016JP",
+        "name": "HATSUNE MIKU EXPO 2016 Japan Tour",
+        "date": "2016-03-23",
+        "last_date": "2016-04-10",
+        "vocadbId": 1399,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-028": {
+    "sourceIndex": 28,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016JP",
+        "name": "HATSUNE MIKU EXPO 2016 Japan Tour",
+        "date": "2016-03-23",
+        "last_date": "2016-04-10",
+        "vocadbId": 1399,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-029": {
+    "sourceIndex": 29,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016JP",
+        "name": "HATSUNE MIKU EXPO 2016 Japan Tour",
+        "date": "2016-03-23",
+        "last_date": "2016-04-10",
+        "vocadbId": 1399,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-030": {
+    "sourceIndex": 30,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016JP",
+        "name": "HATSUNE MIKU EXPO 2016 Japan Tour",
+        "date": "2016-03-23",
+        "last_date": "2016-04-10",
+        "vocadbId": 1399,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-031": {
+    "sourceIndex": 31,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016JP",
+        "name": "HATSUNE MIKU EXPO 2016 Japan Tour",
+        "date": "2016-03-23",
+        "last_date": "2016-04-10",
+        "vocadbId": 1399,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-032": {
+    "sourceIndex": 32,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-033": {
+    "sourceIndex": 33,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-034": {
+    "sourceIndex": 34,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-035": {
+    "sourceIndex": 35,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-036": {
+    "sourceIndex": 36,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-037": {
+    "sourceIndex": 37,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-038": {
+    "sourceIndex": 38,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-039": {
+    "sourceIndex": 39,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-040": {
+    "sourceIndex": 40,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-041": {
+    "sourceIndex": 41,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016NA",
+        "name": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+        "date": "2016-04-23",
+        "last_date": "2016-06-04",
+        "vocadbId": 1859,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-042": {
+    "sourceIndex": 42,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016TW",
+        "name": "HATSUNE MIKU EXPO 2016 in TAIWAN",
+        "date": "2016-06-25",
+        "last_date": "2016-06-26",
+        "vocadbId": 1941,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-043": {
+    "sourceIndex": 43,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-044": {
+    "sourceIndex": 44,
+    "collectionIds": [
+      "4"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2016",
+        "name": "Hatsune Miku Magical Mirai 2016",
+        "date": "2016-09-09",
+        "last_date": "2016-09-11",
+        "vocadbId": 1398,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-045": {
+    "sourceIndex": 45,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016CN",
+        "name": "HATSUNE MIKU EXPO 2016 CHINA TOUR",
+        "date": "2016-12-03",
+        "last_date": "2016-12-11",
+        "vocadbId": 1943,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-046": {
+    "sourceIndex": 46,
+    "collectionIds": [
+      "16"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2016CN",
+        "name": "HATSUNE MIKU EXPO 2016 CHINA TOUR",
+        "date": "2016-12-03",
+        "last_date": "2016-12-11",
+        "vocadbId": 1943,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-047": {
+    "sourceIndex": 47,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "KODO2017",
+        "name": "Hatsune Miku x Kodo Taiko Performing Arts Ensemble 2017",
+        "date": "2017-03-04",
+        "last_date": "2017-03-05",
+        "vocadbId": 2947,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-048": {
+    "sourceIndex": 48,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-049": {
+    "sourceIndex": 49,
+    "collectionIds": [
+      "5"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2017",
+        "name": "Hatsune Miku Magical Mirai 2017",
+        "date": "2017-09-01",
+        "last_date": "2017-09-03",
+        "vocadbId": 1397,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-050": {
+    "sourceIndex": 50,
+    "collectionIds": [
+      "33"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2017",
+        "name": "MIKU WITH YOU 2017 SHANGHAI",
+        "date": "2017-11-25",
+        "last_date": null,
+        "vocadbId": 1619,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-051": {
+    "sourceIndex": 51,
+    "collectionIds": [
+      "17"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2017MY",
+        "name": "HATSUNE MIKU EXPO 2017 in MALAYSIA",
+        "date": "2017-12-16",
+        "last_date": null,
+        "vocadbId": 1584,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2017": {
+    "collectionIds": [
+      "43"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "expo-2018-na": {
+    "collectionIds": [
+      "18"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2018NA",
+        "name": "HATSUNE MIKU EXPO 2018 USA & MEXICO",
+        "date": "2018-06-29",
+        "last_date": "2018-07-19",
+        "vocadbId": 1673,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "mikutime-KODO2018": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "KODO2018",
+        "name": "Hatsune Miku × Kodo Taiko Special Live 2018",
+        "date": "2018-06-02",
+        "last_date": "2018-06-03",
+        "vocadbId": 2948,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "moegirl-stage-052": {
+    "sourceIndex": 52,
+    "collectionIds": [
+      "24"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SM2018",
+        "name": "SNOW MIKU LIVE! 2018",
+        "date": "2018-02-09",
+        "last_date": "2018-02-10",
+        "vocadbId": 1618,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-053": {
+    "sourceIndex": 53,
+    "collectionIds": [
+      "6"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2018",
+        "name": "Hatsune Miku Magical Mirai 2018",
+        "date": "2018-08-25",
+        "last_date": "2018-09-02",
+        "vocadbId": 1561,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-054": {
+    "sourceIndex": 54,
+    "collectionIds": [
+      "6"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2018",
+        "name": "Hatsune Miku Magical Mirai 2018",
+        "date": "2018-08-25",
+        "last_date": "2018-09-02",
+        "vocadbId": 1561,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-055": {
+    "sourceIndex": 55,
+    "collectionIds": [
+      "34"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2018",
+        "name": "MIKU WITH YOU 2018",
+        "date": "2018-10-13",
+        "last_date": "2018-10-28",
+        "vocadbId": 2085,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-056": {
+    "sourceIndex": 56,
+    "collectionIds": [
+      "34"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2018",
+        "name": "MIKU WITH YOU 2018",
+        "date": "2018-10-13",
+        "last_date": "2018-10-28",
+        "vocadbId": 2085,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-057": {
+    "sourceIndex": 57,
+    "collectionIds": [
+      "34"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2018",
+        "name": "MIKU WITH YOU 2018",
+        "date": "2018-10-13",
+        "last_date": "2018-10-28",
+        "vocadbId": 2085,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-058": {
+    "sourceIndex": 58,
+    "collectionIds": [
+      "18"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2018EU",
+        "name": "HATSUNE MIKU EXPO 2018 EUROPE",
+        "date": "2018-12-01",
+        "last_date": "2018-12-08",
+        "vocadbId": 1854,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-059": {
+    "sourceIndex": 59,
+    "collectionIds": [
+      "18"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2018EU",
+        "name": "HATSUNE MIKU EXPO 2018 EUROPE",
+        "date": "2018-12-01",
+        "last_date": "2018-12-08",
+        "vocadbId": 1854,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-060": {
+    "sourceIndex": 60,
+    "collectionIds": [
+      "18"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2018EU",
+        "name": "HATSUNE MIKU EXPO 2018 EUROPE",
+        "date": "2018-12-01",
+        "last_date": "2018-12-08",
+        "vocadbId": 1854,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2018": {
+    "collectionIds": [
+      "44"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-061": {
+    "sourceIndex": 61,
+    "collectionIds": [
+      "25"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SM2019",
+        "name": "SNOW MIKU LIVE! 2019",
+        "date": "2019-02-09",
+        "last_date": "2019-02-10",
+        "vocadbId": 2422,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-062": {
+    "sourceIndex": 62,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2019TWHK",
+        "name": "HATSUNE MIKU EXPO 2019 Taiwan & Hong Kong",
+        "date": "2019-05-11",
+        "last_date": "2019-07-27",
+        "vocadbId": 2489,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-063": {
+    "sourceIndex": 63,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-064": {
+    "sourceIndex": 64,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2019TWHK",
+        "name": "HATSUNE MIKU EXPO 2019 Taiwan & Hong Kong",
+        "date": "2019-05-11",
+        "last_date": "2019-07-27",
+        "vocadbId": 2489,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-065": {
+    "sourceIndex": 65,
+    "collectionIds": [
+      "7"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2019",
+        "name": "Hatsune Miku Magical Mirai 2019",
+        "date": "2019-08-09",
+        "last_date": "2019-09-01",
+        "vocadbId": 2515,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-066": {
+    "sourceIndex": 66,
+    "collectionIds": [
+      "7"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2019",
+        "name": "Hatsune Miku Magical Mirai 2019",
+        "date": "2019-08-09",
+        "last_date": "2019-09-01",
+        "vocadbId": 2515,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-067": {
+    "sourceIndex": 67,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-068": {
+    "sourceIndex": 68,
+    "collectionIds": [
+      "35"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2019",
+        "name": "MIKU WITH YOU 2019",
+        "date": "2019-11-01",
+        "last_date": "2019-11-24",
+        "vocadbId": 3752,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-069": {
+    "sourceIndex": 69,
+    "collectionIds": [
+      "35"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2019",
+        "name": "MIKU WITH YOU 2019",
+        "date": "2019-11-01",
+        "last_date": "2019-11-24",
+        "vocadbId": 3752,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-070": {
+    "sourceIndex": 70,
+    "collectionIds": [
+      "35"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2019",
+        "name": "MIKU WITH YOU 2019",
+        "date": "2019-11-01",
+        "last_date": "2019-11-24",
+        "vocadbId": 3752,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-071": {
+    "sourceIndex": 71,
+    "collectionIds": [
+      "35"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2019",
+        "name": "MIKU WITH YOU 2019",
+        "date": "2019-11-01",
+        "last_date": "2019-11-24",
+        "vocadbId": 3752,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2019": {
+    "collectionIds": [
+      "45"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "galaxy-2020": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "GALAXY2020",
+        "name": "Hatsune Miku GALAXY LIVE 2020",
+        "date": "2020-09-26",
+        "last_date": null,
+        "vocadbId": 2952,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-072": {
+    "sourceIndex": 72,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2020EU",
+        "name": "HATSUNE MIKU EXPO 2020 EUROPE",
+        "date": "2020-01-11",
+        "last_date": "2020-01-28",
+        "vocadbId": 2786,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-073": {
+    "sourceIndex": 73,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2020EU",
+        "name": "HATSUNE MIKU EXPO 2020 EUROPE",
+        "date": "2020-01-11",
+        "last_date": "2020-01-28",
+        "vocadbId": 2786,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-074": {
+    "sourceIndex": 74,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2020EU",
+        "name": "HATSUNE MIKU EXPO 2020 EUROPE",
+        "date": "2020-01-11",
+        "last_date": "2020-01-28",
+        "vocadbId": 2786,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-075": {
+    "sourceIndex": 75,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2020EU",
+        "name": "HATSUNE MIKU EXPO 2020 EUROPE",
+        "date": "2020-01-11",
+        "last_date": "2020-01-28",
+        "vocadbId": 2786,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-076": {
+    "sourceIndex": 76,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2020EU",
+        "name": "HATSUNE MIKU EXPO 2020 EUROPE",
+        "date": "2020-01-11",
+        "last_date": "2020-01-28",
+        "vocadbId": 2786,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-077": {
+    "sourceIndex": 77,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ZERO",
+        "name": "Nico Nico Net Chokaigi 2020 Natsu ✕ HATSUNE MIKU LIVE - UNTITLED 0 -",
+        "date": "2020-08-09",
+        "last_date": null,
+        "vocadbId": 2939,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-078": {
+    "sourceIndex": 78,
+    "collectionIds": [
+      "8"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2020",
+        "name": "Hatsune Miku Magical Mirai 2020",
+        "date": "2020-11-28",
+        "last_date": "2020-12-20",
+        "vocadbId": 2758,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-079": {
+    "sourceIndex": 79,
+    "collectionIds": [
+      "8"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2020",
+        "name": "Hatsune Miku Magical Mirai 2020",
+        "date": "2020-11-28",
+        "last_date": "2020-12-20",
+        "vocadbId": 2758,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-080": {
+    "sourceIndex": 80,
+    "collectionIds": [
+      "36"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2020",
+        "name": "HATSUNE MIKU WITH YOU 2020",
+        "date": "2020-12-25",
+        "last_date": null,
+        "vocadbId": 3250,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2020": {
+    "collectionIds": [
+      "46"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "break-2021-151": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "galaxy-2021": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "GALAXY2021",
+        "name": "Hatsune Miku GALAXY LIVE 2021",
+        "date": "2021-12-18",
+        "last_date": null,
+        "vocadbId": 3979,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-081": {
+    "sourceIndex": 81,
+    "collectionIds": [
+      "19"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2021",
+        "name": "HATSUNE MIKU EXPO 2021 Online",
+        "date": "2021-06-06",
+        "last_date": null,
+        "vocadbId": 3224,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-082": {
+    "sourceIndex": 82,
+    "collectionIds": [
+      "9"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2021",
+        "name": "Hatsune Miku Magical Mirai 2021",
+        "date": "2021-10-22",
+        "last_date": "2021-11-07",
+        "vocadbId": 3305,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-083": {
+    "sourceIndex": 83,
+    "collectionIds": [
+      "9"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2021",
+        "name": "Hatsune Miku Magical Mirai 2021",
+        "date": "2021-10-22",
+        "last_date": "2021-11-07",
+        "vocadbId": 3305,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-084": {
+    "sourceIndex": 84,
+    "collectionIds": [
+      "37"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2021",
+        "name": "HATSUNE MIKU WITH YOU 2021",
+        "date": "2021-12-25",
+        "last_date": null,
+        "vocadbId": 4058,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "sekai-symphony-2021": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2021": {
+    "collectionIds": [
+      "47"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "break-2022-152": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "break-2022-153": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "colorful-2022": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "mikutime-KAGA14": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "KAGA14",
+        "name": "Kagamine Rin・Len Happy 14th Birthday Party 「Two You☆★」",
+        "date": "2022-07-07",
+        "last_date": "2022-07-08",
+        "vocadbId": 4161,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "mikutime-MEREWIND": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MEREWIND",
+        "name": "HATSUNE MIKU EXPO Rewind",
+        "date": "2022-06-05",
+        "last_date": null,
+        "vocadbId": 4114,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "moegirl-stage-085": {
+    "sourceIndex": 85,
+    "collectionIds": [
+      "10"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2022",
+        "name": "Hatsune Miku Magical Mirai 10th Anniversary in Tokyo & Osaka",
+        "date": "2022-08-12",
+        "last_date": "2022-09-04",
+        "vocadbId": 4233,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-086": {
+    "sourceIndex": 86,
+    "collectionIds": [
+      "10"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2022",
+        "name": "Hatsune Miku Magical Mirai 10th Anniversary in Tokyo & Osaka",
+        "date": "2022-08-12",
+        "last_date": "2022-09-04",
+        "vocadbId": 4233,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-087": {
+    "sourceIndex": 87,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MEREWINDPLUS",
+        "name": "HATSUNE MIKU EXPO Rewind+",
+        "date": "2022-11-06",
+        "last_date": null,
+        "vocadbId": 4490,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "sekai-symphony-2022": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2022": {
+    "collectionIds": [
+      "48"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "break-2023-154": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "colorful-2023": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-088": {
+    "sourceIndex": 88,
+    "collectionIds": [
+      "10"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM10Sapporo",
+        "name": "Hatsune Miku Magical Mirai 10th Anniversary in Sapporo",
+        "date": "2023-02-04",
+        "last_date": "2023-02-05",
+        "vocadbId": 4235,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-089": {
+    "sourceIndex": 89,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Thunderbolt",
+        "name": "Hatsune Miku JAPAN TOUR 2023 ~THUNDERBOLT~",
+        "date": "2023-02-23",
+        "last_date": "2023-03-25",
+        "vocadbId": 4765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-090": {
+    "sourceIndex": 90,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Thunderbolt",
+        "name": "Hatsune Miku JAPAN TOUR 2023 ~THUNDERBOLT~",
+        "date": "2023-02-23",
+        "last_date": "2023-03-25",
+        "vocadbId": 4765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-091": {
+    "sourceIndex": 91,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Thunderbolt",
+        "name": "Hatsune Miku JAPAN TOUR 2023 ~THUNDERBOLT~",
+        "date": "2023-02-23",
+        "last_date": "2023-03-25",
+        "vocadbId": 4765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-092": {
+    "sourceIndex": 92,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Thunderbolt",
+        "name": "Hatsune Miku JAPAN TOUR 2023 ~THUNDERBOLT~",
+        "date": "2023-02-23",
+        "last_date": "2023-03-25",
+        "vocadbId": 4765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-093": {
+    "sourceIndex": 93,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Thunderbolt",
+        "name": "Hatsune Miku JAPAN TOUR 2023 ~THUNDERBOLT~",
+        "date": "2023-02-23",
+        "last_date": "2023-03-25",
+        "vocadbId": 4765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-094": {
+    "sourceIndex": 94,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "KODO2023",
+        "name": "Hatsune Miku × Kodo Taiko Special Live 2023",
+        "date": "2023-06-03",
+        "last_date": "2023-06-04",
+        "vocadbId": 5910,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-095": {
+    "sourceIndex": 95,
+    "collectionIds": [],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-096": {
+    "sourceIndex": 96,
+    "collectionIds": [
+      "11"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2023",
+        "name": "Hatsune Miku Magical Mirai 2023",
+        "date": "2023-08-11",
+        "last_date": "2023-09-03",
+        "vocadbId": 6045,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-097": {
+    "sourceIndex": 97,
+    "collectionIds": [
+      "11"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2023",
+        "name": "Hatsune Miku Magical Mirai 2023",
+        "date": "2023-08-11",
+        "last_date": "2023-09-03",
+        "vocadbId": 6045,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-098": {
+    "sourceIndex": 98,
+    "collectionIds": [
+      "20"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2023VR",
+        "name": "HATSUNE MIKU EXPO 2023 VR",
+        "date": "2023-11-11",
+        "last_date": null,
+        "vocadbId": 5751,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "sekai-symphony-2023": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2023": {
+    "collectionIds": [
+      "49"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "colorful-2024": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "colorful-4": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "mikutime-MK15": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MK15",
+        "name": "MK15th project MEIKO＆KAITO Online Concert",
+        "date": "2024-02-24",
+        "last_date": null,
+        "vocadbId": 6539,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "moegirl-stage-099": {
+    "sourceIndex": 99,
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MIKUFES24",
+        "name": "Miku FES'24 (Spring) ~Happy 16th Birthday~",
+        "date": "2024-03-31",
+        "last_date": null,
+        "vocadbId": 6986,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-100": {
+    "sourceIndex": 100,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-101": {
+    "sourceIndex": 101,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-102": {
+    "sourceIndex": 102,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-103": {
+    "sourceIndex": 103,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-104": {
+    "sourceIndex": 104,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-105": {
+    "sourceIndex": 105,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-106": {
+    "sourceIndex": 106,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-107": {
+    "sourceIndex": 107,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-108": {
+    "sourceIndex": 108,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-109": {
+    "sourceIndex": 109,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-110": {
+    "sourceIndex": 110,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-111": {
+    "sourceIndex": 111,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-112": {
+    "sourceIndex": 112,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-113": {
+    "sourceIndex": 113,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-114": {
+    "sourceIndex": 114,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-115": {
+    "sourceIndex": 115,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-116": {
+    "sourceIndex": 116,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NA",
+        "name": "HATSUNE MIKU EXPO 2024 North America",
+        "date": "2024-04-04",
+        "last_date": "2024-05-21",
+        "vocadbId": 6516,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-117": {
+    "sourceIndex": 117,
+    "collectionIds": [
+      "39"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2024",
+        "name": "HATSUNE MIKU WITH YOU 2024",
+        "date": "2024-07-13",
+        "last_date": "2024-07-28",
+        "vocadbId": 7673,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-118": {
+    "sourceIndex": 118,
+    "collectionIds": [
+      "39"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2024",
+        "name": "HATSUNE MIKU WITH YOU 2024",
+        "date": "2024-07-13",
+        "last_date": "2024-07-28",
+        "vocadbId": 7673,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-119": {
+    "sourceIndex": 119,
+    "collectionIds": [
+      "39"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MWY2024",
+        "name": "HATSUNE MIKU WITH YOU 2024",
+        "date": "2024-07-13",
+        "last_date": "2024-07-28",
+        "vocadbId": 7673,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-120": {
+    "sourceIndex": 120,
+    "collectionIds": [
+      "12"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2024",
+        "name": "Hatsune Miku Magical Mirai 2024",
+        "date": "2024-08-17",
+        "last_date": "2024-10-14",
+        "vocadbId": 7214,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-121": {
+    "sourceIndex": 121,
+    "collectionIds": [
+      "12"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2024",
+        "name": "Hatsune Miku Magical Mirai 2024",
+        "date": "2024-08-17",
+        "last_date": "2024-10-14",
+        "vocadbId": 7214,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-122": {
+    "sourceIndex": 122,
+    "collectionIds": [
+      "12"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2024",
+        "name": "Hatsune Miku Magical Mirai 2024",
+        "date": "2024-08-17",
+        "last_date": "2024-10-14",
+        "vocadbId": 7214,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-123": {
+    "sourceIndex": 123,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024EU",
+        "name": "HATSUNE MIKU EXPO 2024 Europe",
+        "date": "2024-10-26",
+        "last_date": "2024-11-02",
+        "vocadbId": 7266,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-124": {
+    "sourceIndex": 124,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024EU",
+        "name": "HATSUNE MIKU EXPO 2024 Europe",
+        "date": "2024-10-26",
+        "last_date": "2024-11-02",
+        "vocadbId": 7266,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-125": {
+    "sourceIndex": 125,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024EU",
+        "name": "HATSUNE MIKU EXPO 2024 Europe",
+        "date": "2024-10-26",
+        "last_date": "2024-11-02",
+        "vocadbId": 7266,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-126": {
+    "sourceIndex": 126,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024EU",
+        "name": "HATSUNE MIKU EXPO 2024 Europe",
+        "date": "2024-10-26",
+        "last_date": "2024-11-02",
+        "vocadbId": 7266,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-127": {
+    "sourceIndex": 127,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024EU",
+        "name": "HATSUNE MIKU EXPO 2024 Europe",
+        "date": "2024-10-26",
+        "last_date": "2024-11-02",
+        "vocadbId": 7266,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-128": {
+    "sourceIndex": 128,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024EU",
+        "name": "HATSUNE MIKU EXPO 2024 Europe",
+        "date": "2024-10-26",
+        "last_date": "2024-11-02",
+        "vocadbId": 7266,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-129": {
+    "sourceIndex": 129,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NZAU",
+        "name": "HATSUNE MIKU EXPO 2024 New Zealand & Australia",
+        "date": "2024-11-15",
+        "last_date": "2024-11-26",
+        "vocadbId": 7765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-130": {
+    "sourceIndex": 130,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NZAU",
+        "name": "HATSUNE MIKU EXPO 2024 New Zealand & Australia",
+        "date": "2024-11-15",
+        "last_date": "2024-11-26",
+        "vocadbId": 7765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-131": {
+    "sourceIndex": 131,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NZAU",
+        "name": "HATSUNE MIKU EXPO 2024 New Zealand & Australia",
+        "date": "2024-11-15",
+        "last_date": "2024-11-26",
+        "vocadbId": 7765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-132": {
+    "sourceIndex": 132,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NZAU",
+        "name": "HATSUNE MIKU EXPO 2024 New Zealand & Australia",
+        "date": "2024-11-15",
+        "last_date": "2024-11-26",
+        "vocadbId": 7765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "moegirl-stage-133": {
+    "sourceIndex": 133,
+    "collectionIds": [
+      "21"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2024NZAU",
+        "name": "HATSUNE MIKU EXPO 2024 New Zealand & Australia",
+        "date": "2024-11-15",
+        "last_date": "2024-11-26",
+        "vocadbId": 7765,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "城市 / 场次",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "sekai-symphony-2024": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2024": {
+    "collectionIds": [
+      "50"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "blooming-2025": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "Blooming",
+        "name": "Hatsune Miku JAPAN LIVE TOUR 2025 ~BLOOMING~",
+        "date": "2025-04-19",
+        "last_date": "2025-05-31",
+        "vocadbId": 8380,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "colorful-5": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "expo-2025": {
+    "collectionIds": [
+      "22"
+    ],
+    "tourRefs": [
+      {
+        "tour": "ME2025",
+        "name": "HATSUNE MIKU EXPO 2025 ASIA",
+        "date": "2025-11-05",
+        "last_date": "2025-11-30",
+        "vocadbId": 9341,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "mirai-2025": {
+    "collectionIds": [
+      "13"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2025",
+        "name": "Hatsune Miku Magical Mirai 2025",
+        "date": "2025-08-01",
+        "last_date": "2025-08-31",
+        "vocadbId": 8768,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "mwy-2025": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MWY2025",
+        "name": "MIKU WITH YOU 2025",
+        "date": "2025-12-20",
+        "last_date": "2025-12-21",
+        "vocadbId": 9644,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2025": {
+    "collectionIds": [
+      "51"
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "mikutime-ME2026EU": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2026EU",
+        "name": "HATSUNE MIKU EXPO 2026 EUROPE",
+        "date": "2026-11-12",
+        "last_date": "2026-11-25",
+        "vocadbId": 12222,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "mikutime-ME2026NA": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "ME2026NA",
+        "name": "HATSUNE MIKU EXPO 2026 NORTH AMERICA",
+        "date": "2026-04-12",
+        "last_date": "2026-05-19",
+        "vocadbId": 9811,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "mikutime-MWY2026": {
+    "collectionIds": [],
+    "tourRefs": [
+      {
+        "tour": "MWY2026",
+        "name": "MIKU WITH YOU 2026",
+        "date": "2026-10-31",
+        "last_date": "2026-12-26",
+        "vocadbId": 13120,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "巡演 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "primary-14": {
+    "collectionIds": [
+      "14"
+    ],
+    "tourRefs": [
+      {
+        "tour": "MM2026",
+        "name": "Hatsune Miku Magical Mirai 2026",
+        "date": "2026-07-24",
+        "last_date": "2026-08-30",
+        "vocadbId": 12251,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "primary-40": {
+    "vocaIndex": 134,
+    "collectionIds": [
+      "40"
+    ],
+    "tourRefs": [
+      {
+        "tour": "LAWSON",
+        "name": "Hatsune Miku LAWSON 50th Anniversary Special LIVE",
+        "date": "2026-01-17",
+        "last_date": "2026-01-18",
+        "vocadbId": 9642,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "primary-41": {
+    "vocaIndex": 136,
+    "collectionIds": [
+      "41"
+    ],
+    "tourRefs": [
+      {
+        "tour": "VOLTAGE",
+        "name": "Pokémon feat. Hatsune Miku VOLTAGE Live!",
+        "date": "2026-03-20",
+        "last_date": "2026-03-22",
+        "vocadbId": 9613,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "primary-42": {
+    "vocaIndex": 135,
+    "collectionIds": [
+      "42"
+    ],
+    "tourRefs": [
+      {
+        "tour": "DECO",
+        "name": "DecoMiku LIVE starring Hatsune Miku 『Hello』",
+        "date": "2026-02-14",
+        "last_date": null,
+        "vocadbId": 9401,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  },
+  "symphony-2026": {
+    "collectionIds": [],
+    "level": "年度 / 项目",
+    "reference": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
+  },
+  "primary-26": {
+    "collectionIds": [
+      "26"
+    ],
+    "tourRefs": [
+      {
+        "tour": "SM2027",
+        "name": "SNOW MIKU LIVE! 2027",
+        "date": "2027-02-05",
+        "last_date": "2027-02-07",
+        "vocadbId": 13226,
+        "source": "https://github.com/talisein/songbot/blob/main/src/concerts-raw_data.cppm"
+      }
+    ],
+    "level": "年度 / 项目",
+    "reference": "https://mzh.moegirl.org.cn/初音未来/演唱会"
+  }
+}

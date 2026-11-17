@@ -86,6 +86,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(!atlasCatalog.events.some(e=>e.series==='未来有你'&&e.year===2025)) throw Error('MWY visibility');
           if(atlasCatalog.events.some(e=>['mikutime-KAGA14','mikutime-MK15'].includes(e.id))) throw Error('reviewed scope');
           if(!atlasCatalog.events.every(e=>e.sourceReferences?.[0]?.url.includes('vocadb.net'))) throw Error('source priority');
+          const chronology=[{id:'late',name:'late',year:2024,date:'2024-10-01'},{id:'early',name:'early',year:2024,date:'2024-02-01'},{id:'unknown',name:'unknown',year:2024,date:'待核实'}];
+          if(chronology.slice().sort((a,b)=>compareAtlasDates(a,b,true)).map(e=>e.id).join()!=='early,late,unknown')throw Error('chronological ascending');
+          if(chronology.slice().sort((a,b)=>compareAtlasDates(a,b,false)).map(e=>e.id).join()!=='late,early,unknown')throw Error('chronological descending');
+          if(atlasStartDate({date:'2024-02-30'})!==null)throw Error('invalid date');
+          if(atlasStartDate({date:'2025年12月12日'})!==Date.UTC(2025,11,12))throw Error('edited date');
+          showAtlasEvent('primary-26');
+          if(!document.getElementById('atlas-detail-body').textContent.includes('Zepp Sapporo'))throw Error('snow venue');
+          if(![...document.querySelectorAll('#atlas-detail-body a')].some(a=>a.textContent.includes('https://snowmiku.com/2027/event-live.html')&&a.href==='https://snowmiku.com/2027/event-live.html'))throw Error('direct official anchor');
+          document.getElementById('atlas-detail').close();
+          document.getElementById('atlas-series').value='';render();
+          if(document.querySelector('.atlas-cover i'))throw Error('source watermark');
+          const ordered=atlasRows();for(let i=1;i<ordered.length;i++)if(compareAtlasDates(ordered[i-1],ordered[i],false)>0)throw Error('catalog chronological order');
           const rgb=s=>s.match(/[0-9.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4});
           const lum=s=>rgb(s).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
           for(const id of ['mode-atlas','atlas-add','atlas-export','atlas-year']) {
@@ -126,7 +138,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(!document.querySelector('progress')) throw Error('series progress');
           view='all';render();
           setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
-          return 'PASS: source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
+          return 'PASS: chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription)"); exit(1) }

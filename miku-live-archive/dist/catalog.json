@@ -642,8 +642,8 @@
       "venue": "Studio Coast",
       "kind": "专场 / 巡演",
       "year": 2009,
-      "officialUrl": "https://blog.piapro.net/2009/09/fes09.html",
-      "source": "https://blog.piapro.net/2009/09/fes09.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -705,7 +705,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "collectionIds": [],
@@ -714,13 +715,13 @@
       "id": "afa-2009",
       "series": "嘉宾 / 联合演出",
       "name": "Anime Festival Asia 2009",
-      "date": "待核实",
-      "city": "待核实",
+      "date": "2009-11-21（初音出演日）",
+      "city": "新加坡",
       "venue": "待核实",
       "kind": "专场 / 巡演",
       "year": 2009,
-      "officialUrl": "https://blog.piapro.net/2009/11/pcd-1.html",
-      "source": "https://blog.piapro.net/2009/11/pcd-1.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -731,6 +732,9 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "detailSources": [
+        "https://blog.piapro.net/2009/11/pcd-1.html"
       ],
       "officialLinks": [
         {
@@ -758,7 +762,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 1,
@@ -812,7 +817,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 3,
@@ -890,7 +896,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 5,
@@ -966,7 +973,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 4,
@@ -993,8 +1001,8 @@
       "venue": "Zepp Tokyo",
       "kind": "专场 / 巡演",
       "year": 2011,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "http://5pb.jp/mikupa/index_tokyo.html",
+      "source": "http://5pb.jp/mikupa/index_tokyo.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1006,6 +1014,12 @@
         }
       ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_tokyo.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2523"
+        },
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
@@ -1043,14 +1057,9 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_tokyo.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 6,
@@ -1077,8 +1086,8 @@
       "venue": "札幌市文化教育会馆大厅",
       "kind": "专场 / 巡演",
       "year": 2011,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "http://5pb.jp/mikupa/index_sapporo.html",
+      "source": "http://5pb.jp/mikupa/index_sapporo.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1090,6 +1099,12 @@
         }
       ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_sapporo.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2526"
+        },
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
@@ -1127,14 +1142,9 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_sapporo.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 7,
@@ -1151,8 +1161,8 @@
       "venue": "待核实",
       "kind": "专场 / 巡演",
       "year": 2011,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1191,7 +1201,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 8,
@@ -1218,8 +1229,8 @@
       "venue": "Suntec Exhibition Hall 402",
       "kind": "专场 / 巡演",
       "year": 2011,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "http://5pb.jp/mikupa/index_singapore.html",
+      "source": "http://5pb.jp/mikupa/index_singapore.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1231,6 +1242,12 @@
         }
       ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_singapore.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2527"
+        },
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
@@ -1268,26 +1285,21 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_singapore.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "id": "research-ihatov-2012",
       "series": "交响合作",
       "name": "冨田勲×初音ミク イーハトーヴ交響曲（首演）",
-      "date": "2012（具体日期待核）",
-      "city": "待逐场核对",
-      "venue": "待逐场核对",
+      "date": "2012-11-23",
+      "city": "日本东京",
+      "venue": "东京 Opera City Concert Hall",
       "kind": "交响合作",
       "year": 2012,
-      "officialUrl": "https://columbia.jp/hatsunemiku/about.html",
-      "source": "https://columbia.jp/hatsunemiku/about.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://columbia.jp/hatsunemiku/about.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -1301,12 +1313,22 @@
           "url": "https://columbia.jp/hatsunemiku/about.html"
         }
       ],
+      "detailSources": [
+        "https://www.wagner-society.org/archives/371/"
+      ],
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://columbia.jp/hatsunemiku/about.html",
           "label": "官方 / 主办方资料",
           "scope": "已收集的官方参考",
           "via": ""
+        },
+        {
+          "url": "https://www.wagner-society.org/archives/371/",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -1334,11 +1356,11 @@
       "name": "夏の終わりの39祭り",
       "date": "2012-08-29",
       "city": "日本横滨",
-      "venue": "户外演出",
+      "venue": "象之鼻公园 水上舞台",
       "kind": "专场 / 巡演",
       "year": 2012,
-      "officialUrl": "https://blog.piapro.net/2012/08/project-diva-f-39.html",
-      "source": "https://blog.piapro.net/2012/08/project-diva-f-39.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1349,6 +1371,9 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "detailSources": [
+        "https://blog.piapro.net/2012/08/project-diva-f-39.html"
       ],
       "officialLinks": [
         {
@@ -1376,7 +1401,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 9,
@@ -1403,8 +1429,8 @@
       "venue": "TOKYO DOME CITY HALL",
       "kind": "专场 / 巡演",
       "year": 2012,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://miku.sega.jp/39/",
+      "source": "https://miku.sega.jp/39/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1414,6 +1440,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://miku.sega.jp/39/",
+      "websiteScope": "历史演出官网（可能已失效）",
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
       ],
       "officialLinks": [
         {
@@ -1487,8 +1518,8 @@
       "venue": "TOKYO DOME CITY HALL",
       "kind": "专场 / 巡演",
       "year": 2012,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://miku.sega.jp/39/",
+      "source": "https://miku.sega.jp/39/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1498,6 +1529,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://miku.sega.jp/39/",
+      "websiteScope": "历史演出官网（可能已失效）",
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
       ],
       "officialLinks": [
         {
@@ -1628,7 +1664,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 12,
@@ -1712,7 +1749,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 14,
@@ -1739,8 +1777,8 @@
       "venue": "KITEC Star Hall",
       "kind": "专场 / 巡演",
       "year": 2012,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://5pb.jp/mikupa/index_hktw.html",
+      "source": "https://5pb.jp/mikupa/index_hktw.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1751,7 +1789,18 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://5pb.jp/mikupa/index_hktw.html",
+      "websiteScope": "历史演出官网（可能已失效）",
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_hktw.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2524"
+        },
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
@@ -1783,12 +1832,6 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_hktw.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
       ]
     },
@@ -1817,8 +1860,8 @@
       "venue": "台北展演二馆",
       "kind": "专场 / 巡演",
       "year": 2012,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://5pb.jp/mikupa/index_hktw.html",
+      "source": "https://5pb.jp/mikupa/index_hktw.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1829,7 +1872,18 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://5pb.jp/mikupa/index_hktw.html",
+      "websiteScope": "历史演出官网（可能已失效）",
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_hktw.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2524"
+        },
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
@@ -1861,12 +1915,6 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_hktw.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
       ]
     },
@@ -1879,8 +1927,8 @@
       "venue": "YCAM Studio A",
       "kind": "歌剧 / 舞台",
       "year": 2012,
-      "officialUrl": "https://www.ycam.jp/asset/pdf/press-release/2012/the-end.pdf",
-      "source": "https://www.ycam.jp/asset/pdf/press-release/2012/the-end.pdf",
+      "officialUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
       "researchSource": "https://www.ycam.jp/asset/pdf/press-release/2012/the-end.pdf",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -1894,6 +1942,8 @@
           "url": "https://www.ycam.jp/asset/pdf/press-release/2012/the-end.pdf"
         }
       ],
+      "websiteUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "websiteScope": "作品官网",
       "officialLinks": [
         {
           "url": "https://www.ycam.jp/asset/pdf/press-release/2012/the-end.pdf",
@@ -1924,13 +1974,13 @@
       "id": "appearance-2013",
       "series": "HATSUNE Appearance",
       "name": "夏祭初音鑑",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2013-08-03 — 08-07（大阪）；2013-08-21 — 08-29（东京）",
+      "city": "日本大阪 / 东京",
+      "venue": "Grand Front Osaka Knowledge Theater；Bellsalle 秋叶原 B1",
       "kind": "专场 / 巡演",
       "year": 2013,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来/演唱会",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -1942,6 +1992,10 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -1969,19 +2023,20 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "id": "research-ihatov-2013-东京",
       "series": "交响合作",
       "name": "イーハトーヴ交響曲 再演 · 东京",
-      "date": "2013（多场，详见公告）",
-      "city": "东京",
-      "venue": "待逐场核对",
+      "date": "2013-09-15 — 09-16",
+      "city": "日本东京",
+      "venue": "Bunkamura Orchard Hall",
       "kind": "交响合作",
       "year": 2013,
-      "officialUrl": "https://blog.piapro.net/2013/09/post-737.html",
-      "source": "https://blog.piapro.net/2013/09/post-737.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://blog.piapro.net/2013/09/post-737.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -1995,6 +2050,12 @@
           "url": "https://blog.piapro.net/2013/09/post-737.html"
         }
       ],
+      "detailSources": [
+        "https://blog.piapro.net/2013/09/post-737.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://blog.piapro.net/2013/09/post-737.html",
@@ -2023,12 +2084,12 @@
       "series": "交响合作",
       "name": "イーハトーヴ交響曲 再演 · 名古屋",
       "date": "2013-09-01",
-      "city": "名古屋",
-      "venue": "待逐场核对",
+      "city": "日本名古屋",
+      "venue": "爱知县艺术剧场 大厅",
       "kind": "交响合作",
       "year": 2013,
-      "officialUrl": "https://blog.piapro.net/2013/09/post-737.html",
-      "source": "https://blog.piapro.net/2013/09/post-737.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://blog.piapro.net/2013/09/post-737.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -2042,12 +2103,23 @@
           "url": "https://blog.piapro.net/2013/09/post-737.html"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://blog.piapro.net/2013/09/post-737.html",
           "label": "官方 / 主办方资料",
           "scope": "已收集的官方参考",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -2069,13 +2141,13 @@
       "id": "research-ihatov-2013-大阪",
       "series": "交响合作",
       "name": "イーハトーヴ交響曲 再演 · 大阪",
-      "date": "2013（具体日期待核）",
-      "city": "大阪",
-      "venue": "待逐场核对",
+      "date": "2013-09-21",
+      "city": "日本大阪",
+      "venue": "ORIX Theater",
       "kind": "交响合作",
       "year": 2013,
-      "officialUrl": "https://blog.piapro.net/2013/09/post-737.html",
-      "source": "https://blog.piapro.net/2013/09/post-737.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://blog.piapro.net/2013/09/post-737.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -2089,12 +2161,23 @@
           "url": "https://blog.piapro.net/2013/09/post-737.html"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://blog.piapro.net/2013/09/post-737.html",
           "label": "官方 / 主办方资料",
           "scope": "已收集的官方参考",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -2117,12 +2200,12 @@
       "series": "交响合作",
       "name": "イーハトーヴ交響曲 再演 · 花卷",
       "date": "2013-08-29",
-      "city": "花卷",
-      "venue": "待逐场核对",
+      "city": "日本花卷",
+      "venue": "花卷市文化会馆",
       "kind": "交响合作",
       "year": 2013,
-      "officialUrl": "https://blog.piapro.net/2013/09/post-737.html",
-      "source": "https://blog.piapro.net/2013/09/post-737.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://blog.piapro.net/2013/09/post-737.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -2136,12 +2219,23 @@
           "url": "https://blog.piapro.net/2013/09/post-737.html"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://blog.piapro.net/2013/09/post-737.html",
           "label": "官方 / 主办方资料",
           "scope": "已收集的官方参考",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -2184,8 +2278,8 @@
       "venue": "札幌市民ホール",
       "kind": "专场 / 巡演",
       "year": 2013,
-      "officialUrl": "https://blog.piapro.net/2012/12/2910.html",
-      "source": "https://blog.piapro.net/2012/12/2910.html",
+      "officialUrl": "https://5pb.jp/mikupa/index_sapporo2013.html",
+      "source": "https://5pb.jp/mikupa/index_sapporo2013.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -2196,7 +2290,18 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://5pb.jp/mikupa/index_sapporo2013.html",
+      "websiteScope": "历史演出官网（可能已失效）",
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_sapporo2013.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2510"
+        },
         {
           "url": "https://blog.piapro.net/2012/12/2910.html",
           "label": "VocaDB 所列官方链接",
@@ -2234,12 +2339,6 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_sapporo2013.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
       ]
     },
@@ -2268,8 +2367,8 @@
       "venue": "和歌山ビッグホエール",
       "kind": "专场 / 巡演",
       "year": 2013,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://5pb.jp/mikupa/index_kansai.html",
+      "source": "https://5pb.jp/mikupa/index_kansai.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -2280,7 +2379,18 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://5pb.jp/mikupa/index_kansai.html",
+      "websiteScope": "历史演出官网（可能已失效）",
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
       "officialLinks": [
+        {
+          "url": "http://5pb.jp/mikupa/index_kansai.html",
+          "label": "VocaDB 所列官方链接",
+          "scope": "关联项目官网 / 官方报道",
+          "via": "https://vocadb.net/E/2511"
+        },
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
@@ -2312,12 +2422,6 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
-        },
-        {
-          "url": "http://5pb.jp/mikupa/index_kansai.html",
-          "label": "Website",
-          "kind": "record",
-          "priority": 4
         }
       ]
     },
@@ -2330,8 +2434,8 @@
       "venue": "Théâtre du Châtelet",
       "kind": "歌剧 / 舞台",
       "year": 2013,
-      "officialUrl": "https://atak.jp/news/20131127/",
-      "source": "https://atak.jp/news/20131127/",
+      "officialUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
       "researchSource": "https://atak.jp/news/20131127/",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -2345,6 +2449,8 @@
           "url": "https://atak.jp/news/20131127/"
         }
       ],
+      "websiteUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "websiteScope": "作品官网",
       "officialLinks": [
         {
           "url": "https://atak.jp/news/20131127/",
@@ -2392,6 +2498,8 @@
           "url": "https://atak.jp/works/vocaloid-opera-the-end/"
         }
       ],
+      "websiteUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "websiteScope": "作品官网",
       "officialLinks": [
         {
           "url": "https://atak.jp/works/vocaloid-opera-the-end/",
@@ -2452,6 +2560,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2013/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2013/",
@@ -2495,12 +2605,12 @@
       "series": "HATSUNE Appearance",
       "name": "雪祭初音鑑",
       "date": "待核实",
-      "city": "待核实",
+      "city": "日本札幌",
       "venue": "待核实",
       "kind": "专场 / 巡演",
       "year": 2014,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://snowmiku.com/2014/",
+      "source": "https://snowmiku.com/2014/",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -2512,12 +2622,22 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://snowmiku.com/2014/dl/snowmiku_guidemap.pdf"
+      ],
+      "websiteUrl": "https://snowmiku.com/2014/",
+      "websiteScope": "该年度活动官网（具体 Live 场馆待核实）",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
           "scope": "官方档案入口，需核对具体项目",
           "via": ""
+        },
+        {
+          "url": "https://snowmiku.com/2014/dl/snowmiku_guidemap.pdf",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -2564,8 +2684,8 @@
       "venue": "Jakarta Convention Center",
       "kind": "专场 / 巡演",
       "year": 2014,
-      "officialUrl": "https://mikuexpo.com/indonesia_karent#creator",
-      "source": "https://mikuexpo.com/indonesia_karent#creator",
+      "officialUrl": "https://mikuexpo.com/indonesia_top",
+      "source": "https://mikuexpo.com/indonesia_top",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -2575,6 +2695,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/indonesia_top",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -2670,6 +2795,11 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://mikuexpo.com/la",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
+      ],
       "officialLinks": [
         {
           "url": "https://mikuexpo.com/la",
@@ -2730,8 +2860,8 @@
       "venue": "Hammerstein Ballroom",
       "kind": "专场 / 巡演",
       "year": 2014,
-      "officialUrl": "https://mikuexpo.com/la",
-      "source": "https://mikuexpo.com/la",
+      "officialUrl": "https://mikuexpo.com/ny",
+      "source": "https://mikuexpo.com/ny",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -2741,6 +2871,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/ny",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -2786,8 +2921,8 @@
       "venue": "Festival Hall",
       "kind": "交响合作",
       "year": 2014,
-      "officialUrl": "https://blog.piapro.net/2014/08/o1408191-1.html",
-      "source": "https://blog.piapro.net/2014/08/o1408191-1.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://blog.piapro.net/2014/08/o1408191-1.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -2801,6 +2936,8 @@
           "url": "https://blog.piapro.net/2014/08/o1408191-1.html"
         }
       ],
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://blog.piapro.net/2014/08/o1408191-1.html",
@@ -2846,8 +2983,8 @@
       "venue": "待核实",
       "kind": "嘉宾参演",
       "year": 2014,
-      "officialUrl": "https://www.crypton.co.jp/cfm/news/2014/04/ladygagatour",
-      "source": "https://www.crypton.co.jp/cfm/news/2014/04/ladygagatour",
+      "officialUrl": "",
+      "source": "https://mikutime.link/setlists/",
       "researchSource": "https://mikutime.link/setlists/",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -2890,7 +3027,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "id": "research-bump-2014",
@@ -2901,7 +3039,7 @@
       "venue": "东京巨蛋",
       "kind": "嘉宾 / 联合演出",
       "year": 2014,
-      "officialUrl": "https://blog.piapro.net/2014/08/o1408012-1.html",
+      "officialUrl": "",
       "source": "https://blog.piapro.net/2014/08/o1408012-1.html",
       "researchSource": "https://blog.piapro.net/2014/08/o1408012-1.html",
       "verification": "已找到一手资料，详见来源",
@@ -2937,7 +3075,8 @@
           "kind": "search",
           "priority": 2
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "id": "research-joypolis-2014",
@@ -2984,7 +3123,8 @@
           "kind": "search",
           "priority": 2
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 20,
@@ -3011,8 +3151,8 @@
       "venue": "INTEX 大阪 5号馆",
       "kind": "专场 / 巡演",
       "year": 2014,
-      "officialUrl": "https://magicalmirai.com/2014/ticket_osaka.html",
-      "source": "https://magicalmirai.com/2014/ticket_osaka.html",
+      "officialUrl": "https://magicalmirai.com/2014/",
+      "source": "https://magicalmirai.com/2014/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3023,6 +3163,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2014/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2014/ticket_osaka.html",
@@ -3101,8 +3243,8 @@
       "venue": "东京体育馆",
       "kind": "专场 / 巡演",
       "year": 2014,
-      "officialUrl": "https://magicalmirai.com/2014/ticket_osaka.html",
-      "source": "https://magicalmirai.com/2014/ticket_osaka.html",
+      "officialUrl": "https://magicalmirai.com/2014/",
+      "source": "https://magicalmirai.com/2014/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3113,6 +3255,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2014/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2014/ticket_osaka.html",
@@ -3189,8 +3333,8 @@
       "venue": "上海风云电竞馆",
       "kind": "专场 / 巡演",
       "year": 2015,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/shanghai",
+      "source": "https://mikuexpo.com/shanghai",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3200,6 +3344,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/shanghai",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3300,7 +3449,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "id": "research-ihatov-2015",
@@ -3311,8 +3461,8 @@
       "venue": "岩手县民会馆 大厅",
       "kind": "交响合作",
       "year": 2015,
-      "officialUrl": "https://blog.piapro.net/2015/12/z1512011-1.html",
-      "source": "https://blog.piapro.net/2015/12/z1512011-1.html",
+      "officialUrl": "https://columbia.jp/ihatov/",
+      "source": "https://columbia.jp/ihatov/",
       "researchSource": "https://blog.piapro.net/2015/12/z1512011-1.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -3326,6 +3476,8 @@
           "url": "https://blog.piapro.net/2015/12/z1512011-1.html"
         }
       ],
+      "websiteUrl": "https://columbia.jp/ihatov/",
+      "websiteScope": "作品官方专题",
       "officialLinks": [
         {
           "url": "https://blog.piapro.net/2015/12/z1512011-1.html",
@@ -3369,13 +3521,13 @@
       "id": "moegirl-stage-026",
       "series": "魔法未来",
       "name": "MAGICAL MIRAI 2015",
-      "date": "2015-09-04 — 09-06",
+      "date": "2015-09-04 — 09-05",
       "city": "日本东京",
       "venue": "日本武道馆",
       "kind": "专场 / 巡演",
       "year": 2015,
-      "officialUrl": "https://magicalmirai.com/2015/index_en.php",
-      "source": "https://magicalmirai.com/2015/index_en.php",
+      "officialUrl": "https://magicalmirai.com/2015/",
+      "source": "https://magicalmirai.com/2015/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3385,6 +3537,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://magicalmirai.com/2015/",
+      "websiteScope": "该年度官网",
+      "detailSources": [
+        "https://magicalmirai.com/2015/"
       ],
       "officialLinks": [
         {
@@ -3452,8 +3609,8 @@
       "venue": "Zepp Fukuoka",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/jp2016",
+      "source": "https://mikuexpo.com/jp2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3463,6 +3620,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/jp2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3518,8 +3680,8 @@
       "venue": "Zepp Namba",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/jp2016",
+      "source": "https://mikuexpo.com/jp2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3529,6 +3691,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/jp2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3584,8 +3751,8 @@
       "venue": "Zepp Nagoya",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/jp2016",
+      "source": "https://mikuexpo.com/jp2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3595,6 +3762,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/jp2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3650,8 +3822,8 @@
       "venue": "Zepp Sapporo",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/jp2016",
+      "source": "https://mikuexpo.com/jp2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3661,6 +3833,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/jp2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3716,8 +3893,8 @@
       "venue": "Zepp Tokyo",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/jp2016",
+      "source": "https://mikuexpo.com/jp2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3727,6 +3904,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/jp2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3782,8 +3964,8 @@
       "venue": "WaMu Theater",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3793,6 +3975,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3860,8 +4047,8 @@
       "venue": "The Warfield",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3871,6 +4058,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -3938,8 +4130,8 @@
       "venue": "Microsoft Theater",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -3949,6 +4141,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4016,8 +4213,8 @@
       "venue": "The Bomb Factory",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4027,6 +4224,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4094,8 +4296,8 @@
       "venue": "NRG Arena",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4105,6 +4307,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4172,8 +4379,8 @@
       "venue": "Sony Centre",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4183,6 +4390,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4250,8 +4462,8 @@
       "venue": "The Chicago Theatre",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4261,6 +4473,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4328,8 +4545,8 @@
       "venue": "Hammerstein Ballroom",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4339,6 +4556,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4406,8 +4628,8 @@
       "venue": "Auditorio Banamex",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4417,6 +4639,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4484,8 +4711,8 @@
       "venue": "El Plaza Condesa",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://mikuexpo.com/na2016/",
-      "source": "http://mikuexpo.com/na2016/",
+      "officialUrl": "https://mikuexpo.com/na2016",
+      "source": "https://mikuexpo.com/na2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4495,6 +4722,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4562,8 +4794,8 @@
       "venue": "新北市工商展览中心",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/tw2016/",
-      "source": "https://mikuexpo.com/tw2016/",
+      "officialUrl": "https://mikuexpo.com/tw2016",
+      "source": "https://mikuexpo.com/tw2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4573,6 +4805,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/tw2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4646,8 +4883,8 @@
       "venue": "上海欢乐谷华侨城大剧院",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/cn2016",
+      "source": "https://mikuexpo.com/cn2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4657,6 +4894,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/cn2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4712,8 +4954,8 @@
       "venue": "北京展览馆剧场",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/cn2016",
+      "source": "https://mikuexpo.com/cn2016",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4723,6 +4965,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/cn2016",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -4779,6 +5026,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
@@ -4817,7 +5066,7 @@
       "venue": "Bunkamura Orchard Hall",
       "kind": "舞台 / 交响合作",
       "year": 2016,
-      "officialUrl": "https://columbia.jp/company/corporate/news_release/2016/pdf/160915.pdf",
+      "officialUrl": "",
       "source": "https://columbia.jp/company/corporate/news_release/2016/pdf/160915.pdf",
       "researchSource": "https://columbia.jp/company/corporate/news_release/2016/pdf/160915.pdf",
       "verification": "已找到一手资料，详见来源",
@@ -4853,7 +5102,8 @@
           "kind": "search",
           "priority": 2
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 44,
@@ -4880,8 +5130,8 @@
       "venue": "幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2016,
-      "officialUrl": "http://magicalmirai.com/2016/",
-      "source": "http://magicalmirai.com/2016/",
+      "officialUrl": "https://magicalmirai.com/2016/",
+      "source": "https://magicalmirai.com/2016/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4892,6 +5142,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2016/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "http://magicalmirai.com/2016/",
@@ -4955,11 +5207,11 @@
       "name": "MIKU EXPO 2017 Malaysia",
       "date": "2017-12-16",
       "city": "马来西亚吉隆坡",
-      "venue": "场馆待官方复核",
+      "venue": "Axiata Arena(Bukit Jalil)",
       "kind": "专场 / 巡演",
       "year": 2017,
-      "officialUrl": "http://mikuexpo.com/may2017/",
-      "source": "http://mikuexpo.com/may2017/",
+      "officialUrl": "https://mikuexpo.com/may2017",
+      "source": "https://mikuexpo.com/may2017",
       "researchSource": "https://piapro.net/intl/en_event.html",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -4969,6 +5221,11 @@
           "label": "检索线索来源",
           "url": "https://piapro.net/intl/en_event.html"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/may2017",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -5028,8 +5285,8 @@
       "venue": "NHK Hall",
       "kind": "专场 / 巡演",
       "year": 2017,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5073,7 +5330,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "collectionIds": [
@@ -5084,9 +5342,9 @@
       "id": "symphony-2017",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2017",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2017-11-17；2017-11-29",
+      "city": "日本大阪 / 东京",
+      "venue": "大阪 Festival Hall；东京国际论坛 Hall A",
       "kind": "专场 / 巡演",
       "year": 2017,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -5102,12 +5360,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -5144,8 +5413,8 @@
       "venue": "上海世博公园",
       "kind": "嘉宾参演",
       "year": 2017,
-      "officialUrl": "https://blog.piapro.net/2017/04/p1704282-1.html",
-      "source": "https://blog.piapro.net/2017/04/p1704282-1.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5183,7 +5452,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 50,
@@ -5210,8 +5480,8 @@
       "venue": "上海新国际博览中心",
       "kind": "专场 / 巡演",
       "year": 2017,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5226,6 +5496,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -5304,8 +5576,8 @@
       "venue": "幕张 Messe 3号馆",
       "kind": "专场 / 巡演",
       "year": 2017,
-      "officialUrl": "http://magicalmirai.com/2017/",
-      "source": "http://magicalmirai.com/2017/",
+      "officialUrl": "https://magicalmirai.com/2017/",
+      "source": "https://magicalmirai.com/2017/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5316,6 +5588,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2017/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "http://magicalmirai.com/2017/",
@@ -5382,13 +5656,13 @@
       "id": "expo-2018-na",
       "series": "MIKU EXPO",
       "name": "MIKU EXPO 2018 USA & Mexico",
-      "date": "2018-06-29 — 2018-07-19（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2018-06-29 — 2018-07-19",
+      "city": "Los Angeles / San Jose / Dallas / Austin / Washington, D.C. / New York City / Mexico City",
+      "venue": "Los Angeles：Microsoft Theater；San Jose：City National Civic；Dallas：The Bomb Factory；Austin：H-E-B Center；Washington, D.C.：The Anthem；New York City：Hammerstein Ballroom；Mexico City：Pepsi Center WTC",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/usamx2018",
+      "source": "https://mikuexpo.com/usamx2018",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5399,6 +5673,48 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "schedule": [
+        {
+          "date": "June 29, 2018",
+          "city": "Los Angeles",
+          "venue": "Microsoft Theater"
+        },
+        {
+          "date": "July 1, 2018",
+          "city": "San Jose",
+          "venue": "City National Civic"
+        },
+        {
+          "date": "July 6, 2018",
+          "city": "Dallas",
+          "venue": "The Bomb Factory"
+        },
+        {
+          "date": "July 8, 2018",
+          "city": "Austin",
+          "venue": "H-E-B Center"
+        },
+        {
+          "date": "July 12, 2018",
+          "city": "Washington, D.C.",
+          "venue": "The Anthem"
+        },
+        {
+          "date": "July 14, 2018",
+          "city": "New York City",
+          "venue": "Hammerstein Ballroom"
+        },
+        {
+          "date": "July 19, 2018",
+          "city": "Mexico City",
+          "venue": "Pepsi Center WTC"
+        }
+      ],
+      "detailSources": [
+        "https://mikuexpo.com/history"
+      ],
+      "websiteUrl": "https://mikuexpo.com/usamx2018",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://mikuexpo.com/history",
@@ -5453,8 +5769,8 @@
       "venue": "La Seine Musicale",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "http://mikuexpo.com/europe2018/",
-      "source": "http://mikuexpo.com/europe2018/",
+      "officialUrl": "https://mikuexpo.com/europe2018",
+      "source": "https://mikuexpo.com/europe2018",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5464,6 +5780,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2018",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -5537,8 +5858,8 @@
       "venue": "Lanxess Arena",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "http://mikuexpo.com/europe2018/",
-      "source": "http://mikuexpo.com/europe2018/",
+      "officialUrl": "https://mikuexpo.com/europe2018",
+      "source": "https://mikuexpo.com/europe2018",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5548,6 +5869,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2018",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -5621,8 +5947,8 @@
       "venue": "Olympia London",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "http://mikuexpo.com/europe2018/",
-      "source": "http://mikuexpo.com/europe2018/",
+      "officialUrl": "https://mikuexpo.com/europe2018",
+      "source": "https://mikuexpo.com/europe2018",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5632,6 +5958,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2018",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -5744,7 +6075,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "collectionIds": [],
@@ -5763,13 +6095,13 @@
       "id": "mikutime-KODO2018",
       "series": "初音未来×鼓童",
       "name": "Hatsune Miku × Kodo Taiko Special Live 2018",
-      "date": "2018-06-02 — 2018-06-03（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2018-06-02 — 06-03",
+      "city": "日本东京",
+      "venue": "NHK Hall",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://kodo-miku.com/2018/index.html",
+      "source": "https://kodo-miku.com/2018/index.html",
       "researchSource": "https://mikutime.link/setlists/",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5780,6 +6112,12 @@
           "url": "https://mikutime.link/setlists/"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://kodo-miku.com/2018/index.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -5824,9 +6162,9 @@
       "id": "symphony-2018",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2018",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2018-11-24；2019-01-25",
+      "city": "日本横滨 / 大阪",
+      "venue": "PACIFICO 横滨 国立大 Hall；ORIX Theater",
       "kind": "专场 / 巡演",
       "year": 2018,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -5842,12 +6180,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -5880,7 +6229,7 @@
       "venue": "滨离宫恩赐庭园",
       "kind": "投影演出",
       "year": 2018,
-      "officialUrl": "https://blog.piapro.net/2018/10/mo1810221-1.html",
+      "officialUrl": "",
       "source": "https://blog.piapro.net/2018/10/mo1810221-1.html",
       "researchSource": "https://blog.piapro.net/2018/10/mo1810221-1.html",
       "verification": "已找到一手资料，详见来源",
@@ -5916,7 +6265,8 @@
           "kind": "search",
           "priority": 2
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 55,
@@ -5943,8 +6293,8 @@
       "venue": "五棵松华熙LIVE·M空间",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -5959,6 +6309,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -6031,8 +6383,8 @@
       "venue": "华熙LIVE·528",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6047,6 +6399,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -6119,8 +6473,8 @@
       "venue": "1862时尚艺术中心",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6135,6 +6489,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -6186,13 +6542,13 @@
       "id": "research-end-2018spain",
       "series": "歌剧 / 舞台",
       "name": "VOCALOID OPERA THE END · 西班牙",
-      "date": "2018（具体日期待核）",
-      "city": "西班牙（城市待逐场核对）",
-      "venue": "待核对",
+      "date": "2018-03-22 — 03-24（马德里）；03-27（巴塞罗那）",
+      "city": "西班牙马德里 / 巴塞罗那",
+      "venue": "Naves Matadero；L’Auditori",
       "kind": "歌剧 / 舞台",
       "year": 2018,
-      "officialUrl": "https://www.jpf.go.jp/j/project/culture/perform/oversea/2018/03-01.html",
-      "source": "https://www.jpf.go.jp/j/project/culture/perform/oversea/2018/03-01.html",
+      "officialUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
       "researchSource": "https://www.jpf.go.jp/j/project/culture/perform/oversea/2018/03-01.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -6206,6 +6562,11 @@
           "url": "https://www.jpf.go.jp/j/project/culture/perform/oversea/2018/03-01.html"
         }
       ],
+      "detailSources": [
+        "https://www.jpf.go.jp/j/project/culture/perform/oversea/2018/03-01.html"
+      ],
+      "websiteUrl": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "websiteScope": "作品官网",
       "officialLinks": [
         {
           "url": "https://www.jpf.go.jp/j/project/culture/perform/oversea/2018/03-01.html",
@@ -6254,8 +6615,8 @@
       "venue": "INTEX 大阪 5号馆A",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "http://magicalmirai.com/2018/index_en.html",
-      "source": "http://magicalmirai.com/2018/index_en.html",
+      "officialUrl": "https://magicalmirai.com/2018/",
+      "source": "https://magicalmirai.com/2018/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6266,6 +6627,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2018/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "http://magicalmirai.com/2018/index_en.html",
@@ -6344,8 +6707,8 @@
       "venue": "幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2018,
-      "officialUrl": "http://magicalmirai.com/2018/index_en.html",
-      "source": "http://magicalmirai.com/2018/index_en.html",
+      "officialUrl": "https://magicalmirai.com/2018/",
+      "source": "https://magicalmirai.com/2018/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6356,6 +6719,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2018/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "http://magicalmirai.com/2018/index_en.html",
@@ -6432,8 +6797,8 @@
       "venue": "新北市工商展览中心",
       "kind": "专场 / 巡演",
       "year": 2019,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/twhk2019",
+      "source": "https://mikuexpo.com/twhk2019",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6443,6 +6808,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/twhk2019",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -6502,8 +6872,8 @@
       "venue": "Star Hall",
       "kind": "专场 / 巡演",
       "year": 2019,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/twhk2019",
+      "source": "https://mikuexpo.com/twhk2019",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6513,6 +6883,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/twhk2019",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -6619,7 +6994,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "collectionIds": [
@@ -6630,9 +7006,9 @@
       "id": "symphony-2019",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2019",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2019-10-14；2019-12-23",
+      "city": "日本横滨 / 大阪",
+      "venue": "PACIFICO 横滨 国立大 Hall；大阪 Festival Hall",
       "kind": "专场 / 巡演",
       "year": 2019,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -6648,12 +7024,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -6690,8 +7077,8 @@
       "venue": "梅赛德斯奔驰文化中心",
       "kind": "嘉宾参演",
       "year": 2019,
-      "officialUrl": "https://blog.piapro.net/2019/04/n190424-1.html",
-      "source": "https://blog.piapro.net/2019/04/n190424-1.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6729,7 +7116,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 67,
@@ -6744,8 +7132,8 @@
       "venue": "幕张 Messe 3号馆",
       "kind": "嘉宾参演",
       "year": 2019,
-      "officialUrl": "https://blog.piapro.net/2019/09/mon190927.html",
-      "source": "https://blog.piapro.net/2019/09/mon190927.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6783,7 +7171,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 68,
@@ -6810,8 +7199,8 @@
       "venue": "1862艺术中心",
       "kind": "专场 / 巡演",
       "year": 2019,
-      "officialUrl": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
-      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "已找到官方四城逐站日期、场馆公告",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6826,6 +7215,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
@@ -6898,8 +7289,8 @@
       "venue": "华熙LIVE528·M空间",
       "kind": "专场 / 巡演",
       "year": 2019,
-      "officialUrl": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
-      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "已找到官方四城逐站日期、场馆公告",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -6914,6 +7305,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
@@ -6986,8 +7379,8 @@
       "venue": "华熙LIVE·M空间",
       "kind": "专场 / 巡演",
       "year": 2019,
-      "officialUrl": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
-      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "已找到官方四城逐站日期、场馆公告",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7002,6 +7395,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
@@ -7074,8 +7469,8 @@
       "venue": "广东艺术剧院",
       "kind": "专场 / 巡演",
       "year": 2019,
-      "officialUrl": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
-      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "已找到官方四城逐站日期、场馆公告",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7090,6 +7485,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/405/ip/16.html",
@@ -7174,6 +7571,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2019/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2019/",
@@ -7264,6 +7663,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2019/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2019/",
@@ -7335,12 +7736,12 @@
       "series": "GALAXY LIVE",
       "name": "HATSUNE MIKU GALAXY LIVE 2020",
       "date": "2020-09-26（社区数据，待核实）",
-      "city": "线上",
-      "venue": "待核实",
+      "city": "线上（VR）",
+      "venue": "INSPIX LIVE（线上虚拟会场）",
       "kind": "VR / 线上",
       "year": 2020,
-      "officialUrl": "https://www.crypton.co.jp/cfm/news/2020/09/03galaxylive2020",
-      "source": "https://www.crypton.co.jp/cfm/news/2020/09/03galaxylive2020",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来/演唱会",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7350,6 +7751,9 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
+      ],
+      "detailSources": [
+        "https://www.crypton.co.jp/cfm/news/2020/09/03galaxylive2020"
       ],
       "officialLinks": [
         {
@@ -7378,7 +7782,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "sourceIndex": 72,
@@ -7403,8 +7808,8 @@
       "venue": "O2 Academy Brixton",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2020",
+      "source": "https://mikuexpo.com/europe2020",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7414,6 +7819,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2020",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -7473,8 +7883,8 @@
       "venue": "Le Zénith Paris",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2020",
+      "source": "https://mikuexpo.com/europe2020",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7484,6 +7894,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2020",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -7543,8 +7958,8 @@
       "venue": "Verti Music Hall",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2020",
+      "source": "https://mikuexpo.com/europe2020",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7554,6 +7969,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2020",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -7613,8 +8033,8 @@
       "venue": "Ziggo Dome",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2020",
+      "source": "https://mikuexpo.com/europe2020",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7624,6 +8044,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2020",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -7683,8 +8108,8 @@
       "venue": "Sant Jordi Club",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2020",
+      "source": "https://mikuexpo.com/europe2020",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7694,6 +8119,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2020",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -7753,8 +8183,8 @@
       "venue": "—",
       "kind": "线上演出",
       "year": 2020,
-      "officialUrl": "https://blog.piapro.net/2020/07/mo202004061-1.html",
-      "source": "https://blog.piapro.net/2020/07/mo202004061-1.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7798,7 +8228,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "collectionIds": [
@@ -7809,9 +8240,9 @@
       "id": "symphony-2020",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2020",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2020-09-21（东京）；10-17（横滨）；11-27（大阪）",
+      "city": "日本东京 / 横滨 / 大阪",
+      "venue": "Suntory Hall；PACIFICO 横滨 国立大 Hall；大阪 Festival Hall",
       "kind": "专场 / 巡演",
       "year": 2020,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -7827,12 +8258,29 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://wmg.jp/hatsune-miku-symphony/news/84641",
+        "https://wmg.jp/hatsune-miku-symphony/news/87102"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://wmg.jp/hatsune-miku-symphony/news/84641",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://wmg.jp/hatsune-miku-symphony/news/87102",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -7881,8 +8329,8 @@
       "venue": "—",
       "kind": "线上演出",
       "year": 2020,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7897,6 +8345,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -7963,8 +8413,8 @@
       "venue": "INTEX 大阪 5号馆A",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://magicalmirai.com/2020/osaka/",
-      "source": "https://magicalmirai.com/2020/osaka/",
+      "officialUrl": "https://magicalmirai.com/2020/",
+      "source": "https://magicalmirai.com/2020/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -7975,6 +8425,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2020/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2020/osaka/",
@@ -8077,8 +8529,8 @@
       "venue": "幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2020,
-      "officialUrl": "https://magicalmirai.com/2020/osaka/",
-      "source": "https://magicalmirai.com/2020/osaka/",
+      "officialUrl": "https://magicalmirai.com/2020/",
+      "source": "https://magicalmirai.com/2020/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8089,6 +8541,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2020/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2020/osaka/",
@@ -8184,12 +8638,12 @@
       "series": "GALAXY LIVE",
       "name": "HATSUNE MIKU GALAXY LIVE 2021",
       "date": "2021-12-18（社区数据，待核实）",
-      "city": "线上",
-      "venue": "待核实",
+      "city": "线上（VR）",
+      "venue": "INSPIX LIVE（线上虚拟会场）",
       "kind": "VR / 线上",
       "year": 2021,
-      "officialUrl": "https://www.crypton.co.jp/cfm/news/2021/08/31galaxy21",
-      "source": "https://www.crypton.co.jp/cfm/news/2021/08/31galaxy21",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来/演唱会",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8199,6 +8653,9 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
+      ],
+      "detailSources": [
+        "https://www.crypton.co.jp/cfm/news/2021/08/31galaxy21"
       ],
       "officialLinks": [
         {
@@ -8233,7 +8690,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "collectionIds": [],
@@ -8243,12 +8701,12 @@
       "series": "MIKU BREAK",
       "name": "MIKU BREAK ver.0.9",
       "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "city": "日本川崎",
+      "venue": "CLUB CITTA’（待官方资料复核）",
       "kind": "舞蹈 / 联合演出",
       "year": 2021,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://mikubreak.com/",
+      "source": "https://mikubreak.com/",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8259,6 +8717,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
+      ],
+      "websiteUrl": "https://mikubreak.com/",
+      "websiteScope": "系列官网",
+      "detailSources": [
+        "https://w.atwiki.jp/mikulive/pages/15.html"
       ],
       "officialLinks": [
         {
@@ -8286,6 +8749,12 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
+        },
+        {
+          "url": "https://w.atwiki.jp/mikulive/pages/15.html",
+          "label": "日期 / 地点补充依据",
+          "kind": "record",
+          "priority": 4
         }
       ]
     },
@@ -8311,11 +8780,11 @@
       "name": "MIKU EXPO 2021 Online",
       "date": "2021-06-06",
       "city": "线上（多地区放送）",
-      "venue": "—",
+      "venue": "线上播放：Twitch / YouTube / Niconico",
       "kind": "线上演出",
       "year": 2021,
-      "officialUrl": "https://mikuexpo.com/online2021/index_en.html",
-      "source": "https://mikuexpo.com/online2021/index_en.html",
+      "officialUrl": "https://mikuexpo.com/online2021/",
+      "source": "https://mikuexpo.com/online2021/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8325,6 +8794,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/online2021/",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -8422,13 +8896,13 @@
       "id": "sekai-symphony-2021",
       "series": "世界计划交响乐",
       "name": "Sekai Symphony 2021",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2021-10-16",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall",
       "kind": "联动 / 交响乐",
       "year": 2021,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/sekaisymphony/2021/index.html",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2021/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8440,12 +8914,22 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "websiteUrl": "https://pjsekai.sega.jp/sekaisymphony/2021/index.html",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://pjsekai.sega.jp/sekaisymphony/2021/index.html"
+      ],
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/sekaisymphony/2021/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -8478,9 +8962,9 @@
       "id": "symphony-2021",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2021",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2021-09-20；2021-11-20",
+      "city": "日本横滨 / 神户",
+      "venue": "PACIFICO 横滨 国立大 Hall；神户国际会馆 こくさいホール",
       "kind": "专场 / 巡演",
       "year": 2021,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -8496,12 +8980,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://wmg.jp/hatsune-miku-symphony/news/87102"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://wmg.jp/hatsune-miku-symphony/news/87102",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -8550,8 +9045,8 @@
       "venue": "—",
       "kind": "线上演出",
       "year": 2021,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8566,6 +9061,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -8626,8 +9123,8 @@
       "venue": "INTEX 大阪 5号馆A",
       "kind": "专场 / 巡演",
       "year": 2021,
-      "officialUrl": "https://magicalmirai.com/2021/osaka_ticket.html",
-      "source": "https://magicalmirai.com/2021/osaka_ticket.html",
+      "officialUrl": "https://magicalmirai.com/2021/",
+      "source": "https://magicalmirai.com/2021/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8638,6 +9135,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2021/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2021/osaka_ticket.html",
@@ -8710,8 +9209,8 @@
       "venue": "幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2021,
-      "officialUrl": "https://magicalmirai.com/2021/osaka_ticket.html",
-      "source": "https://magicalmirai.com/2021/osaka_ticket.html",
+      "officialUrl": "https://magicalmirai.com/2021/",
+      "source": "https://magicalmirai.com/2021/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8722,6 +9221,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2021/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2021/osaka_ticket.html",
@@ -8776,13 +9277,13 @@
       "id": "colorful-2022",
       "series": "COLORFUL LIVE",
       "name": "Project SEKAI COLORFUL LIVE 1st -Link-",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2022-01-28 — 01-30",
+      "city": "日本千叶",
+      "venue": "幕张 Messe 9–11号馆",
       "kind": "联动演出",
       "year": 2022,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/colorfullive/1st-link/index.html",
+      "source": "https://pjsekai.sega.jp/colorfullive/1st-link/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8794,12 +9295,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://pjsekai.sega.jp/colorfullive/1st-link/index.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://pjsekai.sega.jp/colorfullive/1st-link/index.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/colorfullive/1st-link/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -8830,13 +9342,13 @@
       "id": "break-2022-152",
       "series": "MIKU BREAK",
       "name": "MIKU BREAK ver.1.0",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2022-02-24",
+      "city": "日本川崎",
+      "venue": "CLUB CITTA’",
       "kind": "舞蹈 / 联合演出",
       "year": 2022,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://mikubreak.com/",
+      "source": "https://mikubreak.com/",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8848,12 +9360,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://thinkandsense.com/works/miku-break-1/"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://mikubreak.com/",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
           "scope": "官方档案入口，需核对具体项目",
           "via": ""
+        },
+        {
+          "url": "https://thinkandsense.com/works/miku-break-1/",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -8884,13 +9407,13 @@
       "id": "break-2022-153",
       "series": "MIKU BREAK",
       "name": "MIKU BREAK ver.1.1（跨 2022–2023）",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2022-10-15（大阪；其余场次日期待核实）",
+      "city": "日本大阪（其余场次待核实）",
+      "venue": "Namba Hatch（其余场次待核实）",
       "kind": "舞蹈 / 联合演出",
       "year": 2022,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://mikubreak.com/",
+      "source": "https://mikubreak.com/",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8902,12 +9425,22 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "websiteUrl": "https://mikubreak.com/",
+      "websiteScope": "系列官网",
+      "detailSources": [
+        "https://blog.piapro.net/2022/10/im2210131.html"
+      ],
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
           "scope": "官方档案入口，需核对具体项目",
           "via": ""
+        },
+        {
+          "url": "https://blog.piapro.net/2022/10/im2210131.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -8950,11 +9483,11 @@
       "name": "HATSUNE MIKU EXPO Rewind",
       "date": "2022-06-05（社区数据，待核实）",
       "city": "线上",
-      "venue": "待核实",
+      "venue": "线上播放：Twitch / YouTube",
       "kind": "线上演出",
       "year": 2022,
-      "officialUrl": "https://www.crypton.co.jp/cfm/news/2021/12/24me22rewind",
-      "source": "https://www.crypton.co.jp/cfm/news/2021/12/24me22rewind",
+      "officialUrl": "https://mikuexpo.com/rewind2022/",
+      "source": "https://mikuexpo.com/rewind2022/",
       "researchSource": "https://mikutime.link/setlists/",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -8964,6 +9497,11 @@
           "label": "检索线索来源",
           "url": "https://mikutime.link/setlists/"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/rewind2022/",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -9044,11 +9582,11 @@
       "name": "MIKU EXPO Rewind+ 2022",
       "date": "2022-11-06",
       "city": "线上",
-      "venue": "—",
+      "venue": "线上播放：Twitch / YouTube",
       "kind": "线上演出",
       "year": 2022,
-      "officialUrl": "https://mikuexpo.com/rewind2022/index_en.html",
-      "source": "https://mikuexpo.com/rewind2022/index_en.html",
+      "officialUrl": "https://mikuexpo.com/rewind2022/",
+      "source": "https://mikuexpo.com/rewind2022/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9058,6 +9596,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/rewind2022/",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -9143,13 +9686,13 @@
       "id": "sekai-symphony-2022",
       "series": "世界计划交响乐",
       "name": "Sekai Symphony 2022",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2022-06-11",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall",
       "kind": "联动 / 交响乐",
       "year": 2022,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/sekaisymphony/2022/index.html",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2022/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9161,12 +9704,22 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "websiteUrl": "https://pjsekai.sega.jp/sekaisymphony/2022/index.html",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://pjsekai.sega.jp/sekaisymphony/2022/index.html"
+      ],
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/sekaisymphony/2022/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -9199,9 +9752,9 @@
       "id": "symphony-2022",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2022",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2022-07-02；09-25；11-23",
+      "city": "日本东京 / 横滨 / 大阪",
+      "venue": "Suntory Hall；PACIFICO 横滨 国立大 Hall；The Symphony Hall",
       "kind": "专场 / 巡演",
       "year": 2022,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -9217,12 +9770,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://wmg.jp/hatsune-miku-symphony/news/87102",
+        "https://mitchie-m.com/blog/hatsune-miku/live/symphony-2022-ohedo-julia-night/"
+      ],
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://wmg.jp/hatsune-miku-symphony/news/87102",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -9243,6 +9807,12 @@
           "label": "原检索资料",
           "kind": "record",
           "priority": 3
+        },
+        {
+          "url": "https://mitchie-m.com/blog/hatsune-miku/live/symphony-2022-ohedo-julia-night/",
+          "label": "日期 / 地点补充依据",
+          "kind": "record",
+          "priority": 4
         }
       ]
     },
@@ -9271,8 +9841,8 @@
       "venue": "INTEX 大阪 5号馆A",
       "kind": "专场 / 巡演",
       "year": 2022,
-      "officialUrl": "https://magicalmirai.com/10th/",
-      "source": "https://magicalmirai.com/10th/",
+      "officialUrl": "https://magicalmirai.com/2022/",
+      "source": "https://magicalmirai.com/2022/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9283,6 +9853,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2022/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/10th/",
@@ -9361,8 +9933,8 @@
       "venue": "幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2022,
-      "officialUrl": "https://magicalmirai.com/10th/",
-      "source": "https://magicalmirai.com/10th/",
+      "officialUrl": "https://magicalmirai.com/2022/",
+      "source": "https://magicalmirai.com/2022/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9373,6 +9945,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2022/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/10th/",
@@ -9433,13 +10007,13 @@
       "id": "colorful-2023",
       "series": "COLORFUL LIVE",
       "name": "Project SEKAI COLORFUL LIVE 2nd -Will-",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2023-01-07 — 01-09（东京）；02-25 — 02-26（大阪）",
+      "city": "日本千叶 / 大阪",
+      "venue": "幕张 Messe 7–8号馆；INTEX 大阪 4–5号馆",
       "kind": "联动演出",
       "year": 2023,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html",
+      "source": "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9451,12 +10025,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -9503,8 +10088,8 @@
       "venue": "Zepp Nagoya",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://piapro.net/japantour2023/",
+      "source": "https://piapro.net/japantour2023/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9515,6 +10100,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://piapro.net/japantour2023/",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -9567,8 +10154,8 @@
       "venue": "Zepp Namba",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://piapro.net/japantour2023/",
+      "source": "https://piapro.net/japantour2023/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9579,6 +10166,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://piapro.net/japantour2023/",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -9631,8 +10220,8 @@
       "venue": "Zepp Fukuoka",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://piapro.net/japantour2023/",
+      "source": "https://piapro.net/japantour2023/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9643,6 +10232,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://piapro.net/japantour2023/",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -9695,8 +10286,8 @@
       "venue": "Zepp DiverCity",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://piapro.net/japantour2023/",
+      "source": "https://piapro.net/japantour2023/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9707,6 +10298,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://piapro.net/japantour2023/",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -9759,8 +10352,8 @@
       "venue": "Zepp Sapporo",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://piapro.net/japantour2023/",
+      "source": "https://piapro.net/japantour2023/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9771,6 +10364,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://piapro.net/japantour2023/",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
@@ -9807,13 +10402,13 @@
       "id": "break-2023-154",
       "series": "MIKU BREAK",
       "name": "MIKU BREAK ver.2.0",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2023-08-23",
+      "city": "日本东京",
+      "venue": "Spotify O-EAST",
       "kind": "舞蹈 / 联合演出",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://mikubreak.com/",
+      "source": "https://mikubreak.com/",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9825,12 +10420,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://abstreem.co.jp/RAB/archives/2718"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://mikubreak.com/",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
           "scope": "官方档案入口，需核对具体项目",
           "via": ""
+        },
+        {
+          "url": "https://abstreem.co.jp/RAB/archives/2718",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -9876,11 +10482,11 @@
       "name": "MIKU EXPO 2023 VR",
       "date": "2023-11-12",
       "city": "线上",
-      "venue": "—",
+      "venue": "线上播放：Twitch / YouTube",
       "kind": "线上演出",
       "year": 2023,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/vr2023/",
+      "source": "https://mikuexpo.com/vr2023/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9890,6 +10496,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/vr2023/",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -9927,13 +10538,13 @@
       "id": "sekai-symphony-2023",
       "series": "世界计划交响乐",
       "name": "Sekai Symphony 2023",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2023-06-10",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall",
       "kind": "联动 / 交响乐",
       "year": 2023,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/sekaisymphony/2023/index.html",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2023/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -9945,12 +10556,22 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "websiteUrl": "https://pjsekai.sega.jp/sekaisymphony/2023/index.html",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://pjsekai.sega.jp/sekaisymphony/2023/index.html"
+      ],
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/sekaisymphony/2023/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -9997,8 +10618,8 @@
       "venue": "NHK Hall",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "",
+      "source": "https://moegirl.uk/初音未来",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10036,7 +10657,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "collectionIds": [
@@ -10047,9 +10669,9 @@
       "id": "symphony-2023",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2023",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2023-08-29；2023-10-14；2023-12-23",
+      "city": "日本东京 / 横滨 / 神户",
+      "venue": "Suntory Hall；PACIFICO 横滨 国立大 Hall；神户国际会馆 こくさいホール",
       "kind": "专场 / 巡演",
       "year": 2023,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -10065,12 +10687,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/intl/en_event.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/intl/en_event.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -10147,7 +10780,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "sourceIndex": 88,
@@ -10174,8 +10808,8 @@
       "venue": "札幌文化艺术剧场 hitaru",
       "kind": "专场 / 巡演",
       "year": 2023,
-      "officialUrl": "https://magicalmirai.com/10th/sapporo_ticket.html",
-      "source": "https://magicalmirai.com/10th/sapporo_ticket.html",
+      "officialUrl": "https://magicalmirai.com/2022/",
+      "source": "https://magicalmirai.com/2022/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10186,6 +10820,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2022/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/10th/sapporo_ticket.html",
@@ -10282,6 +10918,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2023/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2023/",
@@ -10396,6 +11034,8 @@
           "url": "https://magicalmirai.com/2023/tokyo_ticket_en.html"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2023/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2023/",
@@ -10474,13 +11114,13 @@
       "id": "colorful-2024",
       "series": "COLORFUL LIVE",
       "name": "Project SEKAI COLORFUL LIVE 3rd -Evolve-",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2024-01-26 — 01-28（东京）；02-17 — 02-18（大阪）",
+      "city": "日本千叶 / 大阪",
+      "venue": "幕张 Messe 9–10号馆；INTEX 大阪 4–5号馆",
       "kind": "联动演出",
       "year": 2024,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html",
+      "source": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10492,12 +11132,23 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -10528,13 +11179,13 @@
       "id": "colorful-4",
       "series": "COLORFUL LIVE",
       "name": "COLORFUL LIVE 4th -Unison-（2024–2025）",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2024-12-13 — 12-15（大阪）；2025-01-24 — 01-26（东京）",
+      "city": "日本大阪 / 千叶",
+      "venue": "INTEX 大阪 4–5号馆；幕张 Messe 10号馆",
       "kind": "联动演出",
       "year": 2024,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html",
+      "source": "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html",
       "researchSource": "https://voca.wiki/初音未来/演唱会#大型演唱会列表",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10546,12 +11197,22 @@
           "url": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
         }
       ],
+      "websiteUrl": "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html"
+      ],
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -10600,8 +11261,8 @@
       "venue": "Thunderbird Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10611,6 +11272,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -10666,8 +11332,8 @@
       "venue": "Keller Auditorium",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10677,6 +11343,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -10732,8 +11403,8 @@
       "venue": "San Jose Civic",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10743,6 +11414,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -10798,8 +11474,8 @@
       "venue": "Mullett Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10809,6 +11485,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -10864,8 +11545,8 @@
       "venue": "Shrine Auditorium",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10875,6 +11556,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -10930,8 +11616,8 @@
       "venue": "Mission Ballroom",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -10941,6 +11627,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -10996,8 +11687,8 @@
       "venue": "The Factory in Deep Ellum",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11007,6 +11698,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11062,8 +11758,8 @@
       "venue": "H-E-B Center",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11073,6 +11769,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11128,8 +11829,8 @@
       "venue": "Gateway Center Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11139,6 +11840,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11194,8 +11900,8 @@
       "venue": "Walt Disney Theatre",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11205,6 +11911,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11260,8 +11971,8 @@
       "venue": "The Anthem",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11271,6 +11982,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11326,8 +12042,8 @@
       "venue": "Prudential Center",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11337,6 +12053,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11392,8 +12113,8 @@
       "venue": "The Wang Theatre",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11403,6 +12124,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11458,8 +12184,8 @@
       "venue": "Fisher Theatre",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11469,6 +12195,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11524,8 +12255,8 @@
       "venue": "Auditorium Theatre",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11535,6 +12266,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11590,8 +12326,8 @@
       "venue": "Coca-Cola Coliseum",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11601,6 +12337,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11656,8 +12397,8 @@
       "venue": "Pepsi Center WTC",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/na2024/index.html",
+      "source": "https://mikuexpo.com/na2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11667,6 +12408,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11722,8 +12468,8 @@
       "venue": "OVO Arena Wembley",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2024/index.html",
+      "source": "https://mikuexpo.com/europe2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11733,6 +12479,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11788,8 +12539,8 @@
       "venue": "ING Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2024/index.html",
+      "source": "https://mikuexpo.com/europe2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11799,6 +12550,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11854,8 +12610,8 @@
       "venue": "Zénith Paris",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2024/index.html",
+      "source": "https://mikuexpo.com/europe2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11865,6 +12621,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11920,8 +12681,8 @@
       "venue": "AFAS",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2024/index.html",
+      "source": "https://mikuexpo.com/europe2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11931,6 +12692,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -11986,8 +12752,8 @@
       "venue": "Mitsubishi Electric Halle",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2024/index.html",
+      "source": "https://mikuexpo.com/europe2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -11997,6 +12763,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12052,8 +12823,8 @@
       "venue": "Uber Eats Music Hall",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/history",
-      "source": "https://mikuexpo.com/history",
+      "officialUrl": "https://mikuexpo.com/europe2024/index.html",
+      "source": "https://mikuexpo.com/europe2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12063,6 +12834,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/europe2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12118,8 +12894,8 @@
       "venue": "Spark Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/nzaus2024/",
-      "source": "https://mikuexpo.com/nzaus2024/",
+      "officialUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12129,6 +12905,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12190,8 +12971,8 @@
       "venue": "Convention & Exhibition Centre",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/nzaus2024/",
-      "source": "https://mikuexpo.com/nzaus2024/",
+      "officialUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12201,6 +12982,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12262,8 +13048,8 @@
       "venue": "ICC Sydney Theatre",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/nzaus2024/",
-      "source": "https://mikuexpo.com/nzaus2024/",
+      "officialUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12273,6 +13059,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12334,8 +13125,8 @@
       "venue": "John Cain Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/nzaus2024/",
-      "source": "https://mikuexpo.com/nzaus2024/",
+      "officialUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12345,6 +13136,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12406,8 +13202,8 @@
       "venue": "RAC Arena",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://mikuexpo.com/nzaus2024/",
-      "source": "https://mikuexpo.com/nzaus2024/",
+      "officialUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12417,6 +13213,11 @@
           "label": "检索线索来源",
           "url": "https://moegirl.uk/初音未来"
         }
+      ],
+      "websiteUrl": "https://mikuexpo.com/nzaus2024/index.html",
+      "websiteScope": "该巡演官网",
+      "detailSources": [
+        "https://mikuexpo.com/history"
       ],
       "officialLinks": [
         {
@@ -12515,7 +13316,8 @@
           "kind": "record",
           "priority": 3
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "collectionIds": [],
@@ -12524,13 +13326,13 @@
       "id": "sekai-symphony-2024",
       "series": "世界计划交响乐",
       "name": "Sekai Symphony 2024",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2024-06-08（横滨）；07-20（大阪）",
+      "city": "日本横滨 / 大阪",
+      "venue": "PACIFICO 横滨 国立大 Hall；大阪国际会议场 Main Hall（Grand Cube Osaka）",
       "kind": "联动 / 交响乐",
       "year": 2024,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
       "researchSource": "https://moegirl.uk/初音未来/演唱会",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12542,12 +13344,28 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "websiteUrl": "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
+      "websiteScope": "演出官网",
+      "detailSources": [
+        "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
+        "https://pjsekai.sega.jp/sekaisymphony/2024/img/osaka.png?5"
+      ],
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://pjsekai.sega.jp/sekaisymphony/2024/img/osaka.png?5",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -12580,9 +13398,9 @@
       "id": "symphony-2024",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2024",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2024-04-27 起（其余场次日期待核实）",
+      "city": "日本东京 / 横滨 / 神户",
+      "venue": "Suntory Hall 大厅；PACIFICO 横滨 国立大 Hall；神户国际会馆 こくさいホール",
       "kind": "专场 / 巡演",
       "year": 2024,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -12598,12 +13416,28 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://www.suntory.co.jp/suntoryhall/archive/det.html?data_id=22454",
+        "https://wmg.jp/hatsune-miku-symphony/discography/30311"
+      ],
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://www.suntory.co.jp/suntoryhall/archive/det.html?data_id=22454",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://wmg.jp/hatsune-miku-symphony/discography/30311",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -12652,8 +13486,8 @@
       "venue": "前滩31",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12668,6 +13502,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -12722,8 +13558,8 @@
       "venue": "五棵松华熙LIVE·M空间",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12738,6 +13574,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -12792,8 +13630,8 @@
       "venue": "广东艺术剧院",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方品牌页确认年度项目、日期与城市；场馆另行核查",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12808,6 +13646,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
@@ -12846,7 +13686,7 @@
       "venue": "山下码头",
       "kind": "边界项目 / 视听活动",
       "year": 2024,
-      "officialUrl": "https://blog.piapro.net/2024/02/ni24021301.html",
+      "officialUrl": "",
       "source": "https://blog.piapro.net/2024/02/ni24021301.html",
       "researchSource": "https://blog.piapro.net/2024/02/ni24021301.html",
       "verification": "已找到一手资料，详见来源",
@@ -12882,19 +13722,20 @@
           "kind": "search",
           "priority": 2
         }
-      ]
+      ],
+      "websiteScope": "独立演出官网待核实；可查看下方官方资料"
     },
     {
       "id": "research-coachella-2024",
       "series": "音乐节参演",
       "name": "Coachella 2024 · 初音未来",
-      "date": "2024-04-12 起（逐场待核）",
-      "city": "美国",
-      "venue": "待逐场核对",
+      "date": "2024-04-12；2024-04-19",
+      "city": "美国加利福尼亚州 Indio",
+      "venue": "Coachella 户外音乐节（分舞台待核实）",
       "kind": "音乐节参演",
       "year": 2024,
-      "officialUrl": "https://www.crypton.co.jp/cfm/news/2024/04/10coachella",
-      "source": "https://www.crypton.co.jp/cfm/news/2024/04/10coachella",
+      "officialUrl": "https://coachella.com/",
+      "source": "https://coachella.com/",
       "researchSource": "https://www.crypton.co.jp/cfm/news/2024/04/10coachella",
       "verification": "已找到一手资料，详见来源",
       "notes": "",
@@ -12908,6 +13749,11 @@
           "url": "https://www.crypton.co.jp/cfm/news/2024/04/10coachella"
         }
       ],
+      "detailSources": [
+        "https://www.crypton.co.jp/cfm/news/2024/04/10coachella"
+      ],
+      "websiteUrl": "https://coachella.com/",
+      "websiteScope": "音乐节官网（当前年度）",
       "officialLinks": [
         {
           "url": "https://www.crypton.co.jp/cfm/news/2024/04/10coachella",
@@ -12956,8 +13802,8 @@
       "venue": "福冈太阳宫",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
-      "source": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
+      "officialUrl": "https://magicalmirai.com/2024/",
+      "source": "https://magicalmirai.com/2024/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -12968,6 +13814,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2024/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
@@ -13028,8 +13876,8 @@
       "venue": "幕张 Messe 3号馆",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
-      "source": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
+      "officialUrl": "https://magicalmirai.com/2024/",
+      "source": "https://magicalmirai.com/2024/",
       "researchSource": "https://magicalmirai.com/2024/tokyo_ticket.html",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13040,6 +13888,8 @@
           "url": "https://magicalmirai.com/2024/tokyo_ticket.html"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2024/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
@@ -13094,8 +13944,8 @@
       "venue": "INTEX 大阪 5号馆A",
       "kind": "专场 / 巡演",
       "year": 2024,
-      "officialUrl": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
-      "source": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
+      "officialUrl": "https://magicalmirai.com/2024/",
+      "source": "https://magicalmirai.com/2024/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13106,6 +13956,8 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "websiteUrl": "https://magicalmirai.com/2024/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2024/fukuoka_ticket_en.html",
@@ -13148,13 +14000,13 @@
       "id": "colorful-5",
       "series": "COLORFUL LIVE",
       "name": "COLORFUL LIVE 5th -Frontier-（2025–2026）",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2025-12-12 — 12-14（大阪）；2026-01-23 — 01-25（东京）",
+      "city": "日本大阪 / 千叶",
+      "venue": "INTEX 大阪 4–5号馆；幕张 Messe 2–3号馆",
       "kind": "联动演出",
       "year": 2025,
-      "officialUrl": "https://pjsekai.sega.jp/",
-      "source": "https://pjsekai.sega.jp/",
+      "officialUrl": "https://pjsekai.sega.jp/colorfullive/5th-frontier/",
+      "source": "https://pjsekai.sega.jp/colorfullive/5th-frontier/",
       "researchSource": "https://voca.wiki/初音未来/演唱会#大型演唱会列表",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13166,12 +14018,23 @@
           "url": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
         }
       ],
+      "detailSources": [
+        "https://pjsekai.sega.jp/colorfullive/5th-frontier/schedule-and-ticket.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://pjsekai.sega.jp/colorfullive/5th-frontier/",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/",
           "label": "Project SEKAI 官方网站",
           "scope": "关联企划入口，不能代替出演证明",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/colorfullive/5th-frontier/schedule-and-ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13212,13 +14075,13 @@
       "id": "blooming-2025",
       "series": "JAPAN TOUR",
       "name": "JAPAN TOUR 2025 ～BLOOMING～",
-      "date": "2025-04-19 — 2025-05-31（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2025-04-19 — 05-31",
+      "city": "日本大阪 / 名古屋 / 福冈 / 东京 / 高松 / 札幌 / 那霸",
+      "venue": "Zepp Namba；Zepp Nagoya；Zepp Fukuoka；Zepp Haneda；Rexxam Hall 大厅；Zepp Sapporo；NAHArt 大剧场",
       "kind": "专场 / 巡演",
       "year": 2025,
-      "officialUrl": "https://piapro.net/intl/en_event.html",
-      "source": "https://piapro.net/intl/en_event.html",
+      "officialUrl": "https://piapro.net/japantour2025/index_en.html",
+      "source": "https://piapro.net/japantour2025/index_en.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13229,12 +14092,23 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "detailSources": [
+        "https://piapro.net/japantour2025/index_en.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://piapro.net/japantour2025/index_en.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://piapro.net/intl/en_event.html",
           "label": "Crypton 官方活动档案",
           "scope": "官方档案入口，需核对具体项目",
           "via": ""
+        },
+        {
+          "url": "https://piapro.net/japantour2025/index_en.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13277,13 +14151,13 @@
       "id": "expo-2025",
       "series": "MIKU EXPO",
       "name": "MIKU EXPO 2025",
-      "date": "2025-11-05 — 2025-11-30（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2025-11-05 — 2025-11-30",
+      "city": "Bangkok / Hong Kong / Jakarta / Manila / Singapore / Kuala Lumpur / Taipei / Seoul",
+      "venue": "Bangkok：UOB LIVE；Hong Kong：AsiaWorld-Arena；Jakarta：Tennis Indoor Senayan；Manila：SM Mall of Asia Arena；Singapore：The Star Theatre；Kuala Lumpur：Idea Live KL；Taipei：Taipei Arena；Seoul：Hwajeong Gymnasium",
       "kind": "专场 / 巡演",
       "year": 2025,
-      "officialUrl": "https://mikuexpo.com/asia2025/",
-      "source": "https://mikuexpo.com/asia2025/",
+      "officialUrl": "https://mikuexpo.com/asia2025/index.html",
+      "source": "https://mikuexpo.com/asia2025/index.html",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13294,6 +14168,53 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "schedule": [
+        {
+          "date": "Nov. 5, 2025",
+          "city": "Bangkok",
+          "venue": "UOB LIVE"
+        },
+        {
+          "date": "Nov. 8, 2025",
+          "city": "Hong Kong",
+          "venue": "AsiaWorld-Arena"
+        },
+        {
+          "date": "Nov. 12, 2025",
+          "city": "Jakarta",
+          "venue": "Tennis Indoor Senayan"
+        },
+        {
+          "date": "Nov. 16, 2025",
+          "city": "Manila",
+          "venue": "SM Mall of Asia Arena"
+        },
+        {
+          "date": "Nov. 19, 2025",
+          "city": "Singapore",
+          "venue": "The Star Theatre"
+        },
+        {
+          "date": "Nov. 22, 2025",
+          "city": "Kuala Lumpur",
+          "venue": "Idea Live KL"
+        },
+        {
+          "date": "Nov. 26, 2025",
+          "city": "Taipei",
+          "venue": "Taipei Arena"
+        },
+        {
+          "date": "Nov. 29-30, 2025",
+          "city": "Seoul",
+          "venue": "Hwajeong Gymnasium"
+        }
+      ],
+      "detailSources": [
+        "https://mikuexpo.com/history"
+      ],
+      "websiteUrl": "https://mikuexpo.com/asia2025/index.html",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://mikuexpo.com/asia2025/",
@@ -13338,9 +14259,9 @@
       "id": "symphony-2025",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2025",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2025-02-11 起（其余场次日期待核实）",
+      "city": "日本札幌 / 东京 / 横滨 / 神户",
+      "venue": "札幌 Kitara；Suntory Hall；PACIFICO 横滨 国立大 Hall；神户国际会馆 こくさいホール",
       "kind": "专场 / 巡演",
       "year": 2025,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -13356,12 +14277,22 @@
           "url": "https://moegirl.uk/初音未来/演唱会"
         }
       ],
+      "detailSources": [
+        "https://www.sso.or.jp/concerts/2025/02/2025-10th-anniversary/"
+      ],
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://www.sso.or.jp/concerts/2025/02/2025-10th-anniversary/",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13402,13 +14333,13 @@
       "id": "mwy-2025",
       "series": "未来有你",
       "name": "未来有你 2025",
-      "date": "2025-12-20 — 2025-12-21（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "上海静安体育中心",
+      "date": "2025-12-20 — 12-21",
+      "city": "中国上海",
+      "venue": "静安体育中心",
       "kind": "专场 / 巡演",
       "year": 2025,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/931/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/931/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://moegirl.uk/初音未来",
       "verification": "官方明确日期与场馆",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13423,6 +14354,12 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "detailSources": [
+        "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/931/ip/16.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/931/ip/16.html",
@@ -13468,13 +14405,13 @@
       "id": "research-sekai-fes-2025",
       "series": "联动舞台",
       "name": "Project SEKAI 5th Anniversary 感谢祭 · Virtual Singer出演环节",
-      "date": "2025（具体日期待核）",
-      "city": "待核对",
-      "venue": "待核对",
+      "date": "2025-10-18 — 10-19",
+      "city": "日本东京",
+      "venue": "Tokyo Garden Theater（舞台）",
       "kind": "联动舞台",
       "year": 2025,
-      "officialUrl": "https://pjsekai.sega.jp/5thanniversarythanksfestival/stage/index.html",
-      "source": "https://pjsekai.sega.jp/5thanniversarythanksfestival/stage/index.html",
+      "officialUrl": "https://pjsekai.sega.jp/5thanniversarythanksfestival/index.html",
+      "source": "https://pjsekai.sega.jp/5thanniversarythanksfestival/index.html",
       "researchSource": "https://pjsekai.sega.jp/5thanniversarythanksfestival/stage/index.html",
       "verification": "已找到一手资料，详见来源",
       "notes": "官网列有初音未来；应与普通声优舞台、游戏内虚拟Live区分。",
@@ -13488,12 +14425,23 @@
           "url": "https://pjsekai.sega.jp/5thanniversarythanksfestival/stage/index.html"
         }
       ],
+      "detailSources": [
+        "https://pjsekai.sega.jp/5thanniversarythanksfestival/index.html",
+        "https://liveviewing.jp/pjsekai_5thanniversary/"
+      ],
+      "websiteUrl": "https://pjsekai.sega.jp/5thanniversarythanksfestival/index.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://pjsekai.sega.jp/5thanniversarythanksfestival/stage/index.html",
           "label": "官方 / 主办方资料",
           "scope": "已收集的官方参考",
           "via": ""
+        },
+        {
+          "url": "https://pjsekai.sega.jp/5thanniversarythanksfestival/index.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13508,6 +14456,12 @@
           "label": "Vocaloid Wiki 检索入口（尚未匹配具体条目）",
           "kind": "search",
           "priority": 2
+        },
+        {
+          "url": "https://liveviewing.jp/pjsekai_5thanniversary/",
+          "label": "日期 / 地点补充依据",
+          "kind": "record",
+          "priority": 4
         }
       ]
     },
@@ -13530,9 +14484,9 @@
       "id": "mirai-2025",
       "series": "魔法未来",
       "name": "MAGICAL MIRAI 2025",
-      "date": "2025-08-01 — 2025-08-31（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2025-08-01 — 08-03（仙台）；08-09 — 08-11（大阪）；08-29 — 08-31（东京）",
+      "city": "日本仙台 / 大阪 / 千叶",
+      "venue": "仙台 Sunplaza Hall；INTEX 大阪 5号馆A；幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2025,
       "officialUrl": "https://magicalmirai.com/2025/",
@@ -13547,6 +14501,14 @@
           "url": "https://moegirl.uk/初音未来"
         }
       ],
+      "detailSources": [
+        "https://magicalmirai.com/2025/sendai_ticket.html",
+        "https://magicalmirai.com/2025/osaka_ticket.html",
+        "https://magicalmirai.com/2025/tokyo_ticket.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://magicalmirai.com/2025/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2025/",
@@ -13559,6 +14521,21 @@
           "label": "魔法未来官方门户",
           "scope": "系列入口，具体场次见活动页",
           "via": ""
+        },
+        {
+          "url": "https://magicalmirai.com/2025/sendai_ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://magicalmirai.com/2025/osaka_ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://magicalmirai.com/2025/tokyo_ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13646,7 +14623,8 @@
           "kind": "record",
           "priority": 4
         }
-      ]
+      ],
+      "websiteScope": "关联项目 / 系列官网（历史页面可能已变更）"
     },
     {
       "vocaIndex": 134,
@@ -13673,8 +14651,8 @@
       "venue": "横滨 Arena",
       "kind": "专场 / 巡演",
       "year": 2026,
-      "officialUrl": "https://l-tike.com/concert/lawson50th_260117_0118/",
-      "source": "https://l-tike.com/concert/lawson50th_260117_0118/",
+      "officialUrl": "https://l-tike.com/lawson50thmiku/",
+      "source": "https://l-tike.com/lawson50thmiku/",
       "researchSource": "https://blog.piapro.net/2026/01/im26012101.html",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13685,6 +14663,8 @@
           "url": "https://blog.piapro.net/2026/01/im26012101.html"
         }
       ],
+      "websiteUrl": "https://l-tike.com/lawson50thmiku/",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://l-tike.com/concert/lawson50th_260117_0118/",
@@ -13743,9 +14723,9 @@
       "id": "mikutime-ME2026EU",
       "series": "MIKU EXPO",
       "name": "HATSUNE MIKU EXPO 2026 EUROPE",
-      "date": "2026-11-12 — 2026-11-25（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2026-11-12 — 11-27",
+      "city": "英国伦敦 / 比利时布鲁塞尔 / 荷兰阿姆斯特丹 / 德国柏林、杜塞尔多夫 / 法国巴黎 / 西班牙马德里 / 葡萄牙里斯本",
+      "venue": "The O2；ING Arena；AFAS Live；Velodrom；PSD Bank Dome；Accor Arena；Palacio Vistalegre；Sagres Campo Pequeno",
       "kind": "专场 / 巡演",
       "year": 2026,
       "officialUrl": "https://mikuexpo.com/europe2026/",
@@ -13760,6 +14740,54 @@
           "url": "https://mikutime.link/setlists/"
         }
       ],
+      "detailSources": [
+        "https://blog.piapro.net/2026/04/ec2604081.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://mikuexpo.com/europe2026/",
+      "websiteScope": "演出官网",
+      "schedule": [
+        {
+          "date": "2026-11-12",
+          "city": "London",
+          "venue": "The O2"
+        },
+        {
+          "date": "2026-11-14",
+          "city": "Brussels",
+          "venue": "ING Arena"
+        },
+        {
+          "date": "2026-11-15",
+          "city": "Amsterdam",
+          "venue": "AFAS Live"
+        },
+        {
+          "date": "2026-11-17",
+          "city": "Berlin",
+          "venue": "Velodrom"
+        },
+        {
+          "date": "2026-11-20",
+          "city": "Düsseldorf",
+          "venue": "PSD Bank Dome"
+        },
+        {
+          "date": "2026-11-22",
+          "city": "Paris",
+          "venue": "Accor Arena"
+        },
+        {
+          "date": "2026-11-24 — 11-25",
+          "city": "Madrid",
+          "venue": "Palacio Vistalegre"
+        },
+        {
+          "date": "2026-11-27",
+          "city": "Lisbon",
+          "venue": "Sagres Campo Pequeno"
+        }
+      ],
       "officialLinks": [
         {
           "url": "https://mikuexpo.com/europe2026/",
@@ -13772,6 +14800,11 @@
           "label": "MIKU EXPO 官方历史日程",
           "scope": "系列历史档案",
           "via": ""
+        },
+        {
+          "url": "https://blog.piapro.net/2026/04/ec2604081.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13818,13 +14851,13 @@
       "id": "mikutime-ME2026NA",
       "series": "MIKU EXPO",
       "name": "HATSUNE MIKU EXPO 2026 NORTH AMERICA",
-      "date": "2026-04-12 — 2026-05-19（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2026-04-12 — 2026-05-19",
+      "city": "Chicago, IL / Denver, CO / Vancouver, BC / Seattle, WA / San Jose, CA / Los Angeles, CA / Glendale, AZ / Grand Prairie, TX / Cedar Park, TX / Duluth, GA / Washington, DC / Newark, NJ / Boston, MA / Hamilton, ON / Mexico City",
+      "venue": "Chicago, IL：The Auditorium Theatre；Denver, CO：Mission Ballroom；Vancouver, BC：Doug Mitchell Thunderbird Sports Centre；Seattle, WA：WAMU Theater；San Jose, CA：San Jose Civic；Los Angeles, CA：Peacock Theater；Glendale, AZ：Desert Diamond Arena；Grand Prairie, TX：Texas Trust CU Theatre；Cedar Park, TX：H-E-B Center at Cedar Park；Duluth, GA：Gas South Arena；Washington, DC：The Anthem；Newark, NJ：Prudential Center；Boston, MA：Wang Theatre At The Boch Center；Hamilton, ON：TD Coliseum；Mexico City：Pepsi Center WTC",
       "kind": "专场 / 巡演",
       "year": 2026,
-      "officialUrl": "https://mikuexpo.com/na2026/",
-      "source": "https://mikuexpo.com/na2026/",
+      "officialUrl": "https://mikuexpo.com/na2026/index.html",
+      "source": "https://mikuexpo.com/na2026/index.html",
       "researchSource": "https://mikutime.link/setlists/",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -13835,6 +14868,88 @@
           "url": "https://mikutime.link/setlists/"
         }
       ],
+      "schedule": [
+        {
+          "date": "Apr. 12-13, 2026",
+          "city": "Chicago, IL",
+          "venue": "The Auditorium Theatre"
+        },
+        {
+          "date": "Apr. 15, 2026",
+          "city": "Denver, CO",
+          "venue": "Mission Ballroom"
+        },
+        {
+          "date": "Apr. 18, 2026",
+          "city": "Vancouver, BC",
+          "venue": "Doug Mitchell Thunderbird Sports Centre"
+        },
+        {
+          "date": "Apr. 20, 2026",
+          "city": "Seattle, WA",
+          "venue": "WAMU Theater"
+        },
+        {
+          "date": "Apr. 22-23, 2026",
+          "city": "San Jose, CA",
+          "venue": "San Jose Civic"
+        },
+        {
+          "date": "Apr. 25-26, 2026",
+          "city": "Los Angeles, CA",
+          "venue": "Peacock Theater"
+        },
+        {
+          "date": "Apr. 28, 2026",
+          "city": "Glendale, AZ",
+          "venue": "Desert Diamond Arena"
+        },
+        {
+          "date": "Apr. 30, 2026",
+          "city": "Grand Prairie, TX",
+          "venue": "Texas Trust CU Theatre"
+        },
+        {
+          "date": "May 1, 2026",
+          "city": "Cedar Park, TX",
+          "venue": "H-E-B Center at Cedar Park"
+        },
+        {
+          "date": "May 3, 2026",
+          "city": "Duluth, GA",
+          "venue": "Gas South Arena"
+        },
+        {
+          "date": "May 5, 2026",
+          "city": "Washington, DC",
+          "venue": "The Anthem"
+        },
+        {
+          "date": "May 7, 2026",
+          "city": "Newark, NJ",
+          "venue": "Prudential Center"
+        },
+        {
+          "date": "May 10-11, 2026",
+          "city": "Boston, MA",
+          "venue": "Wang Theatre At The Boch Center"
+        },
+        {
+          "date": "May 13, 2026",
+          "city": "Hamilton, ON",
+          "venue": "TD Coliseum"
+        },
+        {
+          "date": "May 19, 2026",
+          "city": "Mexico City",
+          "venue": "Pepsi Center WTC"
+        }
+      ],
+      "detailSources": [
+        "https://mikuexpo.com/history"
+      ],
+      "websiteUrl": "https://mikuexpo.com/na2026/index.html",
+      "websiteScope": "该巡演官网",
       "officialLinks": [
         {
           "url": "https://mikuexpo.com/na2026/",
@@ -13877,9 +14992,9 @@
       "id": "symphony-2026",
       "series": "初音未来交响乐",
       "name": "Miku Symphony 2026",
-      "date": "待核实",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2026-06-20；07-05；10-10（2027 后续公演见官网）",
+      "city": "日本札幌 / 东京 / 横滨（2027 大阪公演另见官网）",
+      "venue": "札幌 Kitara；Suntory Hall 大厅；PACIFICO 横滨 国立大 Hall",
       "kind": "联动 / 交响乐",
       "year": 2026,
       "officialUrl": "https://sp.wmg.jp/mikusymphony/",
@@ -13895,12 +15010,28 @@
           "url": "https://voca.wiki/初音未来/演唱会#大型演唱会列表"
         }
       ],
+      "detailSources": [
+        "https://blog.piapro.net/2026/05/ob2605221.html",
+        "https://wmg.jp/hatsune-miku-symphony/news/108091"
+      ],
+      "websiteUrl": "https://sp.wmg.jp/mikusymphony/",
+      "websiteScope": "系列官网（当前版本，历史演出资料另列）",
       "officialLinks": [
         {
           "url": "https://sp.wmg.jp/mikusymphony/",
           "label": "初音未来交响乐官方网站",
           "scope": "系列入口，历年场次需另核",
           "via": ""
+        },
+        {
+          "url": "https://blog.piapro.net/2026/05/ob2605221.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://wmg.jp/hatsune-miku-symphony/news/108091",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -13945,7 +15076,7 @@
       "series": "宝可梦",
       "name": "ポケモン feat. 初音ミク VOLTAGE Live!",
       "date": "2026-03-20 — 03-22",
-      "city": "日本千叶",
+      "city": "日本千叶县船桥市",
       "venue": "LaLa arena TOKYO-BAY",
       "kind": "专场 / 巡演",
       "year": 2026,
@@ -13961,6 +15092,8 @@
           "url": "https://www.jvcmusic.co.jp/project-voltage/"
         }
       ],
+      "websiteUrl": "https://www.project-voltage.jp/live2026/",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://www.project-voltage.jp/live2026/",
@@ -14013,13 +15146,13 @@
       "id": "mikutime-MWY2026",
       "series": "未来有你",
       "name": "MIKU WITH YOU 2026",
-      "date": "2026-10-31 — 2026-12-26（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2026-10-31 — 11-01（上海；其他站待官方确认）",
+      "city": "中国上海（其他站待核实）",
+      "venue": "上海静安体育中心（其他站待核实）",
       "kind": "专场 / 巡演",
       "year": 2026,
-      "officialUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
-      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "officialUrl": "https://www.scla.com.cn/",
+      "source": "https://www.scla.com.cn/",
       "researchSource": "https://mikutime.link/setlists/",
       "verification": "原目录线索，未据本次检索逐条确认",
       "notes": "原始时间地点保留为待核查信息，不视为官方已核实。",
@@ -14030,12 +15163,22 @@
           "url": "https://mikutime.link/setlists/"
         }
       ],
+      "detailSources": [
+        "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/4728/ip/16.html"
+      ],
+      "websiteUrl": "https://www.scla.com.cn/",
+      "websiteScope": "授权监修方官网（新创华）；历届活动公告见官方资料",
       "officialLinks": [
         {
           "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
           "label": "新创华：初音未来 / 未来有你档案",
           "scope": "主办 / 授权方档案",
           "via": ""
+        },
+        {
+          "url": "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/4728/ip/16.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -14084,9 +15227,9 @@
       "id": "primary-14",
       "series": "魔法未来",
       "name": "初音ミク「マジカルミライ 2026」",
-      "date": "2026-07-24 — 2026-08-30（社区数据，待核实）",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2026-07-24 — 07-26（滨松）；08-14 — 08-16（大阪）；08-28 — 08-30（东京）",
+      "city": "日本滨松 / 大阪 / 千叶",
+      "venue": "ACT CITY 滨松 大厅；INTEX 大阪 5号馆A；幕张 Messe 9号馆",
       "kind": "专场 / 巡演",
       "year": 2026,
       "officialUrl": "https://magicalmirai.com/2026/",
@@ -14101,6 +15244,14 @@
           "url": "https://magicalmirai.com/2026/"
         }
       ],
+      "detailSources": [
+        "https://magicalmirai.com/2026/hamamatsu_ticket.html",
+        "https://magicalmirai.com/2026/osaka_ticket.html",
+        "https://magicalmirai.com/2026/tokyo_ticket.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://magicalmirai.com/2026/",
+      "websiteScope": "该年度官网",
       "officialLinks": [
         {
           "url": "https://magicalmirai.com/2026/",
@@ -14113,6 +15264,21 @@
           "label": "魔法未来官方门户",
           "scope": "系列入口，具体场次见活动页",
           "via": ""
+        },
+        {
+          "url": "https://magicalmirai.com/2026/hamamatsu_ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://magicalmirai.com/2026/osaka_ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
+        },
+        {
+          "url": "https://magicalmirai.com/2026/tokyo_ticket.html",
+          "label": "日期 / 地点官方依据",
+          "scope": "资料依据"
         }
       ],
       "sourceReferences": [
@@ -14149,9 +15315,9 @@
       "id": "primary-26",
       "series": "SNOW MIKU LIVE",
       "name": "SNOW MIKU LIVE! 2027",
-      "date": "2027-02-05 — 2027-02-07",
-      "city": "待核实",
-      "venue": "待核实",
+      "date": "2027-02-05 — 02-07",
+      "city": "日本札幌",
+      "venue": "Zepp Sapporo",
       "kind": "专场 / 巡演",
       "year": 2027,
       "officialUrl": "https://snowmiku.com/2027/event-live.html",
@@ -14166,6 +15332,12 @@
           "url": "https://snowmiku.com/2027/event-live.html"
         }
       ],
+      "detailSources": [
+        "https://snowmiku.com/2027/event-live.html"
+      ],
+      "checked": "2026-11-17",
+      "websiteUrl": "https://snowmiku.com/2027/event-live.html",
+      "websiteScope": "演出官网",
       "officialLinks": [
         {
           "url": "https://snowmiku.com/2027/event-live.html",

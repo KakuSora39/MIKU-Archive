@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from urllib.parse import urlparse,quote
-PRIMARY={'piapro.net','crypton.co.jp','mikuexpo.com','magicalmirai.com','snowmiku.com','scla.com.cn','wmg.jp','columbia.jp','sega.jp','project-voltage.jp','otoiro.co.jp','l-tike.com','atak.jp','ycam.jp','jpf.go.jp','chokabuki.jp','mikufes24spring.jp','thinkandsense.com','anisama.tv','bml.bilibili.com'}
+PRIMARY={'5pb.jp','mikubreak.com','coachella.com','suntory.co.jp','sso.or.jp','wagner-society.org','abstreem.co.jp','piapro.net','crypton.co.jp','mikuexpo.com','magicalmirai.com','snowmiku.com','scla.com.cn','wmg.jp','columbia.jp','sega.jp','project-voltage.jp','otoiro.co.jp','l-tike.com','atak.jp','ycam.jp','jpf.go.jp','chokabuki.jp','mikufes24spring.jp','thinkandsense.com','anisama.tv','bml.bilibili.com'}
 def official(url):
  h=(urlparse(url).hostname or '').lower()
  return any(h==d or h.endswith('.'+d) for d in PRIMARY)
@@ -49,3 +49,16 @@ def resolve_sources(event,snapshot,manual=None):
  add_ref(event.get('researchSource',''),'原检索资料')
  research.sort(key=lambda r:(r['priority'],r['kind']=='search'))
  return officials,research
+
+
+def direct_website(event):
+ """Keep official announcements as evidence, never label them as an event site."""
+ if event.get('websiteUrl'): return event['websiteUrl'], event.get('websiteScope','演出官网')
+ for link in event.get('officialLinks',[]):
+  url=link['url']; parsed=urlparse(url); path=parsed.path.lower()
+  if parsed.hostname in {'blog.piapro.net','www.crypton.co.jp','piapro.net','www.scla.com.cn'}: continue
+  if any(part in path for part in ['/news','/history','/discography','/intl/','/about','/company/']): continue
+  if path.endswith(('.pdf','.jpg','.png')): continue
+  if parsed.hostname in {'columbia.jp','sp.wmg.jp','wmg.jp'} and 'symphony' not in path: continue
+  return url,'关联项目 / 系列官网（历史页面可能已变更）'
+ return '', '独立演出官网待核实；可查看下方官方资料'

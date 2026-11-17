@@ -28,8 +28,19 @@ assert research_rank('https://mzh.moegirl.org.cn/Test')==3
 assert research_rank('https://voca.wiki/Test')==4
 assert not official('https://vocaloid.fandom.com/wiki/Test')
 for event in es:
-    assert event['officialUrl'] and event['officialLinks']
+    assert event['officialLinks']
+    assert 'blog.piapro.net' not in event['officialUrl']
+    assert '/intl/en_event' not in event['officialUrl']
     assert event['sourceReferences'][0]['priority']==1
     assert [ref['priority'] for ref in event['sourceReferences']]==sorted(ref['priority'] for ref in event['sourceReferences'])
     assert all(ref['kind'] in {'record','search','unavailable'} for ref in event['sourceReferences'])
 print('PASS: official references for 195 entries, VocaDB/Wiki/Moegirl source priority, explicit lookup labels')
+
+byid={e['id']:e for e in es}
+assert byid['primary-26']['city']=='日本札幌'
+assert byid['primary-26']['venue']=='Zepp Sapporo'
+assert len(byid['mikutime-ME2026NA']['schedule'])==15
+assert byid['moegirl-stage-051']['venue']=='Axiata Arena(Bukit Jalil)'
+assert byid['expo-2025']['officialUrl']=='https://mikuexpo.com/asia2025/index.html'
+assert '11-27' in byid['mikutime-ME2026EU']['date']
+print('PASS: source-backed venues, direct official links, tour schedules')

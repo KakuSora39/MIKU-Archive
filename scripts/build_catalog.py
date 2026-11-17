@@ -1,7 +1,7 @@
 """Build the atlas from the user-reviewed CSV. Never filter out incomplete entries."""
 import csv
 import json
-from source_policy import resolve_sources
+from source_policy import resolve_sources, direct_website
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / 'miku-live-archive/dist'
@@ -11,6 +11,7 @@ def build_catalog():
     metadata = json.loads((REFERENCES / 'catalog-links.json').read_text(encoding='utf-8'))
     snapshot = json.loads((REFERENCES / "vocadb-event-links.json").read_text(encoding="utf-8"))
     manual = json.loads((REFERENCES / "official-link-overrides.json").read_text(encoding="utf-8"))
+    details = json.loads((REFERENCES / "event-details.json").read_text(encoding="utf-8"))
     events = []
     with (REFERENCES / 'live-catalog.csv').open(encoding='utf-8-sig', newline='') as file:
         for row in csv.DictReader(file):
@@ -31,9 +32,17 @@ def build_catalog():
             event['sources'] = [dict(label='官网 / 主办方参考', url=event['officialUrl'])] if event['officialUrl'] else []
             if event['researchSource'] and event['researchSource'] != event['officialUrl']:
                 event['sources'].append(dict(label='检索线索来源', url=event['researchSource']))
+            enrichment = details.get(event['id'], {})
+            event.update(enrichment)
             event['officialLinks'], event['sourceReferences'] = resolve_sources(event, snapshot, manual)
-            if not event['officialUrl'] and event['officialLinks']:
-                event['officialUrl'] = event['officialLinks'][0]['url']
+            for url in event.get('detailSources', []):
+                if url not in [ref['url'] for ref in event['officialLinks']]:
+                    from source_policy import official, research_rank
+                    if official(url): event['officialLinks'].append(dict(url=url,label='日期 / 地点官方依据',scope='资料依据'))
+                    elif url not in [ref['url'] for ref in event['sourceReferences']]:
+                        event['sourceReferences'].append(dict(url=url,label='日期 / 地点补充依据',kind='record',priority=research_rank(url)))
+            event['sourceReferences'].sort(key=lambda ref: ref['priority'])
+            event['officialUrl'], event['websiteScope'] = direct_website(event)
             event['source'] = event['officialUrl'] or event['researchSource']
             events.append(event)
     if len({event['id'] for event in events}) != len(events):

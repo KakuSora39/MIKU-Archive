@@ -1,0 +1,645 @@
+{
+  "expo-2018-na": [
+    {
+      "key": "los-angeles",
+      "date": "2018-06-29",
+      "city": "Los Angeles",
+      "venue": "Microsoft Theater"
+    },
+    {
+      "key": "san-jose",
+      "date": "2018-07-01",
+      "city": "San Jose",
+      "venue": "City National Civic"
+    },
+    {
+      "key": "dallas",
+      "date": "2018-07-06",
+      "city": "Dallas",
+      "venue": "The Bomb Factory"
+    },
+    {
+      "key": "austin",
+      "date": "2018-07-08",
+      "city": "Austin",
+      "venue": "H-E-B Center"
+    },
+    {
+      "key": "washington-d-c",
+      "date": "2018-07-12",
+      "city": "Washington, D.C.",
+      "venue": "The Anthem"
+    },
+    {
+      "key": "new-york-city",
+      "date": "2018-07-14",
+      "city": "New York City",
+      "venue": "Hammerstein Ballroom"
+    },
+    {
+      "key": "mexico-city",
+      "date": "2018-07-19",
+      "city": "Mexico City",
+      "venue": "Pepsi Center WTC"
+    }
+  ],
+  "expo-2025": [
+    {
+      "key": "bangkok",
+      "date": "2025-11-05",
+      "city": "Bangkok",
+      "venue": "UOB LIVE"
+    },
+    {
+      "key": "hong-kong",
+      "date": "2025-11-08",
+      "city": "Hong Kong",
+      "venue": "AsiaWorld-Arena"
+    },
+    {
+      "key": "jakarta",
+      "date": "2025-11-12",
+      "city": "Jakarta",
+      "venue": "Tennis Indoor Senayan"
+    },
+    {
+      "key": "manila",
+      "date": "2025-11-16",
+      "city": "Manila",
+      "venue": "SM Mall of Asia Arena"
+    },
+    {
+      "key": "singapore",
+      "date": "2025-11-19",
+      "city": "Singapore",
+      "venue": "The Star Theatre"
+    },
+    {
+      "key": "kuala-lumpur",
+      "date": "2025-11-22",
+      "city": "Kuala Lumpur",
+      "venue": "Idea Live KL"
+    },
+    {
+      "key": "taipei",
+      "date": "2025-11-26",
+      "city": "Taipei",
+      "venue": "Taipei Arena"
+    },
+    {
+      "key": "seoul",
+      "date": "2025-11-29 — 2025-11-30",
+      "city": "Seoul",
+      "venue": "Hwajeong Gymnasium"
+    }
+  ],
+  "mikutime-ME2026NA": [
+    {
+      "key": "chicago-il",
+      "date": "2026-04-12 — 2026-04-13",
+      "city": "Chicago, IL",
+      "venue": "The Auditorium Theatre"
+    },
+    {
+      "key": "denver-co",
+      "date": "2026-04-15",
+      "city": "Denver, CO",
+      "venue": "Mission Ballroom"
+    },
+    {
+      "key": "vancouver-bc",
+      "date": "2026-04-18",
+      "city": "Vancouver, BC",
+      "venue": "Doug Mitchell Thunderbird Sports Centre"
+    },
+    {
+      "key": "seattle-wa",
+      "date": "2026-04-20",
+      "city": "Seattle, WA",
+      "venue": "WAMU Theater"
+    },
+    {
+      "key": "san-jose-ca",
+      "date": "2026-04-22 — 2026-04-23",
+      "city": "San Jose, CA",
+      "venue": "San Jose Civic"
+    },
+    {
+      "key": "los-angeles-ca",
+      "date": "2026-04-25 — 2026-04-26",
+      "city": "Los Angeles, CA",
+      "venue": "Peacock Theater"
+    },
+    {
+      "key": "glendale-az",
+      "date": "2026-04-28",
+      "city": "Glendale, AZ",
+      "venue": "Desert Diamond Arena"
+    },
+    {
+      "key": "grand-prairie-tx",
+      "date": "2026-04-30",
+      "city": "Grand Prairie, TX",
+      "venue": "Texas Trust CU Theatre"
+    },
+    {
+      "key": "cedar-park-tx",
+      "date": "2026-05-01",
+      "city": "Cedar Park, TX",
+      "venue": "H-E-B Center at Cedar Park"
+    },
+    {
+      "key": "duluth-ga",
+      "date": "2026-05-03",
+      "city": "Duluth, GA",
+      "venue": "Gas South Arena"
+    },
+    {
+      "key": "washington-dc",
+      "date": "2026-05-05",
+      "city": "Washington, DC",
+      "venue": "The Anthem"
+    },
+    {
+      "key": "newark-nj",
+      "date": "2026-05-07",
+      "city": "Newark, NJ",
+      "venue": "Prudential Center"
+    },
+    {
+      "key": "boston-ma",
+      "date": "2026-05-10 — 2026-05-11",
+      "city": "Boston, MA",
+      "venue": "Wang Theatre At The Boch Center"
+    },
+    {
+      "key": "hamilton-on",
+      "date": "2026-05-13",
+      "city": "Hamilton, ON",
+      "venue": "TD Coliseum"
+    },
+    {
+      "key": "mexico-city",
+      "date": "2026-05-19",
+      "city": "Mexico City",
+      "venue": "Pepsi Center WTC"
+    }
+  ],
+  "mikutime-ME2026EU": [
+    {
+      "key": "london",
+      "date": "2026-11-12",
+      "city": "London",
+      "venue": "The O2"
+    },
+    {
+      "key": "brussels",
+      "date": "2026-11-14",
+      "city": "Brussels",
+      "venue": "ING Arena"
+    },
+    {
+      "key": "amsterdam",
+      "date": "2026-11-15",
+      "city": "Amsterdam",
+      "venue": "AFAS Live"
+    },
+    {
+      "key": "berlin",
+      "date": "2026-11-17",
+      "city": "Berlin",
+      "venue": "Velodrom"
+    },
+    {
+      "key": "d-sseldorf",
+      "date": "2026-11-20",
+      "city": "Düsseldorf",
+      "venue": "PSD Bank Dome"
+    },
+    {
+      "key": "paris",
+      "date": "2026-11-22",
+      "city": "Paris",
+      "venue": "Accor Arena"
+    },
+    {
+      "key": "madrid",
+      "date": "2026-11-24 — 11-25",
+      "city": "Madrid",
+      "venue": "Palacio Vistalegre"
+    },
+    {
+      "key": "lisbon",
+      "date": "2026-11-27",
+      "city": "Lisbon",
+      "venue": "Sagres Campo Pequeno"
+    }
+  ],
+  "primary-14": [
+    {
+      "key": "hamamatsu",
+      "date": "2026-07-24 — 07-26",
+      "city": "日本滨松",
+      "venue": "ACT CITY 滨松 大厅",
+      "officialUrl": "https://magicalmirai.com/2026/hamamatsu_ticket.html",
+      "websiteScope": "该城市站官方票务与演出日程"
+    },
+    {
+      "key": "osaka",
+      "date": "2026-08-14 — 08-16",
+      "city": "日本大阪",
+      "venue": "INTEX 大阪 5号馆A",
+      "officialUrl": "https://magicalmirai.com/2026/osaka_ticket.html",
+      "websiteScope": "该城市站官方票务与演出日程"
+    },
+    {
+      "key": "tokyo",
+      "date": "2026-08-28 — 08-30",
+      "city": "日本千叶（东京站）",
+      "venue": "幕张 Messe 9号馆",
+      "officialUrl": "https://magicalmirai.com/2026/tokyo_ticket.html",
+      "websiteScope": "该城市站官方票务与演出日程"
+    }
+  ],
+  "mirai-2025": [
+    {
+      "key": "sendai",
+      "date": "2025-08-01 — 08-03",
+      "city": "日本仙台",
+      "venue": "仙台 Sunplaza Hall",
+      "officialUrl": "https://magicalmirai.com/2025/sendai_ticket.html",
+      "websiteScope": "该城市站官方票务与演出日程"
+    },
+    {
+      "key": "osaka",
+      "date": "2025-08-09 — 08-11",
+      "city": "日本大阪",
+      "venue": "INTEX 大阪 5号馆A",
+      "officialUrl": "https://magicalmirai.com/2025/osaka_ticket.html",
+      "websiteScope": "该城市站官方票务与演出日程"
+    },
+    {
+      "key": "tokyo",
+      "date": "2025-08-29 — 08-31",
+      "city": "日本千叶（东京站）",
+      "venue": "幕张 Messe 9号馆",
+      "officialUrl": "https://magicalmirai.com/2025/tokyo_ticket.html",
+      "websiteScope": "该城市站官方票务与演出日程"
+    }
+  ],
+  "mikutime-MWY2026": [
+    {
+      "key": "shanghai",
+      "date": "2026-10-31 — 11-01",
+      "city": "中国上海",
+      "venue": "上海静安体育中心",
+      "detailSources": [
+        "https://blog.piapro.net/2026/11/ft2611131.html"
+      ]
+    },
+    {
+      "key": "chengdu",
+      "date": "2026-12-26",
+      "city": "中国成都",
+      "venue": "成都金融城演艺中心",
+      "detailSources": [
+        "https://blog.piapro.net/2026/11/ft2611131.html"
+      ],
+      "notes": "官方已确认追加公演；当地时间 19:00 开演。"
+    }
+  ],
+  "blooming-2025": [
+    {
+      "key": "osaka",
+      "date": "2025-04-19",
+      "city": "日本大阪",
+      "venue": "Zepp Namba"
+    },
+    {
+      "key": "nagoya",
+      "date": "2025-04-26",
+      "city": "日本名古屋",
+      "venue": "Zepp Nagoya"
+    },
+    {
+      "key": "fukuoka",
+      "date": "2025-04-29",
+      "city": "日本福冈",
+      "venue": "Zepp Fukuoka"
+    },
+    {
+      "key": "tokyo",
+      "date": "2025-05-02 — 05-03",
+      "city": "日本东京",
+      "venue": "Zepp Haneda"
+    },
+    {
+      "key": "takamatsu",
+      "date": "2025-05-06",
+      "city": "日本高松",
+      "venue": "Rexxam Hall 大厅"
+    },
+    {
+      "key": "sapporo",
+      "date": "2025-05-17",
+      "city": "日本札幌",
+      "venue": "Zepp Sapporo"
+    },
+    {
+      "key": "naha",
+      "date": "2025-05-31",
+      "city": "日本那霸",
+      "venue": "NAHArt 大剧场"
+    }
+  ],
+  "appearance-2013": [
+    {
+      "key": "osaka",
+      "date": "2013-08-03 — 08-07",
+      "city": "日本大阪",
+      "venue": "Grand Front Osaka Knowledge Theater"
+    },
+    {
+      "key": "tokyo",
+      "date": "2013-08-21 — 08-29",
+      "city": "日本东京",
+      "venue": "Bellsalle 秋叶原 B1"
+    }
+  ],
+  "research-end-2018spain": [
+    {
+      "key": "madrid",
+      "date": "2018-03-22 — 03-24",
+      "city": "西班牙马德里",
+      "venue": "Naves Matadero"
+    },
+    {
+      "key": "barcelona",
+      "date": "2018-03-27",
+      "city": "西班牙巴塞罗那",
+      "venue": "L’Auditori"
+    }
+  ],
+  "symphony-2017": [
+    {
+      "key": "osaka",
+      "date": "2017-11-17",
+      "city": "日本大阪",
+      "venue": "大阪 Festival Hall"
+    },
+    {
+      "key": "tokyo",
+      "date": "2017-11-29",
+      "city": "日本东京",
+      "venue": "东京国际论坛 Hall A"
+    }
+  ],
+  "symphony-2018": [
+    {
+      "key": "yokohama",
+      "date": "2018-11-24",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "osaka",
+      "date": "2019-01-25",
+      "city": "日本大阪",
+      "venue": "ORIX Theater"
+    }
+  ],
+  "symphony-2019": [
+    {
+      "key": "yokohama",
+      "date": "2019-10-14",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "osaka",
+      "date": "2019-12-23",
+      "city": "日本大阪",
+      "venue": "大阪 Festival Hall"
+    }
+  ],
+  "symphony-2020": [
+    {
+      "key": "tokyo",
+      "date": "2020-09-21",
+      "city": "日本东京",
+      "venue": "Suntory Hall"
+    },
+    {
+      "key": "yokohama",
+      "date": "2020-10-17",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "osaka",
+      "date": "2020-11-27",
+      "city": "日本大阪",
+      "venue": "大阪 Festival Hall"
+    }
+  ],
+  "symphony-2021": [
+    {
+      "key": "yokohama",
+      "date": "2021-09-20",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "kobe",
+      "date": "2021-11-20",
+      "city": "日本神户",
+      "venue": "神户国际会馆 こくさいホール"
+    }
+  ],
+  "symphony-2022": [
+    {
+      "key": "tokyo",
+      "date": "2022-07-02",
+      "city": "日本东京",
+      "venue": "Suntory Hall"
+    },
+    {
+      "key": "yokohama",
+      "date": "2022-09-25",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "osaka",
+      "date": "2022-11-23",
+      "city": "日本大阪",
+      "venue": "The Symphony Hall"
+    }
+  ],
+  "symphony-2023": [
+    {
+      "key": "tokyo",
+      "date": "2023-08-29",
+      "city": "日本东京",
+      "venue": "Suntory Hall"
+    },
+    {
+      "key": "yokohama",
+      "date": "2023-10-14",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "kobe",
+      "date": "2023-12-23",
+      "city": "日本神户",
+      "venue": "神户国际会馆 こくさいホール"
+    }
+  ],
+  "symphony-2024": [
+    {
+      "key": "tokyo",
+      "date": "2024-04-27",
+      "city": "日本东京",
+      "venue": "Suntory Hall 大厅"
+    },
+    {
+      "key": "yokohama",
+      "date": "2024（具体日期待核实）",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "kobe",
+      "date": "2024（具体日期待核实）",
+      "city": "日本神户",
+      "venue": "神户国际会馆 こくさいホール"
+    }
+  ],
+  "symphony-2025": [
+    {
+      "key": "sapporo",
+      "date": "2025-02-11",
+      "city": "日本札幌",
+      "venue": "札幌 Kitara"
+    },
+    {
+      "key": "tokyo",
+      "date": "2025（具体日期待核实）",
+      "city": "日本东京",
+      "venue": "Suntory Hall"
+    },
+    {
+      "key": "yokohama",
+      "date": "2025（具体日期待核实）",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "kobe",
+      "date": "2025（具体日期待核实）",
+      "city": "日本神户",
+      "venue": "神户国际会馆 こくさいホール"
+    }
+  ],
+  "symphony-2026": [
+    {
+      "key": "sapporo",
+      "date": "2026-06-20",
+      "city": "日本札幌",
+      "venue": "札幌 Kitara"
+    },
+    {
+      "key": "tokyo",
+      "date": "2026-07-05",
+      "city": "日本东京",
+      "venue": "Suntory Hall 大厅"
+    },
+    {
+      "key": "yokohama",
+      "date": "2026-10-10",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    }
+  ],
+  "colorful-2023": [
+    {
+      "key": "tokyo",
+      "date": "2023-01-07 — 01-09",
+      "city": "日本千叶",
+      "venue": "幕张 Messe 7–8号馆"
+    },
+    {
+      "key": "osaka",
+      "date": "2023-02-25 — 02-26",
+      "city": "日本大阪",
+      "venue": "INTEX 大阪 4–5号馆"
+    }
+  ],
+  "colorful-2024": [
+    {
+      "key": "tokyo",
+      "date": "2024-01-26 — 01-28",
+      "city": "日本千叶",
+      "venue": "幕张 Messe 9–10号馆"
+    },
+    {
+      "key": "osaka",
+      "date": "2024-02-17 — 02-18",
+      "city": "日本大阪",
+      "venue": "INTEX 大阪 4–5号馆"
+    }
+  ],
+  "colorful-4": [
+    {
+      "key": "osaka",
+      "date": "2024-12-13 — 12-15",
+      "city": "日本大阪",
+      "venue": "INTEX 大阪 4–5号馆"
+    },
+    {
+      "key": "tokyo",
+      "date": "2025-01-24 — 01-26",
+      "city": "日本千叶",
+      "venue": "幕张 Messe 10号馆"
+    }
+  ],
+  "colorful-5": [
+    {
+      "key": "osaka",
+      "date": "2025-12-12 — 12-14",
+      "city": "日本大阪",
+      "venue": "INTEX 大阪 4–5号馆"
+    },
+    {
+      "key": "tokyo",
+      "date": "2026-01-23 — 01-25",
+      "city": "日本千叶",
+      "venue": "幕张 Messe 2–3号馆"
+    }
+  ],
+  "sekai-symphony-2024": [
+    {
+      "key": "yokohama",
+      "date": "2024-06-08",
+      "city": "日本横滨",
+      "venue": "PACIFICO 横滨 国立大 Hall"
+    },
+    {
+      "key": "osaka",
+      "date": "2024-07-20",
+      "city": "日本大阪",
+      "venue": "大阪国际会议场 Main Hall（Grand Cube Osaka）"
+    }
+  ],
+  "break-2022-153": [
+    {
+      "key": "osaka",
+      "date": "2022-10-15",
+      "city": "日本大阪",
+      "venue": "Namba Hatch",
+      "notes": "此条仅对应已确认的大阪站；其他场次资料在项目档案中继续维护。"
+    }
+  ],
+  "mikutime-GAGA": []
+}

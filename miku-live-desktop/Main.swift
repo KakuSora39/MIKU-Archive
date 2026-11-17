@@ -82,10 +82,31 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(atlasCatalog.tourRecords.length!==73) throw Error('tour index coverage');
           if(!atlasCatalog.events.some(e=>e.id==='mikutime-MEREWIND')) throw Error('Rewind June');
           if(!atlasCatalog.events.find(e=>e.sourceIndex===87).tourRefs.some(t=>t.tour==='MEREWINDPLUS')) throw Error('Rewind plus');
-          if(atlasBaseline.length!==195 || atlasCatalog.events.length!==195) throw Error('reviewed CSV baseline');
+          if(atlasCatalog.sourceCount!==195 || atlasBaseline.length!==263 || atlasCatalog.events.length!==263 || atlasCatalog.projects.length!==27) throw Error('city station baseline');
           if(!atlasCatalog.events.some(e=>e.series==='未来有你'&&e.year===2025)) throw Error('MWY visibility');
           if(atlasCatalog.events.some(e=>['mikutime-KAGA14','mikutime-MK15'].includes(e.id))) throw Error('reviewed scope');
           if(!atlasCatalog.events.every(e=>e.sourceReferences?.[0]?.url.includes('vocadb.net'))) throw Error('source priority');
+          if(atlasCatalog.events.some(e=>e.id==='primary-14'))throw Error('merged project in city cards');
+          const miraiStations=atlasCatalog.events.filter(e=>e.parentId==='primary-14');
+          if(miraiStations.length!==3||new Set(miraiStations.map(e=>e.city)).size!==3)throw Error('Mirai split');
+          if(atlasCatalog.events.filter(e=>e.parentId==='mikutime-MWY2026').length!==2)throw Error('MWY split');
+          if(atlasCatalog.events.filter(e=>e.parentId==='mikutime-ME2026NA').length!==15)throw Error('EXPO split');
+          saveCatalogEdits({'primary-14':{venue:'LEGACY PROJECT VENUE'}});
+          atlasProgress['primary-14']={watched:true,notes:'legacy project mark'};
+          if(atlasCatalog.projects.find(e=>e.id==='primary-14').venue!=='LEGACY PROJECT VENUE')throw Error('legacy project edit');
+          if(miraiStations.some(e=>atlasProgress[e.id]?.watched))throw Error('project mark copied to stations');
+          const projectBackup=createBackup();saveCatalogEdits({});atlasProgress={};mergeBackup(projectBackup);
+          if(atlasCatalog.projects.find(e=>e.id==='primary-14').venue!=='LEGACY PROJECT VENUE'||!atlasProgress['primary-14'].watched)throw Error('legacy project backup');
+          showAtlasEvent('primary-14');
+          if(document.querySelectorAll('#atlas-detail-body [data-related]').length!==3)throw Error('project station links');
+          document.querySelector('#atlas-detail-body [data-related]').click();
+          if(!document.querySelector('#atlas-detail-body [data-related="primary-14"]'))throw Error('station parent link');
+          document.getElementById('atlas-detail').close();
+          saveCatalogEdits({});atlasProgress={};saveAtlas();
+          document.getElementById('atlas-series').value='';atlasView='projects';render();
+          if(document.querySelectorAll('.atlas-card').length!==27)throw Error('project view');
+          atlasView='cards';render();
+          if(!document.querySelector('.side-bottom').textContent.includes('记录每一次登台'))throw Error('atlas sidebar copy');
           const chronology=[{id:'late',name:'late',year:2024,date:'2024-10-01'},{id:'early',name:'early',year:2024,date:'2024-02-01'},{id:'unknown',name:'unknown',year:2024,date:'待核实'}];
           if(chronology.slice().sort((a,b)=>compareAtlasDates(a,b,true)).map(e=>e.id).join()!=='early,late,unknown')throw Error('chronological ascending');
           if(chronology.slice().sort((a,b)=>compareAtlasDates(a,b,false)).map(e=>e.id).join()!=='late,early,unknown')throw Error('chronological descending');
@@ -113,7 +134,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           const marksBefore=JSON.stringify(atlasProgress);mergeBackup({schema:1,records:data});
           if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE'||JSON.stringify(atlasProgress)!==marksBefore) throw Error('legacy backup compatibility');
           editCatalogEvent(null);document.querySelector('#catalog-form [name="name"]').value='自建测试 Live';document.querySelector('#catalog-form [name="series"]').value='测试系列';document.getElementById('catalog-form').requestSubmit();
-          if(atlasCatalog.events.length!==196) throw Error('custom event');document.getElementById('atlas-detail').close();
+          if(atlasCatalog.events.length!==264) throw Error('custom event');document.getElementById('atlas-detail').close();
           saveCatalogEdits({});refreshAtlasOptions();
           const testID=atlasCatalog.events[0].id;
           showAtlasEvent(testID);document.getElementById('detail-watched').checked=true;document.getElementById('detail-save').click();
@@ -141,7 +162,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           return 'PASS: chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
-            if let error = error { print("FAIL: \(error.localizedDescription)"); exit(1) }
+            if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
             if let index=CommandLine.arguments.firstIndex(of:"--capture-preview"),index+1<CommandLine.arguments.count {
                 let path=CommandLine.arguments[index+1]
                 DispatchQueue.main.asyncAfter(deadline:.now()+0.3) {

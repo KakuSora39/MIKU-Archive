@@ -57,7 +57,7 @@ function compareAtlasDates(a,b,oldest=false) {
 }
 function atlasRows() {
   const q=$('atlas-search').value.trim().toLowerCase(),p=$('atlas-personal').value;
-  return atlasCatalog.events.filter(e=>{
+  return (atlasView==='projects'?atlasCatalog.projects:atlasCatalog.events).filter(e=>{
     const mark=atlasProgress[e.id]||{};
     return (!$('atlas-year').value||e.year==$('atlas-year').value)&&(!$('atlas-series').value||e.series===$('atlas-series').value)&&(!$('atlas-kind').value||e.kind===$('atlas-kind').value)&&(!p||(p==='unmarked'?!mark.watched&&!mark.wishlist:mark[p]===true))&&(!q||[e.name,e.city,e.venue,e.series,e.date,e.notes,mark.notes].join(' ').toLowerCase().includes(q));
   }).sort((a,b)=>compareAtlasDates(a,b,$('atlas-sort').value==='old'));
@@ -67,11 +67,11 @@ function renderAtlas() {
   if(!atlasCatalog)return;
   const all=atlasCatalog.events,rows=atlasRows(),names=[...new Set(all.map(e=>e.series))];
   $('crumb').textContent='Live 图鉴'; $('title').innerHTML='每一次登台，<br>都是未来的足迹。';$('snow-panel').hidden=true;
-  $('stats').innerHTML=[['演出图鉴',all.length,'城市站 / 场次与年度项目分别注明'],['覆盖系列',names.length,'专场 · 巡演 · 线上 · 联动'],['已看过',all.filter(e=>atlasProgress[e.id]?.watched).length,'个人观看标记，与 BD 收藏独立'],['想看的 Live',all.filter(e=>atlasProgress[e.id]?.wishlist).length,'留给下一次相遇的清单']].map(([t,n,d])=>`<div class="stat"><label>${t}</label><strong>${n}</strong><small>${d}</small></div>`).join('');
+  $('stats').innerHTML=[['演出图鉴',all.length,'已知城市站独立建档，项目资料另列'],['覆盖系列',names.length,'专场 · 巡演 · 线上 · 联动'],['已看过',all.filter(e=>atlasProgress[e.id]?.watched).length,'个人观看标记，与 BD 收藏独立'],['想看的 Live',all.filter(e=>atlasProgress[e.id]?.wishlist).length,'留给下一次相遇的清单']].map(([t,n,d])=>`<div class="stat"><label>${t}</label><strong>${n}</strong><small>${d}</small></div>`).join('');
   $('nav').innerHTML=`<button class="${!$('atlas-series').value?'active':''}" data-atlas-series=""><span>✳　全部 Live</span><small>${all.length}</small></button>`+names.map(s=>`<button data-atlas-series="${esc(s)}" class="${$('atlas-series').value===s?'active':''}"><span>${s==='SNOW MIKU LIVE'?'❄':'○'}　${esc(s)}</span><small>${all.filter(e=>e.series===s).length}</small></button>`).join('');
   $('nav').querySelectorAll('button').forEach(b=>b.onclick=()=>openAtlasSeries(b.dataset.atlasSeries));
-  $('atlas-result').textContent=`${rows.length} / ${all.length} 条`;
-  $('atlas-scope').textContent='目录更新 '+atlasCatalog.updated+' · 已审阅底稿 '+atlasBaseline.length+' 条 · 资料未齐仍保留 · 按首场日期排序；日期未知列于同年末尾。';
+  $('atlas-result').textContent=`${rows.length} / ${atlasView==='projects'?atlasCatalog.projects.length:all.length} 条`;
+  $('atlas-scope').textContent='目录更新 '+atlasCatalog.updated+' · '+(atlasView==='projects'?'项目档案保留旧标记与备注，不计入城市站进度':'城市站独立建档，巡演按站记录')+' · 按首场日期排序；日期未知列于同年末尾。';
   document.querySelectorAll('[data-atlas-view]').forEach(b=>b.classList.toggle('selected',b.dataset.atlasView===atlasView));
   if(!rows.length){$('atlas-content').innerHTML='<div class="empty">没有匹配的演出。调整筛选或搜索其他城市、场馆。</div>';return}
   if(atlasView==='series') {
@@ -94,16 +94,17 @@ function renderAtlas() {
 function hue(text){return [...text].reduce((n,c)=>n+c.charCodeAt(0),0)%110+115}
 function safeSource(url,label){try{const u=new URL(url);if(!['https:','http:'].includes(u.protocol))return '';return `<a href="${esc(u.href)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`}catch{return ''}}
 function showAtlasEvent(id) {
-  const e=atlasCatalog.events.find(e=>e.id===id);if(!e)return;
+  const e=[...atlasCatalog.events,...atlasCatalog.projects].find(e=>e.id===id);if(!e)return;
   const mark=atlasProgress[id]||{},linked=e.collectionIds.map(id=>data.find(r=>r.id===id)).filter(Boolean);
-  $('atlas-detail-body').innerHTML=`<div class="eyebrow">LIVE ENCYCLOPEDIA / ${esc(e.year)}</div><h2 id="detail-title">${esc(e.name)}</h2><div class="atlas-badges"><span class="badge">${esc(e.series)}</span><span class="badge unknown">${esc(e.verification)}</span></div><dl class="atlas-facts"><dt>举办日期</dt><dd>${esc(e.date)}</dd><dt>城市 / 地区</dt><dd>${esc(e.city)}</dd><dt>场馆</dt><dd>${esc(e.venue)}</dd><dt>演出形式</dt><dd>${esc(e.kind)}</dd><dt>收录层级</dt><dd>${esc(e.level||'年度 / 项目')}${e.sourceIndex?' · 原表 #'+e.sourceIndex:''}${e.vocaIndex?' · Vocawiki #'+e.vocaIndex:''}</dd><dt>官网</dt><dd>${renderOfficialLinks(e)}</dd><dt>官方资料 / 公告</dt><dd>${renderOfficialEvidence(e)}</dd><dt>检索来源</dt><dd>${renderResearchLinks(e)}</dd></dl>${eventEvidence(e)}${renderEventSchedule(e)}${e.notes?`<p class="muted">${esc(e.notes)}</p>`:''}<button id="detail-edit-event">编辑演出资料</button><h3>我的图鉴记录</h3><p class="muted">观看标记不代表已到场；参展与票根功能留待后续扩展。</p><div class="atlas-marks"><label><input type="checkbox" id="detail-watched" ${mark.watched?'checked':''}> 已看过</label><label><input type="checkbox" id="detail-wishlist" ${mark.wishlist?'checked':''}> 想看</label></div><label class="atlas-note-label">个人备注<textarea id="detail-notes" placeholder="记下你对这场 Live 的印象…">${esc(mark.notes||'')}</textarea></label><button id="detail-save" class="primary">保存图鉴标记</button><h3>BD / 正式影像</h3><p class="muted">以下是关联年度或项目的影像档案，不代表该城市站、该场次独立发行 BD。演出是否收录与是否发行影像分别维护。</p>${linked.length?linked.map(r=>`<div class="atlas-linked"><strong>${esc(r.name)}</strong><p>BD：${esc(r.bd)} · ${esc(r.release)} · ${esc(r.collected)}</p><small>${esc(r.version)}</small><br><button class="edit" data-record="${esc(r.id)}">编辑影像档案 ↗</button></div>`).join(''):'<p class="muted">待核实：尚未建立关联影像档案。</p>'}`;
+  $('atlas-detail-body').innerHTML=`<div class="eyebrow">LIVE ENCYCLOPEDIA / ${esc(e.year)}</div><h2 id="detail-title">${esc(e.name)}</h2><div class="atlas-badges"><span class="badge">${esc(e.series)}</span><span class="badge unknown">${esc(e.verification)}</span></div><dl class="atlas-facts"><dt>举办日期</dt><dd>${esc(e.date)}</dd><dt>城市 / 地区</dt><dd>${esc(e.city)}</dd><dt>场馆</dt><dd>${esc(e.venue)}</dd><dt>演出形式</dt><dd>${esc(e.kind)}</dd><dt>收录层级</dt><dd>${esc(e.level||'年度 / 项目')}${e.sourceIndex?' · 原表 #'+e.sourceIndex:''}${e.vocaIndex?' · Vocawiki #'+e.vocaIndex:''}</dd><dt>官网</dt><dd>${renderOfficialLinks(e)}</dd><dt>官方资料 / 公告</dt><dd>${renderOfficialEvidence(e)}</dd><dt>检索来源</dt><dd>${renderResearchLinks(e)}</dd></dl>${renderEventRelations(e)}${eventEvidence(e)}${renderEventSchedule(e)}${e.notes?`<p class="muted">${esc(e.notes)}</p>`:''}<button id="detail-edit-event">编辑演出资料</button><h3>我的图鉴记录</h3><p class="muted">观看标记不代表已到场；参展与票根功能留待后续扩展。</p><div class="atlas-marks"><label><input type="checkbox" id="detail-watched" ${mark.watched?'checked':''}> 已看过</label><label><input type="checkbox" id="detail-wishlist" ${mark.wishlist?'checked':''}> 想看</label></div><label class="atlas-note-label">个人备注<textarea id="detail-notes" placeholder="记下你对这场 Live 的印象…">${esc(mark.notes||'')}</textarea></label><button id="detail-save" class="primary">保存图鉴标记</button><h3>BD / 正式影像</h3><p class="muted">以下是关联年度或项目的影像档案，不代表该城市站、该场次独立发行 BD。演出是否收录与是否发行影像分别维护。</p>${linked.length?linked.map(r=>`<div class="atlas-linked"><strong>${esc(r.name)}</strong><p>BD：${esc(r.bd)} · ${esc(r.release)} · ${esc(r.collected)}</p><small>${esc(r.version)}</small><br><button class="edit" data-record="${esc(r.id)}">编辑影像档案 ↗</button></div>`).join(''):'<p class="muted">待核实：尚未建立关联影像档案。</p>'}`;
   $('detail-edit-event').onclick=()=>editCatalogEvent(id);
   $('detail-save').onclick=()=>{atlasProgress[id]={watched:$('detail-watched').checked,wishlist:$('detail-wishlist').checked,notes:$('detail-notes').value};saveAtlas();render();$('atlas-detail').close()};
+  $('atlas-detail-body').querySelectorAll('[data-related]').forEach(button=>button.onclick=()=>{$('atlas-detail').close();showAtlasEvent(button.dataset.related)});
   $('atlas-detail-body').querySelectorAll('[data-record]').forEach(b=>b.onclick=()=>{$('atlas-detail').close();setMode(false);edit(b.dataset.record)});
   $('atlas-detail').showModal();
 }
 function showAtlasSources() {
-  $('atlas-detail-body').innerHTML=`<h2 id="detail-title">资料来源与收录范围</h2><p>${esc(atlasCatalog.coverage)}</p><p>第三方检索顺序：VocaDB → Vocaloid Wiki → 萌娘百科 → 其他第三方。检索入口与已匹配条目分开标记；没有读取成功的条目不声称已验证。官网和主办方资料独立列出，系列入口也明确注明。当前以你审阅的 CSV 为目录底稿，资料不全的记录继续展示，不把缺少官方资料作为隐藏条件。巡演、城市站及边界活动均注明类型。官网链接是参考入口，不代表所有字段已完成官方核实。演出资料可以本机编辑或新增，并随完整备份导入导出。</p><ul>${atlasCatalog.sources.map(s=>`<li>${safeSource(s.url,s.label)}</li>`).join('')}</ul><p>事实索引整理自萌娘百科、Vocawiki、MikuTime / talisein 的公开演出记录；本项目仅使用名称、日期、城市、场馆等事实并标注来源，不收录百科说明正文或图片。图鉴卡面为程序生成的文字封面。</p><p>已看、想看、演出资料修订及新增记录保存在本机，备份同时包含这些内容与原有 BD 记录。完整 Live 收藏偏好继续用于影像模块。</p>`;$('atlas-detail').showModal();
+  $('atlas-detail-body').innerHTML=`<h2 id="detail-title">资料来源与收录范围</h2><p>${esc(atlasCatalog.coverage)}</p><p>第三方检索顺序：VocaDB → Vocaloid Wiki → 萌娘百科 → 其他第三方。检索入口与已匹配条目分开标记；没有读取成功的条目不声称已验证。官网和主办方资料独立列出，系列入口也明确注明。当前以审阅的 CSV 为目录底稿；已知城市站独立建档，年度 / 巡演资料与尚无站点清单的线索保留在“项目资料”。同站连续日期合并维护，不将项目和城市站重复计数。官网链接是参考入口，不代表所有字段已完成官方核实。演出资料可以本机编辑或新增，并随完整备份导入导出。</p><ul>${atlasCatalog.sources.map(s=>`<li>${safeSource(s.url,s.label)}</li>`).join('')}</ul><p>事实索引整理自萌娘百科、Vocawiki、MikuTime / talisein 的公开演出记录；本项目仅使用名称、日期、城市、场馆等事实并标注来源，不收录百科说明正文或图片。图鉴卡面为程序生成的文字封面。</p><p>已看、想看、演出资料修订及新增记录保存在本机，备份同时包含这些内容与原有 BD 记录。完整 Live 收藏偏好继续用于影像模块。</p>`;$('atlas-detail').showModal();
 }
 
 // Keep tour dates alongside city dates rather than silently replacing them.
@@ -143,4 +144,14 @@ function renderOfficialEvidence(event) {
 function renderEventSchedule(event) {
   if(!event.schedule?.length)return '';
   return '<h3>逐站日程</h3><div class="atlas-schedule"><table><thead><tr><th>日期</th><th>城市</th><th>场馆</th></tr></thead><tbody>'+event.schedule.map(stop=>`<tr><td>${esc(stop.date)}</td><td>${esc(stop.city)}</td><td>${esc(stop.venue)}</td></tr>`).join('')+'</tbody></table></div>';
+}
+
+function renderEventRelations(event) {
+  if(event.parentId) {
+    const project=atlasCatalog.projects.find(p=>p.id===event.parentId);
+    return project?`<section class="atlas-evidence"><h3>所属项目</h3><button data-related="${esc(project.id)}">${esc(project.name)} ↗</button><p class="muted">旧项目的观看标记与备注保留在项目档案，各城市站独立标记。</p></section>`:'';
+  }
+  if(!event.stationIds)return '';
+  const stations=event.stationIds.map(id=>atlasCatalog.events.find(e=>e.id===id)).filter(Boolean).sort((a,b)=>compareAtlasDates(a,b,true));
+  return '<section class="atlas-evidence"><h3>独立城市站</h3>'+ (stations.length?stations.map(stop=>`<p><button data-related="${esc(stop.id)}">${esc(stop.city)} · ${esc(stop.date)} ↗</button></p>`).join(''):'<p>逐站清单待核实；暂未创建推测站点。</p>')+'<p class="muted">此页保留旧项目资料与个人记录，不计入城市站进度。</p></section>';
 }

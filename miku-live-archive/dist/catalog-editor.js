@@ -1,6 +1,6 @@
 // Personal metadata overrides survive catalog updates and are included in backups.
 const atlasEditsKey = 'miku-atlas-edits-v1';
-let atlasEdits = {}, atlasBaseline = [], catalogEditing = null;
+let atlasEdits = {}, atlasBaseline = [], atlasProjectBaseline = [], catalogEditing = null;
 const catalogFields = [
   ['name','演出名称'], ['year','年份'], ['series','系列'], ['kind','演出类型'],
   ['date','举办日期 / 日期范围'], ['city','城市 / 地区'], ['venue','场馆'],
@@ -38,18 +38,20 @@ function saveCatalogEdits(next) {
   atlasEdits=normalized;applyCatalogEdits();
 }
 function applyCatalogEdits() {
-  const known=new Set(atlasBaseline.map(e=>e.id));
+  const known=new Set([...atlasBaseline,...atlasProjectBaseline].map(e=>e.id));
+  atlasCatalog.projects=atlasProjectBaseline.map(base=>({...base,...(atlasEdits[base.id]||{}),id:base.id}));
   atlasCatalog.events=atlasBaseline.map(base=>({...base,...(atlasEdits[base.id]||{}),id:base.id}));
   for(const [id,patch] of Object.entries(atlasEdits)) if(patch._custom&&!known.has(id)) {
     atlasCatalog.events.push({id,date:'待补充',city:'待补充',venue:'待补充',kind:'专场 / 巡演',level:'自建演出',status:'本机新增',verification:'待核实',notes:'',officialUrl:'',researchSource:'',collectionIds:[],tourRefs:[],sources:[],...patch});
   }
-  for(const event of atlasCatalog.events) {
+  for(const event of [...atlasCatalog.events,...atlasCatalog.projects]) {
     if(atlasEdits[event.id])event.status=atlasEdits[event.id]._custom?'本机新增':'本机修订';
     event.source=event.officialUrl||event.researchSource||event.source||'';
   }
 }
 function initCatalogEditing() {
   atlasBaseline=JSON.parse(JSON.stringify(atlasCatalog.events));
+  atlasProjectBaseline=JSON.parse(JSON.stringify(atlasCatalog.projects||[]));
   try {atlasEdits=normalizeCatalogEdits(JSON.parse(localStorage.getItem(atlasEditsKey)||'{}'));}
   catch {atlasEdits={};$('save').textContent='图鉴修订无法读取，请检查或导入备份';}
   applyCatalogEdits();
@@ -66,18 +68,18 @@ function initCatalogEditing() {
     } catch(error) {$('catalog-error').textContent=error.message;}
   };
   $('catalog-reset').onclick=()=>{
-    const id=catalogEditing;if(!id||!confirm(atlasEdits[id]?._custom?'删除这条本机新增的演出？':'恢复该演出的 CSV 原始资料？个人观看标记与备注会保留。'))return;
+    const id=catalogEditing;if(!id||!confirm(atlasEdits[id]?._custom?'删除这条本机新增的演出？':'恢复该条目的内置资料？个人观看标记与备注会保留。'))return;
     try {const next={...atlasEdits};delete next[id];saveCatalogEdits(next);refreshAtlasOptions();render();$('catalog-editor').close();}
     catch(error){$('catalog-error').textContent=error.message;}
   };
 }
 function editCatalogEvent(id) {
   catalogEditing=id;
-  const event=atlasCatalog.events.find(e=>e.id===id)||{year:new Date().getFullYear(),series:$('atlas-series').value||'其他专场',kind:'专场 / 巡演',verification:'待核实',date:'待补充',city:'待补充',venue:'待补充',level:'自建演出'};
+  const event=[...atlasCatalog.events,...atlasCatalog.projects].find(e=>e.id===id)||{year:new Date().getFullYear(),series:$('atlas-series').value||'其他专场',kind:'专场 / 巡演',verification:'待核实',date:'待补充',city:'待补充',venue:'待补充',level:'自建演出'};
   $('atlas-detail').close();$('catalog-error').textContent='';
   $('catalog-editor-title').textContent=id?'编辑演出资料':'新增演出';
   $('catalog-fields').innerHTML=catalogFields.map(([field,label])=>`<label>${label}${['notes','verification'].includes(field)?`<textarea name="${field}">${esc(event[field]||'')}</textarea>`:`<input name="${field}" value="${esc(event[field]??'')}" ${field==='year'?'type="number" min="2000" max="2100"':field.endsWith('Url')||field==='researchSource'?'type="url"':''} ${['name','year','series'].includes(field)?'required':''}>`}</label>`).join('');
   $('catalog-reset').hidden=!id||!atlasEdits[id];
-  $('catalog-reset').textContent=atlasEdits[id]?._custom?'删除本机新增':'恢复 CSV 资料';
+  $('catalog-reset').textContent=atlasEdits[id]?._custom?'删除本机新增':'恢复内置资料';
   $('catalog-editor').showModal();
 }

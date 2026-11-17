@@ -48,7 +48,7 @@ for event in es+projects:
 print('PASS: official references for events and projects, VocaDB/Wiki/Moegirl source priority, explicit lookup labels')
 
 byid={e['id']:e for e in es+projects}
-assert byid['primary-26']['city']=='日本札幌'
+assert byid['primary-26']['city']=='日本 札幌'
 assert byid['primary-26']['venue']=='Zepp Sapporo'
 assert len(byid['mikutime-ME2026NA']['schedule'])==15
 assert byid['moegirl-stage-051']['venue']=='Axiata Arena(Bukit Jalil)'
@@ -71,3 +71,23 @@ assert '从 2009 年的舞台足迹，到下一次相遇。' in html
 assert '记录每一次登台' in html
 assert '只收藏完整 Live' not in html and '不单独收集单曲字幕封装' not in html
 print('PASS: independent cities, cross-year dates, unknown tour preservation, atlas copy')
+
+for event in es:
+    assert event['name'].endswith(' · '+event['city'])
+    assert event['aliases'] and event['nameStatus']
+    if event['nameStatus']!='待核实':
+        assert event['officialName'] and event['officialNameSource']
+    if event['locationMode']=='online':
+        assert event['country']=='' and event['city']=='线上'
+    else:
+        assert event['country'] and event['cityName']
+assert byid['primary-14--hamamatsu']['name']=='初音ミク「マジカルミライ 2026」 · 日本 滨松'
+assert byid['mikutime-ME2026NA--chicago-il']['name']=='MIKU EXPO 2026 North America · 美国 芝加哥'
+assert byid['moegirl-stage-085']['officialName']=='初音ミク「マジカルミライ」10th Anniversary'
+assert byid['moegirl-stage-088']['officialName']==byid['moegirl-stage-085']['officialName']
+assert '2018-2019' in byid['symphony-2018--osaka']['officialName']
+assert 'Melodies on the Keys' in byid['symphony-2026--yokohama']['officialName']
+assert byid['moegirl-stage-007']['nameStatus']=='待核实' and not byid['moegirl-stage-007']['officialName']
+assert byid['moegirl-stage-009']['sessionLabel']!=byid['moegirl-stage-010']['sessionLabel']
+assert ' · ' not in byid['primary-14']['name']
+print('PASS: official titles, country/city suffixes, online labels, official editions and explicit unresolved title')

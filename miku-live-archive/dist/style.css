@@ -661,3 +661,5 @@ input[type=checkbox]{appearance:auto;-webkit-appearance:checkbox;width:17px;heig
 .atlas-schedule th,.atlas-schedule td { padding:10px; text-align:left; vertical-align:top; }
 
 .atlas-card-body > p { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; overflow:hidden; }
+
+.atlas-location { white-space:nowrap; font:inherit; }

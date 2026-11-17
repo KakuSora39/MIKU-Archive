@@ -1,0 +1,1549 @@
+{
+  "format": "官网正式名称 · 国家/地区 城市；线上项目用“线上”；项目资料不拼接多地后缀。",
+  "titles": {
+    "research-end-2012": {
+      "title": "Vocaloid Opera THE END",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "status": "官方资料已核对"
+    },
+    "research-end-2013paris": {
+      "title": "Vocaloid Opera THE END",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "status": "官方资料已核对"
+    },
+    "research-end-2013tokyo": {
+      "title": "Vocaloid Opera THE END",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-018": {
+      "title": "初音ミク「マジカルミライ2013」",
+      "source": "https://magicalmirai.com/2013/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-019": {
+      "title": "HATSUNE MIKU EXPO 2014 in Indonesia",
+      "source": "https://mikuexpo.com/indonesia_top",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-022": {
+      "title": "HATSUNE MIKU EXPO 2014 in LOS ANGELES",
+      "source": "https://mikuexpo.com/la",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-023": {
+      "title": "HATSUNE MIKU EXPO 2014 in NEW YORK",
+      "source": "https://mikuexpo.com/ny",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-020": {
+      "title": "初音ミク「マジカルミライ 2014」",
+      "source": "https://magicalmirai.com/2014/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-021": {
+      "title": "初音ミク「マジカルミライ 2014」",
+      "source": "https://magicalmirai.com/2014/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-025": {
+      "title": "HATSUNE MIKU EXPO 2015 in SHANGHAI",
+      "source": "https://mikuexpo.com/shanghai",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-024": {
+      "title": "SNOW MIKU LIVE! 2015",
+      "source": "https://snowmiku.com/2015/live_ticket.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-026": {
+      "title": "初音ミク「マジカルミライ 2015」",
+      "source": "https://blog.piapro.net/2015/09/c1509111-1.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-027": {
+      "title": "HATSUNE MIKU EXPO 2016 Japan Tour",
+      "source": "https://mikuexpo.com/jp2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-028": {
+      "title": "HATSUNE MIKU EXPO 2016 Japan Tour",
+      "source": "https://mikuexpo.com/jp2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-029": {
+      "title": "HATSUNE MIKU EXPO 2016 Japan Tour",
+      "source": "https://mikuexpo.com/jp2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-030": {
+      "title": "HATSUNE MIKU EXPO 2016 Japan Tour",
+      "source": "https://mikuexpo.com/jp2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-031": {
+      "title": "HATSUNE MIKU EXPO 2016 Japan Tour",
+      "source": "https://mikuexpo.com/jp2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-032": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-033": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-034": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-035": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-036": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-037": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-038": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-039": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-040": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-041": {
+      "title": "HATSUNE MIKU EXPO 2016 NORTH AMERICA",
+      "source": "https://mikuexpo.com/na2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-042": {
+      "title": "HATSUNE MIKU EXPO 2016 IN TAIWAN",
+      "source": "https://mikuexpo.com/tw2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-045": {
+      "title": "HATSUNE MIKU EXPO 2016 CHINA TOUR",
+      "source": "https://mikuexpo.com/cn2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-046": {
+      "title": "HATSUNE MIKU EXPO 2016 CHINA TOUR",
+      "source": "https://mikuexpo.com/cn2016",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-043": {
+      "title": "初音ミクシンフォニー",
+      "source": "https://wmg.jp/hatsune-miku-symphony/news/70593",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-044": {
+      "title": "初音ミク「マジカルミライ 2016」",
+      "source": "https://magicalmirai.com/2016/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-051": {
+      "title": "HATSUNE MIKU EXPO 2017 IN MALAYSIA",
+      "source": "https://mikuexpo.com/may2017",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-049": {
+      "title": "初音ミク「マジカルミライ 2017」",
+      "source": "https://magicalmirai.com/2017/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-058": {
+      "title": "HATSUNE MIKU EXPO 2018 EUROPE",
+      "source": "https://mikuexpo.com/europe2018",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-059": {
+      "title": "HATSUNE MIKU EXPO 2018 EUROPE",
+      "source": "https://mikuexpo.com/europe2018",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-060": {
+      "title": "HATSUNE MIKU EXPO 2018 EUROPE",
+      "source": "https://mikuexpo.com/europe2018",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-052": {
+      "title": "SNOW MIKU LIVE! 2018",
+      "source": "http://snowmiku.com/2018/live_ticket.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-053": {
+      "title": "初音ミク「マジカルミライ 2018」",
+      "source": "https://magicalmirai.com/2018/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-054": {
+      "title": "初音ミク「マジカルミライ 2018」",
+      "source": "https://magicalmirai.com/2018/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-062": {
+      "title": "HATSUNE MIKU EXPO 2019 Taiwan & Hong Kong",
+      "source": "https://mikuexpo.com/twhk2019",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-064": {
+      "title": "HATSUNE MIKU EXPO 2019 Taiwan & Hong Kong",
+      "source": "https://mikuexpo.com/twhk2019",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-061": {
+      "title": "SNOW MIKU LIVE! 2019",
+      "source": "https://snowmiku.com/2019/live_zepp.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-065": {
+      "title": "初音ミク「マジカルミライ 2019」",
+      "source": "https://magicalmirai.com/2019/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-066": {
+      "title": "初音ミク「マジカルミライ 2019」",
+      "source": "https://magicalmirai.com/2019/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-072": {
+      "title": "HATSUNE MIKU EXPO 2020 EUROPE",
+      "source": "https://mikuexpo.com/europe2020",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-073": {
+      "title": "HATSUNE MIKU EXPO 2020 EUROPE",
+      "source": "https://mikuexpo.com/europe2020",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-074": {
+      "title": "HATSUNE MIKU EXPO 2020 EUROPE",
+      "source": "https://mikuexpo.com/europe2020",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-075": {
+      "title": "HATSUNE MIKU EXPO 2020 EUROPE",
+      "source": "https://mikuexpo.com/europe2020",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-076": {
+      "title": "HATSUNE MIKU EXPO 2020 EUROPE",
+      "source": "https://mikuexpo.com/europe2020",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-078": {
+      "title": "初音ミク「マジカルミライ 2020」",
+      "source": "https://magicalmirai.com/2020/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-079": {
+      "title": "初音ミク「マジカルミライ 2020」",
+      "source": "https://magicalmirai.com/2020/",
+      "status": "官方资料已核对"
+    },
+    "break-2021-151": {
+      "title": "MIKU BREAK ver.0.9",
+      "source": "https://blog.piapro.net/2022/03/im2203161.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-081": {
+      "title": "HATSUNE MIKU EXPO 2021 Online",
+      "source": "https://mikuexpo.com/online2021/",
+      "status": "官方资料已核对"
+    },
+    "sekai-symphony-2021": {
+      "title": "セカイシンフォニー2021",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2021/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-082": {
+      "title": "初音ミク「マジカルミライ 2021」",
+      "source": "https://magicalmirai.com/2021/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-083": {
+      "title": "初音ミク「マジカルミライ 2021」",
+      "source": "https://magicalmirai.com/2021/",
+      "status": "官方资料已核对"
+    },
+    "colorful-2022": {
+      "title": "プロジェクトセカイ COLORFUL LIVE 1st - Link -",
+      "source": "https://pjsekai.sega.jp/colorfullive/1st-link/index.html",
+      "status": "官方资料已核对"
+    },
+    "break-2022-152": {
+      "title": "MIKU BREAK ver.1.0",
+      "source": "https://thinkandsense.com/works/miku-break-1/",
+      "status": "官方资料已核对"
+    },
+    "mikutime-MEREWIND": {
+      "title": "HATSUNE MIKU EXPO Rewind",
+      "source": "https://mikuexpo.com/rewind2022/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-087": {
+      "title": "HATSUNE MIKU EXPO Rewind+",
+      "source": "https://mikuexpo.com/rewind2022/",
+      "status": "官方资料已核对"
+    },
+    "sekai-symphony-2022": {
+      "title": "セカイシンフォニー2022",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2022/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-085": {
+      "title": "初音ミク「マジカルミライ」10th Anniversary",
+      "source": "https://magicalmirai.com/2022/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-086": {
+      "title": "初音ミク「マジカルミライ」10th Anniversary",
+      "source": "https://magicalmirai.com/2022/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-089": {
+      "title": "初音ミク JAPAN TOUR 2023 〜THUNDERBOLT〜",
+      "source": "https://piapro.net/japantour2023/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-090": {
+      "title": "初音ミク JAPAN TOUR 2023 〜THUNDERBOLT〜",
+      "source": "https://piapro.net/japantour2023/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-091": {
+      "title": "初音ミク JAPAN TOUR 2023 〜THUNDERBOLT〜",
+      "source": "https://piapro.net/japantour2023/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-092": {
+      "title": "初音ミク JAPAN TOUR 2023 〜THUNDERBOLT〜",
+      "source": "https://piapro.net/japantour2023/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-093": {
+      "title": "初音ミク JAPAN TOUR 2023 〜THUNDERBOLT〜",
+      "source": "https://piapro.net/japantour2023/",
+      "status": "官方资料已核对"
+    },
+    "break-2023-154": {
+      "title": "MIKU BREAK ver.2.0",
+      "source": "https://abstreem.co.jp/RAB/archives/2718",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-098": {
+      "title": "HATSUNE MIKU EXPO 2023 VR",
+      "source": "https://mikuexpo.com/vr2023/",
+      "status": "官方资料已核对"
+    },
+    "sekai-symphony-2023": {
+      "title": "セカイシンフォニー2023",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2023/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-088": {
+      "title": "初音ミク「マジカルミライ」10th Anniversary",
+      "source": "https://magicalmirai.com/2022/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-096": {
+      "title": "初音ミク「マジカルミライ 2023」",
+      "source": "https://magicalmirai.com/2023/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-097": {
+      "title": "初音ミク「マジカルミライ 2023」",
+      "source": "https://magicalmirai.com/2023/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-100": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-101": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-102": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-103": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-104": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-105": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-106": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-107": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-108": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-109": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-110": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-111": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-112": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-113": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-114": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-115": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-116": {
+      "title": "HATSUNE MIKU EXPO 2024 North America",
+      "source": "https://mikuexpo.com/na2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-123": {
+      "title": "HATSUNE MIKU EXPO 2024 EUROPE",
+      "source": "https://mikuexpo.com/europe2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-124": {
+      "title": "HATSUNE MIKU EXPO 2024 EUROPE",
+      "source": "https://mikuexpo.com/europe2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-125": {
+      "title": "HATSUNE MIKU EXPO 2024 EUROPE",
+      "source": "https://mikuexpo.com/europe2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-126": {
+      "title": "HATSUNE MIKU EXPO 2024 EUROPE",
+      "source": "https://mikuexpo.com/europe2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-127": {
+      "title": "HATSUNE MIKU EXPO 2024 EUROPE",
+      "source": "https://mikuexpo.com/europe2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-128": {
+      "title": "HATSUNE MIKU EXPO 2024 EUROPE",
+      "source": "https://mikuexpo.com/europe2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-129": {
+      "title": "MIKU EXPO 2024 New Zealand & Australia",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-130": {
+      "title": "MIKU EXPO 2024 New Zealand & Australia",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-131": {
+      "title": "MIKU EXPO 2024 New Zealand & Australia",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-132": {
+      "title": "MIKU EXPO 2024 New Zealand & Australia",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-133": {
+      "title": "MIKU EXPO 2024 New Zealand & Australia",
+      "source": "https://mikuexpo.com/nzaus2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-120": {
+      "title": "初音ミク「マジカルミライ 2024」",
+      "source": "https://magicalmirai.com/2024/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-121": {
+      "title": "初音ミク「マジカルミライ 2024」",
+      "source": "https://magicalmirai.com/2024/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-122": {
+      "title": "初音ミク「マジカルミライ 2024」",
+      "source": "https://magicalmirai.com/2024/",
+      "status": "官方资料已核对"
+    },
+    "primary-26": {
+      "title": "SNOW MIKU LIVE! 2027",
+      "source": "https://snowmiku.com/2027/event-live.html",
+      "status": "官方资料已核对"
+    },
+    "symphony-2017": {
+      "title": "初音ミクシンフォニー2017",
+      "source": "https://wmg.jp/hatsune-miku-symphony/news/78157",
+      "status": "官方资料已核对"
+    },
+    "expo-2018-na": {
+      "title": "HATSUNE MIKU EXPO 2018 USA & MEXICO",
+      "source": "https://mikuexpo.com/usamx2018",
+      "status": "官方资料已核对"
+    },
+    "symphony-2018": {
+      "title": "初音ミクシンフォニー2018-2019",
+      "source": "https://wmg.jp/hatsune-miku-symphony/news/81527",
+      "status": "官方资料已核对"
+    },
+    "research-end-2018spain": {
+      "title": "Vocaloid Opera THE END",
+      "source": "https://atak.jp/works/vocaloid-opera-the-end/",
+      "status": "官方资料已核对"
+    },
+    "symphony-2019": {
+      "title": "初音ミクシンフォニー2019",
+      "source": "https://kyodo-osaka.co.jp/search/detail/388",
+      "status": "官方资料已核对"
+    },
+    "symphony-2020": {
+      "title": "初音ミクシンフォニー2020～5th Anniversary～",
+      "source": "https://wmg.jp/hatsune-miku-symphony/news/85519",
+      "status": "官方资料已核对"
+    },
+    "symphony-2021": {
+      "title": "初音ミクシンフォニー2021〜KAITO 15th Anniversary〜",
+      "source": "https://blog.piapro.net/2021/08/oa2108201.html",
+      "status": "官方资料已核对"
+    },
+    "break-2022-153": {
+      "title": "MIKU BREAK ver.1.1",
+      "source": "https://blog.piapro.net/2022/10/im2210131.html",
+      "status": "官方资料已核对"
+    },
+    "symphony-2022": {
+      "title": "初音ミクシンフォニー2022～Hatsune Miku,Kagamine Rin,Kagamine Len 15th Anniversary～",
+      "source": "https://wmg.jp/hatsune-miku-symphony/news/87102",
+      "status": "官方资料已核对"
+    },
+    "colorful-2023": {
+      "title": "プロジェクトセカイ COLORFUL LIVE 2nd - Will -",
+      "source": "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html",
+      "status": "官方资料已核对"
+    },
+    "symphony-2023": {
+      "title": "初音ミクシンフォニー2023",
+      "source": "https://www.suntory.co.jp/suntoryhall/archive/det.html?data_id=22025",
+      "status": "官方资料已核对"
+    },
+    "colorful-2024": {
+      "title": "プロジェクトセカイ COLORFUL LIVE 3rd - Evolve -",
+      "source": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html",
+      "status": "官方资料已核对"
+    },
+    "colorful-4": {
+      "title": "プロジェクトセカイ COLORFUL LIVE 4th - Unison -",
+      "source": "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html",
+      "status": "官方资料已核对"
+    },
+    "sekai-symphony-2024": {
+      "title": "セカイシンフォニー2024",
+      "source": "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
+      "status": "官方资料已核对"
+    },
+    "symphony-2024": {
+      "title": "初音ミクシンフォニー2024",
+      "source": "https://www.suntory.co.jp/suntoryhall/archive/det.html?data_id=22454",
+      "status": "官方资料已核对"
+    },
+    "colorful-5": {
+      "title": "プロジェクトセカイ COLORFUL LIVE 5th - Frontier -",
+      "source": "https://pjsekai.sega.jp/colorfullive/5th-frontier/index.html",
+      "status": "官方资料已核对"
+    },
+    "blooming-2025": {
+      "title": "初音ミク JAPAN LIVE TOUR 2025 ～BLOOMING～",
+      "source": "https://piapro.net/japantour2025/",
+      "status": "官方资料已核对"
+    },
+    "expo-2025": {
+      "title": "MIKU EXPO 2025 ASIA",
+      "source": "https://mikuexpo.com/asia2025/index.html",
+      "status": "官方资料已核对"
+    },
+    "symphony-2025": {
+      "title": "初音ミクシンフォニー2025 10th Anniversary",
+      "source": "https://www.sso.or.jp/concerts/2025/02/2025-10th-anniversary/",
+      "status": "官方资料已核对"
+    },
+    "mirai-2025": {
+      "title": "初音ミク「マジカルミライ 2025」",
+      "source": "https://magicalmirai.com/2025/",
+      "status": "官方资料已核对"
+    },
+    "mikutime-ME2026EU": {
+      "title": "MIKU EXPO 2026 EUROPE",
+      "source": "https://mikuexpo.com/europe2026/",
+      "status": "官方资料已核对"
+    },
+    "mikutime-ME2026NA": {
+      "title": "MIKU EXPO 2026 North America",
+      "source": "https://mikuexpo.com/na2026/index.html",
+      "status": "官方资料已核对"
+    },
+    "symphony-2026": {
+      "title": "初音ミクシンフォニー2026",
+      "source": "https://blog.piapro.net/2026/05/ob2605221.html",
+      "status": "官方资料已核对"
+    },
+    "primary-14": {
+      "title": "初音ミク「マジカルミライ 2026」",
+      "source": "https://magicalmirai.com/2026/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-050": {
+      "title": "未来有你·初音未来2017上海演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/2/id/33.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-055": {
+      "title": "未来有你·初音未来2018中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/252/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-056": {
+      "title": "未来有你·初音未来2018中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/252/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-057": {
+      "title": "未来有你·初音未来2018中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Jp/Index/pageView/catid/33/id/252/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-068": {
+      "title": "未来有你·初音未来2019中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/453/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-069": {
+      "title": "未来有你·初音未来2019中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/453/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-070": {
+      "title": "未来有你·初音未来2019中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/453/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-071": {
+      "title": "未来有你·初音未来2019中国巡回演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/453/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-080": {
+      "title": "未来有你·初音未来2020特别感谢LIVE",
+      "source": "https://blog.piapro.net/2020/10/zh2010211.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-084": {
+      "title": "未来有你·初音未来2021演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/382/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-117": {
+      "title": "未来有你2024演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/671/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-118": {
+      "title": "未来有你2024演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/671/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-119": {
+      "title": "未来有你2024演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/671/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "mwy-2025": {
+      "title": "未来有你2025演唱会",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/931/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "mikutime-MWY2026": {
+      "title": "初音未来·未来有你2026",
+      "source": "https://www.scla.com.cn/Cn/Index/pageView/catid/17/id/4728/ip/16.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-001": {
+      "title": "Animelo Summer Live 2009 - RE:BRIDGE -",
+      "source": "https://anisama.tv/2009/liveinfo/index.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-003": {
+      "title": "ミクの日感謝祭 39's Giving Day",
+      "source": "https://miku.sega.jp/39/mikufes.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-005": {
+      "title": "MIKUNOPOLIS in Los Angeles",
+      "source": "https://miku.sega.jp/39/mikula.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-004": {
+      "title": "Hatsune Miku Live Party 2011 - 39’s Live in Tokyo",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-006": {
+      "title": "Hatsune Miku Live Party 2011 - 39’s Live in Sapporo",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-008": {
+      "title": "HATSUNE MIKU LIVE PARTY in Singapore 2011",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-009": {
+      "title": "初音ミクライブパーティー2012（ミクパ♪）",
+      "source": "https://miku.sega.jp/39/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-010": {
+      "title": "初音ミクライブパーティー2012（ミクパ♪）",
+      "source": "https://miku.sega.jp/39/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-011": {
+      "title": "初音ミクコンサート 最後のミクの日感謝祭",
+      "source": "https://miku.sega.jp/39/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-012": {
+      "title": "初音ミクコンサート 最後のミクの日感謝祭",
+      "source": "https://miku.sega.jp/39/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-014": {
+      "title": "Hatsune Miku - Hong Kong First Concert “Mikupa♪”",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-015": {
+      "title": "Hatsune Miku - Taiwan First Concert “Mikupa♪”",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-016": {
+      "title": "Hatsune Miku Live Party 2013 in Sapporo (Mikupa♪)",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-017": {
+      "title": "Hatsune Miku Live Party 2013 in Kansai (Mikupa♪)",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-013": {
+      "title": "夏の終わりの39祭り",
+      "source": "https://blog.piapro.net/2012/08/project-diva-f-39.html",
+      "status": "官方资料已核对"
+    },
+    "appearance-2013": {
+      "title": "HATSUNE Appearance 夏祭初音鑑",
+      "source": "https://blog.piapro.net/2013/09/post-739.html",
+      "status": "官方资料已核对"
+    },
+    "appearance-2014": {
+      "title": "HATSUNE Appearance「雪祭初音鑑」",
+      "source": "https://snowmiku.com/2014/dl/snowmiku_guidemap.pdf",
+      "status": "官方资料已核对"
+    },
+    "primary-42": {
+      "title": "デコミク LIVE starring 初音ミク『Hello』Produced by DECO*27 / OTOIRO",
+      "source": "https://otoiro.co.jp/live/decomikulive2026",
+      "status": "官方资料已核对"
+    },
+    "primary-41": {
+      "title": "ポケモン feat. 初音ミク VOLTAGE Live!",
+      "source": "https://www.project-voltage.jp/live2026/",
+      "status": "官方资料已核对"
+    },
+    "research-sekai-fes-2025": {
+      "title": "プロジェクトセカイ 5th Anniversary 感謝祭",
+      "source": "https://pjsekai.sega.jp/5thanniversarythanksfestival/index.html",
+      "status": "官方资料已核对"
+    },
+    "research-joypolis-2014": {
+      "title": "SEGA feat. HATSUNE MIKU Project 5th Anniversary Party in JOYPOLIS",
+      "source": "https://info.miku.sega.jp/1151",
+      "status": "官方资料已核对"
+    },
+    "research-coachella-2024": {
+      "title": "Coachella Valley Music & Arts Festival 2024",
+      "source": "https://www.crypton.co.jp/cfm/news/2024/04/10coachella",
+      "status": "官方资料已核对"
+    },
+    "research-bump-2014": {
+      "title": "BUMP OF CHICKEN「WILLPOLIS 2014」FINAL",
+      "source": "https://blog.piapro.net/2014/08/o1408012-1.html",
+      "status": "官方资料已核对"
+    },
+    "research-fireworks-2024": {
+      "title": "Music & Fire Works -Time Capsule-",
+      "source": "https://blog.piapro.net/2024/02/ni24021301.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-067": {
+      "title": "DIVE XR FESTIVAL",
+      "source": "https://blog.piapro.net/2019/09/mon190927.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-063": {
+      "title": "BILIBILI MACRO LINK - VISUAL RELEASE 2019",
+      "source": "https://blog.piapro.net/2019/04/n190424-1.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-095": {
+      "title": "BILIBILI MACRO LINK 2023",
+      "source": "https://www.bilibili.com/video/BV13W4y1Q7GT/",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-099": {
+      "title": "MIKU FES’24（春）～Happy 16th Birthday～",
+      "source": "https://blog.piapro.net/2024/04/d24042601.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-047": {
+      "title": "This is NIPPON プレミアムシアター 初音ミク×鼓童 スペシャルライブ",
+      "source": "https://piapro.net/miku10th/",
+      "status": "官方资料已核对"
+    },
+    "mikutime-KODO2018": {
+      "title": "This is NIPPON プレミアムシアター 初音ミク×鼓童 スペシャルライブ2018",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-094": {
+      "title": "初音ミク×鼓童 スペシャルライブ2023 ～結～",
+      "source": "https://www.kodo.or.jp/kodo_blog/feature/45460",
+      "status": "官方资料已核对"
+    },
+    "primary-40": {
+      "title": "初音ミク LAWSON 50th Anniversary Special LIVE",
+      "source": "https://l-tike.com/lawson50thmiku/",
+      "status": "官方资料已核对"
+    },
+    "galaxy-2020": {
+      "title": "初音ミク GALAXY LIVE 2020",
+      "source": "https://www.crypton.co.jp/cfm/news/2020/09/03galaxylive2020",
+      "status": "官方资料已核对"
+    },
+    "galaxy-2021": {
+      "title": "初音ミク GALAXY LIVE 2021",
+      "source": "https://www.crypton.co.jp/cfm/news/2021/08/31galaxy21",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-002": {
+      "title": "ミクFES（ミクフェス）'09（夏）",
+      "source": "https://blog.piapro.net/2009/09/fes09.html",
+      "status": "官方资料已核对"
+    },
+    "afa-2009": {
+      "title": "ANIME FESTIVAL ASIA（AFA09）",
+      "source": "https://blog.piapro.net/2009/11/pcd-1.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-007": {
+      "title": "MIKUPA 2011 Bangkok",
+      "source": "",
+      "status": "待核实"
+    },
+    "research-ihatov-2012": {
+      "title": "冨田勲新制作「イーハトーヴ」交響曲",
+      "source": "https://www.wagner-society.org/archives/371/",
+      "status": "官方资料已核对"
+    },
+    "research-ihatov-2013-东京": {
+      "title": "Isao Tomita feat. Hatsune Miku \"Unlimited Journey - Ihatov Symphony\"",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "research-ihatov-2013-名古屋": {
+      "title": "Isao Tomita feat. Hatsune Miku \"Unlimited Journey - Ihatov Symphony\"",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "research-ihatov-2013-大阪": {
+      "title": "Isao Tomita feat. Hatsune Miku \"Unlimited Journey - Ihatov Symphony\"",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "research-ihatov-2013-花卷": {
+      "title": "Isao Tomita feat. Hatsune Miku \"Unlimited Journey - Ihatov Symphony\"",
+      "source": "https://piapro.net/intl/en_event.html",
+      "status": "官方资料已核对"
+    },
+    "research-ihatov-2014": {
+      "title": "大阪芸術大学プロムナードコンサート2014",
+      "source": "https://blog.piapro.net/2014/08/o1408191-1.html",
+      "status": "官方资料已核对"
+    },
+    "research-ihatov-2015": {
+      "title": "平成27年度「いわて教育の日」のつどい",
+      "source": "https://blog.piapro.net/2015/12/z1512011-1.html",
+      "status": "官方资料已核对"
+    },
+    "research-coppelius-2016": {
+      "title": "冨田勲 追悼特別公演 冨田勲×初音ミク『ドクター・コッペリウス』",
+      "source": "https://columbia.jp/company/corporate/news_release/2016/pdf/160915.pdf",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-048": {
+      "title": "B.I.G. Carnival“Banana.IP.Galaxy”",
+      "source": "https://blog.piapro.net/2017/04/p1704282-1.html",
+      "status": "官方资料已核对"
+    },
+    "research-tokyo150-2018": {
+      "title": "刻をあそぶ 時空の旅～初音ミク Links Tokyo150～",
+      "source": "https://blog.piapro.net/2018/10/mo1810221-1.html",
+      "status": "官方资料已核对"
+    },
+    "moegirl-stage-077": {
+      "title": "HATSUNE MIKU LIVE - UNTITLED 0 -",
+      "source": "https://blog.piapro.net/2020/04/mo202004031-1.html",
+      "status": "官方资料已核对"
+    },
+    "mikutime-GAGA": {
+      "title": "LADY GAGA’S artRAVE: the ARTPOP ball",
+      "source": "https://www.crypton.co.jp/cfm/news/2014/04/ladygagatour",
+      "status": "官方资料已核对"
+    }
+  },
+  "stationTitles": {
+    "symphony-2026--yokohama": {
+      "title": "初音ミクシンフォニー2026-2027「Melodies on the Keys」",
+      "source": "https://blog.piapro.net/2026/09/ob2609161.html",
+      "status": "官方资料已核对"
+    }
+  },
+  "locations": {
+    "Amsterdam": {
+      "country": "荷兰",
+      "city": "阿姆斯特丹",
+      "mode": "physical"
+    },
+    "Austin": {
+      "country": "美国",
+      "city": "奥斯汀",
+      "mode": "physical"
+    },
+    "Bangkok": {
+      "country": "泰国",
+      "city": "曼谷",
+      "mode": "physical"
+    },
+    "Berlin": {
+      "country": "德国",
+      "city": "柏林",
+      "mode": "physical"
+    },
+    "Boston, MA": {
+      "country": "美国",
+      "city": "波士顿",
+      "mode": "physical"
+    },
+    "Brussels": {
+      "country": "比利时",
+      "city": "布鲁塞尔",
+      "mode": "physical"
+    },
+    "Cedar Park, TX": {
+      "country": "美国",
+      "city": "锡达帕克",
+      "mode": "physical"
+    },
+    "Chicago, IL": {
+      "country": "美国",
+      "city": "芝加哥",
+      "mode": "physical"
+    },
+    "Dallas": {
+      "country": "美国",
+      "city": "达拉斯",
+      "mode": "physical"
+    },
+    "Denver, CO": {
+      "country": "美国",
+      "city": "丹佛",
+      "mode": "physical"
+    },
+    "Duluth, GA": {
+      "country": "美国",
+      "city": "德卢斯",
+      "mode": "physical"
+    },
+    "Düsseldorf": {
+      "country": "德国",
+      "city": "杜塞尔多夫",
+      "mode": "physical"
+    },
+    "Glendale, AZ": {
+      "country": "美国",
+      "city": "格伦代尔",
+      "mode": "physical"
+    },
+    "Grand Prairie, TX": {
+      "country": "美国",
+      "city": "大草原城",
+      "mode": "physical"
+    },
+    "Hamilton, ON": {
+      "country": "加拿大",
+      "city": "汉密尔顿",
+      "mode": "physical"
+    },
+    "Hong Kong": {
+      "country": "中国",
+      "city": "香港",
+      "mode": "physical"
+    },
+    "Jakarta": {
+      "country": "印度尼西亚",
+      "city": "雅加达",
+      "mode": "physical"
+    },
+    "Kuala Lumpur": {
+      "country": "马来西亚",
+      "city": "吉隆坡",
+      "mode": "physical"
+    },
+    "Lisbon": {
+      "country": "葡萄牙",
+      "city": "里斯本",
+      "mode": "physical"
+    },
+    "London": {
+      "country": "英国",
+      "city": "伦敦",
+      "mode": "physical"
+    },
+    "Los Angeles": {
+      "country": "美国",
+      "city": "洛杉矶",
+      "mode": "physical"
+    },
+    "Los Angeles, CA": {
+      "country": "美国",
+      "city": "洛杉矶",
+      "mode": "physical"
+    },
+    "Madrid": {
+      "country": "西班牙",
+      "city": "马德里",
+      "mode": "physical"
+    },
+    "Manila": {
+      "country": "菲律宾",
+      "city": "马尼拉",
+      "mode": "physical"
+    },
+    "Mexico City": {
+      "country": "墨西哥",
+      "city": "墨西哥城",
+      "mode": "physical"
+    },
+    "New York City": {
+      "country": "美国",
+      "city": "纽约",
+      "mode": "physical"
+    },
+    "Newark, NJ": {
+      "country": "美国",
+      "city": "纽瓦克",
+      "mode": "physical"
+    },
+    "Paris": {
+      "country": "法国",
+      "city": "巴黎",
+      "mode": "physical"
+    },
+    "San Jose": {
+      "country": "美国",
+      "city": "圣何塞",
+      "mode": "physical"
+    },
+    "San Jose, CA": {
+      "country": "美国",
+      "city": "圣何塞",
+      "mode": "physical"
+    },
+    "Seattle, WA": {
+      "country": "美国",
+      "city": "西雅图",
+      "mode": "physical"
+    },
+    "Seoul": {
+      "country": "韩国",
+      "city": "首尔",
+      "mode": "physical"
+    },
+    "Singapore": {
+      "country": "新加坡",
+      "city": "新加坡",
+      "mode": "physical"
+    },
+    "Taipei": {
+      "country": "中国",
+      "city": "台北",
+      "mode": "physical"
+    },
+    "Vancouver, BC": {
+      "country": "加拿大",
+      "city": "温哥华",
+      "mode": "physical"
+    },
+    "Washington, D.C.": {
+      "country": "美国",
+      "city": "华盛顿",
+      "mode": "physical"
+    },
+    "Washington, DC": {
+      "country": "美国",
+      "city": "华盛顿",
+      "mode": "physical"
+    },
+    "东京": {
+      "country": "日本",
+      "city": "东京",
+      "mode": "physical"
+    },
+    "中国上海": {
+      "country": "中国",
+      "city": "上海",
+      "mode": "physical"
+    },
+    "中国北京": {
+      "country": "中国",
+      "city": "北京",
+      "mode": "physical"
+    },
+    "中国台北": {
+      "country": "中国",
+      "city": "台北",
+      "mode": "physical"
+    },
+    "中国台湾新北": {
+      "country": "中国",
+      "city": "新北",
+      "mode": "physical"
+    },
+    "中国广州": {
+      "country": "中国",
+      "city": "广州",
+      "mode": "physical"
+    },
+    "中国成都": {
+      "country": "中国",
+      "city": "成都",
+      "mode": "physical"
+    },
+    "中国香港": {
+      "country": "中国",
+      "city": "香港",
+      "mode": "physical"
+    },
+    "加拿大多伦多": {
+      "country": "加拿大",
+      "city": "多伦多",
+      "mode": "physical"
+    },
+    "加拿大温哥华": {
+      "country": "加拿大",
+      "city": "温哥华",
+      "mode": "physical"
+    },
+    "印度尼西亚雅加达": {
+      "country": "印度尼西亚",
+      "city": "雅加达",
+      "mode": "physical"
+    },
+    "墨西哥墨西哥城": {
+      "country": "墨西哥",
+      "city": "墨西哥城",
+      "mode": "physical"
+    },
+    "墨西哥蒙特雷": {
+      "country": "墨西哥",
+      "city": "蒙特雷",
+      "mode": "physical"
+    },
+    "大阪": {
+      "country": "日本",
+      "city": "大阪",
+      "mode": "physical"
+    },
+    "岩手": {
+      "country": "日本",
+      "city": "盛冈",
+      "mode": "physical"
+    },
+    "巴黎": {
+      "country": "法国",
+      "city": "巴黎",
+      "mode": "physical"
+    },
+    "德国杜塞尔多夫": {
+      "country": "德国",
+      "city": "杜塞尔多夫",
+      "mode": "physical"
+    },
+    "德国柏林": {
+      "country": "德国",
+      "city": "柏林",
+      "mode": "physical"
+    },
+    "德国科隆": {
+      "country": "德国",
+      "city": "科隆",
+      "mode": "physical"
+    },
+    "新加坡": {
+      "country": "新加坡",
+      "city": "新加坡",
+      "mode": "physical"
+    },
+    "新西兰奥克兰": {
+      "country": "新西兰",
+      "city": "奥克兰",
+      "mode": "physical"
+    },
+    "日本东京": {
+      "country": "日本",
+      "city": "东京",
+      "mode": "physical"
+    },
+    "日本仙台": {
+      "country": "日本",
+      "city": "仙台",
+      "mode": "physical"
+    },
+    "日本千叶": {
+      "country": "日本",
+      "city": "千叶",
+      "mode": "physical"
+    },
+    "日本千叶县船桥市": {
+      "country": "日本",
+      "city": "船桥",
+      "mode": "physical"
+    },
+    "日本千叶（东京站）": {
+      "country": "日本",
+      "city": "千叶",
+      "mode": "physical"
+    },
+    "日本名古屋": {
+      "country": "日本",
+      "city": "名古屋",
+      "mode": "physical"
+    },
+    "日本和歌山": {
+      "country": "日本",
+      "city": "和歌山",
+      "mode": "physical"
+    },
+    "日本埼玉": {
+      "country": "日本",
+      "city": "埼玉",
+      "mode": "physical"
+    },
+    "日本大阪": {
+      "country": "日本",
+      "city": "大阪",
+      "mode": "physical"
+    },
+    "日本山口": {
+      "country": "日本",
+      "city": "山口",
+      "mode": "physical"
+    },
+    "日本川崎": {
+      "country": "日本",
+      "city": "川崎",
+      "mode": "physical"
+    },
+    "日本札幌": {
+      "country": "日本",
+      "city": "札幌",
+      "mode": "physical"
+    },
+    "日本横滨": {
+      "country": "日本",
+      "city": "横滨",
+      "mode": "physical"
+    },
+    "日本滨松": {
+      "country": "日本",
+      "city": "滨松",
+      "mode": "physical"
+    },
+    "日本神户": {
+      "country": "日本",
+      "city": "神户",
+      "mode": "physical"
+    },
+    "日本福冈": {
+      "country": "日本",
+      "city": "福冈",
+      "mode": "physical"
+    },
+    "日本花卷": {
+      "country": "日本",
+      "city": "花卷",
+      "mode": "physical"
+    },
+    "日本那霸": {
+      "country": "日本",
+      "city": "那霸",
+      "mode": "physical"
+    },
+    "日本高松": {
+      "country": "日本",
+      "city": "高松",
+      "mode": "physical"
+    },
+    "横滨": {
+      "country": "日本",
+      "city": "横滨",
+      "mode": "physical"
+    },
+    "比利时布鲁塞尔": {
+      "country": "比利时",
+      "city": "布鲁塞尔",
+      "mode": "physical"
+    },
+    "法国巴黎": {
+      "country": "法国",
+      "city": "巴黎",
+      "mode": "physical"
+    },
+    "泰国曼谷": {
+      "country": "泰国",
+      "city": "曼谷",
+      "mode": "physical"
+    },
+    "澳大利亚墨尔本": {
+      "country": "澳大利亚",
+      "city": "墨尔本",
+      "mode": "physical"
+    },
+    "澳大利亚布里斯班": {
+      "country": "澳大利亚",
+      "city": "布里斯班",
+      "mode": "physical"
+    },
+    "澳大利亚悉尼": {
+      "country": "澳大利亚",
+      "city": "悉尼",
+      "mode": "physical"
+    },
+    "澳大利亚珀斯": {
+      "country": "澳大利亚",
+      "city": "珀斯",
+      "mode": "physical"
+    },
+    "线上": {
+      "country": "",
+      "city": "线上",
+      "mode": "online"
+    },
+    "线上（VR）": {
+      "country": "",
+      "city": "线上",
+      "mode": "online"
+    },
+    "线上（多地区放送）": {
+      "country": "",
+      "city": "线上",
+      "mode": "online"
+    },
+    "美国丹佛": {
+      "country": "美国",
+      "city": "丹佛",
+      "mode": "physical"
+    },
+    "美国亚特兰大": {
+      "country": "美国",
+      "city": "亚特兰大",
+      "mode": "physical"
+    },
+    "美国休斯敦": {
+      "country": "美国",
+      "city": "休斯敦",
+      "mode": "physical"
+    },
+    "美国加利福尼亚州 Indio": {
+      "country": "美国",
+      "city": "印第奥",
+      "mode": "physical"
+    },
+    "美国华盛顿": {
+      "country": "美国",
+      "city": "华盛顿",
+      "mode": "physical"
+    },
+    "美国圣何塞": {
+      "country": "美国",
+      "city": "圣何塞",
+      "mode": "physical"
+    },
+    "美国奥兰多": {
+      "country": "美国",
+      "city": "奥兰多",
+      "mode": "physical"
+    },
+    "美国奥斯汀": {
+      "country": "美国",
+      "city": "奥斯汀",
+      "mode": "physical"
+    },
+    "美国底特律": {
+      "country": "美国",
+      "city": "底特律",
+      "mode": "physical"
+    },
+    "美国旧金山": {
+      "country": "美国",
+      "city": "旧金山",
+      "mode": "physical"
+    },
+    "美国波士顿": {
+      "country": "美国",
+      "city": "波士顿",
+      "mode": "physical"
+    },
+    "美国波特兰": {
+      "country": "美国",
+      "city": "波特兰",
+      "mode": "physical"
+    },
+    "美国洛杉矶": {
+      "country": "美国",
+      "city": "洛杉矶",
+      "mode": "physical"
+    },
+    "美国纽瓦克": {
+      "country": "美国",
+      "city": "纽瓦克",
+      "mode": "physical"
+    },
+    "美国纽约": {
+      "country": "美国",
+      "city": "纽约",
+      "mode": "physical"
+    },
+    "美国芝加哥": {
+      "country": "美国",
+      "city": "芝加哥",
+      "mode": "physical"
+    },
+    "美国菲尼克斯": {
+      "country": "美国",
+      "city": "菲尼克斯",
+      "mode": "physical"
+    },
+    "美国西雅图": {
+      "country": "美国",
+      "city": "西雅图",
+      "mode": "physical"
+    },
+    "美国达拉斯": {
+      "country": "美国",
+      "city": "达拉斯",
+      "mode": "physical"
+    },
+    "英国伦敦": {
+      "country": "英国",
+      "city": "伦敦",
+      "mode": "physical"
+    },
+    "荷兰阿姆斯特丹": {
+      "country": "荷兰",
+      "city": "阿姆斯特丹",
+      "mode": "physical"
+    },
+    "西班牙巴塞罗那": {
+      "country": "西班牙",
+      "city": "巴塞罗那",
+      "mode": "physical"
+    },
+    "西班牙马德里": {
+      "country": "西班牙",
+      "city": "马德里",
+      "mode": "physical"
+    },
+    "马来西亚吉隆坡": {
+      "country": "马来西亚",
+      "city": "吉隆坡",
+      "mode": "physical"
+    }
+  }
+}

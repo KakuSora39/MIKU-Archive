@@ -2,7 +2,7 @@
 const atlasEditsKey = 'miku-atlas-edits-v1';
 let atlasEdits = {}, atlasBaseline = [], atlasProjectBaseline = [], catalogEditing = null;
 const catalogFields = [
-  ['name','演出名称'], ['year','年份'], ['series','系列'], ['kind','演出类型'],
+  ['name','显示名称（官网名称 · 国家/地区 城市）'], ['year','年份'], ['series','系列'], ['kind','演出类型'],
   ['date','举办日期 / 日期范围'], ['city','城市 / 地区'], ['venue','场馆'],
   ['level','记录层级（城市站 / 巡演 / 年度项目等）'], ['officialUrl','官网 / 主办方链接'],
   ['researchSource','补充检索链接（按来源排序）'], ['verification','核实说明'], ['notes','资料备注']
@@ -37,10 +37,21 @@ function saveCatalogEdits(next) {
   localStorage.setItem(atlasEditsKey,JSON.stringify(normalized));
   atlasEdits=normalized;applyCatalogEdits();
 }
+// Old forms saved the whole display name even when only a venue was edited.
+// Recognize known legacy labels while keeping a deliberately custom title intact.
+function mergeNamedCatalogEdit(base) {
+  const patch=atlasEdits[base.id]||{},event={...base,...patch,id:base.id};
+  if(patch.city&&patch.city===base.originalCity)event.city=base.city;
+  const legacy=patch.name&&(base.aliases||[]).includes(patch.name);
+  if(legacy)event.name=base.name;
+  if(patch.name&&!legacy&&patch.name!==base.name)event.nameStatus='本机命名';
+  else if(patch.city&&base.officialName&&!base.stationIds)event.name=base.officialName+' · '+event.city;
+  return event;
+}
 function applyCatalogEdits() {
   const known=new Set([...atlasBaseline,...atlasProjectBaseline].map(e=>e.id));
-  atlasCatalog.projects=atlasProjectBaseline.map(base=>({...base,...(atlasEdits[base.id]||{}),id:base.id}));
-  atlasCatalog.events=atlasBaseline.map(base=>({...base,...(atlasEdits[base.id]||{}),id:base.id}));
+  atlasCatalog.projects=atlasProjectBaseline.map(mergeNamedCatalogEdit);
+  atlasCatalog.events=atlasBaseline.map(mergeNamedCatalogEdit);
   for(const [id,patch] of Object.entries(atlasEdits)) if(patch._custom&&!known.has(id)) {
     atlasCatalog.events.push({id,date:'待补充',city:'待补充',venue:'待补充',kind:'专场 / 巡演',level:'自建演出',status:'本机新增',verification:'待核实',notes:'',officialUrl:'',researchSource:'',collectionIds:[],tourRefs:[],sources:[],...patch});
   }

@@ -1,13 +1,15 @@
+if('scrollRestoration' in history)history.scrollRestoration='manual';
 // Appearance is applied before CSS loads to avoid a light flash on dark launches.
 const settingsKey='miku-settings-v1', browseKey='miku-browse-v1';
-const defaultSettings={theme:'auto',remember:true,defaultView:'cards',defaultSort:'new'};
+const defaultSettings={theme:'auto',textSize:'standard',remember:true,defaultView:'cards',defaultSort:'new'};
 function normalizeSettings(raw={}) {
-  return {theme:['auto','light','dark'].includes(raw?.theme)?raw.theme:'auto',remember:typeof raw?.remember==='boolean'?raw.remember:true,defaultView:['cards','timeline','series','projects'].includes(raw?.defaultView)?raw.defaultView:'cards',defaultSort:['new','old'].includes(raw?.defaultSort)?raw.defaultSort:'new'};
+  return {textSize:['standard','large'].includes(raw?.textSize)?raw.textSize:'standard',theme:['auto','light','dark'].includes(raw?.theme)?raw.theme:'auto',remember:typeof raw?.remember==='boolean'?raw.remember:true,defaultView:['cards','timeline','series','projects'].includes(raw?.defaultView)?raw.defaultView:'cards',defaultSort:['new','old'].includes(raw?.defaultSort)?raw.defaultSort:'new'};
 }
 function readLocalJSON(key,fallback) {try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}}
 let appSettings=normalizeSettings(readLocalJSON(settingsKey,{})),browseReady=false,browseTimer;
 const systemTheme=window.matchMedia('(prefers-color-scheme: dark)');
 function applyAppearance() {
+  document.documentElement.dataset.textSize=appSettings.textSize;
   document.documentElement.dataset.theme=appSettings.theme==='auto'?(systemTheme.matches?'dark':'light'):appSettings.theme;
   document.documentElement.style.colorScheme=document.documentElement.dataset.theme;
   if(window.webkit?.messageHandlers?.archive)window.webkit.messageHandlers.archive.postMessage({action:'theme',value:appSettings.theme});
@@ -47,6 +49,7 @@ function restoreBrowseState() {
   return saved;
 }
 function syncSettingsControls() {
+  document.getElementById('settings-text-size').value=appSettings.textSize;
   document.getElementById('settings-theme').value=appSettings.theme;
   document.getElementById('settings-remember').checked=appSettings.remember;
   document.getElementById('settings-view').value=appSettings.defaultView;
@@ -54,11 +57,14 @@ function syncSettingsControls() {
 }
 function openSettings() {
   syncSettingsControls();document.getElementById('settings-status').textContent='更改立即生效，设置保存在本机。';
+  refreshBackupStatus();
   const dialog=document.getElementById('settings-dialog');if(!dialog.open)dialog.showModal();
 }
 function initSettings() {
   const $id=id=>document.getElementById(id);
   $id('settings-open').onclick=openSettings;$id('settings-close').onclick=()=>$id('settings-dialog').close();
+  initArchiveActions();
+  $id('settings-text-size').onchange=e=>updateSettings({textSize:e.target.value});
   $id('settings-theme').onchange=e=>updateSettings({theme:e.target.value});
   $id('settings-remember').onchange=e=>updateSettings({remember:e.target.checked});
   $id('settings-view').onchange=e=>updateSettings({defaultView:e.target.value});
@@ -68,12 +74,15 @@ function initSettings() {
   document.querySelectorAll('[data-app-version]').forEach(e=>e.textContent=APP_INFO.version);
   $id('settings-version').textContent=APP_INFO.version+'（构建 '+APP_INFO.build+'）';
   $id('settings-data-date').textContent=atlasCatalog.updated;
-  $id('settings-changes').innerHTML=APP_INFO.changes.map(change=>'<li>'+esc(change)+'</li>').join('');
-  const saved=restoreBrowseState();browseReady=true;
-  requestAnimationFrame(()=>{
+  $id('settings-changes').innerHTML=[{version:APP_INFO.version,date:APP_INFO.releasedAt,changes:APP_INFO.changes},...(APP_INFO.history||[]).filter(release=>release.version!==APP_INFO.version)].map(release=>`<details class="release-note" ${release.version===APP_INFO.version?'open':''}><summary>${esc(release.version)}${release.date?' · '+esc(release.date):''}</summary><ul>${release.changes.map(change=>'<li>'+esc(change)+'</li>').join('')}</ul></details>`).join('');
+  const saved=restoreBrowseState();
+  // WebKit may restore a previous scroll offset after the first layout. Wait for
+  // fonts and two frames so the large type setting has settled before restoring.
+  const fonts=document.fonts?.ready||Promise.resolve();
+  fonts.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{
     if(saved){window.scrollTo(0,Number.isFinite(saved.scrollY)?Math.max(0,saved.scrollY):0);$id('nav').scrollTop=Number.isFinite(saved.navScroll)?Math.max(0,saved.navScroll):0;}
-    rememberBrowseState(true);
-  });
+    browseReady=true;rememberBrowseState(true);
+  })));
   window.addEventListener('scroll',()=>rememberBrowseState(),{passive:true});
   $id('nav').addEventListener('scroll',()=>rememberBrowseState(),{passive:true});
   window.addEventListener('pagehide',()=>rememberBrowseState(true));

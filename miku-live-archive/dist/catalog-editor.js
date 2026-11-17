@@ -35,7 +35,7 @@ function saveCatalogEdits(next) {
   // Write first: a storage error must not be reported as a successful save.
   const normalized=normalizeCatalogEdits(next);
   localStorage.setItem(atlasEditsKey,JSON.stringify(normalized));
-  atlasEdits=normalized;applyCatalogEdits();
+  atlasEdits=normalized;applyCatalogEdits();notifyArchiveChanged();
 }
 // Old forms saved the whole display name even when only a venue was edited.
 // Recognize known legacy labels while keeping a deliberately custom title intact.
@@ -80,7 +80,7 @@ function initCatalogEditing() {
   };
   $('catalog-reset').onclick=()=>{
     const id=catalogEditing;if(!id||!confirm(atlasEdits[id]?._custom?'删除这条本机新增的演出？':'恢复该条目的内置资料？个人观看标记与备注会保留。'))return;
-    try {const next={...atlasEdits};delete next[id];saveCatalogEdits(next);refreshAtlasOptions();render();$('catalog-editor').close();}
+    try {if(atlasEdits[id]?._custom)removeCustomEvent(id);else {const next={...atlasEdits};delete next[id];saveCatalogEdits(next);}refreshAtlasOptions();render();$('catalog-editor').close();}
     catch(error){$('catalog-error').textContent=error.message;}
   };
 }

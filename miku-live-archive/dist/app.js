@@ -27,8 +27,9 @@ function save() {
   try {
     localStorage.setItem(key, JSON.stringify(data));
     $("save").textContent = "● 已保存到本机";
+    notifyArchiveChanged();return true;
   } catch (e) {
-    $("save").textContent = "保存失败，请导出备份";
+    $("save").textContent = "保存失败，请导出备份";return false;
   }
 }
 function options() {
@@ -157,8 +158,7 @@ function renderCollection() {
     .forEach(
       (b) =>
         (b.onchange = () => {
-          data.find((r) => r.id === b.dataset.missing).missing = b.checked;
-          save();
+          changeMissingMark(b.dataset.missing,b.checked);
           render();
         }),
     );
@@ -201,21 +201,14 @@ $("form").onsubmit = (e) => {
   e.preventDefault();
   let r = Object.fromEntries(new FormData(e.target));
   r.year = Number(r.year);
-  if (editing)
-    Object.assign(
-      data.find((x) => x.id === editing),
-      r,
-    );
-  else data.push({ ...r, id: crypto.randomUUID(), missing: false });
-  save();
+  if(!storeCollectionRecord(r,editing))return;
   options();
   render();
   $("editor").close();
 };
 $("delete").onclick = () => {
   if (confirm("删除此条收藏记录？")) {
-    data = data.filter((r) => r.id !== editing);
-    save();
+    if(!removeCollectionRecord(editing))return;
     options();
     render();
     $("editor").close();
@@ -240,52 +233,15 @@ $("snow").onclick = () => {
   $("snow-panel").scrollIntoView({ behavior: "smooth", block: "center" });
 };
 $("export").onclick = () => {
-  let url = URL.createObjectURL(
-    new Blob(
-      [
-        JSON.stringify(
-          createBackup(),
-          null,
-          2,
-        ),
-      ],
-      { type: "application/json" },
-    ),
-  );
-  let a = document.createElement("a");
-  a.href = url;
-  a.download =
-    "miku-archive-" + new Date().toISOString().slice(0, 10) + ".json";
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  const text=JSON.stringify(createBackup(),null,2),url=URL.createObjectURL(new Blob([text],{type:'application/json'}));
+  const a=document.createElement('a');a.href=url;a.download='miku-archive-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+  recordBackupExport(JSON.parse(text),'browser');setTimeout(()=>URL.revokeObjectURL(url),1000);
 };
 $("import").onclick = () => $("file").click();
-$("file").onchange = async (e) => {
-  try {
-    let obj = JSON.parse(await e.target.files[0].text());
-    if (
-      obj.schema !== 1 ||
-      !Array.isArray(obj.records) ||
-      !obj.records.every(
-        (r) =>
-          r.id &&
-          typeof r.name === "string" &&
-          typeof r.series === "string" &&
-          Number.isFinite(Number(r.year)),
-      )
-    )
-      throw Error("格式无效");
-    if (!confirm("将按记录编号合并备份，同编号记录会被备份内容替换。继续？"))
-      return;
-    mergeBackup(obj);
-    options();
-    render();
-    alert("备份已合并");
-  } catch (e) {
-    alert("无法导入：请使用本站导出的 JSON 备份。");
-  } finally {
-    $("file").value = "";
-  }
+$("file").onchange = async e => {
+  try {const file=e.target.files[0];if(file)previewBackup(JSON.parse(await file.text()));}
+  catch(error){alert('无法导入：'+error.message);}
+  finally {$("file").value='';}
 };
 function render() {
   const navTop=$('nav').scrollTop;

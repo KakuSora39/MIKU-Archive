@@ -185,6 +185,57 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(localStorage.getItem(browseKey)!==null)throw Error('disabled browser memory');
           restoreBrowseState();if(atlasView!=='series'||document.getElementById('atlas-sort').value!=='new')throw Error('default browser settings');
           updateSettings({...defaultSettings,theme:'light'});document.getElementById('atlas-series').value='';atlasView='cards';render();
+          const archiveBefore=currentArchiveState();
+          const originalBackupMeta=localStorage.getItem(backupMetaKey);
+          const markID='primary-26';
+          recordBackupExport(createBackup(),'native');const exportedTime=readLocalJSON(backupMetaKey,{}).exportedAt;
+          if(!document.getElementById('backup-state').textContent.includes('一致'))throw Error('clean backup state');
+          updateSettings({textSize:'large'});
+          const largeFont=parseFloat(getComputedStyle(document.querySelector('.atlas-title')).fontSize);
+          if(document.documentElement.dataset.textSize!=='large'||largeFont<16)throw Error('larger type');
+          updateSettings({textSize:'standard'});
+          if(parseFloat(getComputedStyle(document.querySelector('.atlas-title')).fontSize)>=largeFont)throw Error('standard type');
+          if(!document.getElementById('backup-state').textContent.includes('一致'))throw Error('preferences marked backup dirty');
+          showAtlasEvent(markID);document.getElementById('detail-watched').checked=true;document.getElementById('detail-save').click();
+          if(document.getElementById('undo-toast').hidden||!atlasProgress[markID]?.watched)throw Error('mark undo offered');
+          if(!document.getElementById('backup-state').textContent.includes('有数据修改'))throw Error('dirty backup state');
+          document.getElementById('undo-action').click();
+          if(atlasProgress[markID]?.watched||!document.getElementById('backup-state').textContent.includes('一致'))throw Error('mark undo/backup equality');
+          changeAtlasMark(markID,{watched:true,wishlist:false,notes:'new data after export'});
+          recordBackupExport(archiveBefore,'native');
+          if(!document.getElementById('backup-state').textContent.includes('有数据修改'))throw Error('export snapshot used wrong current state');
+          undoLastAction();
+          const customID='custom-undo-test';saveCatalogEdits({...atlasEdits,[customID]:{_custom:true,name:'可撤销的演出',year:2026,series:'测试系列',venue:'测试场馆'}});
+          changeAtlasMark(customID,{watched:true,wishlist:true,notes:'删除后应恢复的备注'});
+          removeCustomEvent(customID);
+          if(atlasCatalog.events.some(e=>e.id===customID)||atlasProgress[customID])throw Error('custom delete');
+          if(!undoLastAction()||!atlasCatalog.events.some(e=>e.id===customID)||atlasProgress[customID]?.notes!=='删除后应恢复的备注')throw Error('custom deletion undo');
+          changeMissingMark(data[0].id,!data[0].missing);pendingUndo.expiresAt=Date.now()-1;
+          if(undoLastAction())throw Error('expired undo');
+          commitArchiveState(archiveBefore);clearUndo();
+          const incoming={schema:1,records:[{...data[0],name:'预览修改'}],atlasProgress:{[markID]:{watched:true,notes:'预览备注'}},atlasEdits:{'custom-preview':{_custom:true,name:'预览新增',year:2026,series:'测试系列'}}};
+          const beforePreview=JSON.stringify(currentArchiveState()),summary=previewBackup(incoming);
+          if(summary.records!==1||summary.conflicts!==1||summary.marks!==1||summary.custom!==1)throw Error('backup preview counts');
+          if(JSON.stringify(currentArchiveState())!==beforePreview)throw Error('preview mutated archive');
+          document.getElementById('backup-preview-cancel').click();
+          if(JSON.stringify(currentArchiveState())!==beforePreview)throw Error('cancelled import mutated archive');
+          previewBackup(incoming);document.getElementById('backup-preview-confirm').click();
+          if(data[0].name!=='预览修改'||!atlasEdits['custom-preview']||!atlasProgress[markID].watched)throw Error('confirmed preview import');
+          const beforeInvalid=JSON.stringify(currentArchiveState());
+          try {mergeBackup({schema:1,records:[{...data[0],name:'不可写入'}],atlasEdits:{'custom-invalid':{_custom:true,name:'错误'}}});throw Error('invalid backup accepted');}catch(error){if(error.message==='invalid backup accepted')throw error;}
+          if(JSON.stringify(currentArchiveState())!==beforeInvalid)throw Error('invalid import partial write');
+          const beforeWriteFailure=JSON.stringify(currentArchiveState()),oldSet=Storage.prototype.setItem;
+          let writeAttempt=0;
+          Storage.prototype.setItem=function(k,v){if(++writeAttempt===2)throw new Error('test storage failure');return oldSet.call(this,k,v);};
+          try {mergeBackup(incoming);throw Error('failed storage accepted');}catch(error){if(error.message==='failed storage accepted')throw error;}finally{Storage.prototype.setItem=oldSet;}
+          if(JSON.stringify(currentArchiveState())!==beforeWriteFailure||JSON.stringify(JSON.parse(localStorage.getItem(key)))!==JSON.stringify(data))throw Error('failed import rollback');
+          const deletedRecord=cloneArchive(data[0]);removeCollectionRecord(deletedRecord.id);
+          if(data.some(row=>row.id===deletedRecord.id)||!undoLastAction()||!data.some(row=>row.id===deletedRecord.id))throw Error('collection delete undo');
+          storeCollectionRecord({...data[0],collected:'待补'},data[0].id);
+          if(!undoLastAction()||data[0].collected!==deletedRecord.collected)throw Error('collection edit undo');
+          commitArchiveState(archiveBefore);clearUndo();refreshAtlasOptions();render();
+          if(document.querySelectorAll('.release-note').length<2||!document.getElementById('settings-changes').textContent.includes('1.4.0'))throw Error('version history');
+          if(originalBackupMeta===null)localStorage.removeItem(backupMetaKey);else localStorage.setItem(backupMetaKey,originalBackupMeta);refreshBackupStatus();
           const editID=atlasCatalog.events[0].id;
           editCatalogEvent(editID);document.querySelector('#catalog-form [name="venue"]').value='TEST VENUE';document.getElementById('catalog-form').requestSubmit();
           if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE') throw Error('event edit');
@@ -220,19 +271,28 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           view='all';render();
           setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
           const previewTheme=\(CommandLine.arguments.contains("--preview-dark") ? "'dark'" : CommandLine.arguments.contains("--preview-auto") ? "'auto'" : "'light'");
-          updateSettings({theme:previewTheme});
+          clearUndo();updateSettings({theme:previewTheme,textSize:\(CommandLine.arguments.contains("--preview-large") ? "'large'" : "'standard'")});
           if(\(CommandLine.arguments.contains("--preview-settings") ? "true" : "false"))openSettings();
-          return 'PASS: settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
+          if(\(CommandLine.arguments.contains("--preview-backup") ? "true" : "false"))previewBackup(createBackup());
+          if(\(CommandLine.arguments.contains("--preview-settings-bottom") ? "true" : "false")){openSettings();document.getElementById('settings-dialog').scrollTop=10000;}
+          if(\(CommandLine.arguments.contains("--preview-undo") ? "true" : "false"))changeAtlasMark('primary-26',{watched:true,notes:'已更新标记'});
+          return 'PASS: undo, backup preview/state/rollback, type size, release history; settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
             if CommandLine.arguments.contains("--test-restart") && self.settingsReloadPhase == 0 {
                 self.settingsReloadPhase = 1
                 self.web.evaluateJavaScript("""
-                updateSettings({theme:'dark',remember:true});atlasView='timeline';document.getElementById('atlas-sort').value='old';document.getElementById('atlas-series').value='魔法未来';document.getElementById('atlas-search').value='2026';render();window.scrollTo(0,180);rememberBrowseState(true);
+                updateSettings({theme:'dark',textSize:'large',remember:true});recordBackupExport(createBackup(),'native');atlasView='timeline';document.getElementById('atlas-sort').value='old';document.getElementById('atlas-series').value='魔法未来';document.getElementById('atlas-search').value='2026';render();
                 """) {_,error in
                     if let error=error {print(error);exit(1)}
-                    self.web.reload()
+                    DispatchQueue.main.asyncAfter(deadline:.now()+0.2) {
+                        self.web.evaluateJavaScript("window.scrollTo(0,180);rememberBrowseState(true);JSON.parse(localStorage.getItem(browseKey)).scrollY") {value,error in
+                            if let error=error {print(error);exit(1)}
+                            guard let offset=value as? Double,abs(offset-180)<10 else {print("FAIL: cannot establish scroll checkpoint",value ?? "nil");exit(1)}
+                            self.web.reload()
+                        }
+                    }
                 }
                 return
             }
@@ -250,11 +310,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     func checkSettingsAfterReload() {
         web.evaluateJavaScript("""
         (()=>{
+          if(appSettings.textSize!=='large')throw Error('text size after reload');
+          if(!readLocalJSON(backupMetaKey,null)?.exportedAt)throw Error('backup metadata after reload');
           if(appSettings.theme!=='dark'||document.documentElement.dataset.theme!=='dark')throw Error('theme after reload');
           if(atlasView!=='timeline'||!atlasMode||document.getElementById('atlas-series').value!=='魔法未来'||document.getElementById('atlas-sort').value!=='old'||document.getElementById('atlas-search').value!=='2026')throw Error('filters after reload');
           if(Math.abs(window.scrollY-180)>10)throw Error('position after reload '+window.scrollY);
           if(data.filter(r=>r.collected==='已收集').length!==13)throw Error('collection after reload');
-          return 'PASS: actual WebKit reload restored theme, view, search, series, ordering, scroll and collection';
+          return 'PASS: actual WebKit reload restored text size, backup metadata, theme, view, search, series, ordering, scroll and collection';
         })()
         """) {value,error in
             if let error=error {print("FAIL: \((error as NSError).userInfo)");exit(1)}
@@ -275,7 +337,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         let panel = NSSavePanel(); panel.title = "导出收藏备份"; panel.nameFieldStringValue = "miku-archive-\(ISO8601DateFormatter().string(from: Date()).prefix(10)).json"
         panel.beginSheetModal(for: window) { response in
             guard response == .OK, let url = panel.url else { return }
-            do { try text.write(to: url, atomically: true, encoding: .utf8) }
+            do {
+                try text.write(to: url, atomically: true, encoding: .utf8)
+                let encoded=Data(text.utf8).base64EncodedString()
+                self.web.evaluateJavaScript("recordBackupExport(JSON.parse(new TextDecoder().decode(Uint8Array.from(atob('\(encoded)'),c=>c.charCodeAt(0)))),'native')")
+            }
             catch { self.alert("导出失败", error.localizedDescription) }
         }
     }
@@ -285,18 +351,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             guard response == .OK, let url = panel.url else { return }
             do {
                 let bytes = try Data(contentsOf: url)
-                guard let obj = try JSONSerialization.jsonObject(with: bytes) as? [String: Any], obj["schema"] as? Int == 1,
-                      let records = obj["records"] as? [[String: Any]], records.allSatisfy({ $0["id"] is String && $0["name"] is String && $0["series"] is String && $0["year"] is NSNumber }) else {
-                    self.alert("无法导入", "请使用收藏馆导出的 JSON 备份。"); return
-                }
-                let a = NSAlert(); a.messageText = "合并 \(records.count) 条收藏记录？"; a.informativeText = "同编号记录将以备份内容替换，其余现有记录保留。"; a.addButton(withTitle: "合并"); a.addButton(withTitle: "取消")
-                guard a.runModal() == .alertFirstButtonReturn else { return }
-                let encoded = try JSONSerialization.data(withJSONObject: obj).base64EncodedString()
+                let encoded=bytes.base64EncodedString()
                 self.web.evaluateJavaScript("""
-                (()=>{const incoming=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob('\(encoded)'),c=>c.charCodeAt(0)))); mergeBackup(incoming);options();render();return data.length;})()
-                """) { _, error in
-                    if let error = error { self.alert("导入失败", error.localizedDescription) }
-                    else { self.alert("导入完成", "备份已合并并保存。") }
+                previewBackup(JSON.parse(new TextDecoder().decode(Uint8Array.from(atob('\(encoded)'),c=>c.charCodeAt(0)))));
+                """) {_,error in
+                    if let error=error {self.alert("无法导入",error.localizedDescription)}
                 }
             } catch { self.alert("无法读取备份", error.localizedDescription) }
         }
@@ -324,7 +383,7 @@ if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(name
 app.delegate = delegate
 // Keep JavaScript confirmations and error dialogs available in the native window.
 if CommandLine.arguments.contains("--check-resources") {
-    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","app-info.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
+    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
     print("Bundled resources OK"); exit(0)
 }
 app.run()

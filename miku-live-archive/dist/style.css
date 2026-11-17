@@ -690,3 +690,25 @@ input[type=checkbox]{appearance:auto;-webkit-appearance:checkbox;width:17px;heig
 .settings-entry small {margin:0;display:inline;}
 #settings-dialog {background:var(--surface);}
 :root[data-theme="dark"] select {background-image:linear-gradient(45deg,transparent 50%,#b9d5cb 50%),linear-gradient(135deg,#b9d5cb 50%,transparent 50%);}
+
+#undo-toast {position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;max-width:calc(100vw - 32px);padding:12px 16px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 32px #0003;z-index:1000;}
+#undo-message {font-size:13px;line-height:1.5;}
+#undo-action {color:var(--mint);font-weight:600;white-space:nowrap;}
+#backup-preview {width:min(600px,calc(100vw - 36px));max-height:85vh;overflow-y:auto;background:var(--surface);}
+#backup-preview-error {color:var(--mint);}
+#backup-state,#backup-time {line-height:1.6;overflow-wrap:anywhere;}
+.release-note {padding:10px 0;border-top:1px solid var(--line);}
+.release-note summary {cursor:pointer;font-size:13px;font-weight:600;padding:6px 0;}
+:root[data-text-size="large"] body {font-size:16px;}
+:root[data-text-size="large"] .atlas-title {font-size:17px;line-height:1.65;}
+:root[data-text-size="large"] .atlas-card-body>p {font-size:13px;min-height:52px;}
+:root[data-text-size="large"] .atlas-card-foot small,:root[data-text-size="large"] .badge,:root[data-text-size="large"] .atlas-cover small {font-size:12px;}
+:root[data-text-size="large"] .atlas-cover span,:root[data-text-size="large"] .atlas-card-foot button {font-size:13px;}
+:root[data-text-size="large"] .atlas-facts,:root[data-text-size="large"] .atlas-linked,:root[data-text-size="large"] #catalog-fields label,:root[data-text-size="large"] .atlas-note-label {font-size:15px;}
+:root[data-text-size="large"] .filters input,:root[data-text-size="large"] .filters select,:root[data-text-size="large"] .tabs button,:root[data-text-size="large"] table,:root[data-text-size="large"] td strong {font-size:14px;}
+:root[data-text-size="large"] th,:root[data-text-size="large"] td small,:root[data-text-size="large"] .atlas-timeline-row span,:root[data-text-size="large"] .atlas-timeline-row small {font-size:13px;}
+:root[data-text-size="large"] .atlas-timeline-row strong,:root[data-text-size="large"] .settings-row {font-size:15px;}
+:root[data-text-size="large"] #settings-dialog p,:root[data-text-size="large"] #settings-dialog li,:root[data-text-size="large"] .settings-row small,:root[data-text-size="large"] .settings-row select,:root[data-text-size="large"] .settings-about {font-size:14px;}
+:root[data-text-size="large"] aside nav button {font-size:13px;}
+:root[data-text-size="large"] .muted,:root[data-text-size="large"] .atlas-evidence {font-size:13px;}
+@media(max-width:700px){#undo-toast{left:16px;right:16px;transform:none;max-width:none;flex-wrap:wrap;}:root[data-text-size="large"] .atlas-grid{grid-template-columns:1fr;}}

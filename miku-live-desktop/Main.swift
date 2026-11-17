@@ -85,6 +85,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(atlasBaseline.length!==195 || atlasCatalog.events.length!==195) throw Error('reviewed CSV baseline');
           if(!atlasCatalog.events.some(e=>e.series==='未来有你'&&e.year===2025)) throw Error('MWY visibility');
           if(atlasCatalog.events.some(e=>['mikutime-KAGA14','mikutime-MK15'].includes(e.id))) throw Error('reviewed scope');
+          if(!atlasCatalog.events.every(e=>e.sourceReferences?.[0]?.url.includes('vocadb.net'))) throw Error('source priority');
+          const rgb=s=>s.match(/[0-9.]+/g).slice(0,3).map(Number).map(v=>{v/=255;return v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4});
+          const lum=s=>rgb(s).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
+          for(const id of ['mode-atlas','atlas-add','atlas-export','atlas-year']) {
+            const style=getComputedStyle(document.getElementById(id));const a=lum(style.color),b=lum(style.backgroundColor);
+            if((Math.max(a,b)+.05)/(Math.min(a,b)+.05)<4.5)throw Error('control contrast '+id);
+          }
           const editID=atlasCatalog.events[0].id;
           editCatalogEvent(editID);document.querySelector('#catalog-form [name="venue"]').value='TEST VENUE';document.getElementById('catalog-form').requestSubmit();
           if(atlasCatalog.events.find(e=>e.id===editID).venue!=='TEST VENUE') throw Error('event edit');
@@ -118,11 +125,20 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           document.getElementById('series').value='';view='progress';render();
           if(!document.querySelector('progress')) throw Error('series progress');
           view='all';render();
-          return 'PASS: '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
+          setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
+          return 'PASS: source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription)"); exit(1) }
-            print(value ?? "No result"); exit(0)
+            if let index=CommandLine.arguments.firstIndex(of:"--capture-preview"),index+1<CommandLine.arguments.count {
+                let path=CommandLine.arguments[index+1]
+                DispatchQueue.main.asyncAfter(deadline:.now()+0.3) {
+                    self.web.takeSnapshot(with:nil) { image,error in
+                        guard let image=image,let tiff=image.tiffRepresentation,let rep=NSBitmapImageRep(data:tiff),let png=rep.representation(using:.png,properties:[:]) else { print("Snapshot failed");exit(1) }
+                        do {try png.write(to:URL(fileURLWithPath:path));print(value ?? "PASS");exit(0)} catch {print(error);exit(1)}
+                    }
+                }
+            } else {print(value ?? "No result");exit(0)}
         }
     }
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
@@ -180,6 +196,7 @@ extension AppDelegate: WKUIDelegate {
 let app = NSApplication.shared
 let delegate = AppDelegate()
 app.setActivationPolicy(.regular)
+if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(named:.darkAqua)}
 app.delegate = delegate
 // Keep JavaScript confirmations and error dialogs available in the native window.
 if CommandLine.arguments.contains("--check-resources") {

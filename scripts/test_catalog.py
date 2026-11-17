@@ -20,3 +20,16 @@ seed=json.loads((root/'miku-live-archive/dist/seed.json').read_text())
 assert all(id in {r['id'] for r in seed} for e in es for id in e['collectionIds'])
 assert sum(r['collected']=='已收集' for r in seed)==13
 print('PASS: all 195 approved rows, incomplete entries retained, MWY complete, stable IDs/BD links')
+
+from source_policy import research_rank, official
+assert research_rank('https://vocadb.net/E/1')==1
+assert research_rank('https://vocaloid.fandom.com/wiki/Test')==2
+assert research_rank('https://mzh.moegirl.org.cn/Test')==3
+assert research_rank('https://voca.wiki/Test')==4
+assert not official('https://vocaloid.fandom.com/wiki/Test')
+for event in es:
+    assert event['officialUrl'] and event['officialLinks']
+    assert event['sourceReferences'][0]['priority']==1
+    assert [ref['priority'] for ref in event['sourceReferences']]==sorted(ref['priority'] for ref in event['sourceReferences'])
+    assert all(ref['kind'] in {'record','search','unavailable'} for ref in event['sourceReferences'])
+print('PASS: official references for 195 entries, VocaDB/Wiki/Moegirl source priority, explicit lookup labels')

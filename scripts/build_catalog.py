@@ -1,6 +1,7 @@
 """Build the atlas from the user-reviewed CSV. Never filter out incomplete entries."""
 import csv
 import json
+from source_policy import resolve_sources
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / 'miku-live-archive/dist'
@@ -8,6 +9,8 @@ REFERENCES = ROOT / 'scripts/references'
 
 def build_catalog():
     metadata = json.loads((REFERENCES / 'catalog-links.json').read_text(encoding='utf-8'))
+    snapshot = json.loads((REFERENCES / "vocadb-event-links.json").read_text(encoding="utf-8"))
+    manual = json.loads((REFERENCES / "official-link-overrides.json").read_text(encoding="utf-8"))
     events = []
     with (REFERENCES / 'live-catalog.csv').open(encoding='utf-8-sig', newline='') as file:
         for row in csv.DictReader(file):
@@ -28,13 +31,17 @@ def build_catalog():
             event['sources'] = [dict(label='官网 / 主办方参考', url=event['officialUrl'])] if event['officialUrl'] else []
             if event['researchSource'] and event['researchSource'] != event['officialUrl']:
                 event['sources'].append(dict(label='检索线索来源', url=event['researchSource']))
+            event['officialLinks'], event['sourceReferences'] = resolve_sources(event, snapshot, manual)
+            if not event['officialUrl'] and event['officialLinks']:
+                event['officialUrl'] = event['officialLinks'][0]['url']
+            event['source'] = event['officialUrl'] or event['researchSource']
             events.append(event)
     if len({event['id'] for event in events}) != len(events):
         raise ValueError('Duplicate event IDs in live-catalog.csv')
     tours = json.loads((REFERENCES / 'mikutime-concert-index.json').read_text())['concerts']
-    catalog = dict(version=3, updated='2026-11-17',
+    catalog = dict(version=4, updated='2026-11-17',
         coverage='以用户审阅的 195 条检索底稿为初始目录。城市站、巡演、年度项目及边界活动分别注明；资料缺项不隐藏条目。候选记录数量不等于实际演出场数，仍可持续修订。',
-        sources=[dict(label='新创华：未来有你历届官方记录',url='https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html'),dict(label='Crypton 官方活动目录',url='https://piapro.net/intl/en_event.html'),dict(label='MIKU EXPO 官方历史',url='https://mikuexpo.com/history'),dict(label='Vocawiki 辅助目录',url='https://voca.wiki/初音未来/演唱会'),dict(label='MikuTime 辅助巡演索引',url='https://mikutime.link/setlists/')],
+        sources=[dict(label='VocaDB（优先检索）',url='https://vocadb.net/'),dict(label='Vocaloid Wiki（其次）',url='https://vocaloid.fandom.com/'),dict(label='新创华：未来有你历届官方记录',url='https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html'),dict(label='Crypton 官方活动目录',url='https://piapro.net/intl/en_event.html'),dict(label='MIKU EXPO 官方历史',url='https://mikuexpo.com/history'),dict(label='Vocawiki 辅助目录',url='https://voca.wiki/初音未来/演唱会'),dict(label='MikuTime 辅助巡演索引',url='https://mikutime.link/setlists/')],
         tourRecords=[tour for tour in tours if tour['tour'] not in {'KAGA14','MK15'}], events=events)
     return catalog
 

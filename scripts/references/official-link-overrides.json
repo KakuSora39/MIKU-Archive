@@ -1,0 +1,44 @@
+{
+  "afa-2009": {
+    "url": "https://blog.piapro.net/2009/11/pcd-1.html",
+    "label": "Crypton：AFA09 初音参演公告",
+    "scope": "对应活动的官方报道"
+  },
+  "moegirl-stage-001": {
+    "url": "https://anisama.tv/2009/liveinfo/index.html",
+    "label": "Animelo 2009 官方演出资料",
+    "scope": "对应年度官网与出演名单"
+  },
+  "moegirl-stage-013": {
+    "url": "https://blog.piapro.net/2012/08/project-diva-f-39.html",
+    "label": "Crypton：夏の終わりの39祭り 公告",
+    "scope": "对应活动的官方公告"
+  },
+  "mikutime-GAGA": {
+    "url": "https://www.crypton.co.jp/cfm/news/2014/04/ladygagatour",
+    "label": "Crypton：Lady Gaga 巡演初音开场日程",
+    "scope": "对应巡演的官方公告（含取消信息）"
+  },
+  "moegirl-stage-048": {
+    "url": "https://blog.piapro.net/2017/04/p1704282-1.html",
+    "label": "Crypton：B.I.G 嘉年华现场报道",
+    "scope": "对应活动的官方报道"
+  },
+  "moegirl-stage-063": {
+    "url": "https://blog.piapro.net/2019/04/n190424-1.html",
+    "label": "Crypton：BML-VR 2019 参演公告",
+    "scope": "对应年度的官方公告"
+  },
+  "moegirl-stage-067": {
+    "url": "https://blog.piapro.net/2019/09/mon190927.html",
+    "label": "Crypton：DIVE XR FESTIVAL 现场报道",
+    "scope": "对应活动的官方报道"
+  },
+  "moegirl-stage-095": {
+    "url": "https://bml.bilibili.com/",
+    "label": "BILIBILI MACRO LINK 主办方官网",
+    "scope": "系列入口；历史资料见主办方 2023 宣传 PV",
+    "via": "https://www.bilibili.com/video/BV13W4y1Q7GT/",
+    "vocadbId": 6333
+  }
+}

@@ -5,7 +5,7 @@ const catalogFields = [
   ['name','演出名称'], ['year','年份'], ['series','系列'], ['kind','演出类型'],
   ['date','举办日期 / 日期范围'], ['city','城市 / 地区'], ['venue','场馆'],
   ['level','记录层级（城市站 / 巡演 / 年度项目等）'], ['officialUrl','官网 / 主办方链接'],
-  ['researchSource','辅助资料链接'], ['verification','核实说明'], ['notes','资料备注']
+  ['researchSource','补充检索链接（按来源排序）'], ['verification','核实说明'], ['notes','资料备注']
 ];
 function normalizeCatalogEdits(input) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw Error('图鉴修订格式无效');

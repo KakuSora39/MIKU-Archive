@@ -95,15 +95,15 @@ function editCatalogEvent(id) {
   $('catalog-editor-title').textContent=id?'编辑演出资料':'新增演出';
   catalogPendingCover=event.coverUrl?.startsWith('data:')?event.coverUrl:'';catalogCoverReading=false;catalogCoverRequest++;
   $('catalog-fields').innerHTML=catalogFields.filter(([field])=>!['coverUrl','coverCredit'].includes(field)).map(([field,label])=>`<label>${label}${['notes','verification'].includes(field)?`<textarea name="${field}">${esc(event[field]||'')}</textarea>`:`<input name="${field}" value="${esc(event[field]??'')}" ${field==='year'?'type="number" min="2000" max="2100"':field.endsWith('Url')||field==='researchSource'?'type="url"':''} ${['name','year','series'].includes(field)?'required':''}>`}</label>`).join('');
-  $('catalog-fields').insertAdjacentHTML('beforeend',`<section class="cover-editor"><h3>卡片封面</h3><p class="muted">显示在右上角，向文字区渐隐。支持 JPG / PNG / WebP，最大 2 MB，上传后自动压缩为缩略图。本机图片随备份保存；链接图片需要联网。</p><div id="catalog-cover-preview"></div><label>图片链接<input id="catalog-cover-url" type="url" placeholder="https://…" value="${esc(catalogPendingCover?'':event.coverUrl||'')}"></label><label>或上传本机图片<input id="catalog-cover-file" type="file" accept="image/jpeg,image/png,image/webp"></label><label>来源 / 署名<input name="coverCredit" value="${esc(event.coverCredit||'')}"></label><button type="button" id="catalog-cover-clear">移除封面</button><p id="catalog-cover-status" role="status"></p></section>`);
+  $('catalog-fields').insertAdjacentHTML('beforeend',`<section class="cover-editor"><h3>卡片封面</h3><p class="muted">显示在右上角，向文字区渐隐。支持 JPG / PNG / WebP，最大 2 MB，上传后自动压缩为缩略图。默认使用已核实的官方图片或通用初音形象。本机图片随备份保存；链接图片需要联网。</p><div id="catalog-cover-preview"></div><label>图片链接<input id="catalog-cover-url" type="url" placeholder="https://…" value="${esc(catalogPendingCover?'':event.coverUrl||'')}"></label><label>或上传本机图片<input id="catalog-cover-file" type="file" accept="image/jpeg,image/png,image/webp"></label><label>来源 / 署名<input name="coverCredit" value="${esc(event.coverCredit||'')}"></label><button type="button" id="catalog-cover-clear">恢复默认封面</button><p id="catalog-cover-status" role="status"></p></section>`);
   const previewCover=()=>{
     const url=$('catalog-cover-url').value.trim()||catalogPendingCover;
     const preview=$('catalog-cover-preview');
-    try {preview.innerHTML=`<div class="atlas-cover" style="--cover-hue:${hue(event.series)}">${coverMarkup({coverUrl:url})}<span>${esc(event.series)}</span><b>${event.year}</b><small>封面预览</small></div>`;bindCoverFallbacks(preview);}
+    try {preview.innerHTML=`<div class="atlas-cover" style="--cover-hue:${hue(event.series)}">${coverMarkup({...event,coverUrl:url})}<span>${esc(event.series)}</span><b>${event.year}</b><small>封面预览</small></div>`;bindCoverFallbacks(preview);}
     catch {preview.textContent='图片链接暂不可用';}
   };
   $('catalog-cover-url').oninput=()=>{catalogCoverRequest++;catalogPendingCover='';catalogCoverReading=false;$('catalog-cover-file').value='';$('catalog-cover-status').textContent='';previewCover();};
-  $('catalog-cover-clear').onclick=()=>{catalogCoverRequest++;catalogPendingCover='';catalogCoverReading=false;$('catalog-cover-url').value='';$('catalog-cover-file').value='';$('catalog-cover-status').textContent='保存后移除封面。';previewCover();};
+  $('catalog-cover-clear').onclick=()=>{catalogCoverRequest++;catalogPendingCover='';catalogCoverReading=false;$('catalog-cover-url').value='';$('catalog-cover-file').value='';$('catalog-cover-status').textContent='保存后恢复官方默认封面。';previewCover();};
   $('catalog-cover-file').onchange=async e=>{
     const file=e.target.files[0];if(!file)return;
     const request=++catalogCoverRequest;catalogCoverReading=true;

@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "sourceCount": 195,
   "projects": [
     {
@@ -70,7 +70,9 @@
       "aliases": [
         "夏祭初音鑑",
         "HATSUNE Appearance 夏祭初音鑑"
-      ]
+      ],
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [],
@@ -147,7 +149,9 @@
       "aliases": [
         "Lady Gaga's artRAVE: The ARTPOP Ball",
         "LADY GAGA’S artRAVE: the ARTPOP ball"
-      ]
+      ],
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "collectionIds": [
@@ -225,7 +229,9 @@
       "aliases": [
         "Miku Symphony 2017",
         "初音ミクシンフォニー2017"
-      ]
+      ],
+      "coverKey": "symphony-2017",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -348,7 +354,9 @@
       "aliases": [
         "MIKU EXPO 2018 USA & Mexico",
         "HATSUNE MIKU EXPO 2018 USA & MEXICO"
-      ]
+      ],
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -426,7 +434,9 @@
       "aliases": [
         "Miku Symphony 2018",
         "初音ミクシンフォニー2018-2019"
-      ]
+      ],
+      "coverKey": "symphony-2018",
+      "coverNote": ""
     },
     {
       "id": "research-end-2018spain",
@@ -489,7 +499,9 @@
       "aliases": [
         "VOCALOID OPERA THE END · 西班牙",
         "Vocaloid Opera THE END"
-      ]
+      ],
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [
@@ -567,7 +579,9 @@
       "aliases": [
         "Miku Symphony 2019",
         "初音ミクシンフォニー2019"
-      ]
+      ],
+      "coverKey": "symphony-2019",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -652,7 +666,9 @@
       "aliases": [
         "Miku Symphony 2020",
         "初音ミクシンフォニー2020～5th Anniversary～"
-      ]
+      ],
+      "coverKey": "symphony-2020-yokohama",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -730,7 +746,9 @@
       "aliases": [
         "Miku Symphony 2021",
         "初音ミクシンフォニー2021〜KAITO 15th Anniversary〜"
-      ]
+      ],
+      "coverKey": "symphony-2021",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -804,7 +822,9 @@
       "aliases": [
         "MIKU BREAK ver.1.1（跨 2022–2023）",
         "MIKU BREAK ver.1.1"
-      ]
+      ],
+      "coverKey": "miku-kei",
+      "coverNote": "活动官网证书无法正常验证，官方公告中尚未确认该版本可用主视觉，暂用通用形象。"
     },
     {
       "collectionIds": [
@@ -889,7 +909,9 @@
       "aliases": [
         "Miku Symphony 2022",
         "初音ミクシンフォニー2022～Hatsune Miku,Kagamine Rin,Kagamine Len 15th Anniversary～"
-      ]
+      ],
+      "coverKey": "symphony-2022-yokohama",
+      "coverNote": "东京 / 大阪使用同版官方视觉。"
     },
     {
       "collectionIds": [],
@@ -965,7 +987,9 @@
       "aliases": [
         "Project SEKAI COLORFUL LIVE 2nd -Will-",
         "プロジェクトセカイ COLORFUL LIVE 2nd - Will -"
-      ]
+      ],
+      "coverKey": "colorful-2nd-will",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -1044,7 +1068,9 @@
       "aliases": [
         "Miku Symphony 2023",
         "初音ミクシンフォニー2023"
-      ]
+      ],
+      "coverKey": "symphony-2023",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -1120,7 +1146,9 @@
       "aliases": [
         "Project SEKAI COLORFUL LIVE 3rd -Evolve-",
         "プロジェクトセカイ COLORFUL LIVE 3rd - Evolve -"
-      ]
+      ],
+      "coverKey": "colorful-3rd-evolve",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -1195,7 +1223,9 @@
       "aliases": [
         "COLORFUL LIVE 4th -Unison-（2024–2025）",
         "プロジェクトセカイ COLORFUL LIVE 4th - Unison -"
-      ]
+      ],
+      "coverKey": "colorful-4th-unison",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -1276,7 +1306,9 @@
       "aliases": [
         "Sekai Symphony 2024",
         "セカイシンフォニー2024"
-      ]
+      ],
+      "coverKey": "sekai-symphony-2024",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -1360,7 +1392,9 @@
       "aliases": [
         "Miku Symphony 2024",
         "初音ミクシンフォニー2024"
-      ]
+      ],
+      "coverKey": "symphony-2024-tokyo",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -1436,7 +1470,9 @@
       "aliases": [
         "COLORFUL LIVE 5th -Frontier-（2025–2026）",
         "プロジェクトセカイ COLORFUL LIVE 5th - Frontier -"
-      ]
+      ],
+      "coverKey": "colorful-5th-frontier",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -1526,7 +1562,9 @@
       "aliases": [
         "JAPAN TOUR 2025 ～BLOOMING～",
         "初音ミク JAPAN LIVE TOUR 2025 ～BLOOMING～"
-      ]
+      ],
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -1661,7 +1699,9 @@
       "aliases": [
         "MIKU EXPO 2025",
         "MIKU EXPO 2025 ASIA"
-      ]
+      ],
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -1740,7 +1780,9 @@
       "aliases": [
         "Miku Symphony 2025",
         "初音ミクシンフォニー2025 10th Anniversary"
-      ]
+      ],
+      "coverKey": "symphony-2025-sapporo",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -1846,7 +1888,9 @@
       "aliases": [
         "MAGICAL MIRAI 2025",
         "初音ミク「マジカルミライ 2025」"
-      ]
+      ],
+      "coverKey": "mirai-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -1991,7 +2035,9 @@
       "aliases": [
         "HATSUNE MIKU EXPO 2026 EUROPE",
         "MIKU EXPO 2026 EUROPE"
-      ]
+      ],
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -2166,7 +2212,9 @@
       "aliases": [
         "HATSUNE MIKU EXPO 2026 NORTH AMERICA",
         "MIKU EXPO 2026 North America"
-      ]
+      ],
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -2248,7 +2296,9 @@
       "aliases": [
         "Miku Symphony 2026",
         "初音ミクシンフォニー2026"
-      ]
+      ],
+      "coverKey": "symphony-2026-yokohama",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -2338,7 +2388,9 @@
       "aliases": [
         "MIKU WITH YOU 2026",
         "初音未来·未来有你2026"
-      ]
+      ],
+      "coverKey": "mwy-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -2437,10 +2489,12 @@
       "officialNameSource": "https://magicalmirai.com/2026/",
       "aliases": [
         "初音ミク「マジカルミライ 2026」"
-      ]
+      ],
+      "coverKey": "mirai-2026",
+      "coverNote": ""
     }
   ],
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "coverage": "以 195 条审阅底稿为基础，将已知城市站独立建档。当前 263 条演出档案、27 条项目资料；同站连续日期仍合并记录，档案数量不等于演出场次数。旧项目记录及未拆分线索保留在项目资料中。",
   "sources": [
     {
@@ -3157,7 +3211,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [],
@@ -3225,7 +3281,9 @@
       "originalCity": "新加坡",
       "country": "新加坡",
       "cityName": "新加坡",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 1,
@@ -3291,7 +3349,9 @@
       "originalCity": "日本埼玉",
       "country": "日本",
       "cityName": "埼玉",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 3,
@@ -3381,7 +3441,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "giving-2010",
+      "coverNote": ""
     },
     {
       "sourceIndex": 5,
@@ -3469,7 +3531,9 @@
       "originalCity": "美国洛杉矶",
       "country": "美国",
       "cityName": "洛杉矶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mikunopolis-2011",
+      "coverNote": ""
     },
     {
       "sourceIndex": 4,
@@ -3565,7 +3629,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 6,
@@ -3661,7 +3727,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 7,
@@ -3729,7 +3797,9 @@
       "originalCity": "泰国曼谷",
       "country": "泰国",
       "cityName": "曼谷",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 8,
@@ -3825,7 +3895,9 @@
       "originalCity": "新加坡",
       "country": "新加坡",
       "cityName": "新加坡",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "id": "research-ihatov-2012",
@@ -3893,7 +3965,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 13,
@@ -3961,7 +4035,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 9,
@@ -4062,7 +4138,9 @@
       "country": "日本",
       "cityName": "东京",
       "locationMode": "physical",
-      "sessionLabel": "昼场"
+      "sessionLabel": "昼场",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 10,
@@ -4163,7 +4241,9 @@
       "country": "日本",
       "cityName": "东京",
       "locationMode": "physical",
-      "sessionLabel": "夜场"
+      "sessionLabel": "夜场",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 11,
@@ -4260,7 +4340,9 @@
       "country": "日本",
       "cityName": "东京",
       "locationMode": "physical",
-      "sessionLabel": "昼场"
+      "sessionLabel": "昼场",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 12,
@@ -4357,7 +4439,9 @@
       "country": "日本",
       "cityName": "东京",
       "locationMode": "physical",
-      "sessionLabel": "夜场"
+      "sessionLabel": "夜场",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 14,
@@ -4451,7 +4535,9 @@
       "originalCity": "中国香港",
       "country": "中国",
       "cityName": "香港",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 15,
@@ -4545,7 +4631,9 @@
       "originalCity": "中国台北",
       "country": "中国",
       "cityName": "台北",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "id": "research-end-2012",
@@ -4605,7 +4693,9 @@
       "originalCity": "日本山口",
       "country": "日本",
       "cityName": "山口",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [],
@@ -4676,7 +4766,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [],
@@ -4747,7 +4839,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-ihatov-2013-东京",
@@ -4811,7 +4905,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-ihatov-2013-名古屋",
@@ -4880,7 +4976,9 @@
       "originalCity": "日本名古屋",
       "country": "日本",
       "cityName": "名古屋",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-ihatov-2013-大阪",
@@ -4949,7 +5047,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-ihatov-2013-花卷",
@@ -5018,7 +5118,9 @@
       "originalCity": "日本花卷",
       "country": "日本",
       "cityName": "花卷",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 16,
@@ -5118,7 +5220,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "sourceIndex": 17,
@@ -5212,7 +5316,9 @@
       "originalCity": "日本和歌山",
       "country": "日本",
       "cityName": "和歌山",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "旧活动官网失效或未确认该场独立主视觉，暂用官方通用形象；不表示已证实没有主视觉。"
     },
     {
       "id": "research-end-2013paris",
@@ -5272,7 +5378,9 @@
       "originalCity": "巴黎",
       "country": "法国",
       "cityName": "巴黎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-end-2013tokyo",
@@ -5332,7 +5440,9 @@
       "originalCity": "东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 18,
@@ -5417,7 +5527,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2013",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -5492,7 +5604,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 19,
@@ -5602,7 +5716,9 @@
       "originalCity": "印度尼西亚雅加达",
       "country": "印度尼西亚",
       "cityName": "雅加达",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-id2014",
+      "coverNote": ""
     },
     {
       "sourceIndex": 22,
@@ -5688,7 +5804,9 @@
       "originalCity": "美国洛杉矶",
       "country": "美国",
       "cityName": "洛杉矶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-us2014",
+      "coverNote": ""
     },
     {
       "sourceIndex": 23,
@@ -5776,7 +5894,9 @@
       "originalCity": "美国纽约",
       "country": "美国",
       "cityName": "纽约",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-us2014",
+      "coverNote": ""
     },
     {
       "id": "research-ihatov-2014",
@@ -5836,7 +5956,9 @@
       "originalCity": "大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-bump-2014",
@@ -5895,7 +6017,9 @@
       "originalCity": "东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "id": "research-joypolis-2014",
@@ -5954,7 +6078,9 @@
       "originalCity": "东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 20,
@@ -6057,7 +6183,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2014",
+      "coverNote": ""
     },
     {
       "sourceIndex": 21,
@@ -6160,7 +6288,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2014",
+      "coverNote": ""
     },
     {
       "sourceIndex": 25,
@@ -6240,7 +6370,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-sh2015",
+      "coverNote": ""
     },
     {
       "sourceIndex": 24,
@@ -6323,7 +6455,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "snow-2015",
+      "coverNote": ""
     },
     {
       "id": "research-ihatov-2015",
@@ -6383,7 +6517,9 @@
       "originalCity": "岩手",
       "country": "日本",
       "cityName": "盛冈",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 26,
@@ -6477,7 +6613,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2015",
+      "coverNote": ""
     },
     {
       "sourceIndex": 27,
@@ -6559,7 +6697,9 @@
       "originalCity": "日本福冈",
       "country": "日本",
       "cityName": "福冈",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-jp2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 28,
@@ -6641,7 +6781,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-jp2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 29,
@@ -6723,7 +6865,9 @@
       "originalCity": "日本名古屋",
       "country": "日本",
       "cityName": "名古屋",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-jp2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 30,
@@ -6805,7 +6949,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-jp2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 31,
@@ -6887,7 +7033,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-jp2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 32,
@@ -6981,7 +7129,9 @@
       "originalCity": "美国西雅图",
       "country": "美国",
       "cityName": "西雅图",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 33,
@@ -7075,7 +7225,9 @@
       "originalCity": "美国旧金山",
       "country": "美国",
       "cityName": "旧金山",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 34,
@@ -7169,7 +7321,9 @@
       "originalCity": "美国洛杉矶",
       "country": "美国",
       "cityName": "洛杉矶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 35,
@@ -7263,7 +7417,9 @@
       "originalCity": "美国达拉斯",
       "country": "美国",
       "cityName": "达拉斯",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 36,
@@ -7357,7 +7513,9 @@
       "originalCity": "美国休斯敦",
       "country": "美国",
       "cityName": "休斯敦",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 37,
@@ -7451,7 +7609,9 @@
       "originalCity": "加拿大多伦多",
       "country": "加拿大",
       "cityName": "多伦多",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 38,
@@ -7545,7 +7705,9 @@
       "originalCity": "美国芝加哥",
       "country": "美国",
       "cityName": "芝加哥",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 39,
@@ -7639,7 +7801,9 @@
       "originalCity": "美国纽约",
       "country": "美国",
       "cityName": "纽约",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 40,
@@ -7733,7 +7897,9 @@
       "originalCity": "墨西哥蒙特雷",
       "country": "墨西哥",
       "cityName": "蒙特雷",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 41,
@@ -7827,7 +7993,9 @@
       "originalCity": "墨西哥墨西哥城",
       "country": "墨西哥",
       "cityName": "墨西哥城",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 42,
@@ -7927,7 +8095,9 @@
       "originalCity": "中国台湾新北",
       "country": "中国",
       "cityName": "新北",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-tw2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 45,
@@ -8009,7 +8179,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-cn2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 46,
@@ -8091,7 +8263,9 @@
       "originalCity": "中国北京",
       "country": "中国",
       "cityName": "北京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-cn2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 43,
@@ -8159,7 +8333,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2016",
+      "coverNote": ""
     },
     {
       "id": "research-coppelius-2016",
@@ -8218,7 +8394,9 @@
       "originalCity": "东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 44,
@@ -8309,7 +8487,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2016",
+      "coverNote": ""
     },
     {
       "sourceIndex": 51,
@@ -8397,7 +8577,9 @@
       "originalCity": "马来西亚吉隆坡",
       "country": "马来西亚",
       "cityName": "吉隆坡",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-may2017",
+      "coverNote": ""
     },
     {
       "sourceIndex": 47,
@@ -8479,7 +8661,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [
@@ -8557,7 +8741,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2017",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -8635,7 +8821,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2017",
+      "coverNote": ""
     },
     {
       "sourceIndex": 48,
@@ -8701,7 +8889,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 50,
@@ -8808,7 +8998,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2017",
+      "coverNote": ""
     },
     {
       "sourceIndex": 49,
@@ -8905,7 +9097,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2017",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -8986,7 +9180,9 @@
       "originalCity": "Los Angeles",
       "country": "美国",
       "cityName": "洛杉矶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -9067,7 +9263,9 @@
       "originalCity": "San Jose",
       "country": "美国",
       "cityName": "圣何塞",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -9148,7 +9346,9 @@
       "originalCity": "Dallas",
       "country": "美国",
       "cityName": "达拉斯",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -9229,7 +9429,9 @@
       "originalCity": "Austin",
       "country": "美国",
       "cityName": "奥斯汀",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -9310,7 +9512,9 @@
       "originalCity": "Washington, D.C.",
       "country": "美国",
       "cityName": "华盛顿",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -9391,7 +9595,9 @@
       "originalCity": "New York City",
       "country": "美国",
       "cityName": "纽约",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -9472,7 +9678,9 @@
       "originalCity": "Mexico City",
       "country": "墨西哥",
       "cityName": "墨西哥城",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-usamx2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 58,
@@ -9572,7 +9780,9 @@
       "originalCity": "法国巴黎",
       "country": "法国",
       "cityName": "巴黎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 59,
@@ -9672,7 +9882,9 @@
       "originalCity": "德国科隆",
       "country": "德国",
       "cityName": "科隆",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 60,
@@ -9772,7 +9984,9 @@
       "originalCity": "英国伦敦",
       "country": "英国",
       "cityName": "伦敦",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 52,
@@ -9849,7 +10063,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "snow-2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -9935,7 +10151,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [
@@ -10013,7 +10231,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2018",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -10091,7 +10311,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2018",
+      "coverNote": ""
     },
     {
       "id": "research-tokyo150-2018",
@@ -10150,7 +10372,9 @@
       "originalCity": "东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 55,
@@ -10251,7 +10475,9 @@
       "originalCity": "中国北京",
       "country": "中国",
       "cityName": "北京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 56,
@@ -10352,7 +10578,9 @@
       "originalCity": "中国成都",
       "country": "中国",
       "cityName": "成都",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 57,
@@ -10453,7 +10681,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2018",
+      "coverNote": ""
     },
     {
       "id": "research-end-2018spain--madrid",
@@ -10516,7 +10746,9 @@
       "originalCity": "西班牙马德里",
       "country": "西班牙",
       "cityName": "马德里",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-end-2018spain--barcelona",
@@ -10579,7 +10811,9 @@
       "originalCity": "西班牙巴塞罗那",
       "country": "西班牙",
       "cityName": "巴塞罗那",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "sourceIndex": 53,
@@ -10682,7 +10916,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 54,
@@ -10785,7 +11021,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2018",
+      "coverNote": ""
     },
     {
       "sourceIndex": 62,
@@ -10871,7 +11109,9 @@
       "originalCity": "中国台湾新北",
       "country": "中国",
       "cityName": "新北",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-twhk2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 64,
@@ -10957,7 +11197,9 @@
       "originalCity": "中国香港",
       "country": "中国",
       "cityName": "香港",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-twhk2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 61,
@@ -11040,7 +11282,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "snow-2019",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -11118,7 +11362,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2019",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -11196,7 +11442,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 63,
@@ -11262,7 +11510,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 67,
@@ -11327,7 +11577,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 68,
@@ -11428,7 +11680,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 69,
@@ -11529,7 +11783,9 @@
       "originalCity": "中国成都",
       "country": "中国",
       "cityName": "成都",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 70,
@@ -11630,7 +11886,9 @@
       "originalCity": "中国北京",
       "country": "中国",
       "cityName": "北京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 71,
@@ -11731,7 +11989,9 @@
       "originalCity": "中国广州",
       "country": "中国",
       "cityName": "广州",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 65,
@@ -11834,7 +12094,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2019",
+      "coverNote": ""
     },
     {
       "sourceIndex": 66,
@@ -11937,7 +12199,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2019",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -12015,7 +12279,9 @@
       "originalCity": "线上（VR）",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "galaxy-2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 72,
@@ -12101,7 +12367,9 @@
       "originalCity": "英国伦敦",
       "country": "英国",
       "cityName": "伦敦",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 73,
@@ -12187,7 +12455,9 @@
       "originalCity": "法国巴黎",
       "country": "法国",
       "cityName": "巴黎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 74,
@@ -12273,7 +12543,9 @@
       "originalCity": "德国柏林",
       "country": "德国",
       "cityName": "柏林",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 75,
@@ -12359,7 +12631,9 @@
       "originalCity": "荷兰阿姆斯特丹",
       "country": "荷兰",
       "cityName": "阿姆斯特丹",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 76,
@@ -12445,7 +12719,9 @@
       "originalCity": "西班牙巴塞罗那",
       "country": "西班牙",
       "cityName": "巴塞罗那",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 77,
@@ -12527,7 +12803,9 @@
       "originalCity": "线上",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [
@@ -12611,7 +12889,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "该场东京主视觉尚未确认，未套用横滨 / 大阪的不同版本。"
     },
     {
       "collectionIds": [
@@ -12695,7 +12975,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2020-yokohama",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -12779,7 +13061,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2020-osaka",
+      "coverNote": ""
     },
     {
       "sourceIndex": 80,
@@ -12874,7 +13158,9 @@
       "originalCity": "线上",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "mwy-2020",
+      "coverNote": ""
     },
     {
       "sourceIndex": 78,
@@ -13001,7 +13287,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2020-osaka",
+      "coverNote": ""
     },
     {
       "sourceIndex": 79,
@@ -13128,7 +13416,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2020-tokyo",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -13212,7 +13502,9 @@
       "originalCity": "线上（VR）",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "galaxy-2021",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -13287,7 +13579,9 @@
       "originalCity": "日本川崎",
       "country": "日本",
       "cityName": "川崎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "活动官网证书无法正常验证，官方公告中尚未确认该版本可用主视觉，暂用通用形象。"
     },
     {
       "sourceIndex": 81,
@@ -13429,7 +13723,9 @@
       "originalCity": "线上（多地区放送）",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "expo-online2021",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -13504,7 +13800,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "sekai-symphony-2021",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -13582,7 +13880,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2021",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -13660,7 +13960,9 @@
       "originalCity": "日本神户",
       "country": "日本",
       "cityName": "神户",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2021",
+      "coverNote": ""
     },
     {
       "sourceIndex": 84,
@@ -13749,7 +14051,9 @@
       "originalCity": "线上",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "mwy-2021",
+      "coverNote": ""
     },
     {
       "sourceIndex": 82,
@@ -13846,7 +14150,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2021",
+      "coverNote": ""
     },
     {
       "sourceIndex": 83,
@@ -13943,7 +14249,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2021",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -14019,7 +14327,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-1st-link",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -14094,7 +14404,9 @@
       "originalCity": "日本川崎",
       "country": "日本",
       "cityName": "川崎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "活动官网证书无法正常验证，官方公告中尚未确认该版本可用主视觉，暂用通用形象。"
     },
     {
       "collectionIds": [],
@@ -14169,7 +14481,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "活动官网证书无法正常验证，官方公告中尚未确认该版本可用主视觉，暂用通用形象。"
     },
     {
       "collectionIds": [],
@@ -14277,7 +14591,9 @@
       "originalCity": "线上",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "expo-rewind2022",
+      "coverNote": ""
     },
     {
       "sourceIndex": 87,
@@ -14405,7 +14721,9 @@
       "originalCity": "线上",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "expo-rewind2022",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -14480,7 +14798,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "sekai-symphony-2022",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -14564,7 +14884,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2022-tokyo",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -14648,7 +14970,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2022-yokohama",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -14732,7 +15056,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2022-tokyo",
+      "coverNote": "东京 / 大阪使用同版官方视觉。"
     },
     {
       "sourceIndex": 85,
@@ -14835,7 +15161,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2022",
+      "coverNote": ""
     },
     {
       "sourceIndex": 86,
@@ -14938,7 +15266,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2022",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -15014,7 +15344,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-2nd-will",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -15090,7 +15422,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-2nd-will",
+      "coverNote": ""
     },
     {
       "sourceIndex": 89,
@@ -15167,7 +15501,9 @@
       "originalCity": "日本名古屋",
       "country": "日本",
       "cityName": "名古屋",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "thunderbolt-2023",
+      "coverNote": ""
     },
     {
       "sourceIndex": 90,
@@ -15244,7 +15580,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "thunderbolt-2023",
+      "coverNote": ""
     },
     {
       "sourceIndex": 91,
@@ -15321,7 +15659,9 @@
       "originalCity": "日本福冈",
       "country": "日本",
       "cityName": "福冈",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "thunderbolt-2023",
+      "coverNote": ""
     },
     {
       "sourceIndex": 92,
@@ -15398,7 +15738,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "thunderbolt-2023",
+      "coverNote": ""
     },
     {
       "sourceIndex": 93,
@@ -15475,7 +15817,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "thunderbolt-2023",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -15550,7 +15894,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "活动官网证书无法正常验证，官方公告中尚未确认该版本可用主视觉，暂用通用形象。"
     },
     {
       "sourceIndex": 98,
@@ -15632,7 +15978,9 @@
       "originalCity": "线上",
       "country": "",
       "cityName": "线上",
-      "locationMode": "online"
+      "locationMode": "online",
+      "coverKey": "expo-vr2023",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -15707,7 +16055,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "sekai-symphony-2023",
+      "coverNote": ""
     },
     {
       "sourceIndex": 94,
@@ -15783,7 +16133,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "kodo-2023",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -15861,7 +16213,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2023",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -15939,7 +16293,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "未确认该城市适用的官方主视觉，未套用东京场不同版本。"
     },
     {
       "collectionIds": [
@@ -16017,7 +16373,9 @@
       "originalCity": "日本神户",
       "country": "日本",
       "cityName": "神户",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "未确认该城市适用的官方主视觉，未套用东京场不同版本。"
     },
     {
       "sourceIndex": 95,
@@ -16084,7 +16442,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 88,
@@ -16193,7 +16553,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2022",
+      "coverNote": ""
     },
     {
       "sourceIndex": 96,
@@ -16320,7 +16682,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2023",
+      "coverNote": ""
     },
     {
       "sourceIndex": 97,
@@ -16441,7 +16805,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2023",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -16517,7 +16883,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-3rd-evolve",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -16593,7 +16961,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-3rd-evolve",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -16668,7 +17038,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-4th-unison",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -16743,7 +17115,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-4th-unison",
+      "coverNote": ""
     },
     {
       "sourceIndex": 100,
@@ -16825,7 +17199,9 @@
       "originalCity": "加拿大温哥华",
       "country": "加拿大",
       "cityName": "温哥华",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 101,
@@ -16907,7 +17283,9 @@
       "originalCity": "美国波特兰",
       "country": "美国",
       "cityName": "波特兰",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 102,
@@ -16989,7 +17367,9 @@
       "originalCity": "美国圣何塞",
       "country": "美国",
       "cityName": "圣何塞",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 103,
@@ -17071,7 +17451,9 @@
       "originalCity": "美国菲尼克斯",
       "country": "美国",
       "cityName": "菲尼克斯",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 104,
@@ -17153,7 +17535,9 @@
       "originalCity": "美国洛杉矶",
       "country": "美国",
       "cityName": "洛杉矶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 105,
@@ -17235,7 +17619,9 @@
       "originalCity": "美国丹佛",
       "country": "美国",
       "cityName": "丹佛",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 106,
@@ -17317,7 +17703,9 @@
       "originalCity": "美国达拉斯",
       "country": "美国",
       "cityName": "达拉斯",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 107,
@@ -17399,7 +17787,9 @@
       "originalCity": "美国奥斯汀",
       "country": "美国",
       "cityName": "奥斯汀",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 108,
@@ -17481,7 +17871,9 @@
       "originalCity": "美国亚特兰大",
       "country": "美国",
       "cityName": "亚特兰大",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 109,
@@ -17563,7 +17955,9 @@
       "originalCity": "美国奥兰多",
       "country": "美国",
       "cityName": "奥兰多",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 110,
@@ -17645,7 +18039,9 @@
       "originalCity": "美国华盛顿",
       "country": "美国",
       "cityName": "华盛顿",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 111,
@@ -17727,7 +18123,9 @@
       "originalCity": "美国纽瓦克",
       "country": "美国",
       "cityName": "纽瓦克",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 112,
@@ -17809,7 +18207,9 @@
       "originalCity": "美国波士顿",
       "country": "美国",
       "cityName": "波士顿",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 113,
@@ -17891,7 +18291,9 @@
       "originalCity": "美国底特律",
       "country": "美国",
       "cityName": "底特律",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 114,
@@ -17973,7 +18375,9 @@
       "originalCity": "美国芝加哥",
       "country": "美国",
       "cityName": "芝加哥",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 115,
@@ -18055,7 +18459,9 @@
       "originalCity": "加拿大多伦多",
       "country": "加拿大",
       "cityName": "多伦多",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 116,
@@ -18137,7 +18543,9 @@
       "originalCity": "墨西哥墨西哥城",
       "country": "墨西哥",
       "cityName": "墨西哥城",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 123,
@@ -18219,7 +18627,9 @@
       "originalCity": "英国伦敦",
       "country": "英国",
       "cityName": "伦敦",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 124,
@@ -18301,7 +18711,9 @@
       "originalCity": "比利时布鲁塞尔",
       "country": "比利时",
       "cityName": "布鲁塞尔",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 125,
@@ -18383,7 +18795,9 @@
       "originalCity": "法国巴黎",
       "country": "法国",
       "cityName": "巴黎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 126,
@@ -18465,7 +18879,9 @@
       "originalCity": "荷兰阿姆斯特丹",
       "country": "荷兰",
       "cityName": "阿姆斯特丹",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 127,
@@ -18547,7 +18963,9 @@
       "originalCity": "德国杜塞尔多夫",
       "country": "德国",
       "cityName": "杜塞尔多夫",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 128,
@@ -18629,7 +19047,9 @@
       "originalCity": "德国柏林",
       "country": "德国",
       "cityName": "柏林",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 129,
@@ -18717,7 +19137,9 @@
       "originalCity": "新西兰奥克兰",
       "country": "新西兰",
       "cityName": "奥克兰",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-nzaus2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 130,
@@ -18805,7 +19227,9 @@
       "originalCity": "澳大利亚布里斯班",
       "country": "澳大利亚",
       "cityName": "布里斯班",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-nzaus2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 131,
@@ -18893,7 +19317,9 @@
       "originalCity": "澳大利亚悉尼",
       "country": "澳大利亚",
       "cityName": "悉尼",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-nzaus2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 132,
@@ -18981,7 +19407,9 @@
       "originalCity": "澳大利亚墨尔本",
       "country": "澳大利亚",
       "cityName": "墨尔本",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-nzaus2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 133,
@@ -19069,7 +19497,9 @@
       "originalCity": "澳大利亚珀斯",
       "country": "澳大利亚",
       "cityName": "珀斯",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-nzaus2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 99,
@@ -19145,7 +19575,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mikufes-2024",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -19226,7 +19658,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "sekai-symphony-2024",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -19307,7 +19741,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "sekai-symphony-2024",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -19390,7 +19826,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2024-tokyo",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -19473,7 +19911,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "横滨 / 神户版主视觉仍待补，未套用东京场版本。"
     },
     {
       "collectionIds": [
@@ -19556,7 +19996,9 @@
       "originalCity": "日本神户",
       "country": "日本",
       "cityName": "神户",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "横滨 / 神户版主视觉仍待补，未套用东京场版本。"
     },
     {
       "sourceIndex": 117,
@@ -19639,7 +20081,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 118,
@@ -19722,7 +20166,9 @@
       "originalCity": "中国北京",
       "country": "中国",
       "cityName": "北京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 119,
@@ -19805,7 +20251,9 @@
       "originalCity": "中国广州",
       "country": "中国",
       "cityName": "广州",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2024",
+      "coverNote": ""
     },
     {
       "id": "research-fireworks-2024",
@@ -19863,7 +20311,9 @@
       "originalCity": "横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "id": "research-coachella-2024",
@@ -19926,7 +20376,9 @@
       "originalCity": "美国加利福尼亚州 Indio",
       "country": "美国",
       "cityName": "印第奥",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "尚未确认该活动为初音单独制作的官方形象；未用音乐节标志或其他艺人图片替代。"
     },
     {
       "sourceIndex": 120,
@@ -20011,7 +20463,9 @@
       "originalCity": "日本福冈",
       "country": "日本",
       "cityName": "福冈",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 121,
@@ -20090,7 +20544,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2024",
+      "coverNote": ""
     },
     {
       "sourceIndex": 122,
@@ -20175,7 +20631,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2024",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20251,7 +20709,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-5th-frontier",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20327,7 +20787,9 @@
       "originalCity": "日本千叶",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "colorful-5th-frontier",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20412,7 +20874,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20497,7 +20961,9 @@
       "originalCity": "日本名古屋",
       "country": "日本",
       "cityName": "名古屋",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20582,7 +21048,9 @@
       "originalCity": "日本福冈",
       "country": "日本",
       "cityName": "福冈",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20667,7 +21135,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20752,7 +21222,9 @@
       "originalCity": "日本高松",
       "country": "日本",
       "cityName": "高松",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20837,7 +21309,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -20922,7 +21396,9 @@
       "originalCity": "日本那霸",
       "country": "日本",
       "cityName": "那霸",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "blooming-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21009,7 +21485,9 @@
       "originalCity": "Bangkok",
       "country": "泰国",
       "cityName": "曼谷",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21096,7 +21574,9 @@
       "originalCity": "Hong Kong",
       "country": "中国",
       "cityName": "香港",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21183,7 +21663,9 @@
       "originalCity": "Jakarta",
       "country": "印度尼西亚",
       "cityName": "雅加达",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21270,7 +21752,9 @@
       "originalCity": "Manila",
       "country": "菲律宾",
       "cityName": "马尼拉",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21357,7 +21841,9 @@
       "originalCity": "Singapore",
       "country": "新加坡",
       "cityName": "新加坡",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21444,7 +21930,9 @@
       "originalCity": "Kuala Lumpur",
       "country": "马来西亚",
       "cityName": "吉隆坡",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21531,7 +22019,9 @@
       "originalCity": "Taipei",
       "country": "中国",
       "cityName": "台北",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21618,7 +22108,9 @@
       "originalCity": "Seoul",
       "country": "韩国",
       "cityName": "首尔",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-asia2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21695,7 +22187,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2025-sapporo",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21772,7 +22266,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2025-tokyo",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -21849,7 +22345,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "横滨 / 神户版主视觉仍待补，未套用札幌或东京 / 大阪的不同版本。"
     },
     {
       "collectionIds": [
@@ -21926,7 +22424,9 @@
       "originalCity": "日本神户",
       "country": "日本",
       "cityName": "神户",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "横滨 / 神户版主视觉仍待补，未套用札幌或东京 / 大阪的不同版本。"
     },
     {
       "collectionIds": [],
@@ -22022,7 +22522,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2025",
+      "coverNote": ""
     },
     {
       "id": "research-sekai-fes-2025",
@@ -22097,7 +22599,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "miku-kei",
+      "coverNote": "已检索现有官方入口与官方活动资料，尚未确认该条目对应的初音主视觉，暂用官方通用形象。"
     },
     {
       "collectionIds": [
@@ -22202,7 +22706,9 @@
       "originalCity": "日本仙台",
       "country": "日本",
       "cityName": "仙台",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -22307,7 +22813,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2025",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -22412,7 +22920,9 @@
       "originalCity": "日本千叶（东京站）",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2025",
+      "coverNote": ""
     },
     {
       "vocaIndex": 135,
@@ -22490,7 +23000,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "decomiku-2026",
+      "coverNote": ""
     },
     {
       "vocaIndex": 134,
@@ -22580,7 +23092,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "lawson-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -22677,7 +23191,9 @@
       "originalCity": "London",
       "country": "英国",
       "cityName": "伦敦",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -22774,7 +23290,9 @@
       "originalCity": "Brussels",
       "country": "比利时",
       "cityName": "布鲁塞尔",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -22871,7 +23389,9 @@
       "originalCity": "Amsterdam",
       "country": "荷兰",
       "cityName": "阿姆斯特丹",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -22968,7 +23488,9 @@
       "originalCity": "Berlin",
       "country": "德国",
       "cityName": "柏林",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23065,7 +23587,9 @@
       "originalCity": "Düsseldorf",
       "country": "德国",
       "cityName": "杜塞尔多夫",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23162,7 +23686,9 @@
       "originalCity": "Paris",
       "country": "法国",
       "cityName": "巴黎",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23259,7 +23785,9 @@
       "originalCity": "Madrid",
       "country": "西班牙",
       "cityName": "马德里",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23356,7 +23884,9 @@
       "originalCity": "Lisbon",
       "country": "葡萄牙",
       "cityName": "里斯本",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-europe2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23441,7 +23971,9 @@
       "originalCity": "Chicago, IL",
       "country": "美国",
       "cityName": "芝加哥",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23526,7 +24058,9 @@
       "originalCity": "Denver, CO",
       "country": "美国",
       "cityName": "丹佛",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23611,7 +24145,9 @@
       "originalCity": "Vancouver, BC",
       "country": "加拿大",
       "cityName": "温哥华",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23696,7 +24232,9 @@
       "originalCity": "Seattle, WA",
       "country": "美国",
       "cityName": "西雅图",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23781,7 +24319,9 @@
       "originalCity": "San Jose, CA",
       "country": "美国",
       "cityName": "圣何塞",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23866,7 +24406,9 @@
       "originalCity": "Los Angeles, CA",
       "country": "美国",
       "cityName": "洛杉矶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -23951,7 +24493,9 @@
       "originalCity": "Glendale, AZ",
       "country": "美国",
       "cityName": "格伦代尔",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24036,7 +24580,9 @@
       "originalCity": "Grand Prairie, TX",
       "country": "美国",
       "cityName": "大草原城",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24121,7 +24667,9 @@
       "originalCity": "Cedar Park, TX",
       "country": "美国",
       "cityName": "锡达帕克",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24206,7 +24754,9 @@
       "originalCity": "Duluth, GA",
       "country": "美国",
       "cityName": "德卢斯",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24291,7 +24841,9 @@
       "originalCity": "Washington, DC",
       "country": "美国",
       "cityName": "华盛顿",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24376,7 +24928,9 @@
       "originalCity": "Newark, NJ",
       "country": "美国",
       "cityName": "纽瓦克",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24461,7 +25015,9 @@
       "originalCity": "Boston, MA",
       "country": "美国",
       "cityName": "波士顿",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24546,7 +25102,9 @@
       "originalCity": "Hamilton, ON",
       "country": "加拿大",
       "cityName": "汉密尔顿",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24631,7 +25189,9 @@
       "originalCity": "Mexico City",
       "country": "墨西哥",
       "cityName": "墨西哥城",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "expo-na2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24712,7 +25272,9 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24793,7 +25355,9 @@
       "originalCity": "日本东京",
       "country": "日本",
       "cityName": "东京",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -24874,7 +25438,9 @@
       "originalCity": "日本横滨",
       "country": "日本",
       "cityName": "横滨",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "symphony-2026-yokohama",
+      "coverNote": ""
     },
     {
       "vocaIndex": 136,
@@ -24958,7 +25524,9 @@
       "originalCity": "日本千叶县船桥市",
       "country": "日本",
       "cityName": "船桥",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "voltage-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -25048,7 +25616,9 @@
       "originalCity": "中国上海",
       "country": "中国",
       "cityName": "上海",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [],
@@ -25138,7 +25708,9 @@
       "originalCity": "中国成都",
       "country": "中国",
       "cityName": "成都",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mwy-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -25237,7 +25809,9 @@
       "originalCity": "日本滨松",
       "country": "日本",
       "cityName": "滨松",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -25336,7 +25910,9 @@
       "originalCity": "日本大阪",
       "country": "日本",
       "cityName": "大阪",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -25435,7 +26011,9 @@
       "originalCity": "日本千叶（东京站）",
       "country": "日本",
       "cityName": "千叶",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "mirai-2026",
+      "coverNote": ""
     },
     {
       "collectionIds": [
@@ -25510,7 +26088,1242 @@
       "originalCity": "日本札幌",
       "country": "日本",
       "cityName": "札幌",
-      "locationMode": "physical"
+      "locationMode": "physical",
+      "coverKey": "snow-2027",
+      "coverNote": ""
     }
-  ]
+  ],
+  "coverAssets": {
+    "miku-kei": {
+      "imageUrl": "https://piapro.net/images/ch_img_miku.png",
+      "sourceUrl": "https://piapro.net/pages/character/",
+      "label": "官方通用初音未来形象",
+      "credit": "Art by KEI / © Crypton Future Media, INC. www.piapro.net",
+      "kind": "generic",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/miku-kei.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "28659fa5814570fe6d0c1bd8bb8830fd83584ceaccef2f5273bf424e7fbcd9d0",
+      "width": 416,
+      "height": 640
+    },
+    "mirai-2013": {
+      "imageUrl": "https://magicalmirai.com/2013/images/img_main_chris.jpg",
+      "sourceUrl": "https://magicalmirai.com/2013/",
+      "label": "魔法未来 2013 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2013.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "97065d880c54fd6c3fee5174debbf9428affb7b650a915b32c7ac82c7cb89c98",
+      "width": 640,
+      "height": 480
+    },
+    "mirai-2014": {
+      "imageUrl": "https://magicalmirai.com/2014/images/bg_mainvisual.jpg",
+      "sourceUrl": "https://magicalmirai.com/2014/",
+      "label": "魔法未来 2014 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2014.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "0748baa764adbff87c1983ee7e9bbf21b510c22c48aa85ca2fb4b9533b146bc5",
+      "width": 640,
+      "height": 452
+    },
+    "mirai-2015": {
+      "imageUrl": "https://magicalmirai.com/2015/images/mainv.jpg",
+      "sourceUrl": "https://magicalmirai.com/2015/",
+      "label": "魔法未来 2015 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2015.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "a7180e0d65ce61ffca2e1e7ba38e23841dcec68c7a7b6e021ab9a6342605fc0b",
+      "width": 533,
+      "height": 640
+    },
+    "mirai-2016": {
+      "imageUrl": "https://magicalmirai.com/2016/images/index_mainvisual.png",
+      "sourceUrl": "https://magicalmirai.com/2016/",
+      "label": "魔法未来 2016 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2016.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "c039b281cb5950af877304b34a6485cdf19fa9bd464fccea509fe50053ecd042",
+      "width": 640,
+      "height": 490
+    },
+    "mirai-2017": {
+      "imageUrl": "https://magicalmirai.com/2017/images/top_main_miku.png",
+      "sourceUrl": "https://magicalmirai.com/2017/",
+      "label": "魔法未来 2017 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2017.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "9b8c97e151be7bbbb0a2e02fb146358ea459d720208a0103b51a54fe3930fb53",
+      "width": 640,
+      "height": 565
+    },
+    "mirai-2018": {
+      "imageUrl": "https://magicalmirai.com/2018/images/index/visual_main_01.jpg",
+      "sourceUrl": "https://magicalmirai.com/2018/",
+      "label": "魔法未来 2018 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "85% 20%",
+      "note": "",
+      "file": "covers/mirai-2018.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "a6b4a4b7ee7949065a389a3ca08bfd689fc08d1f7375f33edd4525c7e6bae8f2",
+      "width": 640,
+      "height": 377
+    },
+    "mirai-2019": {
+      "imageUrl": "https://magicalmirai.com/2019/images/index/mainvisual_miku.png",
+      "sourceUrl": "https://magicalmirai.com/2019/",
+      "label": "魔法未来 2019 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2019.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "8627c77d3357e5098aac2b329d66b20686552923cadc7f1f682c4723a36d81cb",
+      "width": 640,
+      "height": 608
+    },
+    "mirai-2021": {
+      "imageUrl": "https://magicalmirai.com/2021/images/index/img_visual_miku.png",
+      "sourceUrl": "https://magicalmirai.com/2021/",
+      "label": "魔法未来 2021 官方主视觉",
+      "credit": "Art by 左 / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2021.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "7c9dd6d82d9c63964245520d2d5190866df34017a0f47a83bee0969b14f08616",
+      "width": 639,
+      "height": 556
+    },
+    "mirai-2022": {
+      "imageUrl": "https://magicalmirai.com/10th/images/index/hero_img_miku.png",
+      "sourceUrl": "https://magicalmirai.com/10th/",
+      "label": "魔法未来 2022 官方主视觉",
+      "credit": "Art by KEI / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2022.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "38c2f6fc7aa7e3e8e191ddf9304469c5851b2ac7bc42b370a31e340e9b64a7e5",
+      "width": 616,
+      "height": 640
+    },
+    "mirai-2023": {
+      "imageUrl": "https://magicalmirai.com/2023/images/index/visual_miku.jpg",
+      "sourceUrl": "https://magicalmirai.com/2023/",
+      "label": "魔法未来 2023 官方主视觉",
+      "credit": "Art by LAM / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2023.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f24f75862f98e6e89a9b89fcdca0f3dffc681be608cd52d4d04bf74075cd49da",
+      "width": 640,
+      "height": 585
+    },
+    "mirai-2024": {
+      "imageUrl": "https://magicalmirai.com/2024/images/index/visual_miku.png",
+      "sourceUrl": "https://magicalmirai.com/2024/",
+      "label": "魔法未来 2024 官方主视觉",
+      "credit": "Art by たま / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "0269bf1a263746112185933e96bd0924e0be3f28965c328c67cffaffbf3fd6a1",
+      "width": 593,
+      "height": 640
+    },
+    "mirai-2025": {
+      "imageUrl": "https://magicalmirai.com/2025/images/index/img_theme_miku.png",
+      "sourceUrl": "https://magicalmirai.com/2025/",
+      "label": "魔法未来 2025 官方主视觉",
+      "credit": "Art by Tiv / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2025.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "b6d3b74682eba2fa9da77e744805092c66f738439e1a11e5e84f81ea61f3fa4c",
+      "width": 640,
+      "height": 577
+    },
+    "mirai-2026": {
+      "imageUrl": "https://magicalmirai.com/2026/images/index/img_visual_miku.webp",
+      "sourceUrl": "https://magicalmirai.com/2026/",
+      "label": "魔法未来 2026 官方主视觉",
+      "credit": "Art by 緜 / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "77d9e6efa78ad738a191ea6075d94bdd95989bc3d7633707dfc0ed9ecab5e842",
+      "width": 572,
+      "height": 640
+    },
+    "mirai-2020-osaka": {
+      "imageUrl": "https://magicalmirai.com/2020/images/index_contents_mainvisual_osaka.png",
+      "sourceUrl": "https://magicalmirai.com/2020/",
+      "label": "魔法未来 2020 osaka 官方主视觉",
+      "credit": "Art by 藤ちょこ / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2020-osaka.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "26c606ecdcf3523ac076b47b2d72a6399769eab357267e28225bb455d877d46b",
+      "width": 477,
+      "height": 640
+    },
+    "mirai-2020-tokyo": {
+      "imageUrl": "https://magicalmirai.com/2020/images/index_contents_mainvisual_tokyo.png",
+      "sourceUrl": "https://magicalmirai.com/2020/",
+      "label": "魔法未来 2020 tokyo 官方主视觉",
+      "credit": "Art by 藤ちょこ / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mirai-2020-tokyo.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "4058e3daae28ca2f6647eb86818ed0bc1f8d9265e8aeb7d9031b148abec68c7e",
+      "width": 472,
+      "height": 640
+    },
+    "expo-na2026": {
+      "imageUrl": "https://mikuexpo.com/na2026/images/hero_chara.webp",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO na2026 官方历届主视觉",
+      "credit": "Art by yon / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-na2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f0df9656382954a3dd5037f510c6815144a087101cba382ddc2c50f6d06d6adc",
+      "width": 493,
+      "height": 640
+    },
+    "expo-asia2025": {
+      "imageUrl": "https://mikuexpo.com/asia2025/images/hero_chara.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO asia2025 官方历届主视觉",
+      "credit": "Art by RITAO / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-asia2025.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "a3660207f148d2c550793bb9e00185e0644df3ce7813a61e05004264aa9b797c",
+      "width": 514,
+      "height": 640
+    },
+    "expo-nzaus2024": {
+      "imageUrl": "https://mikuexpo.com/images/hero_event_miku_nzaus2024.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO nzaus2024 官方历届主视觉",
+      "credit": "Art by Namie / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-nzaus2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "139a9a587fc1dc60b6aff6c276436b6433970c6dddeb3e89cfe3b38b49dcfc46",
+      "width": 640,
+      "height": 509
+    },
+    "expo-europe2024": {
+      "imageUrl": "https://mikuexpo.com/images/hero_event_miku_europe2024.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO europe2024 官方历届主视觉",
+      "credit": "Art by zain / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-europe2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "02cb9fee6af72592e939fd400a9f03058da5d5fe980be915f7a694eaa9f964fd",
+      "width": 640,
+      "height": 566
+    },
+    "expo-na2024": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_na2024.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO na2024 官方历届主视觉",
+      "credit": "Art by hatahiro / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-na2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "abcb63904b3a8704513cc52437c104447219edba4724e9688de0fb00d1cdb45b",
+      "width": 640,
+      "height": 464
+    },
+    "expo-vr2023": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_vr2023.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO vr2023 官方历届主视觉",
+      "credit": "Art by Bukurote / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-vr2023.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "11db003a6cd36c58bde70bea71c31f648ccc4e5148f6bf32006eea7911002a62",
+      "width": 640,
+      "height": 584
+    },
+    "expo-rewind2022": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_rewind2022.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO rewind2022 官方历届主视觉",
+      "credit": "Art by Zambiie / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-rewind2022.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f392686b1915394eafa7e70b65f6580f52ef684935c9209aa398db397c5bf09b",
+      "width": 640,
+      "height": 511
+    },
+    "expo-online2021": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_online2021.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO online2021 官方历届主视觉",
+      "credit": "Art by ryota / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-online2021.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "1c69ef3530e4889178c0d5f622eb24fff8d8fc4f2ad137715dc91281a1192488",
+      "width": 640,
+      "height": 485
+    },
+    "expo-europe2020": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_europe2020.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO europe2020 官方历届主视觉",
+      "credit": "Art by POKImari / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-europe2020.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "839edd9f7754938abb6629f64dab8826a20533b10a20e0f38df0f541a0714826",
+      "width": 640,
+      "height": 539
+    },
+    "expo-twhk2019": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_twhk2019.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO twhk2019 官方历届主视觉",
+      "credit": "Art by Ordan / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-twhk2019.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "75caf99d734367ce9476198dace06ac7c268eca58d69f438c76eed789dae3bb2",
+      "width": 640,
+      "height": 492
+    },
+    "expo-europe2018": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_europe2018.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO europe2018 官方历届主视觉",
+      "credit": "Art by Sameyama Jiro / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-europe2018.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "5f307e2abe0f26b354a832fea8d543ea376284d84d66c5b62788ae479f1b0bb6",
+      "width": 640,
+      "height": 409
+    },
+    "expo-usamx2018": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_usamx2018.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO usamx2018 官方历届主视觉",
+      "credit": "Art by JohnSu / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-usamx2018.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "aa8a68cddfbb88955376b85834fc444f7cb905622f20cb9b36de671fd44ba677",
+      "width": 640,
+      "height": 489
+    },
+    "expo-may2017": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_may2017.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO may2017 官方历届主视觉",
+      "credit": "Art by FeiGiap / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-may2017.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "54178cd5fcdcd7142a78b87e4950bfcf473eff6599492d37cbbdd473c8aaee1e",
+      "width": 640,
+      "height": 412
+    },
+    "expo-cn2016": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_cn2016.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO cn2016 官方历届主视觉",
+      "credit": "Art by saberiii / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-cn2016.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "8f0fad7a14c4f155167a8a047d088cc2f29ff8faa1388941cc3cfcda07cc7354",
+      "width": 640,
+      "height": 304
+    },
+    "expo-tw2016": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_tw2016.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO tw2016 官方历届主视觉",
+      "credit": "Art by BEEK / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-tw2016.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "b291b33a6fc2659435092ce9ddfebe91b5e6f94c1bda094ae55a49346fc23caf",
+      "width": 640,
+      "height": 444
+    },
+    "expo-na2016": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_na2016.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO na2016 官方历届主视觉",
+      "credit": "Art by neco / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-na2016.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "a6e88518b140439c5e5bd5527658c6bc8bcd99bf410c609769ad8baf84763351",
+      "width": 640,
+      "height": 640
+    },
+    "expo-jp2016": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_jp2016.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO jp2016 官方历届主视觉",
+      "credit": "Art by neco / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-jp2016.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "816aca9209e14dc3c11f73769eacfab7658c592022e9a5bbd856d2f2ca96e7f9",
+      "width": 617,
+      "height": 640
+    },
+    "expo-sh2015": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_sh2015.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO sh2015 官方历届主视觉",
+      "credit": "Art by SEGA / MARZA ANIMATION PLANET INC. / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-sh2015.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "ae9ed7f6008772039cd45c2bc2f61e2d11007de69bdda1553dc73262956d76a8",
+      "width": 435,
+      "height": 640
+    },
+    "expo-us2014": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_us2014.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO us2014 官方历届主视觉",
+      "credit": "Art by apapico / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-us2014.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "97b363b7b7eb0eaf6d08f16e6cec72d239e670b69c0f8a91d14b7181e35a6845",
+      "width": 640,
+      "height": 461
+    },
+    "expo-id2014": {
+      "imageUrl": "https://mikuexpo.com/images/pasteve_miku_id2014.png",
+      "sourceUrl": "https://mikuexpo.com/",
+      "label": "MIKU EXPO id2014 官方历届主视觉",
+      "credit": "Art by KEI / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-id2014.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "230ed8e8c0450080322b670204533305ead2671908db06b5ac9f587ff155c5fa",
+      "width": 640,
+      "height": 564
+    },
+    "expo-europe2026": {
+      "imageUrl": "https://mikuexpo.com/europe2026/images/hero_chara.webp",
+      "sourceUrl": "https://mikuexpo.com/europe2026/",
+      "label": "MIKU EXPO 2026 EUROPE 官方主视觉",
+      "credit": "Art by suzunosuke / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/expo-europe2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "9137113786fcac878acb9c99f930c77d337df0569b49f7333ef0821a5523f3b6",
+      "width": 452,
+      "height": 640
+    },
+    "snow-2015": {
+      "imageUrl": "https://snowmiku.com/2015/images/bg_main.jpg",
+      "sourceUrl": "https://snowmiku.com/2015/",
+      "label": "SNOW MIKU 2015 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "采用同年度 SNOW MIKU 官方活动主视觉，不声称为 Live 单独绘制。",
+      "file": "covers/snow-2015.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "99818b5b739d03da22e51f25d3c262c61d95bf1b787588f0472033431875d626",
+      "width": 640,
+      "height": 606
+    },
+    "snow-2018": {
+      "imageUrl": "https://snowmiku.com/2018/images/index/visual_miku.png?180205",
+      "sourceUrl": "https://snowmiku.com/2018/",
+      "label": "SNOW MIKU 2018 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "采用同年度 SNOW MIKU 官方活动主视觉。",
+      "file": "covers/snow-2018.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f08cf7e2cd760ae56173f6f5055b07cf8a0adbe7f06bfe87abe29e3beb68409c",
+      "width": 471,
+      "height": 640
+    },
+    "snow-2019": {
+      "imageUrl": "https://snowmiku.com/2019/images/index/back_main_visual.jpg",
+      "sourceUrl": "https://snowmiku.com/2019/",
+      "label": "SNOW MIKU 2019 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "采用同年度 SNOW MIKU 官方活动主视觉。",
+      "file": "covers/snow-2019.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "978584286e4f9601e37a5638a4d61bcb048410d1969b89c11e3c9be23e5b07f4",
+      "width": 550,
+      "height": 640
+    },
+    "snow-2027": {
+      "imageUrl": "https://snowmiku.com/2027/images/index/chara-theme-visual.webp",
+      "sourceUrl": "https://snowmiku.com/2027/",
+      "label": "SNOW MIKU 2027 官方主视觉",
+      "credit": "Art by さくらしおり / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "Live 页面未标示独立主视觉；采用同年度 SNOW MIKU 活动主视觉。",
+      "file": "covers/snow-2027.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "a25e6be4059bb9b3a5233555475b6b7d243d70e2ee3e64a6a253908dab8a6a98",
+      "width": 533,
+      "height": 640
+    },
+    "blooming-2025": {
+      "imageUrl": "https://piapro.net/japantour2025/images/hero_visual_miku.webp",
+      "sourceUrl": "https://piapro.net/japantour2025/index_en.html",
+      "label": "BLOOMING 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/blooming-2025.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "9018a3ed84a686ea9829c1bb4f195ce9aa06abbd36e0ef40da8f381c80051050",
+      "width": 640,
+      "height": 586
+    },
+    "thunderbolt-2023": {
+      "imageUrl": "https://piapro.net/japantour2023/images/theme_visual.png",
+      "sourceUrl": "https://piapro.net/japantour2023/",
+      "label": "THUNDERBOLT 官方主视觉",
+      "credit": "Art by 秋赤音 / © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/thunderbolt-2023.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "3708c6756e5fdc76d7f4a5c2a3fa1ef54dd7ff1500d719fda6927857d43aa31b",
+      "width": 599,
+      "height": 640
+    },
+    "decomiku-2026": {
+      "imageUrl": "https://otoiro.co.jp/wp/wp-content/uploads/2025/07/DML26_CO_KV.png",
+      "sourceUrl": "https://otoiro.co.jp/live/decomikulive2026",
+      "label": "デコミク LIVE 2026 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/decomiku-2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "95f0535da93a990942e517b05571eedba20255c26b516ae73b05d548171c399f",
+      "width": 640,
+      "height": 360
+    },
+    "voltage-2026": {
+      "imageUrl": "https://www.project-voltage.jp/live2026/assets/img/kv/pkmk_live_kv.png",
+      "sourceUrl": "https://www.project-voltage.jp/live2026/",
+      "label": "VOLTAGE Live! 官方主视觉",
+      "credit": "© Pokémon. © Crypton Future Media, INC.",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/voltage-2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "740ec6d0ceda55ad3a6f2029a4bfee5fcb4a0b857c06f6d4b0a5ae8178f9f915",
+      "width": 419,
+      "height": 640
+    },
+    "mikufes-2024": {
+      "imageUrl": "https://mikufes24spring.jp/wp-content/themes/mikufes_theme/img/main.jpg",
+      "sourceUrl": "https://mikufes24spring.jp/",
+      "label": "MIKU FES’24 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "85% 20%",
+      "note": "",
+      "file": "covers/mikufes-2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "c7edf91e2296b836b53660fb242f38134a8a0666e72c2333e6746d9806aa250d",
+      "width": 640,
+      "height": 389
+    },
+    "sekai-symphony-2021": {
+      "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2021/img/main.png",
+      "sourceUrl": "https://pjsekai.sega.jp/sekaisymphony/2021/index.html",
+      "label": "セカイシンフォニー 2021 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/sekai-symphony-2021.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "01f8a1b1c56f625ac937b7cabf7a12fff9e13ba8dd14f2a145fc62f2539e5f0e",
+      "width": 617,
+      "height": 640
+    },
+    "sekai-symphony-2022": {
+      "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2022/img/hero.png",
+      "sourceUrl": "https://pjsekai.sega.jp/sekaisymphony/2022/index.html",
+      "label": "セカイシンフォニー 2022 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/sekai-symphony-2022.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "908c12f9e3fcd069d7f833b89eb269f999546740d7f21e39928c7b54288bf769",
+      "width": 640,
+      "height": 620
+    },
+    "sekai-symphony-2023": {
+      "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2023/img/main.jpg",
+      "sourceUrl": "https://pjsekai.sega.jp/sekaisymphony/2023/index.html",
+      "label": "セカイシンフォニー 2023 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/sekai-symphony-2023.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "2c994071cb41f0ccd464ecff75e6631e3612c57a8996c294dc75d16c6fde72cf",
+      "width": 639,
+      "height": 457
+    },
+    "sekai-symphony-2024": {
+      "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2024/img/kv.png",
+      "sourceUrl": "https://pjsekai.sega.jp/sekaisymphony/2024/index.html",
+      "label": "セカイシンフォニー 2024 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/sekai-symphony-2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "4fd95bc7ea55249489e4adf866c03f4f5234e0a294174e23921afa19f28ee32b",
+      "width": 640,
+      "height": 454
+    },
+    "colorful-1st-link": {
+      "imageUrl": "https://pjsekai.sega.jp/colorfullive/1st-link/assets/images/pc/kv_chara-5.png",
+      "sourceUrl": "https://pjsekai.sega.jp/colorfullive/1st-link/index.html",
+      "label": "COLORFUL LIVE 1st-link 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/colorful-1st-link.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "d6cb7498f21b9ac0ba518d6d2d8288f2a757287b8e9b904da99f0a7979b877dd",
+      "width": 534,
+      "height": 640
+    },
+    "colorful-2nd-will": {
+      "imageUrl": "https://pjsekai.sega.jp/colorfullive/2nd-will/images/kv-chara01-pc.png",
+      "sourceUrl": "https://pjsekai.sega.jp/colorfullive/2nd-will/index.html",
+      "label": "COLORFUL LIVE 2nd-will 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/colorful-2nd-will.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "5c1c5d86b3bbe147b8eb4e3dc8e15c6a97fcad9e28b2cae70659aa0af365f7a6",
+      "width": 366,
+      "height": 640
+    },
+    "colorful-3rd-evolve": {
+      "imageUrl": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/images/kv-chara.png",
+      "sourceUrl": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/index.html",
+      "label": "COLORFUL LIVE 3rd-evolve 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/colorful-3rd-evolve.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.33,
+        0,
+        0.31,
+        1
+      ],
+      "sha256": "e8aeb607a8751bf238a294bb64dedb314c9f2b0be88cfc74c53f02fe9fa06d02",
+      "width": 281,
+      "height": 640
+    },
+    "colorful-4th-unison": {
+      "imageUrl": "https://pjsekai.sega.jp/colorfullive/4th-unison/assets/images/pc/top/kv_character.webp",
+      "sourceUrl": "https://pjsekai.sega.jp/colorfullive/4th-unison/index.html",
+      "label": "COLORFUL LIVE 4th-unison 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/colorful-4th-unison.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.43,
+        0.43,
+        0.3,
+        0.57
+      ],
+      "sha256": "202d804ce0f913c39e86e34d4ae26fcfa4d82104acb6dd74b9db4427ebb57e36",
+      "width": 523,
+      "height": 640
+    },
+    "mwy-2024": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2024/06/zh2406141.jpg",
+      "sourceUrl": "https://blog.piapro.net/2024/06/zh2406141.html",
+      "label": "未来有你 2024 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by 影依望远镜 / © Crypton Future Media, INC. www.piapro.net",
+      "position": "50% 15%",
+      "note": "历届页面配图印有 2023 年份，已排除；采用 Crypton 2024 年正式官宣并明确标注作者的主视觉。",
+      "file": "covers/mwy-2024.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f4cc00164325e8ba35b437bc91629e9815ba6f9b696eb043179e8dc545538bd9",
+      "width": 390,
+      "height": 424,
+      "focus": [
+        0.1,
+        0.2,
+        0.78,
+        0.6
+      ]
+    },
+    "mwy-2020": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250424/20250424133631_6809cddfdeee1.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "label": "未来有你 2020 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mwy-2020.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "a19969e55b3dc71ef0b6281a6ffd5c24f1f492cb7cface9d90891aabbeb71e17",
+      "width": 452,
+      "height": 640
+    },
+    "mwy-2018": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163156_6808a57ce669b.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "label": "未来有你 2018 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mwy-2018.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "d731906a495a0851b18a12fdfd4ca0e50c20133ab45443fad8a0598e09ca5436",
+      "width": 452,
+      "height": 640
+    },
+    "galaxy-2020": {
+      "imageUrl": "http://blog.piapro.net/wp-content/uploads/2020/09/a2009031-2.jpg",
+      "sourceUrl": "https://blog.piapro.net/2020/09/a2009031.html",
+      "label": "galaxy-2020 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 55%",
+      "note": "",
+      "file": "covers/galaxy-2020.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "b8716883ee6ef0e6f83b71ee2e74d8f0f9b96517c2b8eb31f176ae657b071060",
+      "width": 452,
+      "height": 640
+    },
+    "galaxy-2021": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2021/09/a2109171-2-1.png",
+      "sourceUrl": "https://blog.piapro.net/2021/09/a2109171.html",
+      "label": "galaxy-2021 官方主视觉",
+      "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
+      "kind": "mainvisual",
+      "position": "50% 55%",
+      "note": "",
+      "file": "covers/galaxy-2021.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "abe50ded87da7b3cf8d6f2593774d59ab366b8b13fbd47e3200b720b059a0a5a",
+      "width": 375,
+      "height": 500
+    },
+    "colorful-5th-frontier": {
+      "imageUrl": "https://pjsekai.sega.jp/colorfullive/5th-frontier/assets/images/pc/top/chara@0.5x.webp",
+      "sourceUrl": "https://pjsekai.sega.jp/colorfullive/5th-frontier/index.html",
+      "label": "COLORFUL LIVE 5th 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/colorful-5th-frontier.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.25,
+        0.52,
+        0.5,
+        0.48
+      ],
+      "sha256": "73111d47a3df0285274213441358b94d8a8f2e24e1b7f84f0316c400556b91f0",
+      "width": 567,
+      "height": 390
+    },
+    "mwy-2025": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250911/20250911122403_68c24ee3810bf.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "label": "未来有你 2025 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mwy-2025.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "76608a72681026b22b1805cc864700f0a1cfe82c5895df60abda66d189612050",
+      "width": 452,
+      "height": 640
+    },
+    "mwy-2021": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163119_6808a55714270.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "label": "未来有你 2021 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mwy-2021.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "2cc737cc77c514ba79a4e9fc89561cb128fb31a217d7c9e95ca389898c514115",
+      "width": 453,
+      "height": 640
+    },
+    "mwy-2019": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163144_6808a570482e0.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "label": "未来有你 2019 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mwy-2019.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f91f2c71aeab1ef4badb0bc08f4c0e23839c9ae935fe6648624e25236fdd80a1",
+      "width": 452,
+      "height": 640
+    },
+    "mwy-2017": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163205_6808a585db60c.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html",
+      "label": "未来有你 2017 官方年度主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/mwy-2017.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "0249f02acc2b6e918d01986d9cc476e6e592ee7214f01eb3aa4b3efb8a78b80b",
+      "width": 401,
+      "height": 567
+    },
+    "mwy-2026": {
+      "imageUrl": "https://www.scla.com.cn/Public/Uploads/ueditor/upload/image/20261012/1791756677885601.jpg",
+      "sourceUrl": "https://www.scla.com.cn/Cn/Index/pageView/catid/16/id/1107/ip/16.html",
+      "label": "未来有你 2026 官方单人插画",
+      "kind": "eventvisual",
+      "credit": "© Crypton Future Media, INC. www.piapro.net；插画署名详见官方原图",
+      "position": "50% 30%",
+      "note": "采用主办方“六人等身插画＆立绘公开”页面发布的初音单人插画。",
+      "file": "covers/mwy-2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "cc426982ccda173703cb305361c74016c3745a116d999864b15596a1b3a46f01",
+      "width": 452,
+      "height": 640
+    },
+    "symphony-2016": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2016/05/g1605314.jpg",
+      "sourceUrl": "https://blog.piapro.net/2016/05/g1605311.html",
+      "label": "symphony-2016 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by KEI / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2016.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.63,
+        0.04,
+        0.37,
+        0.94
+      ],
+      "sha256": "e0e5487b4b36b7912aa5215525b50002f0d780102da4b3a42dfb17550536ac9d",
+      "width": 185,
+      "height": 213
+    },
+    "symphony-2017": {
+      "imageUrl": "https://prod-v2-assets.wmg.jp/artist/mikusymphony/others/20170831_mikusymphony_s.jpg",
+      "sourceUrl": "https://wmg.jp/hatsune-miku-symphony/news/78157",
+      "label": "symphony-2017 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by KEI / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2017.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.62,
+        0,
+        0.38,
+        0.98
+      ],
+      "sha256": "295762346c663f8d9d86de0614488a828bda14738333faccbc65e87b0233f03e",
+      "width": 133,
+      "height": 214
+    },
+    "symphony-2018": {
+      "imageUrl": "https://prod-v2-assets.wmg.jp/uploads/pictures/64/content_20180604_mikusymphony_main.jpg",
+      "sourceUrl": "https://wmg.jp/hatsune-miku-symphony/news/81527",
+      "label": "symphony-2018 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2018.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "ee72d992b41e8530b9f75a79625473960724c94e8c8d4577d36821019a0ea11c",
+      "width": 640,
+      "height": 453
+    },
+    "symphony-2019": {
+      "imageUrl": "https://prod-v2-assets.wmg.jp/uploads/pictures/1366/content__%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%BC2019_%E6%96%B0%E3%83%92%E3%82%99%E3%82%B7%E3%82%99%E3%83%A5%E3%82%A2%E3%83%AB.jpg",
+      "sourceUrl": "https://wmg.jp/hatsune-miku-symphony/news/83368",
+      "label": "symphony-2019 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2019.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "0858cb45400cc436639385a6c8af1ed073920906fc307792c9ae0d3f4e892d08",
+      "width": 640,
+      "height": 453
+    },
+    "symphony-2021": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2021/06/U210611_2v.jpg",
+      "sourceUrl": "https://blog.piapro.net/2021/06/u210611_1.html",
+      "label": "symphony-2021 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2021.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.37,
+        0.14,
+        0.3,
+        0.53
+      ],
+      "sha256": "900439d54046c811228a4ca88a3ed67705585eaf9b01447d97c923bcda7c56fd",
+      "width": 240,
+      "height": 300
+    },
+    "symphony-2020-yokohama": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2020/08/U200831_001.jpg",
+      "sourceUrl": "https://blog.piapro.net/2020/09/u2009011-1.html",
+      "label": "symphony-2020-yokohama 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2020-yokohama.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "5f5e86ba65f8e9e681b9a23b20a1b490c44882eb19f9ed6b5009a1d9dbf6d90d",
+      "width": 620,
+      "height": 439
+    },
+    "symphony-2020-osaka": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2020/08/U200831_002.jpg",
+      "sourceUrl": "https://blog.piapro.net/2020/09/u2009011-1.html",
+      "label": "symphony-2020-osaka 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2020-osaka.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "bfa84d80cf727429cb3c6554de3a349950c800a4cf3f90519151d4118935a365",
+      "width": 620,
+      "height": 439
+    },
+    "symphony-2022-tokyo": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2022/03/U220316_main-725x1024.jpg",
+      "sourceUrl": "https://blog.piapro.net/2022/03/u2203161_1.html",
+      "label": "symphony-2022-tokyo 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2022-tokyo.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "7293dbb95e5a1e861fcf9c1e108910343c0a05631aedb6880631c58cd47358db",
+      "width": 453,
+      "height": 640
+    },
+    "symphony-2022-yokohama": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2022/06/U2206011-v.jpg",
+      "sourceUrl": "https://blog.piapro.net/2022/06/u220601_1.html",
+      "label": "symphony-2022-yokohama 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2022-yokohama.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "4f4d79d5069f0e82e4c7916f918509c17ebc57864da404ef84f39203dd59b237",
+      "width": 640,
+      "height": 410
+    },
+    "symphony-2025-sapporo": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2025/11/IM24111902.png",
+      "sourceUrl": "https://blog.piapro.net/2024/11/im24111901.html",
+      "label": "symphony-2025-sapporo 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2025-sapporo.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.06,
+        0.02,
+        0.4,
+        0.96
+      ],
+      "sha256": "e295d54d0065d6e42a58b028d63524cbcc3f16e68b21a12794927645f7d95d81",
+      "width": 474,
+      "height": 640
+    },
+    "symphony-2025-tokyo": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2026/02/IM25021302.png",
+      "sourceUrl": "https://blog.piapro.net/2025/02/im25021301.html",
+      "label": "symphony-2025-tokyo 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2025-tokyo.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "2f2234978056dd619f8a111ee048064ec4eba63ab79fe873b1968f7af7d4ba37",
+      "width": 455,
+      "height": 640
+    },
+    "symphony-2023": {
+      "imageUrl": "https://www.promax.co.jp/backyard/wp-content/uploads/2023/05/IMG_3145.jpg",
+      "sourceUrl": "https://www.promax.co.jp/archives/event/202311598",
+      "label": "初音ミクシンフォニー2023 东京公演 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "采用主办方在该年度项目页面发布的主视觉；仅用于已确认适用的东京场，其他城市未套用。",
+      "file": "covers/symphony-2023.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "369e4d28d88022aea97070175fec4c473f1e43869aa71d6d457f624758ebc9b8",
+      "width": 640,
+      "height": 453
+    },
+    "symphony-2026": {
+      "imageUrl": "https://sp.wmg.jp/mikusymphony/images/2026/main20260501.jpg",
+      "sourceUrl": "https://sp.wmg.jp/mikusymphony/2026/",
+      "label": "初音ミクシンフォニー2026 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "d396e3932c86527b0ecbdc33a85729230946890cced87ed1e1ea656fcc970d48",
+      "width": 640,
+      "height": 449
+    },
+    "kodo-2023": {
+      "imageUrl": "https://blog.piapro.net/wp-content/uploads/2023/02/mon2302151-2.jpg",
+      "sourceUrl": "https://blog.piapro.net/2023/02/mon2302151.html",
+      "label": "kodo-2023 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/kodo-2023.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "7453c85f997c1aea9a768530950b5634896ac7cb794252e33d1d6a5123c1c716",
+      "width": 500,
+      "height": 636
+    },
+    "lawson-2026": {
+      "imageUrl": "https://prcdn.freetls.fastly.net/release_image/52709/539/52709-539-9506960a3193ae9fb82f1e8d392cb860-500x707.jpg?width=1950&height=1350&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000539.000052709.html",
+      "label": "LAWSON 50th 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by はねこと / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/lawson-2026.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "2183b1aba30be6b495a656d3185e14c059d2cbd162baa6a732e51ae1eec7dff8",
+      "width": 452,
+      "height": 640
+    },
+    "symphony-2024-tokyo": {
+      "imageUrl": "https://www.promax.co.jp/backyard/wp-content/uploads/2024/01/MIKU2024_%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB.jpg",
+      "sourceUrl": "https://www.promax.co.jp/archives/event/202413140",
+      "label": "初音ミクシンフォニー2024 東京公演 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by Rella / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "采用主办方在该年度项目页面发布的主视觉；仅用于已确认适用的东京场，其他城市未套用。",
+      "file": "covers/symphony-2024-tokyo.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "d8ca744a07b8fc606706ba23c698ffc3bf1337063798d3121b441f5796fdf739",
+      "width": 640,
+      "height": 360
+    },
+    "giving-2010": {
+      "imageUrl": "https://miku.sega.jp/39/img/bg_miku5.png",
+      "sourceUrl": "https://miku.sega.jp/39/mikufes.html",
+      "label": "ミクの日感謝祭 2010 官方页面形象",
+      "kind": "eventvisual",
+      "credit": "© Crypton Future Media, INC. / SEGA",
+      "position": "50% 0%",
+      "note": "官方页面使用形象，未另行声称为独立绘制主视觉。",
+      "file": "covers/giving-2010.png",
+      "checkedAt": "2026-11-18",
+      "focus": [
+        0.42,
+        0,
+        0.58,
+        0.34
+      ],
+      "sha256": "f67f6e252101fad6c6897c3276dfb54491c54f81b9f797b1a1acf0e17655758a",
+      "width": 250,
+      "height": 640
+    },
+    "mikunopolis-2011": {
+      "imageUrl": "https://miku.sega.jp/39/img/la/bg_la_miku.png",
+      "sourceUrl": "https://miku.sega.jp/39/mikula.html",
+      "label": "MIKUNOPOLIS 官方页面形象",
+      "kind": "eventvisual",
+      "credit": "© Crypton Future Media, INC. / SEGA",
+      "position": "50% 0%",
+      "note": "官方页面使用形象，未另行声称为独立绘制主视觉。",
+      "file": "covers/mikunopolis-2011.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "f55fdbaa633c40cc7dbccdc1c23e911772a6eae2a2fd6e5e1f770e072f4351ad",
+      "width": 491,
+      "height": 640
+    },
+    "symphony-2026-yokohama": {
+      "imageUrl": "https://sp.wmg.jp/mikusymphony/images/2027/main0911.jpg",
+      "sourceUrl": "https://sp.wmg.jp/mikusymphony/",
+      "label": "初音ミクシンフォニー2026–2027 官方主视觉",
+      "kind": "mainvisual",
+      "credit": "Art by 泉彩 / © Crypton Future Media, INC.",
+      "position": "50% 0%",
+      "note": "",
+      "file": "covers/symphony-2026-yokohama.png",
+      "checkedAt": "2026-11-18",
+      "sha256": "cbd2a276eaf697755302761f79e71d835d0288c3c8a075dacbcac6cf73d77a26",
+      "width": 640,
+      "height": 452
+    }
+  },
+  "defaultCover": "miku-kei"
 }

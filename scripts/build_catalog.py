@@ -87,10 +87,12 @@ def build_catalog():
     naming = json.loads((REFERENCES / 'event-names.json').read_text(encoding='utf-8'))
     apply_names(events, projects, naming)
     tours = json.loads((REFERENCES / 'mikutime-concert-index.json').read_text())['concerts']
-    catalog = dict(version=6, sourceCount=source_count, projects=projects, updated='2026-11-17',
+    catalog = dict(version=7, sourceCount=source_count, projects=projects, updated='2026-11-18',
         coverage=f'以 {source_count} 条审阅底稿为基础，将已知城市站独立建档。当前 {len(events)} 条演出档案、{len(projects)} 条项目资料；同站连续日期仍合并记录，档案数量不等于演出场次数。旧项目记录及未拆分线索保留在项目资料中。',
         sources=[dict(label='VocaDB（优先检索）',url='https://vocadb.net/'),dict(label='Vocaloid Wiki（其次）',url='https://vocaloid.fandom.com/'),dict(label='新创华：未来有你历届官方记录',url='https://www.scla.com.cn/Cn/Index/pageView/catid/15/ip/16.html'),dict(label='Crypton 官方活动目录',url='https://piapro.net/intl/en_event.html'),dict(label='MIKU EXPO 官方历史',url='https://mikuexpo.com/history'),dict(label='Vocawiki 辅助目录',url='https://voca.wiki/初音未来/演唱会'),dict(label='MikuTime 辅助巡演索引',url='https://mikutime.link/setlists/')],
         tourRecords=[tour for tour in tours if tour['tour'] not in {'KAGA14','MK15'}], events=events)
+    from catalog_covers import apply_covers
+    apply_covers(catalog, REFERENCES / 'event-covers.json')
     return catalog
 
 if __name__ == '__main__':

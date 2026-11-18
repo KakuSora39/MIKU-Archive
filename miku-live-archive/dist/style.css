@@ -718,13 +718,17 @@ aside nav button {font-size:calc(11px + var(--type-step)*1px);}
 #settings-text-size {width:100%;padding:0;height:24px;accent-color:var(--mint);cursor:pointer;}
 .size-ticks {display:flex;justify-content:space-between;color:var(--muted);font-size:11px;}
 .atlas-cover>span:not(.atlas-art),.atlas-cover>b,.atlas-cover>small {position:relative;z-index:1;max-width:62%;text-align:left;}
-.atlas-art {position:absolute;inset:0 0 0 34%;pointer-events:none;mask-image:linear-gradient(to right,transparent 0%,#000 65%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 65%);}
+.atlas-art {position:absolute;inset:0 0 0 34%;pointer-events:none;mask-image:linear-gradient(to right,transparent 0%,#000 45%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 45%);}
 .atlas-art img {position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;}
 .atlas-art .atlas-art-blur {filter:blur(12px);transform:scale(1.12);opacity:.65;}
-.atlas-art .atlas-art-image {mask-image:linear-gradient(to right,transparent 10%,#000 70%);-webkit-mask-image:linear-gradient(to right,transparent 10%,#000 70%);}
+.atlas-art .atlas-art-image {mask-image:linear-gradient(to right,transparent 5%,#000 45%);-webkit-mask-image:linear-gradient(to right,transparent 5%,#000 45%);}
 .cover-editor {grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px;}
 .cover-editor label {display:flex;flex-direction:column;gap:8px;margin:14px 0;}
 .cover-editor input {width:100%;}
 #catalog-cover-preview {max-width:380px;border-radius:10px;overflow:hidden;}
 #catalog-cover-status {color:var(--mint);font-size:12px;overflow-wrap:anywhere;}
 @media(max-width:700px){#undo-toast{left:16px;right:16px;transform:none;max-width:none;flex-wrap:wrap;}:root[data-text-size="4"] .atlas-grid,:root[data-text-size="5"] .atlas-grid{grid-template-columns:1fr;}.size-slider{width:100%;}}
+
+.atlas-art img {object-position:var(--cover-position,50% 18%);}
+.cover-attribution {border-top:1px solid var(--line);padding-top:12px;margin-top:16px;}
+.cover-attribution p {font-size:calc(12px + var(--type-step)*1px);line-height:1.7;overflow-wrap:anywhere;}

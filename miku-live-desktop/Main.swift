@@ -198,6 +198,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             previousSize=size;
           }
           updateSettings({textSize:2});
+          if(!atlasCatalog.events.every(event=>event.coverKey&&resolvedCover(event)?.src.startsWith('covers/')))throw Error('complete built-in cover bindings');
+          if(resolvedCover({id:'custom-future'}).src!=='covers/miku-kei.png')throw Error('new event default cover');
+          if(atlasCatalog.events.find(e=>e.id==='primary-14--hamamatsu').coverKey!=='mirai-2026'||atlasCatalog.events.find(e=>e.id==='moegirl-stage-088').coverKey!=='mirai-2022')throw Error('cross year official cover');
+          const dummy=document.createElement('div');document.body.append(dummy);dummy.innerHTML=coverMarkup({coverUrl:'https://example.invalid/image.jpg'});bindCoverFallbacks(dummy);
+          dummy.querySelector('img').dispatchEvent(new Event('error'));
+          if(dummy.querySelector('.atlas-art').hidden||!dummy.querySelector('.atlas-art-image').src.endsWith('covers/miku-kei.png'))throw Error('cover error fallback');dummy.remove();
+          showAtlasEvent('primary-26');if(!document.getElementById('atlas-detail-body').textContent.includes('查看官方图片来源'))throw Error('cover attribution');document.getElementById('atlas-detail').close();
           const extensionsBefore=currentArchiveState(),coverID=atlasRows()[0].id;
           const testCover='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
           const testSetlist={schema:1,sourceUrl:'https://example.com/setlist',songs:[{title:'Tell Your World',artist:'livetune',section:'本篇'},{title:'メルト',section:'Encore'}]};
@@ -214,7 +221,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           mergeBackup({schema:1,records:[],atlasEdits:{[coverID]:{venue:'old backup venue'}}});
           if(atlasEdits[coverID].coverUrl!==testCover||!atlasEdits[coverID].setlist)throw Error('old backup erased extensions');
           editCatalogEvent(coverID);document.getElementById('catalog-cover-clear').click();document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();render();
-          if(atlasEdits[coverID].coverUrl!==''||document.querySelector('.atlas-art'))throw Error('remove cover');
+          if(atlasEdits[coverID].coverUrl!==''||resolvedCover(atlasCatalog.events.find(e=>e.id===coverID)).kind==='custom')throw Error('remove cover');
           for(const bad of ['javascript:alert(1)','file:///tmp/a.png','data:image/svg+xml;base64,AAAA','data:image/png;base64,'+'A'.repeat(2800000)]){
             let rejected=false;try{normalizeCatalogEdits({[coverID]:{coverUrl:bad}});}catch{rejected=true;}
             if(!rejected)throw Error('invalid cover accepted');
@@ -312,11 +319,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           clearUndo();updateSettings({theme:previewTheme,textSize:\(CommandLine.arguments.contains("--preview-large") ? "'large'" : "'standard'")});
           const previewCover='\(previewCover)';
           if(previewCover){const edits={...atlasEdits};atlasRows().slice(0,6).forEach(e=>edits[e.id]={...edits[e.id],coverUrl:'data:image/png;base64,'+previewCover,coverCredit:'界面测试图片'});saveCatalogEdits(edits);render();}
+          if(\(CommandLine.arguments.contains("--preview-mirai") ? "true" : "false")){document.getElementById('atlas-series').value='魔法未来';render();}
+          if(\(CommandLine.arguments.contains("--preview-mwy") ? "true" : "false")){document.getElementById('atlas-series').value='未来有你';render();}
+          if(\(CommandLine.arguments.contains("--preview-fallback") ? "true" : "false")){document.getElementById('atlas-series').value='感谢祭 / MIKUPA';render();}
           if(\(CommandLine.arguments.contains("--preview-settings") ? "true" : "false"))openSettings();
           if(\(CommandLine.arguments.contains("--preview-backup") ? "true" : "false"))previewBackup(createBackup());
           if(\(CommandLine.arguments.contains("--preview-settings-bottom") ? "true" : "false")){openSettings();document.getElementById('settings-dialog').scrollTop=10000;}
           if(\(CommandLine.arguments.contains("--preview-undo") ? "true" : "false"))changeAtlasMark('primary-26',{watched:true,notes:'已更新标记'});
-          return 'PASS: five font steps/migration, covers/forms/backup, reserved setlist API; undo, backup preview/state/rollback, type size, release history; settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
+          return 'PASS: official covers/fallback/attribution; five font steps/migration, covers/forms/backup, reserved setlist API; undo, backup preview/state/rollback, type size, release history; settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
@@ -350,6 +360,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     }
     func checkCoverFileUpload() {
         web.callAsyncJavaScript("""
+        await Promise.all(Object.values(atlasCatalog.coverAssets).map(asset=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>image.naturalWidth&&image.naturalHeight?resolve():reject(Error('empty cover '+asset.file));image.onerror=()=>reject(Error('offline cover decode '+asset.file));image.src=asset.file;})));
         const original=currentArchiveState(),id=atlasCatalog.events[0].id;
         const png='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
         editCatalogEvent(id);
@@ -370,7 +381,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         document.getElementById('catalog-close').click();
         if(atlasEdits[id].coverUrl!==savedCover)throw Error('cancel changed saved cover');
         commitArchiveState(original);
-        return 'PASS: actual FileReader/image decode, upload/save, broken and oversized file rejection, URL replacement and cancel';
+        return 'PASS: all bundled cover images decoded offline; actual FileReader/image decode, upload/save, broken and oversized file rejection, URL replacement and cancel';
         """,arguments:[:],in:nil,in:.page) { result in
             switch result {case .success(let value): print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
         }
@@ -458,7 +469,7 @@ if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(name
 app.delegate = delegate
 // Keep JavaScript confirmations and error dialogs available in the native window.
 if CommandLine.arguments.contains("--check-resources") {
-    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","live-assets.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
+    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","live-assets.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json","covers/miku-kei.png"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
     print("Bundled resources OK"); exit(0)
 }
 app.run()

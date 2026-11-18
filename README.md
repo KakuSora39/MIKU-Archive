@@ -215,3 +215,35 @@ python3 -m http.server 8391 --directory miku-live-archive/dist
 `archive-actions.js` 维护短时撤销、内容校验值、备份预览及合并。`miku-backup-meta-v1` 仅保存导出时间、渠道和内容校验值，不保存额外的备份副本；导入的设置与备份状态不覆盖当前设备。完整备份新增 appVersion 说明，schema 仍为 1。
 
 原生回归新增撤销与过期、删除后备注恢复、备份一致 / 修改检测、导出内容快照、导入预览 / 取消 / 确认 / 错误回滚、字号切换和版本历史。`--self-test --test-restart` 还会验证重载后的字号和备份时间。
+
+
+## 1.6.0：五档字号、封面和歌单扩展约定
+
+设置 → 外观中的字号滑块有五个刻度：紧凑、标准、舒适、较大、特大。拖动或使用方向键即时预览，偏好仍保存在 `miku-settings-v1`，`textSize` 改为整数 1–5；旧 `standard` / `large` 自动对应 2 / 4。重启继续使用已选档位。
+
+打开任意演出 → 编辑演出资料 → 卡片封面，可上传 2 MB 内的 JPG、PNG 或 WebP，或填写图片直链。图片从卡片右上角向左渐隐，过渡区叠加模糊图层，保留左侧系列、年份、类型。未设置封面或图片加载失败时继续显示文字卡面。封面来源 / 署名可单独记录，并在详情展示。本版没有批量填入未经核实的海报。
+
+本机上传的图片会等比例缩放并转为 JPEG 卡片缩略图（最长边不超过 480 像素，单张 data URL 不超过 12 KiB），以 data URL 保存于该演出的 `atlasEdits[id].coverUrl`，离线可用并随完整 JSON 备份携带；直链只备份链接，需要联网加载。署名字段为 `coverCredit`。图片读取 / 解码失败不会替换原封面；取消编辑不落盘。移除封面后保存即可恢复文字卡面。大量图片可能占用较多本机存储，保存失败仍保留旧数据。
+
+`live-assets.js` 提供封面检查 / 渲染和歌单预留约定，按现有稳定演出 ID 关联。歌单页面、导入器、播放器均尚未实现。后续功能可沿用以下结构，不用另造演出 ID：
+
+```json
+{
+  "atlasEdits": {
+    "primary-26": {
+      "setlist": {
+        "schema": 1,
+        "sourceUrl": "https://example.com/setlist",
+        "notes": "场次说明",
+        "songs": [
+          {"title": "曲名", "artist": "作者 / 演唱者", "songId": "", "section": "本篇 / Encore", "notes": ""}
+        ]
+      }
+    }
+  }
+}
+```
+
+歌曲按数组顺序排列，可重复曲名；`songId` 暂为可选外部标识。`setlist: null` / 缺省表示尚未录入，`songs: []` 表示已建立空歌单。预留只读接口 `window.MikuArchive.live.getSetlist(eventId)` 返回深拷贝或 null，`setlistSchema` 为 1。`normalizeSetlist()` 校验协议和内容；完整备份仍为 schema 1，能保存 / 恢复这些扩展数据。普通资料编辑以及导入不含新字段的旧备份不会清除封面和歌单字段；显式空封面或 null 歌单可清除对应内容。
+
+验证：原有目录 / 版本检查；原生 `--self-test` 覆盖五档及旧设置迁移、封面显示 / 移除、表单保留扩展字段、备份往返和非法数据拒绝；`--self-test --test-cover-upload` 覆盖真实 FileReader / 图片解码、上传保存、损坏和超限图片、替换链接、取消编辑；`--self-test --test-restart` 覆盖最大字号及浏览位置重载恢复。测试均使用独立临时数据。

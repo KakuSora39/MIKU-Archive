@@ -86,6 +86,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         """)
     }
     func runSelfTest() {
+        let previewIndex=CommandLine.arguments.firstIndex(of:"--preview-cover")
+        let previewCover=previewIndex.flatMap { index in index+1<CommandLine.arguments.count ? try? Data(contentsOf:URL(fileURLWithPath:CommandLine.arguments[index+1])).base64EncodedString() : nil } ?? ""
         let appVersion=Bundle.main.object(forInfoDictionaryKey:"CFBundleShortVersionString") as? String ?? ""
         web.evaluateJavaScript("""
         (() => {
@@ -185,6 +187,42 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(localStorage.getItem(browseKey)!==null)throw Error('disabled browser memory');
           restoreBrowseState();if(atlasView!=='series'||document.getElementById('atlas-sort').value!=='new')throw Error('default browser settings');
           updateSettings({...defaultSettings,theme:'light'});document.getElementById('atlas-series').value='';atlasView='cards';render();
+          const range=document.getElementById('settings-text-size');
+          if(range.type!=='range'||range.min!=='1'||range.max!=='5'||range.step!=='1')throw Error('five-step slider');
+          if(normalizeTextSize('standard')!==2||normalizeTextSize('large')!==4||normalizeTextSize(99)!==2)throw Error('font migration');
+          let previousSize=0;
+          for(let level=1;level<=5;level++){
+            range.value=level;range.dispatchEvent(new Event('input'));
+            const size=parseFloat(getComputedStyle(document.querySelector('.atlas-title')).fontSize);
+            if(appSettings.textSize!==level||size<=previousSize||JSON.parse(localStorage.getItem(settingsKey)).textSize!==level||!range.getAttribute('aria-valuetext'))throw Error('font slider step '+level);
+            previousSize=size;
+          }
+          updateSettings({textSize:2});
+          const extensionsBefore=currentArchiveState(),coverID=atlasRows()[0].id;
+          const testCover='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
+          const testSetlist={schema:1,sourceUrl:'https://example.com/setlist',songs:[{title:'Tell Your World',artist:'livetune',section:'本篇'},{title:'メルト',section:'Encore'}]};
+          saveCatalogEdits({...atlasEdits,[coverID]:{coverUrl:testCover,coverCredit:'测试封面',setlist:testSetlist}});render();
+          if(!document.querySelector('.atlas-art-image')||document.querySelector('.atlas-art-image').src!==testCover)throw Error('cover card rendering');
+          if(getComputedStyle(document.querySelector('.atlas-art-blur')).filter==='none')throw Error('cover blur');
+          const setlistCopy=MikuArchive.live.getSetlist(coverID);setlistCopy.songs[0].title='changed';
+          if(MikuArchive.live.getSetlist(coverID).songs[0].title!=='Tell Your World'||MikuArchive.live.getSetlist('missing')!==null)throw Error('setlist readonly interface');
+          editCatalogEvent(coverID);document.querySelector('#catalog-form [name="venue"]').value='cover-preserving venue';document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
+          if(atlasEdits[coverID].coverUrl!==testCover||atlasEdits[coverID].setlist.songs[1].section!=='Encore')throw Error('form discarded extensions');
+          const extensionsBackup=JSON.parse(JSON.stringify(createBackup()));
+          commitArchiveState(extensionsBefore);mergeBackup(extensionsBackup);
+          if(atlasEdits[coverID].coverUrl!==testCover||MikuArchive.live.getSetlist(coverID).songs.length!==2)throw Error('extensions backup roundtrip');
+          mergeBackup({schema:1,records:[],atlasEdits:{[coverID]:{venue:'old backup venue'}}});
+          if(atlasEdits[coverID].coverUrl!==testCover||!atlasEdits[coverID].setlist)throw Error('old backup erased extensions');
+          editCatalogEvent(coverID);document.getElementById('catalog-cover-clear').click();document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();render();
+          if(atlasEdits[coverID].coverUrl!==''||document.querySelector('.atlas-art'))throw Error('remove cover');
+          for(const bad of ['javascript:alert(1)','file:///tmp/a.png','data:image/svg+xml;base64,AAAA','data:image/png;base64,'+'A'.repeat(2800000)]){
+            let rejected=false;try{normalizeCatalogEdits({[coverID]:{coverUrl:bad}});}catch{rejected=true;}
+            if(!rejected)throw Error('invalid cover accepted');
+          }
+          let rejectedSetlist=false;try{normalizeCatalogEdits({[coverID]:{setlist:{schema:1,songs:[{title:''}]}}});}catch{rejectedSetlist=true;}
+          if(!rejectedSetlist)throw Error('invalid setlist accepted');
+          if(normalizeSetlist(null)!==null||normalizeSetlist({schema:1,songs:[]}).songs.length!==0)throw Error('empty setlist semantics');
+          commitArchiveState(extensionsBefore);refreshAtlasOptions();render();
           const archiveBefore=currentArchiveState();
           const originalBackupMeta=localStorage.getItem(backupMetaKey);
           const markID='primary-26';
@@ -192,7 +230,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(!document.getElementById('backup-state').textContent.includes('一致'))throw Error('clean backup state');
           updateSettings({textSize:'large'});
           const largeFont=parseFloat(getComputedStyle(document.querySelector('.atlas-title')).fontSize);
-          if(document.documentElement.dataset.textSize!=='large'||largeFont<16)throw Error('larger type');
+          if(document.documentElement.dataset.textSize!=='4'||largeFont<16)throw Error('larger type');
           updateSettings({textSize:'standard'});
           if(parseFloat(getComputedStyle(document.querySelector('.atlas-title')).fontSize)>=largeFont)throw Error('standard type');
           if(!document.getElementById('backup-state').textContent.includes('一致'))throw Error('preferences marked backup dirty');
@@ -272,18 +310,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
           const previewTheme=\(CommandLine.arguments.contains("--preview-dark") ? "'dark'" : CommandLine.arguments.contains("--preview-auto") ? "'auto'" : "'light'");
           clearUndo();updateSettings({theme:previewTheme,textSize:\(CommandLine.arguments.contains("--preview-large") ? "'large'" : "'standard'")});
+          const previewCover='\(previewCover)';
+          if(previewCover){const edits={...atlasEdits};atlasRows().slice(0,6).forEach(e=>edits[e.id]={...edits[e.id],coverUrl:'data:image/png;base64,'+previewCover,coverCredit:'界面测试图片'});saveCatalogEdits(edits);render();}
           if(\(CommandLine.arguments.contains("--preview-settings") ? "true" : "false"))openSettings();
           if(\(CommandLine.arguments.contains("--preview-backup") ? "true" : "false"))previewBackup(createBackup());
           if(\(CommandLine.arguments.contains("--preview-settings-bottom") ? "true" : "false")){openSettings();document.getElementById('settings-dialog').scrollTop=10000;}
           if(\(CommandLine.arguments.contains("--preview-undo") ? "true" : "false"))changeAtlasMark('primary-26',{watched:true,notes:'已更新标记'});
-          return 'PASS: undo, backup preview/state/rollback, type size, release history; settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
+          return 'PASS: five font steps/migration, covers/forms/backup, reserved setlist API; undo, backup preview/state/rollback, type size, release history; settings, themes, version and browse restoration; chronological order, direct official links, venue, watermark; source priority and control contrast; '+atlasCatalog.events.length+' events, reviewed CSV, event editing/new/reset, backup compatibility, 133 stable IDs, legacy 51 records/13 owned';
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
+            if CommandLine.arguments.contains("--test-cover-upload") {self.checkCoverFileUpload();return}
             if CommandLine.arguments.contains("--test-restart") && self.settingsReloadPhase == 0 {
                 self.settingsReloadPhase = 1
                 self.web.evaluateJavaScript("""
-                updateSettings({theme:'dark',textSize:'large',remember:true});recordBackupExport(createBackup(),'native');atlasView='timeline';document.getElementById('atlas-sort').value='old';document.getElementById('atlas-series').value='魔法未来';document.getElementById('atlas-search').value='2026';render();
+                updateSettings({theme:'dark',textSize:5,remember:true});recordBackupExport(createBackup(),'native');atlasView='timeline';document.getElementById('atlas-sort').value='old';document.getElementById('atlas-series').value='魔法未来';document.getElementById('atlas-search').value='2026';render();
                 """) {_,error in
                     if let error=error {print(error);exit(1)}
                     DispatchQueue.main.asyncAfter(deadline:.now()+0.2) {
@@ -307,10 +348,37 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             } else {print(value ?? "No result");exit(0)}
         }
     }
+    func checkCoverFileUpload() {
+        web.callAsyncJavaScript("""
+        const original=currentArchiveState(),id=atlasCatalog.events[0].id;
+        const png='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
+        editCatalogEvent(id);
+        const fileInput=document.getElementById('catalog-cover-file');
+        const select=async file=>{const dt=new DataTransfer();dt.items.add(file);fileInput.files=dt.files;await fileInput.onchange({target:fileInput});};
+        const bytes=Uint8Array.from(atob(png),c=>c.charCodeAt(0));
+        await select(new File([bytes],'cover.png',{type:'image/png'}));
+        if(!catalogPendingCover.startsWith('data:image/jpeg;base64,')||catalogPendingCover.length>12288||catalogCoverReading)throw Error('file reader/image decoder');
+        document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
+        if(!atlasEdits[id].coverUrl.startsWith('data:image/jpeg;base64,'))throw Error('uploaded cover save');
+        editCatalogEvent(id);const savedCover=catalogPendingCover;
+        await select(new File(['not an image'],'broken.png',{type:'image/png'}));
+        if(catalogPendingCover!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('无法解码'))throw Error('invalid image replaced cover');
+        await select(new File([new Uint8Array(maxCoverBytes+1)],'huge.png',{type:'image/png'}));
+        if(catalogPendingCover!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('2 MB'))throw Error('oversized image replaced cover');
+        document.getElementById('catalog-cover-url').value='https://example.com/cover.png';document.getElementById('catalog-cover-url').dispatchEvent(new Event('input'));
+        if(catalogPendingCover)throw Error('URL failed to replace local cover');
+        document.getElementById('catalog-close').click();
+        if(atlasEdits[id].coverUrl!==savedCover)throw Error('cancel changed saved cover');
+        commitArchiveState(original);
+        return 'PASS: actual FileReader/image decode, upload/save, broken and oversized file rejection, URL replacement and cancel';
+        """,arguments:[:],in:nil,in:.page) { result in
+            switch result {case .success(let value): print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
+        }
+    }
     func checkSettingsAfterReload() {
         web.evaluateJavaScript("""
         (()=>{
-          if(appSettings.textSize!=='large')throw Error('text size after reload');
+          if(appSettings.textSize!==5)throw Error('text size after reload');
           if(!readLocalJSON(backupMetaKey,null)?.exportedAt)throw Error('backup metadata after reload');
           if(appSettings.theme!=='dark'||document.documentElement.dataset.theme!=='dark')throw Error('theme after reload');
           if(atlasView!=='timeline'||!atlasMode||document.getElementById('atlas-series').value!=='魔法未来'||document.getElementById('atlas-sort').value!=='old'||document.getElementById('atlas-search').value!=='2026')throw Error('filters after reload');
@@ -372,6 +440,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     }
 }
 extension AppDelegate: WKUIDelegate {
+    // WKWebView delegates file inputs to a native chooser on macOS.
+    func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenPanelParameters, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping ([URL]?) -> Void) {
+        let panel=NSOpenPanel()
+        panel.canChooseFiles=true;panel.canChooseDirectories=parameters.allowsDirectories
+        panel.allowsMultipleSelection=parameters.allowsMultipleSelection
+        panel.beginSheetModal(for:window) { response in completionHandler(response == .OK ? panel.urls : nil) }
+    }
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if let url = navigationAction.request.url, ["http", "https"].contains(url.scheme ?? "") { NSWorkspace.shared.open(url) }; return nil
     }
@@ -383,7 +458,7 @@ if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(name
 app.delegate = delegate
 // Keep JavaScript confirmations and error dialogs available in the native window.
 if CommandLine.arguments.contains("--check-resources") {
-    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
+    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","live-assets.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
     print("Bundled resources OK"); exit(0)
 }
 app.run()

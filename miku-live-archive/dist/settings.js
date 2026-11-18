@@ -1,15 +1,22 @@
 if('scrollRestoration' in history)history.scrollRestoration='manual';
 // Appearance is applied before CSS loads to avoid a light flash on dark launches.
 const settingsKey='miku-settings-v1', browseKey='miku-browse-v1';
-const defaultSettings={theme:'auto',textSize:'standard',remember:true,defaultView:'cards',defaultSort:'new'};
+const defaultSettings={theme:'auto',textSize:2,remember:true,defaultView:'cards',defaultSort:'new'};
+const textSizeLabels=['紧凑','标准','舒适','较大','特大'];
+function normalizeTextSize(value) {
+  if(value==='large')return 4; // Migrate the two-size preference without resetting it.
+  if(value==='standard')return 2;
+  return /^[1-5]$/.test(String(value))?Number(value):2;
+}
 function normalizeSettings(raw={}) {
-  return {textSize:['standard','large'].includes(raw?.textSize)?raw.textSize:'standard',theme:['auto','light','dark'].includes(raw?.theme)?raw.theme:'auto',remember:typeof raw?.remember==='boolean'?raw.remember:true,defaultView:['cards','timeline','series','projects'].includes(raw?.defaultView)?raw.defaultView:'cards',defaultSort:['new','old'].includes(raw?.defaultSort)?raw.defaultSort:'new'};
+  return {textSize:normalizeTextSize(raw?.textSize),theme:['auto','light','dark'].includes(raw?.theme)?raw.theme:'auto',remember:typeof raw?.remember==='boolean'?raw.remember:true,defaultView:['cards','timeline','series','projects'].includes(raw?.defaultView)?raw.defaultView:'cards',defaultSort:['new','old'].includes(raw?.defaultSort)?raw.defaultSort:'new'};
 }
 function readLocalJSON(key,fallback) {try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}}
 let appSettings=normalizeSettings(readLocalJSON(settingsKey,{})),browseReady=false,browseTimer;
 const systemTheme=window.matchMedia('(prefers-color-scheme: dark)');
 function applyAppearance() {
   document.documentElement.dataset.textSize=appSettings.textSize;
+  document.documentElement.style.setProperty('--type-step',appSettings.textSize-2);
   document.documentElement.dataset.theme=appSettings.theme==='auto'?(systemTheme.matches?'dark':'light'):appSettings.theme;
   document.documentElement.style.colorScheme=document.documentElement.dataset.theme;
   if(window.webkit?.messageHandlers?.archive)window.webkit.messageHandlers.archive.postMessage({action:'theme',value:appSettings.theme});
@@ -50,6 +57,8 @@ function restoreBrowseState() {
 }
 function syncSettingsControls() {
   document.getElementById('settings-text-size').value=appSettings.textSize;
+  document.getElementById('settings-text-size').setAttribute('aria-valuetext',textSizeLabels[appSettings.textSize-1]);
+  document.getElementById('text-size-value').textContent=appSettings.textSize+' / 5 · '+textSizeLabels[appSettings.textSize-1];
   document.getElementById('settings-theme').value=appSettings.theme;
   document.getElementById('settings-remember').checked=appSettings.remember;
   document.getElementById('settings-view').value=appSettings.defaultView;
@@ -64,7 +73,7 @@ function initSettings() {
   const $id=id=>document.getElementById(id);
   $id('settings-open').onclick=openSettings;$id('settings-close').onclick=()=>$id('settings-dialog').close();
   initArchiveActions();
-  $id('settings-text-size').onchange=e=>updateSettings({textSize:e.target.value});
+  $id('settings-text-size').oninput=e=>updateSettings({textSize:Number(e.target.value)});
   $id('settings-theme').onchange=e=>updateSettings({theme:e.target.value});
   $id('settings-remember').onchange=e=>updateSettings({remember:e.target.checked});
   $id('settings-view').onchange=e=>updateSettings({defaultView:e.target.value});

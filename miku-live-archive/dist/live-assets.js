@@ -1,5 +1,6 @@
 // Per-event extensions use stable event IDs and travel inside atlasEdits backups.
 const maxCoverBytes=2*1024*1024;
+const maxCoverThumbnailLength=32768;
 function normalizeCover(value) {
   if(typeof value!=='string')throw Error('封面需为图片链接或本机图片');
   const text=value.trim();if(!text)return '';
@@ -11,17 +12,19 @@ function normalizeCover(value) {
   if(!['https:','http:'].includes(url.protocol)||url.username||url.password)throw Error('封面链接需使用 http 或 https');
   return url.href;
 }
-async function optimizeCover(value) {
-  const image=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('无法解码这张图片'));img.src=value;});
+async function optimizeCover(value, decoded) {
+  const image=decoded||await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('无法解码这张图片'));img.src=value;});
   const canvas=document.createElement('canvas'),context=canvas.getContext('2d');
   if(!context)throw Error('无法生成封面缩略图');
+  const transparent=ArtworkRenderer.transparency(image).hasAlpha;
   // Bound localStorage growth: covers are thumbnails, not original poster files.
-  for(const side of [480,384,300,240,192,160,128,96]) {
+  for(const side of [720,600,480,384,300,240,192,160,128,96]) {
     const ratio=Math.min(1,side/Math.max(image.naturalWidth,image.naturalHeight));
     canvas.width=Math.max(1,Math.round(image.naturalWidth*ratio));canvas.height=Math.max(1,Math.round(image.naturalHeight*ratio));
-    context.fillStyle='#fff';context.fillRect(0,0,canvas.width,canvas.height);context.drawImage(image,0,0,canvas.width,canvas.height);
-    const result=canvas.toDataURL('image/jpeg',0.76);
-    if(result.length<=12288)return result;
+    if(!transparent){context.fillStyle='#fff';context.fillRect(0,0,canvas.width,canvas.height);}
+    context.drawImage(image,0,0,canvas.width,canvas.height);
+    const result=canvas.toDataURL(transparent?'image/png':'image/jpeg',0.76);
+    if(result.length<=(transparent?98304:maxCoverThumbnailLength))return {data:result,zoom:1};
   }
   throw Error('图片无法压缩为封面，请更换图片');
 }
@@ -85,39 +88,20 @@ function bundledCover(key) {
   return asset&&/^covers\/[a-z0-9-]+\.png$/.test(asset.file||'')?{...asset,src:asset.file}:null;
 }
 function resolvedCover(event) {
+  const selected=ArtworkMedia.get(event.artworkAssetId);
+  if(selected)return {...selected,kind:'custom',label:selected.name,assetId:selected.id,
+    credit:event.coverCredit||selected.credit,sourceUrl:event.coverSourceUrl||selected.source};
   if(event.coverUrl){try{return {src:normalizeCover(event.coverUrl),kind:'custom',label:'自选封面',credit:event.coverCredit||'',frame:event.coverFrame,sourceUrl:event.coverSourceUrl};}catch{}}
   const cover = bundledCover(event.coverKey)||bundledCover(atlasCatalog?.defaultCover);
   return cover && {...cover,frame:event.coverFrame || cover.frame};
 }
-function coverMarkup(event) {
-  const cover=resolvedCover(event);if(!cover)return '';
-  return `<span class="atlas-art" aria-hidden="true" style="${coverFrameStyle(cover.frame)}">${coverLayers(cover.src)}</span>`;
-}
-
-function coverLayers(src) {
-  const image = `src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"`;
-  return `<img class="atlas-art-blur" ${image}><span class="atlas-art-frame"><img class="atlas-art-image" ${image}></span>`;
-}
-
-function bindCoverFallbacks(container) {
-  container.querySelectorAll('.atlas-art img').forEach(img=>{
-    const fallback=()=>{
-      if(!img.isConnected)return;
-      const art=img.closest('.atlas-art'),generic=bundledCover(atlasCatalog?.defaultCover);
-      if(art.dataset.fallback==='true'||!generic){art.hidden=true;return;}
-      art.dataset.fallback='true';
-      art.style.cssText=coverFrameStyle(generic.frame);
-      art.innerHTML=coverLayers(generic.src);
-      art.querySelectorAll('img').forEach(node=>node.onerror=()=>{art.hidden=true;});
-    };
-    img.onerror=fallback;
-    if(img.complete&&img.currentSrc&&!img.naturalWidth)fallback();
-  });
-}
 function renderCoverAttribution(event) {
-  const cover=resolvedCover(event);if(!cover)return '';
-  if(cover.kind==='custom')return `<section class="cover-attribution"><h3>卡片封面</h3><p>自选封面${cover.credit?' · '+esc(cover.credit):''}${cover.sourceUrl?' · '+safeSource(cover.sourceUrl,'原始图片'):''}</p><button id="detail-edit-cover" type="button">编辑封面</button></section>`;
-  const status=cover.kind==='generic'?'官方通用形象 · 该场主视觉待核实':cover.kind==='eventvisual'?'官方活动形象':'官方主视觉';
+  const cover=resolvedCover(event);
+  const {mode,config}=ArtworkRenderer.describe(event);
+  if(mode==='archive')return `<section class="cover-attribution"><h3>卡片封面</h3><p>原创档案封面 ${safeSource(config.logoSource,'官方 Logo 来源')}</p><button id="detail-edit-cover" type="button">编辑封面</button></section>`;
+  if(!cover)return '';
+  if(cover.kind==='custom')return `<section class="cover-attribution"><h3>卡片封面</h3><p>自选封面${cover.credit?' · '+esc(cover.credit):''}${cover.sourceUrl?' · '+safeSource(cover.sourceUrl,'封面来源'):''}</p><button id="detail-edit-cover" type="button">编辑封面</button></section>`;
+  const status=cover.kind==='generic'?'该场主视觉待核实 · 卡片使用占位封面':cover.kind==='eventvisual'?'官方活动形象':'官方主视觉';
   return `<section class="cover-attribution"><h3>卡片封面</h3><p>${esc(status)} · ${esc(cover.label)}</p><p>${esc(cover.credit)}</p><p>${safeSource(cover.sourceUrl,'查看官方图片来源')}</p>${event.coverNote||cover.note?'<p class="muted">'+esc(event.coverNote||cover.note)+'</p>':''}<button id="detail-edit-cover" type="button">编辑封面</button></section>`;
 }
 // Reserved contract only: no import, search or playlist player in this release.

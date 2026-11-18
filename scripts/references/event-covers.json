@@ -20,7 +20,8 @@
         "x": 0,
         "y": 25,
         "zoom": 1.7
-      }
+      },
+      "transparent": true
     },
     "mirai-2013": {
       "imageUrl": "https://magicalmirai.com/2013/images/img_main_chris.jpg",
@@ -38,7 +39,8 @@
         "x": -26,
         "y": 25,
         "zoom": 1.4
-      }
+      },
+      "transparent": false
     },
     "mirai-2014": {
       "imageUrl": "https://magicalmirai.com/2014/images/bg_mainvisual.jpg",
@@ -56,7 +58,8 @@
         "x": 24,
         "y": 15,
         "zoom": 1.4
-      }
+      },
+      "transparent": false
     },
     "mirai-2015": {
       "imageUrl": "https://magicalmirai.com/2015/images/mainv.jpg",
@@ -69,7 +72,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "a7180e0d65ce61ffca2e1e7ba38e23841dcec68c7a7b6e021ab9a6342605fc0b",
       "width": 533,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "mirai-2016": {
       "imageUrl": "https://magicalmirai.com/2016/images/index_mainvisual.png",
@@ -82,7 +86,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "c039b281cb5950af877304b34a6485cdf19fa9bd464fccea509fe50053ecd042",
       "width": 640,
-      "height": 490
+      "height": 490,
+      "transparent": true
     },
     "mirai-2017": {
       "imageUrl": "https://magicalmirai.com/2017/images/top_main_miku.png",
@@ -95,7 +100,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "d2887fd7cc70c93d57739afb25119dbedda11c6d31782cbbb62cac04cd408b6e",
       "width": 640,
-      "height": 611
+      "height": 611,
+      "transparent": true
     },
     "mirai-2018": {
       "imageUrl": "https://magicalmirai.com/2018/images/index/visual_main_01.jpg",
@@ -113,7 +119,8 @@
         "x": -26,
         "y": 16,
         "zoom": 1.45
-      }
+      },
+      "transparent": false
     },
     "mirai-2019": {
       "imageUrl": "https://magicalmirai.com/2019/images/index/mainvisual_miku.png",
@@ -126,7 +133,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "e76eefda939ec7546fd9c84964f0428c2564bcdbf08f017c4107621908798ea4",
       "width": 640,
-      "height": 599
+      "height": 599,
+      "transparent": true
     },
     "mirai-2021": {
       "imageUrl": "https://magicalmirai.com/2021/images/index/img_visual_miku.png",
@@ -139,7 +147,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "577ddc7486678db76946f03e0d51494515d72477e6db721d543f01bd28053267",
       "width": 639,
-      "height": 557
+      "height": 557,
+      "transparent": true
     },
     "mirai-2022": {
       "imageUrl": "https://magicalmirai.com/10th/images/index/hero_img_miku.png",
@@ -152,7 +161,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "3fbd6fb9dbc69f964b1303b4eeba97a2ea408f1d2a71a8781b4bcc037797d706",
       "width": 620,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "mirai-2023": {
       "imageUrl": "https://magicalmirai.com/2023/images/index/visual_miku.jpg",
@@ -165,7 +175,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "f24f75862f98e6e89a9b89fcdca0f3dffc681be608cd52d4d04bf74075cd49da",
       "width": 640,
-      "height": 585
+      "height": 585,
+      "transparent": false
     },
     "mirai-2024": {
       "imageUrl": "https://magicalmirai.com/2024/images/index/visual_miku.png",
@@ -178,7 +189,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "0269bf1a263746112185933e96bd0924e0be3f28965c328c67cffaffbf3fd6a1",
       "width": 593,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "mirai-2025": {
       "imageUrl": "https://magicalmirai.com/2025/images/index/img_theme_miku.png",
@@ -191,7 +203,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "b6d3b74682eba2fa9da77e744805092c66f738439e1a11e5e84f81ea61f3fa4c",
       "width": 640,
-      "height": 577
+      "height": 577,
+      "transparent": true
     },
     "mirai-2026": {
       "imageUrl": "https://magicalmirai.com/2026/images/index/img_visual_miku.webp",
@@ -209,7 +222,8 @@
         "x": 0,
         "y": 21,
         "zoom": 1.45
-      }
+      },
+      "transparent": false
     },
     "mirai-2020-osaka": {
       "imageUrl": "https://magicalmirai.com/2020/images/index_contents_mainvisual_osaka.png",
@@ -222,7 +236,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "34f1e95e34aaf03fec98b2325b546425f256354b6453edcdcdb04700aa5be4cf",
       "width": 477,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "mirai-2020-tokyo": {
       "imageUrl": "https://magicalmirai.com/2020/images/index_contents_mainvisual_tokyo.png",
@@ -235,7 +250,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "12f770660c6e1c33cf2215035886e9b186a8d7074e1fac845779f500d2c4262a",
       "width": 477,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "expo-na2026": {
       "imageUrl": "https://mikuexpo.com/na2026/images/hero_chara.webp",
@@ -248,7 +264,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "a9cb0403f7e4408e30c56f201de8b5ad3881ef8b0188e933b932630172373b6f",
       "width": 493,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "expo-asia2025": {
       "imageUrl": "https://mikuexpo.com/asia2025/images/hero_chara.png",
@@ -261,7 +278,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "f0784f7f2cb89008a80193a22ddf0056a56bc45a02a00d157f07d9357d9218e8",
       "width": 463,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "expo-nzaus2024": {
       "imageUrl": "https://mikuexpo.com/images/hero_event_miku_nzaus2024.png",
@@ -274,7 +292,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "07a122fd2477d1e0449d0730a29f9d0409989ee5e71618e6093c32598d1c469a",
       "width": 640,
-      "height": 496
+      "height": 496,
+      "transparent": true
     },
     "expo-europe2024": {
       "imageUrl": "https://mikuexpo.com/images/hero_event_miku_europe2024.png",
@@ -287,7 +306,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "8efefbb68e8ea28676c09ea6765fbef0c23c2dcc663fb72246e62469c1a672b7",
       "width": 640,
-      "height": 496
+      "height": 496,
+      "transparent": true
     },
     "expo-na2024": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_na2024.png",
@@ -300,7 +320,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "0e5a141200a30e7eed4ca5187537d00f159e633b6ad60e4874502b458c8ce375",
       "width": 640,
-      "height": 465
+      "height": 465,
+      "transparent": true
     },
     "expo-vr2023": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_vr2023.png",
@@ -313,7 +334,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "1601b77b9e6d5bd2a4cd5f9cccc5298e778d67628d3cd34e518c30e052132a5d",
       "width": 640,
-      "height": 474
+      "height": 474,
+      "transparent": true
     },
     "expo-rewind2022": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_rewind2022.png",
@@ -326,7 +348,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "bc1a7eae2fc3278e7a861b807eda4ed08356b6c7ad1a3dbe4ca7bbb7c9f0e5f4",
       "width": 640,
-      "height": 474
+      "height": 474,
+      "transparent": true
     },
     "expo-online2021": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_online2021.png",
@@ -339,7 +362,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "07cb1738198d3ca917ad8a5ef9a85fa4957029077d2f9fa3d0fd678321e35006",
       "width": 640,
-      "height": 474
+      "height": 474,
+      "transparent": true
     },
     "expo-europe2020": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_europe2020.png",
@@ -352,7 +376,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "2e768f6fed2e8ecbca6a763c1e2f692c77183aa004e4809ae1ef470eb99c66dc",
       "width": 640,
-      "height": 499
+      "height": 499,
+      "transparent": true
     },
     "expo-twhk2019": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_twhk2019.png",
@@ -365,7 +390,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "4325497f4cc7bc78e1075b39075823a8e71a8b91e93efef0d9ab41b4c5660a97",
       "width": 640,
-      "height": 483
+      "height": 483,
+      "transparent": true
     },
     "expo-europe2018": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_europe2018.png",
@@ -378,7 +404,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "041654e642d6473d47edaa52d72ee2fd837b2a6f627ec0dc55cca7c4d107eed8",
       "width": 640,
-      "height": 394
+      "height": 394,
+      "transparent": true
     },
     "expo-usamx2018": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_usamx2018.png",
@@ -391,7 +418,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "4b1b772fee2a274df3ded04c03fb0ad65b22be6641b1e4746daea83b4b32f385",
       "width": 640,
-      "height": 490
+      "height": 490,
+      "transparent": true
     },
     "expo-may2017": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_may2017.png",
@@ -404,7 +432,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "309b52accc4f849dbfaf0d5079d57048ccd155fc5fdce843737e17a083a62779",
       "width": 640,
-      "height": 394
+      "height": 394,
+      "transparent": true
     },
     "expo-cn2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_cn2016.png",
@@ -417,7 +446,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "d9f66f4de832d1c4c704b583fdfcdcc632a3a0f66bcd5b2ce1a26ba8e794dd88",
       "width": 640,
-      "height": 320
+      "height": 320,
+      "transparent": true
     },
     "expo-tw2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_tw2016.png",
@@ -430,7 +460,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "9b85f5a6bf9bf7f32c9b2580c718cf229c4576bc201fa981f286a875712d1c44",
       "width": 640,
-      "height": 444
+      "height": 444,
+      "transparent": true
     },
     "expo-na2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_na2016.png",
@@ -443,7 +474,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "f4aebeb7ba4b4ba6617d87f79c79051068bd39154ba4d1f5be177ea49280303a",
       "width": 640,
-      "height": 612
+      "height": 612,
+      "transparent": true
     },
     "expo-jp2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_jp2016.png",
@@ -456,7 +488,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "62d2e1ec4ea3fc76dfff0236f9cf25372b411faab0f8f5bf207c86a6487549ae",
       "width": 640,
-      "height": 537
+      "height": 537,
+      "transparent": true
     },
     "expo-sh2015": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_sh2015.png",
@@ -469,7 +502,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "f861552a5442813d6b9b2bf81f3d12507f4432caf0f9a51c3c91453b6e894c56",
       "width": 640,
-      "height": 490
+      "height": 490,
+      "transparent": true
     },
     "expo-us2014": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_us2014.png",
@@ -482,7 +516,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "6c925468aa7f4f23cfbeb612d5c9b051e13e43f2bf8013bf6676225891b9021d",
       "width": 640,
-      "height": 457
+      "height": 457,
+      "transparent": true
     },
     "expo-id2014": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_id2014.png",
@@ -495,7 +530,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "68aec68c4403062eab6993455b9c2fd61d8319e5aec06df4a77b76ba95f314ad",
       "width": 640,
-      "height": 394
+      "height": 394,
+      "transparent": true
     },
     "expo-europe2026": {
       "imageUrl": "https://mikuexpo.com/europe2026/images/hero_chara.webp",
@@ -508,7 +544,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "9137113786fcac878acb9c99f930c77d337df0569b49f7333ef0821a5523f3b6",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "snow-2015": {
       "imageUrl": "https://snowmiku.com/2015/images/bg_main.jpg",
@@ -521,7 +558,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "99818b5b739d03da22e51f25d3c262c61d95bf1b787588f0472033431875d626",
       "width": 640,
-      "height": 606
+      "height": 606,
+      "transparent": false
     },
     "snow-2018": {
       "imageUrl": "https://snowmiku.com/2018/images/index/visual_miku.png?180205",
@@ -534,7 +572,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "badec58894a63f9e5ca655983287b10e88a861380f8d4c22bbd9cb3619fdf91f",
       "width": 519,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "snow-2019": {
       "imageUrl": "https://snowmiku.com/2019/images/index/back_main_visual.jpg",
@@ -547,7 +586,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "978584286e4f9601e37a5638a4d61bcb048410d1969b89c11e3c9be23e5b07f4",
       "width": 550,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "snow-2027": {
       "imageUrl": "https://snowmiku.com/2027/images/index/chara-theme-visual.webp",
@@ -560,7 +600,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "24d7e6ec99968f89540e4469d5ff37337293fb4943caf8c0cce17e3f7086758a",
       "width": 535,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "blooming-2025": {
       "imageUrl": "https://piapro.net/japantour2025/images/hero_visual_miku.webp",
@@ -573,7 +614,15 @@
       "checkedAt": "2026-11-18",
       "sha256": "2285e8143d42314a83c3c1c1d02ef9a2b988aa04e0d48b3a35b6a89ae937cd42",
       "width": 640,
-      "height": 475
+      "height": 475,
+      "transparent": true,
+      "artwork": {
+        "frame": {
+          "x": 0,
+          "y": 3,
+          "zoom": 1.29
+        }
+      }
     },
     "thunderbolt-2023": {
       "imageUrl": "https://piapro.net/japantour2023/images/theme_visual.png",
@@ -586,7 +635,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "cf6dd58a0f519e0dc2295ce39c5c0aaf56063ffd7d74f5d9d1612af2fd1e17ea",
       "width": 596,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "decomiku-2026": {
       "imageUrl": "https://otoiro.co.jp/wp/wp-content/uploads/2025/07/DML26_CO_KV.png",
@@ -599,7 +649,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "95f0535da93a990942e517b05571eedba20255c26b516ae73b05d548171c399f",
       "width": 640,
-      "height": 360
+      "height": 360,
+      "transparent": false
     },
     "voltage-2026": {
       "imageUrl": "https://www.project-voltage.jp/live2026/assets/img/kv/pkmk_live_kv.png",
@@ -612,7 +663,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "20c289940cd2004616aada7a7bb9b61b4f8228454032e5685c148f2df1873c86",
       "width": 501,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "mikufes-2024": {
       "imageUrl": "https://mikufes24spring.jp/wp-content/themes/mikufes_theme/img/main.jpg",
@@ -630,7 +682,8 @@
         "x": -23,
         "y": 16,
         "zoom": 1.4
-      }
+      },
+      "transparent": false
     },
     "sekai-symphony-2021": {
       "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2021/img/main.png",
@@ -643,7 +696,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "b98796ce1fd6694ae9715ea6d523a86c5ef6436fe992469efee8dd32dcf7622b",
       "width": 617,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "sekai-symphony-2022": {
       "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2022/img/hero.png",
@@ -656,7 +710,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "5607e5e1f192d295a094ea4c79c4e9e307670081607b8d328c17fbde420f8f38",
       "width": 640,
-      "height": 526
+      "height": 526,
+      "transparent": true
     },
     "sekai-symphony-2023": {
       "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2023/img/main.jpg",
@@ -669,7 +724,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "2c994071cb41f0ccd464ecff75e6631e3612c57a8996c294dc75d16c6fde72cf",
       "width": 639,
-      "height": 457
+      "height": 457,
+      "transparent": false
     },
     "sekai-symphony-2024": {
       "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2024/img/kv.png",
@@ -682,7 +738,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "4fd95bc7ea55249489e4adf866c03f4f5234e0a294174e23921afa19f28ee32b",
       "width": 640,
-      "height": 454
+      "height": 454,
+      "transparent": false
     },
     "colorful-1st-link": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/1st-link/assets/images/pc/kv_chara-5.png",
@@ -695,7 +752,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "2ed94f097d2242689b89f9b6ec8120be535e7a3c4c8664f4cf6db973210878df",
       "width": 535,
-      "height": 640
+      "height": 640,
+      "transparent": true
     },
     "colorful-2nd-will": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/2nd-will/images/kv-chara01-pc.png",
@@ -708,7 +766,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "478a496457cc51e0d5afbf0e6f77acab98c88269cbbaf1355e7c870f3d557e37",
       "width": 640,
-      "height": 468
+      "height": 468,
+      "transparent": true
     },
     "colorful-3rd-evolve": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/images/kv-chara.png",
@@ -721,7 +780,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "016d1dfebff2bc0a772b413743133c5c1b61fb692ae2dbd3ebe92ebc5494cb99",
       "width": 640,
-      "height": 451
+      "height": 451,
+      "transparent": true
     },
     "colorful-4th-unison": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/4th-unison/assets/images/pc/top/kv_character.webp",
@@ -739,7 +799,8 @@
         "x": -9,
         "y": -9,
         "zoom": 1.35
-      }
+      },
+      "transparent": true
     },
     "mwy-2024": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2024/06/zh2406141.jpg",
@@ -757,7 +818,8 @@
         "x": 10,
         "y": 8,
         "zoom": 1.45
-      }
+      },
+      "transparent": false
     },
     "mwy-2020": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250424/20250424133631_6809cddfdeee1.jpg",
@@ -770,7 +832,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "a19969e55b3dc71ef0b6281a6ffd5c24f1f492cb7cface9d90891aabbeb71e17",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "mwy-2018": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163156_6808a57ce669b.jpg",
@@ -783,7 +846,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "d731906a495a0851b18a12fdfd4ca0e50c20133ab45443fad8a0598e09ca5436",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "galaxy-2020": {
       "imageUrl": "http://blog.piapro.net/wp-content/uploads/2020/09/a2009031-2.jpg",
@@ -801,7 +865,8 @@
         "x": 0,
         "y": -4,
         "zoom": 1.4
-      }
+      },
+      "transparent": false
     },
     "galaxy-2021": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2021/09/a2109171-2-1.png",
@@ -819,7 +884,8 @@
         "x": 0,
         "y": 5,
         "zoom": 1.4
-      }
+      },
+      "transparent": false
     },
     "colorful-5th-frontier": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/5th-frontier/assets/images/pc/top/chara@0.5x.webp",
@@ -837,7 +903,8 @@
         "x": 3,
         "y": -22,
         "zoom": 1.5
-      }
+      },
+      "transparent": true
     },
     "mwy-2025": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250911/20250911122403_68c24ee3810bf.jpg",
@@ -855,7 +922,8 @@
         "x": -8,
         "y": 26,
         "zoom": 1.6
-      }
+      },
+      "transparent": false
     },
     "mwy-2021": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163119_6808a55714270.jpg",
@@ -868,7 +936,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "2cc737cc77c514ba79a4e9fc89561cb128fb31a217d7c9e95ca389898c514115",
       "width": 453,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "mwy-2019": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163144_6808a570482e0.jpg",
@@ -881,7 +950,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "f91f2c71aeab1ef4badb0bc08f4c0e23839c9ae935fe6648624e25236fdd80a1",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "mwy-2017": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163205_6808a585db60c.jpg",
@@ -894,7 +964,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "0249f02acc2b6e918d01986d9cc476e6e592ee7214f01eb3aa4b3efb8a78b80b",
       "width": 401,
-      "height": 567
+      "height": 567,
+      "transparent": false
     },
     "mwy-2026": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/ueditor/upload/image/20261012/1791756677885601.jpg",
@@ -912,7 +983,8 @@
         "x": 0,
         "y": 19,
         "zoom": 1.6
-      }
+      },
+      "transparent": false
     },
     "symphony-2016": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2016/05/g1605314.jpg",
@@ -930,7 +1002,8 @@
         "x": -30,
         "y": 12,
         "zoom": 1.35
-      }
+      },
+      "transparent": false
     },
     "symphony-2017": {
       "imageUrl": "https://prod-v2-assets.wmg.jp/artist/mikusymphony/others/20170831_mikusymphony_s.jpg",
@@ -948,7 +1021,8 @@
         "x": -32,
         "y": 12,
         "zoom": 1.5
-      }
+      },
+      "transparent": false
     },
     "symphony-2018": {
       "imageUrl": "https://prod-v2-assets.wmg.jp/uploads/pictures/64/content_20180604_mikusymphony_main.jpg",
@@ -961,7 +1035,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "ee72d992b41e8530b9f75a79625473960724c94e8c8d4577d36821019a0ea11c",
       "width": 640,
-      "height": 453
+      "height": 453,
+      "transparent": false
     },
     "symphony-2019": {
       "imageUrl": "https://prod-v2-assets.wmg.jp/uploads/pictures/1366/content__%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%E3%82%B7%E3%83%B3%E3%83%95%E3%82%A9%E3%83%8B%E3%83%BC2019_%E6%96%B0%E3%83%92%E3%82%99%E3%82%B7%E3%82%99%E3%83%A5%E3%82%A2%E3%83%AB.jpg",
@@ -974,7 +1049,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "0858cb45400cc436639385a6c8af1ed073920906fc307792c9ae0d3f4e892d08",
       "width": 640,
-      "height": 453
+      "height": 453,
+      "transparent": false
     },
     "symphony-2021": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2021/06/U210611_2v.jpg",
@@ -992,7 +1068,8 @@
         "x": 0,
         "y": 18,
         "zoom": 1.5
-      }
+      },
+      "transparent": false
     },
     "symphony-2020-yokohama": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2020/08/U200831_001.jpg",
@@ -1005,7 +1082,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "5f5e86ba65f8e9e681b9a23b20a1b490c44882eb19f9ed6b5009a1d9dbf6d90d",
       "width": 620,
-      "height": 439
+      "height": 439,
+      "transparent": false
     },
     "symphony-2020-osaka": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2020/08/U200831_002.jpg",
@@ -1018,7 +1096,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "bfa84d80cf727429cb3c6554de3a349950c800a4cf3f90519151d4118935a365",
       "width": 620,
-      "height": 439
+      "height": 439,
+      "transparent": false
     },
     "symphony-2022-tokyo": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2022/03/U220316_main-725x1024.jpg",
@@ -1031,7 +1110,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "7293dbb95e5a1e861fcf9c1e108910343c0a05631aedb6880631c58cd47358db",
       "width": 453,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "symphony-2022-yokohama": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2022/06/U2206011-v.jpg",
@@ -1044,7 +1124,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "4f4d79d5069f0e82e4c7916f918509c17ebc57864da404ef84f39203dd59b237",
       "width": 640,
-      "height": 410
+      "height": 410,
+      "transparent": false
     },
     "symphony-2025-sapporo": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2025/11/IM24111902.png",
@@ -1062,7 +1143,8 @@
         "x": 35,
         "y": 2,
         "zoom": 1.5
-      }
+      },
+      "transparent": false
     },
     "symphony-2025-tokyo": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2026/02/IM25021302.png",
@@ -1075,7 +1157,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "2f2234978056dd619f8a111ee048064ec4eba63ab79fe873b1968f7af7d4ba37",
       "width": 455,
-      "height": 640
+      "height": 640,
+      "transparent": false
     },
     "symphony-2023": {
       "imageUrl": "https://www.promax.co.jp/backyard/wp-content/uploads/2023/05/IMG_3145.jpg",
@@ -1088,7 +1171,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "369e4d28d88022aea97070175fec4c473f1e43869aa71d6d457f624758ebc9b8",
       "width": 640,
-      "height": 453
+      "height": 453,
+      "transparent": false
     },
     "symphony-2026": {
       "imageUrl": "https://sp.wmg.jp/mikusymphony/images/2026/main20260501.jpg",
@@ -1101,7 +1185,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "d396e3932c86527b0ecbdc33a85729230946890cced87ed1e1ea656fcc970d48",
       "width": 640,
-      "height": 449
+      "height": 449,
+      "transparent": false
     },
     "kodo-2023": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2023/02/mon2302151-2.jpg",
@@ -1119,7 +1204,8 @@
         "x": 0,
         "y": 8,
         "zoom": 1.55
-      }
+      },
+      "transparent": false
     },
     "lawson-2026": {
       "imageUrl": "https://prcdn.freetls.fastly.net/release_image/52709/539/52709-539-9506960a3193ae9fb82f1e8d392cb860-500x707.jpg?width=1950&height=1350&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
@@ -1137,7 +1223,8 @@
         "x": 0,
         "y": 20,
         "zoom": 1.42
-      }
+      },
+      "transparent": false
     },
     "symphony-2024-tokyo": {
       "imageUrl": "https://www.promax.co.jp/backyard/wp-content/uploads/2024/01/MIKU2024_%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB.jpg",
@@ -1150,7 +1237,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "d8ca744a07b8fc606706ba23c698ffc3bf1337063798d3121b441f5796fdf739",
       "width": 640,
-      "height": 360
+      "height": 360,
+      "transparent": false
     },
     "giving-2010": {
       "imageUrl": "https://miku.sega.jp/39/img/bg_miku5.png",
@@ -1168,7 +1256,8 @@
         "x": -12,
         "y": 67,
         "zoom": 1.75
-      }
+      },
+      "transparent": false
     },
     "mikunopolis-2011": {
       "imageUrl": "https://miku.sega.jp/39/img/la/bg_la_miku.png",
@@ -1186,7 +1275,8 @@
         "x": -29,
         "y": 31,
         "zoom": 1.45
-      }
+      },
+      "transparent": true
     },
     "symphony-2026-yokohama": {
       "imageUrl": "https://sp.wmg.jp/mikusymphony/images/2027/main0911.jpg",
@@ -1199,7 +1289,8 @@
       "checkedAt": "2026-11-18",
       "sha256": "cbd2a276eaf697755302761f79e71d835d0288c3c8a075dacbcac6cf73d77a26",
       "width": 640,
-      "height": 452
+      "height": 452,
+      "transparent": false
     }
   },
   "events": {

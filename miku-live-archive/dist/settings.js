@@ -67,12 +67,14 @@ function syncSettingsControls() {
 function openSettings() {
   syncSettingsControls();document.getElementById('settings-status').textContent='更改立即生效，设置保存在本机。';
   refreshBackupStatus();
+  syncArtworkSettings();
   const dialog=document.getElementById('settings-dialog');if(!dialog.open)dialog.showModal();
 }
 function initSettings() {
   const $id=id=>document.getElementById(id);
   $id('settings-open').onclick=openSettings;$id('settings-close').onclick=()=>$id('settings-dialog').close();
   initArchiveActions();
+  initArtworkSettings();
   $id('settings-text-size').oninput=e=>updateSettings({textSize:Number(e.target.value)});
   $id('settings-theme').onchange=e=>updateSettings({theme:e.target.value});
   $id('settings-remember').onchange=e=>updateSettings({remember:e.target.checked});
@@ -87,13 +89,63 @@ function initSettings() {
   const saved=restoreBrowseState();
   // WebKit may restore a previous scroll offset after the first layout. Wait for
   // fonts and two frames so the large type setting has settled before restoring.
-  const fonts=document.fonts?.ready||Promise.resolve();
-  fonts.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  const restorePosition=()=>{
+    if(browseReady)return;
     if(saved){window.scrollTo(0,Number.isFinite(saved.scrollY)?Math.max(0,saved.scrollY):0);$id('nav').scrollTop=Number.isFinite(saved.navScroll)?Math.max(0,saved.navScroll):0;}
     browseReady=true;rememberBrowseState(true);
-  })));
+  };
+  if(saved){
+    const fallback=setTimeout(restorePosition,350);
+    (document.fonts?.ready||Promise.resolve()).then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      clearTimeout(fallback);restorePosition();
+    })));
+  }else restorePosition();
   window.addEventListener('scroll',()=>rememberBrowseState(),{passive:true});
   $id('nav').addEventListener('scroll',()=>rememberBrowseState(),{passive:true});
   window.addEventListener('pagehide',()=>rememberBrowseState(true));
   document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key===','){e.preventDefault();openSettings();}});
+}
+
+
+const artworkSettingLabels={
+  ratio:'默认封面比例',mode:'默认视觉模板',backgroundTreatment:'默认背景处理',
+  backgroundStrategy:'默认背景颜色策略',missing:'缺少主视觉时',archiveStyle:'默认档案风格'
+};
+function initArtworkSettings() {
+  const section=document.getElementById('settings-artwork');
+  section.insertAdjacentHTML('beforeend',`
+    <p class="muted">适用于尚未单独配置的 Live。已保存的单场构图保留原有设置。</p>
+    ${Object.entries(artworkSettingLabels).map(([key,label])=>`<label class="settings-row"><span>${label}</span><select data-art-default="${key}">${ArtworkRenderer.options(key)}</select></label>`).join('')}
+    <label class="settings-row"><span>自选背景色</span><input type="color" data-art-default="backgroundColor"></label>
+    ${[['blur','模糊范围（px）',64,1],['transitionHeight','过渡高度（%）',40,1],['transitionStrength','过渡强度',1,.01]].map(([key,label,max,step])=>`<label class="settings-row"><span>${label}</span><input type="number" min="0" max="${max}" step="${step}" data-art-default="${key}"></label>`).join('')}
+    <p class="muted" id="artwork-cache-state" role="status"></p>
+    <button id="artwork-cache-clear" type="button">清理缩略图缓存</button>`);
+  section.querySelectorAll('[data-art-default]').forEach(input=>input.onchange=()=>{
+    const patch={[input.dataset.artDefault]:input.type==='number'?input.valueAsNumber:input.value};
+    if(input.type==='color')patch.backgroundStrategy='custom';
+    const status=document.getElementById('settings-status');
+    try{ArtworkRenderer.saveDefaults(patch);render();status.textContent='主视觉默认值已保存。';}
+    catch(error){status.textContent=error.message;}
+    syncArtworkSettings();
+  });
+  const clear=document.getElementById('artwork-cache-clear');
+  clear.onclick=async()=>{
+    clear.disabled=true;
+    try{await ArtworkMedia.clearCache();await refreshArtworkCache();}
+    catch(error){document.getElementById('artwork-cache-state').textContent=error.message;clear.disabled=false;}
+  };
+}
+async function refreshArtworkCache() {
+  const status=document.getElementById('artwork-cache-state');
+  try{
+    const {count,bytes,cacheBytes,available}=await ArtworkMedia.stats();
+    const format=size=>size>=1024*1024?`${(size/1024/1024).toFixed(1)} MB`:`${Math.round(size/1024)} KB`;
+    status.textContent=available?`${count} 张本机原图（${format(bytes)}） · 缩略图缓存 ${format(cacheBytes)}`:'本机素材存储不可用';
+    document.getElementById('artwork-cache-clear').disabled=!available||!cacheBytes;
+  }catch{status.textContent='无法读取素材存储状态';}
+}
+function syncArtworkSettings() {
+  const settings=ArtworkRenderer.globalDefaults();
+  document.querySelectorAll('[data-art-default]').forEach(input=>input.value=settings[input.dataset.artDefault]??'#5b7978');
+  refreshArtworkCache();
 }

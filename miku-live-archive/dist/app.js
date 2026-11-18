@@ -232,10 +232,12 @@ $("snow").onclick = () => {
   render();
   $("snow-panel").scrollIntoView({ behavior: "smooth", block: "center" });
 };
-$("export").onclick = () => {
-  const text=JSON.stringify(createBackup(),null,2),url=URL.createObjectURL(new Blob([text],{type:'application/json'}));
-  const a=document.createElement('a');a.href=url;a.download='miku-archive-'+new Date().toISOString().slice(0,10)+'.json';a.click();
-  recordBackupExport(JSON.parse(text),'browser');setTimeout(()=>URL.revokeObjectURL(url),1000);
+$("export").onclick = async () => {
+  try{
+    const text=await exportArchiveJSON(),url=URL.createObjectURL(new Blob([text],{type:'application/json'}));
+    const a=document.createElement('a');a.href=url;a.download='miku-archive-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+    recordBackupExport(JSON.parse(text),'browser');setTimeout(()=>URL.revokeObjectURL(url),1000);
+  }catch(error){alert('无法导出：'+error.message);}
 };
 $("import").onclick = () => $("file").click();
 $("file").onchange = async e => {
@@ -257,13 +259,17 @@ async function init() {
       ? JSON.parse(stored)
       : await (await fetch("seed.json")).json();
     atlasCatalog = await loadCatalog();
+    try {await ArtworkMedia.init();} catch(error) {console.error(error);}
     initAtlas();
     options();
     initSettings();
     render();
   } catch (e) {
+    appLoadError=e;
+    console.error(e);
     $("atlas-content").textContent = "图鉴加载失败，请刷新或检查资源文件。";
     $("content").textContent = "数据加载失败，请刷新页面或检查浏览器存储设置。";
   }
 }
-init();
+let appLoadError;
+const appReady=init();

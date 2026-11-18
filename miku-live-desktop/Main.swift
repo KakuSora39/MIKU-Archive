@@ -6,12 +6,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     var web: WKWebView!
     var pendingImport: String?
     var settingsReloadPhase = 0
+    private var coverCapture: CoverCaptureWindow?
     let appName = "MIKU Archive"
     func applicationDidFinishLaunching(_ notification: Notification) {
         let config = WKWebViewConfiguration()
         config.websiteDataStore = CommandLine.arguments.contains("--self-test") ? .nonPersistent() : .default()
         config.userContentController.add(self, name: "archive")
         config.userContentController.addScriptMessageHandler(self, contentWorld: .page, name: "coverDownload")
+        config.userContentController.addScriptMessageHandler(self, contentWorld: .page, name: "coverCapture")
         web = WKWebView(frame: .zero, configuration: config)
         web.navigationDelegate = self
         web.uiDelegate = self
@@ -21,7 +23,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         window.title = "MIKU Archive · Live 图鉴"
         window.minSize = NSSize(width: 720, height: 580)
         window.contentView = web
-        window.setFrameAutosaveName("MikuArchiveWindow")
+        if !CommandLine.arguments.contains("--self-test") { window.setFrameAutosaveName("MikuArchiveWindow") }
         window.center()
         buildMenu()
         guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), FileManager.default.fileExists(atPath: root.appendingPathComponent("index.html").path) else {
@@ -77,16 +79,36 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         if CommandLine.arguments.contains("--self-test") {
-            if settingsReloadPhase == 1 { DispatchQueue.main.asyncAfter(deadline:.now()+0.5) {self.checkSettingsAfterReload()}; return }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { self.runSelfTest() }
+            web.callAsyncJavaScript("""
+            await appReady;
+            if(appLoadError)throw appLoadError;
+            const deadline=performance.now()+5000;
+            while(!browseReady&&performance.now()<deadline)await new Promise(resolve=>setTimeout(resolve,25));
+            if(!browseReady)throw Error('application initialization timed out');
+            return true;
+            """, arguments: [:], in:nil, in:.page) {result in
+                if case .failure(let error)=result {print("FAIL: \(error)");exit(1)}
+                if self.settingsReloadPhase==1 {self.checkSettingsAfterReload()}
+                else {self.runSelfTest()}
+            }
         }
         web.evaluateJavaScript("""
-        document.getElementById('export').onclick = () => window.webkit.messageHandlers.archive.postMessage({action:'export',payload:JSON.stringify(createBackup(),null,2)});
+        document.getElementById('export').onclick = async () => {
+          try {
+            const payload=await exportArchiveJSON();
+            const fingerprint=backupSnapshotFingerprint(JSON.parse(payload));
+            window.webkit.messageHandlers.archive.postMessage({action:'export',payload,fingerprint});
+          }
+          catch(error){alert('无法导出：'+error.message);}
+        };
         document.getElementById('import').onclick = () => window.webkit.messageHandlers.archive.postMessage({action:'import'});
         document.querySelector('footer small').textContent = '离线桌面版 · 演出图鉴与影像收藏独立维护 · 文件菜单备份包含图鉴标记 · 资料需手动核实';
         """)
     }
     func runSelfTest() {
+        if CommandLine.arguments.contains("--preview-artwork-narrow") {
+            window.setContentSize(NSSize(width: 820, height: 900))
+        }
         let previewIndex=CommandLine.arguments.firstIndex(of:"--preview-cover")
         let previewCover=previewIndex.flatMap { index in index+1<CommandLine.arguments.count ? try? Data(contentsOf:URL(fileURLWithPath:CommandLine.arguments[index+1])).base64EncodedString() : nil } ?? ""
         let appVersion=Bundle.main.object(forInfoDictionaryKey:"CFBundleShortVersionString") as? String ?? ""
@@ -202,23 +224,38 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(!atlasCatalog.events.every(event=>event.coverKey&&resolvedCover(event)?.src.startsWith('covers/')))throw Error('complete built-in cover bindings');
           if(resolvedCover({id:'custom-future'}).src!=='covers/miku-kei.png')throw Error('new event default cover');
           if(atlasCatalog.events.find(e=>e.id==='primary-14--hamamatsu').coverKey!=='mirai-2026'||atlasCatalog.events.find(e=>e.id==='moegirl-stage-088').coverKey!=='mirai-2022')throw Error('cross year official cover');
-          const dummy=document.createElement('div');document.body.append(dummy);dummy.innerHTML=coverMarkup({coverUrl:'https://example.invalid/image.jpg'});bindCoverFallbacks(dummy);
-          dummy.querySelector('img').dispatchEvent(new Event('error'));
-          if(dummy.querySelector('.atlas-art').hidden||!dummy.querySelector('.atlas-art-image').src.endsWith('covers/miku-kei.png'))throw Error('cover error fallback');dummy.remove();
+          const examples={
+            'blooming-2025--osaka':'cutout','symphony-2025--sapporo':'landscape',
+            'symphony-2025--tokyo':'ambient','moegirl-stage-002':'placeholder'
+          };
+          for(const [id,mode] of Object.entries(examples)){
+            const event=atlasCatalog.events.find(row=>row.id===id);
+            if(ArtworkRenderer.describe(event).mode!==mode)throw Error('artwork mode '+id);
+          }
+          const dummy=document.createElement('div');document.body.append(dummy);
+          dummy.innerHTML=ArtworkRenderer.markup({series:'测试',year:2026,coverUrl:'https://example.invalid/image.jpg'});
+          ArtworkRenderer.bind(dummy);dummy.querySelector('.artwork-image').dispatchEvent(new Event('error'));
+          if(dummy.querySelector('.artwork').dataset.artMode!=='placeholder')throw Error('artwork error fallback');dummy.remove();
+          const card=document.querySelector('.atlas-card');
+          const art=card.querySelector('.artwork'),bounds=art.getBoundingClientRect();
+          if(Math.abs(bounds.width/bounds.height-16/9)>.01||getComputedStyle(art.querySelector('.artwork-transition')).pointerEvents!=='none')throw Error('artwork aspect/transition');
+          const detailButton=card.querySelector('.atlas-card-open');
+          if(!detailButton||card.querySelectorAll('button').length!==1)throw Error('one focusable artwork card action');
+          detailButton.click();if(!document.getElementById('atlas-detail').open)throw Error('artwork card opens details');document.getElementById('atlas-detail').close();
           showAtlasEvent('primary-26');if(!document.getElementById('atlas-detail-body').textContent.includes('查看官方图片来源'))throw Error('cover attribution');document.getElementById('atlas-detail').close();
           const extensionsBefore=currentArchiveState(),coverID=atlasRows()[0].id;
           const testCover='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
           const testSetlist={schema:1,sourceUrl:'https://example.com/setlist',songs:[{title:'Tell Your World',artist:'livetune',section:'本篇'},{title:'メルト',section:'Encore'}]};
-          saveCatalogEdits({...atlasEdits,[coverID]:{coverUrl:testCover,coverCredit:'测试封面',setlist:testSetlist}});render();
+          saveCatalogEdits({...atlasEdits,[coverID]:{coverUrl:testCover,coverCredit:'测试封面',artworkConfig:{mode:'ambient',focalPoint:{x:36,y:60}},setlist:testSetlist}});render();
           if(!document.querySelector('.atlas-art-image')||document.querySelector('.atlas-art-image').src!==testCover)throw Error('cover card rendering');
-          if(getComputedStyle(document.querySelector('.atlas-art-blur')).filter==='none')throw Error('cover blur');
+          if(document.querySelector('.artwork').dataset.artMode!=='ambient')throw Error('manual artwork mode');
           const setlistCopy=MikuArchive.live.getSetlist(coverID);setlistCopy.songs[0].title='changed';
           if(MikuArchive.live.getSetlist(coverID).songs[0].title!=='Tell Your World'||MikuArchive.live.getSetlist('missing')!==null)throw Error('setlist readonly interface');
           editCatalogEvent(coverID);document.querySelector('#catalog-form [name="venue"]').value='cover-preserving venue';document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
           if(atlasEdits[coverID].coverUrl!==testCover||atlasEdits[coverID].setlist.songs[1].section!=='Encore')throw Error('form discarded extensions');
           const extensionsBackup=JSON.parse(JSON.stringify(createBackup()));
           commitArchiveState(extensionsBefore);mergeBackup(extensionsBackup);
-          if(atlasEdits[coverID].coverUrl!==testCover||MikuArchive.live.getSetlist(coverID).songs.length!==2)throw Error('extensions backup roundtrip');
+          if(atlasEdits[coverID].artworkConfig.focalPoint.x!==36||atlasEdits[coverID].coverUrl!==testCover||MikuArchive.live.getSetlist(coverID).songs.length!==2)throw Error('extensions backup roundtrip');
           mergeBackup({schema:1,records:[],atlasEdits:{[coverID]:{venue:'old backup venue'}}});
           if(atlasEdits[coverID].coverUrl!==testCover||!atlasEdits[coverID].setlist)throw Error('old backup erased extensions');
           editCatalogEvent(coverID);document.getElementById('catalog-cover-clear').click();document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();render();
@@ -317,10 +354,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           view='all';render();
           setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
           if(\(CommandLine.arguments.contains("--preview-cover-editor") ? "true" : "false")){showAtlasEvent('primary-14--hamamatsu');document.getElementById('detail-edit-cover').click();}
+          if(\(CommandLine.arguments.contains("--preview-cover-compose") ? "true" : "false")){showAtlasEvent('primary-14--hamamatsu');document.getElementById('detail-edit-cover').click();document.getElementById('catalog-cover-compose').click();}
           const previewTheme=\(CommandLine.arguments.contains("--preview-dark") ? "'dark'" : CommandLine.arguments.contains("--preview-auto") ? "'auto'" : "'light'");
           clearUndo();updateSettings({theme:previewTheme,textSize:\(CommandLine.arguments.contains("--preview-large") ? "'large'" : "'standard'")});
           const previewCover='\(previewCover)';
           if(previewCover){const edits={...atlasEdits};atlasRows().slice(0,6).forEach(e=>edits[e.id]={...edits[e.id],coverUrl:'data:image/png;base64,'+previewCover,coverCredit:'界面测试图片'});saveCatalogEdits(edits);render();}
+          if(\(CommandLine.arguments.contains("--preview-artwork-wall") ? "true" : "false")){
+            const ids=['blooming-2025--osaka','symphony-2025--sapporo','symphony-2025--tokyo','moegirl-stage-117','colorful-5--osaka','moegirl-stage-002'];
+            const root=document.getElementById('atlas-content');
+            root.innerHTML='<div class="atlas-grid">'+ids.map(id=>renderAtlasCard(atlasCatalog.events.find(e=>e.id===id))).join('')+'</div>';
+            ArtworkRenderer.bind(root);
+            window.scrollTo(0,window.scrollY+root.getBoundingClientRect().top-24);
+          }
           if(\(CommandLine.arguments.contains("--preview-mirai") ? "true" : "false")){document.getElementById('atlas-series').value='魔法未来';render();}
           if(\(CommandLine.arguments.contains("--preview-mwy") ? "true" : "false")){document.getElementById('atlas-series').value='未来有你';render();}
           if(\(CommandLine.arguments.contains("--preview-fallback") ? "true" : "false")){document.getElementById('atlas-series').value='感谢祭 / MIKUPA';render();}
@@ -332,13 +377,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
-            if CommandLine.arguments.contains("--test-cover-upload") || CommandLine.arguments.contains("--test-cover-remote") {self.checkCoverFileUpload();return}
+            if CommandLine.arguments.contains("--test-cover-upload") || CommandLine.arguments.contains("--test-cover-remote") || CommandLine.arguments.contains("--test-cover-capture") {self.checkCoverFileUpload();return}
             if CommandLine.arguments.contains("--test-restart") && self.settingsReloadPhase == 0 {
                 self.settingsReloadPhase = 1
-                self.web.evaluateJavaScript("""
+                self.web.callAsyncJavaScript("""
+                const image=document.createElement('canvas');image.width=48;image.height=24;
+                const asset=await ArtworkMedia.add({data:image.toDataURL(),name:'Restart test'});
+                sessionStorage.setItem('restartArtwork',asset.id);
+                ArtworkRenderer.saveDefaults({ratio:'21:9',mode:'poster'});
                 updateSettings({theme:'dark',textSize:5,remember:true});recordBackupExport(createBackup(),'native');atlasView='timeline';document.getElementById('atlas-sort').value='old';document.getElementById('atlas-series').value='魔法未来';document.getElementById('atlas-search').value='2026';render();
-                """) {_,error in
-                    if let error=error {print(error);exit(1)}
+                return true;
+                """,arguments:[:],in:nil,in:.page) {result in
+                    if case .failure(let error)=result {print(error);exit(1)}
                     DispatchQueue.main.asyncAfter(deadline:.now()+0.2) {
                         self.web.evaluateJavaScript("window.scrollTo(0,180);rememberBrowseState(true);JSON.parse(localStorage.getItem(browseKey)).scrollY") {value,error in
                             if let error=error {print(error);exit(1)}
@@ -361,68 +411,161 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         }
     }
     func checkCoverFileUpload() {
+        DispatchQueue.main.asyncAfter(deadline:.now()+(CommandLine.arguments.contains("--test-cover-remote") || CommandLine.arguments.contains("--test-cover-capture") ? 45 : 12)) {
+            self.web.evaluateJavaScript("window.artworkCheckStage") {stage,_ in
+                print("FAIL: artwork test timed out at \(stage ?? "start")");exit(1)
+            }
+        }
         web.callAsyncJavaScript("""
+        window.artworkCheckStage='decode bundled images';
         await Promise.all(Object.values(atlasCatalog.coverAssets).map(asset=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>image.naturalWidth&&image.naturalHeight?resolve():reject(Error('empty cover '+asset.file));image.onerror=()=>reject(Error('offline cover decode '+asset.file));image.src=asset.file;})));
         const original=currentArchiveState(),id=atlasCatalog.events[0].id;
         const png='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
         editCatalogEvent(id);
         const select=async file=>{const fileInput=document.getElementById('catalog-cover-file');const dt=new DataTransfer();dt.items.add(file);fileInput.files=dt.files;await fileInput.onchange({target:fileInput});};
+        const transparent=document.createElement('canvas');transparent.width=transparent.height=48;
+        const context=transparent.getContext('2d');context.fillStyle='#128a78';context.fillRect(10,10,28,28);
+        window.artworkCheckStage='alpha thumbnail';
+        const alphaThumbnail=await optimizeCover(transparent.toDataURL());
+        if(!alphaThumbnail.data.startsWith('data:image/png'))throw Error('transparent upload flattened');
+        const transparentImage=await new Promise((resolve,reject)=>{
+          const candidate=new Image();candidate.onload=()=>resolve(candidate);candidate.onerror=reject;candidate.src=alphaThumbnail.data;
+        });
+        if(ArtworkRenderer.selectMode({},ArtworkRenderer.profile(transparentImage))!=='cutout')throw Error('transparent upload auto mode');
         const bytes=Uint8Array.from(atob(png),c=>c.charCodeAt(0));
+        const originalIDs=ArtworkMedia.ids();
+        window.artworkCheckStage='upload';
         await select(new File([bytes],'cover.png',{type:'image/png'}));
-        if(!catalogPendingCover.startsWith('data:image/jpeg;base64,')||catalogPendingCover.length>12288||catalogCoverReading)throw Error('file reader/image decoder');
+        window.artworkCheckStage='upload complete';
+        const savedCover=catalogArtworkAssetId;
+        if(!savedCover||ArtworkMedia.get(savedCover)?.width!==1||catalogCoverReading)throw Error('file reader/image decoder: '+document.getElementById('catalog-cover-status').textContent);
+        if(!document.getElementById('cover-compose').open)throw Error('upload did not open composer');
+        document.getElementById('cover-compose-apply').click();
         document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
-        if(!atlasEdits[id].coverUrl.startsWith('data:image/jpeg;base64,'))throw Error('uploaded cover save');
-        editCatalogEvent(id);const savedCover=catalogPendingCover;
-        await select(new File(['not an image'],'broken.png',{type:'image/png'}));
-        if(catalogPendingCover!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('无法解码'))throw Error('invalid image replaced cover');
-        await select(new File([new Uint8Array(maxCoverBytes+1)],'huge.png',{type:'image/png'}));
-        if(catalogPendingCover!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('2 MB'))throw Error('oversized image replaced cover');
-        document.getElementById('catalog-cover-url').value='https://example.com/cover.png';document.getElementById('catalog-cover-url').dispatchEvent(new Event('input'));
-        if(catalogPendingCover!==savedCover)throw Error('typing a link discarded the saved cover');
-        const x=document.getElementById('cover-x');x.value=22;x.dispatchEvent(new Event('input'));
-        if(catalogCoverFrame.x!==22)throw Error('cover position not reflected in preview');
-        document.getElementById('catalog-close').click();
-        if(atlasEdits[id].coverUrl!==savedCover)throw Error('cancel changed saved cover');
+        if(atlasEdits[id].artworkAssetId!==savedCover||atlasEdits[id].coverUrl)throw Error('uploaded cover reference');
         editCatalogEvent(id);
-        const y=document.getElementById('cover-y');y.value=17;y.dispatchEvent(new Event('input'));
+        await select(new File(['not an image'],'broken.png',{type:'image/png'}));
+        if(catalogArtworkAssetId!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('无法解码'))throw Error('invalid image replaced cover');
+        await select(new File([new Uint8Array(ArtworkMedia.maxBytes+1)],'huge.png',{type:'image/png'}));
+        if(catalogArtworkAssetId!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('16 MB'))throw Error('oversized image replaced cover');
+        document.getElementById('catalog-cover-url').value='https://example.com/cover.png';document.getElementById('catalog-cover-url').dispatchEvent(new Event('input'));
+        if(catalogArtworkAssetId!==savedCover)throw Error('typing a link discarded the saved cover');
+        document.getElementById('catalog-cover-compose').click();
+        const change=(id,value,type='input')=>{const control=document.getElementById(id);control.value=value;control.dispatchEvent(new Event(type));};
+        window.artworkCheckStage='cancel composition';
+        change('cover-x',22);
+        if(catalogCoverFrame.x!==22)throw Error('cover position not reflected in preview');
+        document.getElementById('cover-compose-cancel').click();
+        if(catalogCoverFrame!==null||atlasEdits[id].artworkAssetId!==savedCover)throw Error('cancel changed saved cover');
+        document.getElementById('catalog-cover-compose').click();
+        const frame=()=>new Promise(resolve=>setTimeout(resolve,70));
+        window.artworkCheckStage='templates';
+        for(const mode of ['landscape','poster','ambient','cutout','archive']){
+          change('cover-mode',mode);
+          await frame();
+          if(document.querySelector('#cover-card-preview .artwork').dataset.artMode!==mode)throw Error('card preview '+mode);
+        }
+        window.artworkCheckStage='archive logo';
+        const archive=document.querySelector('#cover-card-preview .artwork-archive');
+        if(!archive.textContent.includes('原创档案封面')||archive.textContent.includes('待补充'))throw Error('archive label or fabricated metadata');
+        change('cover-logo',savedCover,'change');
+        document.getElementById('cover-compose-apply').click();
+        if(!document.getElementById('cover-compose').open)throw Error('unverified logo accepted');
+        change('cover-logo-source','https://example.com/official-logo');
+        const logoConfirm=document.getElementById('cover-logo-confirm');logoConfirm.checked=true;logoConfirm.dispatchEvent(new Event('change'));
+        await frame();
+        if(!document.querySelector('#cover-card-preview .artwork-logo'))throw Error('confirmed logo preview missing');
+        change('cover-mode','landscape');
+        change('cover-y',17);
+        change('cover-focal-x',74);
+        change('cover-ratio','3:2');
+        window.artworkCheckStage='original crop';
+        const crop=document.getElementById('cover-crop');crop.open=true;
+        const originalImage=document.getElementById('cover-compose-image');
+        if(!originalImage.naturalWidth)await new Promise((resolve,reject)=>{originalImage.addEventListener('load',resolve,{once:true});originalImage.addEventListener('error',reject,{once:true});setTimeout(()=>reject(Error('crop original timed out')),3500);});
+        change('cover-crop-ratio','16:9','change');
+        await frame();
+        const cropRect=document.querySelector('#cover-card-preview .artwork-picture.is-cropped');
+        const realCard=document.querySelector('#cover-card-preview .atlas-card');
+        if(!cropRect||!realCard.querySelector('.atlas-card-facts').textContent.includes(atlasCatalog.events[0].date))throw Error('non-destructive crop or card metadata');
+        document.getElementById('cover-compose-apply').click();
         document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
-        const coverBackup=JSON.parse(JSON.stringify(createBackup()));
-        commitArchiveState(original);mergeBackup(coverBackup);
-        if(atlasEdits[id].coverFrame.y!==17||atlasEdits[id].coverUrl!==savedCover)throw Error('cover image and crop backup');
+        window.artworkCheckStage='defaults';
+        const oldDefaults=ArtworkRenderer.globalDefaults();
+        ArtworkRenderer.saveDefaults({ratio:'4:3',mode:'poster'});
+        const rendered=ArtworkRenderer.describe(atlasCatalog.events.find(event=>event.id===id));
+        if(rendered.config.ratio!=='3:2'||rendered.mode!=='landscape'||ArtworkRenderer.describe({series:'测试',coverUrl:`data:image/png;base64,${png}`}).config.ratio!=='4:3')throw Error('global settings overwrote a Live edit or did not apply');
+        ArtworkRenderer.saveDefaults(oldDefaults);
+        window.artworkCheckStage='share';
+        const second=atlasCatalog.events.find(e=>e.id!==id);
+        editCatalogEvent(second.id);
+        change('catalog-material-picker',savedCover);
+        document.getElementById('catalog-material-attach').click();
+        document.getElementById('cover-compose-apply').click();
+        document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
+        if(atlasEdits[second.id].artworkAssetId!==savedCover||ArtworkMedia.ids().length!==originalIDs.length+1)throw Error('shared asset duplicated or missing');
+        window.artworkCheckStage='export original';
+        const coverBackup=JSON.parse(await exportArchiveJSON());
+        if(coverBackup.artworkMedia.find(asset=>asset.id===savedCover)?.data!==`data:image/png;base64,${png}`)throw Error('original was modified');
+        window.artworkCheckStage='thumbnail cache';
+        await ArtworkMedia.clearCache();
+        if((await ArtworkMedia.stats()).cacheBytes)throw Error('cache clear');
+        if(!/^data:image/.test(await ArtworkMedia.preview(savedCover)))throw Error('cache rebuild from original');
+        commitArchiveState(original);
+        await ArtworkMedia.rollback([savedCover]);
+        window.artworkCheckStage='backup restore';
+        previewBackup(coverBackup);
+        if(!(await confirmBackupImport())||atlasEdits[id].artworkConfig.mode!=='landscape'||atlasEdits[id].artworkConfig.focalPoint.x!==74||atlasEdits[id].coverFrame.y!==17||atlasEdits[id].artworkAssetId!==savedCover||!ArtworkMedia.get(savedCover))throw Error('asset and crop backup');
+        window.artworkCheckStage='remote URL';
         if (verifyRemote) {
           editCatalogEvent(id);
           const link=document.getElementById('catalog-cover-url');
-          link.value='https://piapro.net/images/ch_img_miku.png';
+          link.value=fixtureBase?fixtureBase+'/cover.png':'https://piapro.net/images/ch_img_miku.png';
           await document.getElementById('catalog-cover-fetch').onclick();
-          if(!catalogPendingCover.startsWith('data:image/jpeg;base64,')||catalogPendingCover===savedCover)throw Error(document.getElementById('catalog-cover-status').textContent);
+          if(!catalogArtworkAssetId||catalogArtworkAssetId===savedCover)throw Error(document.getElementById('catalog-cover-status').textContent);
+          document.getElementById('cover-compose-apply').click();
           document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
-          if(!atlasEdits[id].coverUrl.startsWith('data:')||atlasEdits[id].coverSourceUrl!==link.value)throw Error('official URL offline snapshot persistence');
+          if(!ArtworkMedia.get(atlasEdits[id].artworkAssetId)||atlasEdits[id].coverSourceUrl!==link.value)throw Error('official URL offline snapshot persistence');
+        }
+        window.artworkCheckStage='official screenshot';
+        if (verifyCapture) {
+          editCatalogEvent(id);
+          if(fixtureBase)document.getElementById('catalog-form').elements.officialUrl.value=fixtureBase+'/';
+          await document.getElementById('catalog-cover-web').onclick();
+          const composer=document.getElementById('cover-compose');
+          if(!composer.open||ArtworkMedia.get(catalogArtworkAssetId)?.type!=='image/jpeg'||catalogArtworkAssetId===savedCover)throw Error('web snapshot missing from composer');
+          await frame();
+          const editorFrame=document.getElementById('cover-compose-frame');
+          if(Math.abs(editorFrame.clientWidth/editorFrame.clientHeight-3/2)>.025)throw Error('editor frame aspect ratio');
+          document.getElementById('cover-compose-apply').click();
+          document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
+          if(!atlasEdits[id].coverSourceUrl.startsWith(fixtureBase||'https://')||atlasEdits[id].artworkAssetId===savedCover)throw Error('web snapshot did not persist');
         }
         commitArchiveState(original);
-        return 'PASS: all bundled cover images decoded offline; actual FileReader/image decode, upload/save, broken and oversized file rejection, URL replacement and cancel';
-        """,arguments:["verifyRemote": CommandLine.arguments.contains("--test-cover-remote")],in:nil,in:.page) { result in
+        return 'PASS: bundled images, original upload, five templates, verified Logo, crop, live card, global defaults, asset sharing, cache, backup and cancel'+(verifyCapture?'; webpage screenshot saved locally':'')+(verifyRemote?'; direct image URL saved locally':'');
+        """,arguments:["verifyRemote": CommandLine.arguments.contains("--test-cover-remote"), "verifyCapture": CommandLine.arguments.contains("--test-cover-capture"),
+                       "fixtureBase": ProcessInfo.processInfo.environment["MIKU_ARTWORK_TEST_BASE_URL"] ?? ""],in:nil,in:.page) { result in
             switch result {case .success(let value): print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
         }
     }
     func checkSettingsAfterReload() {
-        web.evaluateJavaScript("""
-        (()=>{
+        web.callAsyncJavaScript("""
           if(appSettings.textSize!==5)throw Error('text size after reload');
           if(!readLocalJSON(backupMetaKey,null)?.exportedAt)throw Error('backup metadata after reload');
           if(appSettings.theme!=='dark'||document.documentElement.dataset.theme!=='dark')throw Error('theme after reload');
           if(atlasView!=='timeline'||!atlasMode||document.getElementById('atlas-series').value!=='魔法未来'||document.getElementById('atlas-sort').value!=='old'||document.getElementById('atlas-search').value!=='2026')throw Error('filters after reload');
           if(Math.abs(window.scrollY-180)>10)throw Error('position after reload '+window.scrollY);
           if(data.filter(r=>r.collected==='已收集').length!==13)throw Error('collection after reload');
-          return 'PASS: actual WebKit reload restored text size, backup metadata, theme, view, search, series, ordering, scroll and collection';
-        })()
-        """) {value,error in
-            if let error=error {print("FAIL: \((error as NSError).userInfo)");exit(1)}
-            print(value ?? "PASS");exit(0)
+          const id=sessionStorage.getItem('restartArtwork');
+          if(ArtworkRenderer.globalDefaults().ratio!=='21:9'||ArtworkMedia.get(id)?.width!==48||!(await ArtworkMedia.exportAll()).some(asset=>asset.id===id))throw Error('original image or artwork settings after reload');
+          return 'PASS: WebKit reload restored artwork originals, defaults, text size, backup metadata, theme, filters, scroll and collection';
+        """,arguments:[:],in:nil,in:.page) {result in
+            switch result {case .success(let value): print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
         }
     }
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         guard let body = message.body as? [String: Any], let action = body["action"] as? String else { return }
-        if action == "export", let payload = body["payload"] as? String { writeBackup(payload) }
+        if action == "export", let payload = body["payload"] as? String, let fingerprint = body["fingerprint"] as? String { writeBackup(payload, fingerprint: fingerprint) }
         if action == "import" { importBackup() }
         if action == "theme", let value=body["value"] as? String, ["auto","light","dark"].contains(value) {
             setAppearance(value)
@@ -430,6 +573,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         }
     }
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage, replyHandler: @escaping (Any?, String?) -> Void) {
+        if message.name == "coverCapture" {
+            guard message.frameInfo.isMainFrame, message.frameInfo.request.url?.isFileURL == true,
+                  let address = message.body as? String, let url = CoverCaptureWindow.pageURL(address) else {
+                replyHandler(nil, "请输入完整的官网地址。")
+                return
+            }
+            coverCapture?.close()
+            coverCapture = CoverCaptureWindow(url: url) { [weak self] value, error in
+                replyHandler(value, error)
+                DispatchQueue.main.async {
+                    self?.window.makeKeyAndOrderFront(nil)
+                }
+            }
+            coverCapture?.showWindow(nil)
+            coverCapture?.window?.makeKeyAndOrderFront(nil)
+            return
+        }
         guard message.name == "coverDownload", message.frameInfo.isMainFrame,
               message.frameInfo.request.url?.isFileURL == true,
               let link = message.body as? String, let url = URL(string: link),
@@ -478,14 +638,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
     }
 
     @objc func exportBackup() { web.evaluateJavaScript("document.getElementById('export').click()") }
-    func writeBackup(_ text: String) {
+    func writeBackup(_ text: String, fingerprint: String) {
         let panel = NSSavePanel(); panel.title = "导出收藏备份"; panel.nameFieldStringValue = "miku-archive-\(ISO8601DateFormatter().string(from: Date()).prefix(10)).json"
         panel.beginSheetModal(for: window) { response in
             guard response == .OK, let url = panel.url else { return }
             do {
                 try text.write(to: url, atomically: true, encoding: .utf8)
-                let encoded=Data(text.utf8).base64EncodedString()
-                self.web.evaluateJavaScript("recordBackupExport(JSON.parse(new TextDecoder().decode(Uint8Array.from(atob('\(encoded)'),c=>c.charCodeAt(0)))),'native')")
+                self.web.callAsyncJavaScript("return recordBackupFingerprint(fingerprint,'native');",
+                                             arguments:["fingerprint":fingerprint],in:nil,in:.page) { _ in }
             }
             catch { self.alert("导出失败", error.localizedDescription) }
         }
@@ -495,12 +655,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         panel.beginSheetModal(for: window) { response in
             guard response == .OK, let url = panel.url else { return }
             do {
-                let bytes = try Data(contentsOf: url)
-                let encoded=bytes.base64EncodedString()
-                self.web.evaluateJavaScript("""
-                previewBackup(JSON.parse(new TextDecoder().decode(Uint8Array.from(atob('\(encoded)'),c=>c.charCodeAt(0)))));
-                """) {_,error in
-                    if let error=error {self.alert("无法导入",error.localizedDescription)}
+                let text = try String(contentsOf: url, encoding: .utf8)
+                self.web.callAsyncJavaScript("return previewBackup(JSON.parse(text));",
+                                             arguments:["text":text],in:nil,in:.page) { result in
+                    if case .failure(let error)=result {self.alert("无法导入",error.localizedDescription)}
                 }
             } catch { self.alert("无法读取备份", error.localizedDescription) }
         }
@@ -528,14 +686,19 @@ extension AppDelegate: WKUIDelegate {
         if let url = navigationAction.request.url, ["http", "https"].contains(url.scheme ?? "") { NSWorkspace.shared.open(url) }; return nil
     }
 }
-let app = NSApplication.shared
-let delegate = AppDelegate()
-app.setActivationPolicy(.regular)
-if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(named:.darkAqua)}
-app.delegate = delegate
-// Keep JavaScript confirmations and error dialogs available in the native window.
-if CommandLine.arguments.contains("--check-resources") {
-    guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","catalog-editor.js","settings.js","live-assets.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json","covers/miku-kei.png"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
-    print("Bundled resources OK"); exit(0)
+@main
+struct MikuArchiveApplication {
+    static func main() {
+        let app = NSApplication.shared
+        let delegate = AppDelegate()
+        app.setActivationPolicy(.regular)
+        if CommandLine.arguments.contains("--dark-ui") {app.appearance=NSAppearance(named:.darkAqua)}
+        app.delegate = delegate
+        // Keep JavaScript confirmations and error dialogs available in the native window.
+        if CommandLine.arguments.contains("--check-resources") {
+            guard let root = Bundle.main.resourceURL?.appendingPathComponent("Web"), ["index.html","app.js","atlas.js","artwork.js","catalog-editor.js","settings.js","live-assets.js","artwork-media.js","archive-actions.js","app-info.js","style.css","seed.json","catalog.json","covers/miku-kei.png"].allSatisfy({FileManager.default.fileExists(atPath: root.appendingPathComponent($0).path)}) else { exit(1) }
+            print("Bundled resources OK"); exit(0)
+        }
+        app.run()
+    }
 }
-app.run()

@@ -68,7 +68,7 @@ def main():
     with (CONTENTS / 'Info.plist').open('wb') as file:
         plistlib.dump(info, file)
     run('xcrun', 'swiftc', '-module-cache-path', CACHE, '-O', '-target', 'arm64-apple-macos13.0',
-        BASE / 'Main.swift', '-o', BINARY / 'MIKUArchive',
+        BASE / 'Main.swift', BASE / 'CoverCapture.swift', '-o', BINARY / 'MIKUArchive',
         '-framework', 'Cocoa', '-framework', 'WebKit')
     with tempfile.TemporaryDirectory(prefix='miku-icon-') as temporary:
         temp = Path(temporary)

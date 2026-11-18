@@ -19,7 +19,11 @@ def main():
    (folder/'raw'/(key+'.img')).write_bytes(data)
   list(concurrent.futures.ThreadPoolExecutor(max_workers=6).map(download,manifest['assets'].items()))
   subprocess.run(['xcrun','swift','-module-cache-path',str(folder/'ModuleCache'),str(ROOT/'scripts/PrepareCovers.swift'),str(folder),str(ROOT/'miku-live-archive/dist/covers')],check=True)
- for asset in manifest['assets'].values():
+  profiles=json.loads(subprocess.check_output(
+   ['xcrun','swift','-module-cache-path',str(folder/'ModuleCache'),str(ROOT/'scripts/ProfileCovers.swift'),str(ROOT/'miku-live-archive/dist/covers')],
+   text=True))
+ for key,asset in manifest['assets'].items():
+  asset['transparent']=profiles[key]
   data=(ROOT/'miku-live-archive/dist'/asset['file']).read_bytes()
   asset['sha256']=hashlib.sha256(data).hexdigest();asset['width'],asset['height']=struct.unpack('>II',data[16:24])
  MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

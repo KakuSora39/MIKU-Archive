@@ -26100,13 +26100,17 @@
       "label": "官方通用初音未来形象",
       "credit": "Art by KEI / © Crypton Future Media, INC. www.piapro.net",
       "kind": "generic",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/miku-kei.png",
       "checkedAt": "2026-11-18",
-      "sha256": "28659fa5814570fe6d0c1bd8bb8830fd83584ceaccef2f5273bf424e7fbcd9d0",
-      "width": 416,
-      "height": 640
+      "sha256": "a5d8c9ac4775b8831c0401a9fe7e24d3628277294c81f73956bc501d62abc2d4",
+      "width": 419,
+      "height": 640,
+      "frame": {
+        "x": 0,
+        "y": 25,
+        "zoom": 1.7
+      }
     },
     "mirai-2013": {
       "imageUrl": "https://magicalmirai.com/2013/images/img_main_chris.jpg",
@@ -26114,13 +26118,17 @@
       "label": "魔法未来 2013 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2013.png",
       "checkedAt": "2026-11-18",
       "sha256": "97065d880c54fd6c3fee5174debbf9428affb7b650a915b32c7ac82c7cb89c98",
       "width": 640,
-      "height": 480
+      "height": 480,
+      "frame": {
+        "x": -26,
+        "y": 25,
+        "zoom": 1.4
+      }
     },
     "mirai-2014": {
       "imageUrl": "https://magicalmirai.com/2014/images/bg_mainvisual.jpg",
@@ -26128,13 +26136,17 @@
       "label": "魔法未来 2014 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2014.png",
       "checkedAt": "2026-11-18",
       "sha256": "0748baa764adbff87c1983ee7e9bbf21b510c22c48aa85ca2fb4b9533b146bc5",
       "width": 640,
-      "height": 452
+      "height": 452,
+      "frame": {
+        "x": 24,
+        "y": 15,
+        "zoom": 1.4
+      }
     },
     "mirai-2015": {
       "imageUrl": "https://magicalmirai.com/2015/images/mainv.jpg",
@@ -26142,7 +26154,6 @@
       "label": "魔法未来 2015 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2015.png",
       "checkedAt": "2026-11-18",
@@ -26156,7 +26167,6 @@
       "label": "魔法未来 2016 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2016.png",
       "checkedAt": "2026-11-18",
@@ -26170,13 +26180,12 @@
       "label": "魔法未来 2017 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2017.png",
       "checkedAt": "2026-11-18",
-      "sha256": "9b8c97e151be7bbbb0a2e02fb146358ea459d720208a0103b51a54fe3930fb53",
+      "sha256": "d2887fd7cc70c93d57739afb25119dbedda11c6d31782cbbb62cac04cd408b6e",
       "width": 640,
-      "height": 565
+      "height": 611
     },
     "mirai-2018": {
       "imageUrl": "https://magicalmirai.com/2018/images/index/visual_main_01.jpg",
@@ -26184,13 +26193,17 @@
       "label": "魔法未来 2018 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "85% 20%",
       "note": "",
       "file": "covers/mirai-2018.png",
       "checkedAt": "2026-11-18",
       "sha256": "a6b4a4b7ee7949065a389a3ca08bfd689fc08d1f7375f33edd4525c7e6bae8f2",
       "width": 640,
-      "height": 377
+      "height": 377,
+      "frame": {
+        "x": -26,
+        "y": 16,
+        "zoom": 1.45
+      }
     },
     "mirai-2019": {
       "imageUrl": "https://magicalmirai.com/2019/images/index/mainvisual_miku.png",
@@ -26198,13 +26211,12 @@
       "label": "魔法未来 2019 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2019.png",
       "checkedAt": "2026-11-18",
-      "sha256": "8627c77d3357e5098aac2b329d66b20686552923cadc7f1f682c4723a36d81cb",
+      "sha256": "e76eefda939ec7546fd9c84964f0428c2564bcdbf08f017c4107621908798ea4",
       "width": 640,
-      "height": 608
+      "height": 599
     },
     "mirai-2021": {
       "imageUrl": "https://magicalmirai.com/2021/images/index/img_visual_miku.png",
@@ -26212,13 +26224,12 @@
       "label": "魔法未来 2021 官方主视觉",
       "credit": "Art by 左 / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2021.png",
       "checkedAt": "2026-11-18",
-      "sha256": "7c9dd6d82d9c63964245520d2d5190866df34017a0f47a83bee0969b14f08616",
+      "sha256": "577ddc7486678db76946f03e0d51494515d72477e6db721d543f01bd28053267",
       "width": 639,
-      "height": 556
+      "height": 557
     },
     "mirai-2022": {
       "imageUrl": "https://magicalmirai.com/10th/images/index/hero_img_miku.png",
@@ -26226,12 +26237,11 @@
       "label": "魔法未来 2022 官方主视觉",
       "credit": "Art by KEI / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2022.png",
       "checkedAt": "2026-11-18",
-      "sha256": "38c2f6fc7aa7e3e8e191ddf9304469c5851b2ac7bc42b370a31e340e9b64a7e5",
-      "width": 616,
+      "sha256": "3fbd6fb9dbc69f964b1303b4eeba97a2ea408f1d2a71a8781b4bcc037797d706",
+      "width": 620,
       "height": 640
     },
     "mirai-2023": {
@@ -26240,7 +26250,6 @@
       "label": "魔法未来 2023 官方主视觉",
       "credit": "Art by LAM / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2023.png",
       "checkedAt": "2026-11-18",
@@ -26254,7 +26263,6 @@
       "label": "魔法未来 2024 官方主视觉",
       "credit": "Art by たま / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2024.png",
       "checkedAt": "2026-11-18",
@@ -26268,7 +26276,6 @@
       "label": "魔法未来 2025 官方主视觉",
       "credit": "Art by Tiv / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2025.png",
       "checkedAt": "2026-11-18",
@@ -26282,13 +26289,17 @@
       "label": "魔法未来 2026 官方主视觉",
       "credit": "Art by 緜 / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2026.png",
       "checkedAt": "2026-11-18",
       "sha256": "77d9e6efa78ad738a191ea6075d94bdd95989bc3d7633707dfc0ed9ecab5e842",
       "width": 572,
-      "height": 640
+      "height": 640,
+      "frame": {
+        "x": 0,
+        "y": 21,
+        "zoom": 1.45
+      }
     },
     "mirai-2020-osaka": {
       "imageUrl": "https://magicalmirai.com/2020/images/index_contents_mainvisual_osaka.png",
@@ -26296,11 +26307,10 @@
       "label": "魔法未来 2020 osaka 官方主视觉",
       "credit": "Art by 藤ちょこ / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2020-osaka.png",
       "checkedAt": "2026-11-18",
-      "sha256": "26c606ecdcf3523ac076b47b2d72a6399769eab357267e28225bb455d877d46b",
+      "sha256": "34f1e95e34aaf03fec98b2325b546425f256354b6453edcdcdb04700aa5be4cf",
       "width": 477,
       "height": 640
     },
@@ -26310,12 +26320,11 @@
       "label": "魔法未来 2020 tokyo 官方主视觉",
       "credit": "Art by 藤ちょこ / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mirai-2020-tokyo.png",
       "checkedAt": "2026-11-18",
-      "sha256": "4058e3daae28ca2f6647eb86818ed0bc1f8d9265e8aeb7d9031b148abec68c7e",
-      "width": 472,
+      "sha256": "12f770660c6e1c33cf2215035886e9b186a8d7074e1fac845779f500d2c4262a",
+      "width": 477,
       "height": 640
     },
     "expo-na2026": {
@@ -26324,11 +26333,10 @@
       "label": "MIKU EXPO na2026 官方历届主视觉",
       "credit": "Art by yon / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-na2026.png",
       "checkedAt": "2026-11-18",
-      "sha256": "f0df9656382954a3dd5037f510c6815144a087101cba382ddc2c50f6d06d6adc",
+      "sha256": "a9cb0403f7e4408e30c56f201de8b5ad3881ef8b0188e933b932630172373b6f",
       "width": 493,
       "height": 640
     },
@@ -26338,12 +26346,11 @@
       "label": "MIKU EXPO asia2025 官方历届主视觉",
       "credit": "Art by RITAO / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-asia2025.png",
       "checkedAt": "2026-11-18",
-      "sha256": "a3660207f148d2c550793bb9e00185e0644df3ce7813a61e05004264aa9b797c",
-      "width": 514,
+      "sha256": "f0784f7f2cb89008a80193a22ddf0056a56bc45a02a00d157f07d9357d9218e8",
+      "width": 463,
       "height": 640
     },
     "expo-nzaus2024": {
@@ -26352,13 +26359,12 @@
       "label": "MIKU EXPO nzaus2024 官方历届主视觉",
       "credit": "Art by Namie / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-nzaus2024.png",
       "checkedAt": "2026-11-18",
-      "sha256": "139a9a587fc1dc60b6aff6c276436b6433970c6dddeb3e89cfe3b38b49dcfc46",
+      "sha256": "07a122fd2477d1e0449d0730a29f9d0409989ee5e71618e6093c32598d1c469a",
       "width": 640,
-      "height": 509
+      "height": 496
     },
     "expo-europe2024": {
       "imageUrl": "https://mikuexpo.com/images/hero_event_miku_europe2024.png",
@@ -26366,13 +26372,12 @@
       "label": "MIKU EXPO europe2024 官方历届主视觉",
       "credit": "Art by zain / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-europe2024.png",
       "checkedAt": "2026-11-18",
-      "sha256": "02cb9fee6af72592e939fd400a9f03058da5d5fe980be915f7a694eaa9f964fd",
+      "sha256": "8efefbb68e8ea28676c09ea6765fbef0c23c2dcc663fb72246e62469c1a672b7",
       "width": 640,
-      "height": 566
+      "height": 496
     },
     "expo-na2024": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_na2024.png",
@@ -26380,13 +26385,12 @@
       "label": "MIKU EXPO na2024 官方历届主视觉",
       "credit": "Art by hatahiro / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-na2024.png",
       "checkedAt": "2026-11-18",
-      "sha256": "abcb63904b3a8704513cc52437c104447219edba4724e9688de0fb00d1cdb45b",
+      "sha256": "0e5a141200a30e7eed4ca5187537d00f159e633b6ad60e4874502b458c8ce375",
       "width": 640,
-      "height": 464
+      "height": 465
     },
     "expo-vr2023": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_vr2023.png",
@@ -26394,13 +26398,12 @@
       "label": "MIKU EXPO vr2023 官方历届主视觉",
       "credit": "Art by Bukurote / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-vr2023.png",
       "checkedAt": "2026-11-18",
-      "sha256": "11db003a6cd36c58bde70bea71c31f648ccc4e5148f6bf32006eea7911002a62",
+      "sha256": "1601b77b9e6d5bd2a4cd5f9cccc5298e778d67628d3cd34e518c30e052132a5d",
       "width": 640,
-      "height": 584
+      "height": 474
     },
     "expo-rewind2022": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_rewind2022.png",
@@ -26408,13 +26411,12 @@
       "label": "MIKU EXPO rewind2022 官方历届主视觉",
       "credit": "Art by Zambiie / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-rewind2022.png",
       "checkedAt": "2026-11-18",
-      "sha256": "f392686b1915394eafa7e70b65f6580f52ef684935c9209aa398db397c5bf09b",
+      "sha256": "bc1a7eae2fc3278e7a861b807eda4ed08356b6c7ad1a3dbe4ca7bbb7c9f0e5f4",
       "width": 640,
-      "height": 511
+      "height": 474
     },
     "expo-online2021": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_online2021.png",
@@ -26422,13 +26424,12 @@
       "label": "MIKU EXPO online2021 官方历届主视觉",
       "credit": "Art by ryota / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-online2021.png",
       "checkedAt": "2026-11-18",
-      "sha256": "1c69ef3530e4889178c0d5f622eb24fff8d8fc4f2ad137715dc91281a1192488",
+      "sha256": "07cb1738198d3ca917ad8a5ef9a85fa4957029077d2f9fa3d0fd678321e35006",
       "width": 640,
-      "height": 485
+      "height": 474
     },
     "expo-europe2020": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_europe2020.png",
@@ -26436,13 +26437,12 @@
       "label": "MIKU EXPO europe2020 官方历届主视觉",
       "credit": "Art by POKImari / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-europe2020.png",
       "checkedAt": "2026-11-18",
-      "sha256": "839edd9f7754938abb6629f64dab8826a20533b10a20e0f38df0f541a0714826",
+      "sha256": "2e768f6fed2e8ecbca6a763c1e2f692c77183aa004e4809ae1ef470eb99c66dc",
       "width": 640,
-      "height": 539
+      "height": 499
     },
     "expo-twhk2019": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_twhk2019.png",
@@ -26450,13 +26450,12 @@
       "label": "MIKU EXPO twhk2019 官方历届主视觉",
       "credit": "Art by Ordan / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-twhk2019.png",
       "checkedAt": "2026-11-18",
-      "sha256": "75caf99d734367ce9476198dace06ac7c268eca58d69f438c76eed789dae3bb2",
+      "sha256": "4325497f4cc7bc78e1075b39075823a8e71a8b91e93efef0d9ab41b4c5660a97",
       "width": 640,
-      "height": 492
+      "height": 483
     },
     "expo-europe2018": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_europe2018.png",
@@ -26464,13 +26463,12 @@
       "label": "MIKU EXPO europe2018 官方历届主视觉",
       "credit": "Art by Sameyama Jiro / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-europe2018.png",
       "checkedAt": "2026-11-18",
-      "sha256": "5f307e2abe0f26b354a832fea8d543ea376284d84d66c5b62788ae479f1b0bb6",
+      "sha256": "041654e642d6473d47edaa52d72ee2fd837b2a6f627ec0dc55cca7c4d107eed8",
       "width": 640,
-      "height": 409
+      "height": 394
     },
     "expo-usamx2018": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_usamx2018.png",
@@ -26478,13 +26476,12 @@
       "label": "MIKU EXPO usamx2018 官方历届主视觉",
       "credit": "Art by JohnSu / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-usamx2018.png",
       "checkedAt": "2026-11-18",
-      "sha256": "aa8a68cddfbb88955376b85834fc444f7cb905622f20cb9b36de671fd44ba677",
+      "sha256": "4b1b772fee2a274df3ded04c03fb0ad65b22be6641b1e4746daea83b4b32f385",
       "width": 640,
-      "height": 489
+      "height": 490
     },
     "expo-may2017": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_may2017.png",
@@ -26492,13 +26489,12 @@
       "label": "MIKU EXPO may2017 官方历届主视觉",
       "credit": "Art by FeiGiap / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-may2017.png",
       "checkedAt": "2026-11-18",
-      "sha256": "54178cd5fcdcd7142a78b87e4950bfcf473eff6599492d37cbbdd473c8aaee1e",
+      "sha256": "309b52accc4f849dbfaf0d5079d57048ccd155fc5fdce843737e17a083a62779",
       "width": 640,
-      "height": 412
+      "height": 394
     },
     "expo-cn2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_cn2016.png",
@@ -26506,13 +26502,12 @@
       "label": "MIKU EXPO cn2016 官方历届主视觉",
       "credit": "Art by saberiii / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-cn2016.png",
       "checkedAt": "2026-11-18",
-      "sha256": "8f0fad7a14c4f155167a8a047d088cc2f29ff8faa1388941cc3cfcda07cc7354",
+      "sha256": "d9f66f4de832d1c4c704b583fdfcdcc632a3a0f66bcd5b2ce1a26ba8e794dd88",
       "width": 640,
-      "height": 304
+      "height": 320
     },
     "expo-tw2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_tw2016.png",
@@ -26520,11 +26515,10 @@
       "label": "MIKU EXPO tw2016 官方历届主视觉",
       "credit": "Art by BEEK / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-tw2016.png",
       "checkedAt": "2026-11-18",
-      "sha256": "b291b33a6fc2659435092ce9ddfebe91b5e6f94c1bda094ae55a49346fc23caf",
+      "sha256": "9b85f5a6bf9bf7f32c9b2580c718cf229c4576bc201fa981f286a875712d1c44",
       "width": 640,
       "height": 444
     },
@@ -26534,13 +26528,12 @@
       "label": "MIKU EXPO na2016 官方历届主视觉",
       "credit": "Art by neco / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-na2016.png",
       "checkedAt": "2026-11-18",
-      "sha256": "a6e88518b140439c5e5bd5527658c6bc8bcd99bf410c609769ad8baf84763351",
+      "sha256": "f4aebeb7ba4b4ba6617d87f79c79051068bd39154ba4d1f5be177ea49280303a",
       "width": 640,
-      "height": 640
+      "height": 612
     },
     "expo-jp2016": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_jp2016.png",
@@ -26548,13 +26541,12 @@
       "label": "MIKU EXPO jp2016 官方历届主视觉",
       "credit": "Art by neco / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-jp2016.png",
       "checkedAt": "2026-11-18",
-      "sha256": "816aca9209e14dc3c11f73769eacfab7658c592022e9a5bbd856d2f2ca96e7f9",
-      "width": 617,
-      "height": 640
+      "sha256": "62d2e1ec4ea3fc76dfff0236f9cf25372b411faab0f8f5bf207c86a6487549ae",
+      "width": 640,
+      "height": 537
     },
     "expo-sh2015": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_sh2015.png",
@@ -26562,13 +26554,12 @@
       "label": "MIKU EXPO sh2015 官方历届主视觉",
       "credit": "Art by SEGA / MARZA ANIMATION PLANET INC. / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-sh2015.png",
       "checkedAt": "2026-11-18",
-      "sha256": "ae9ed7f6008772039cd45c2bc2f61e2d11007de69bdda1553dc73262956d76a8",
-      "width": 435,
-      "height": 640
+      "sha256": "f861552a5442813d6b9b2bf81f3d12507f4432caf0f9a51c3c91453b6e894c56",
+      "width": 640,
+      "height": 490
     },
     "expo-us2014": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_us2014.png",
@@ -26576,13 +26567,12 @@
       "label": "MIKU EXPO us2014 官方历届主视觉",
       "credit": "Art by apapico / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-us2014.png",
       "checkedAt": "2026-11-18",
-      "sha256": "97b363b7b7eb0eaf6d08f16e6cec72d239e670b69c0f8a91d14b7181e35a6845",
+      "sha256": "6c925468aa7f4f23cfbeb612d5c9b051e13e43f2bf8013bf6676225891b9021d",
       "width": 640,
-      "height": 461
+      "height": 457
     },
     "expo-id2014": {
       "imageUrl": "https://mikuexpo.com/images/pasteve_miku_id2014.png",
@@ -26590,13 +26580,12 @@
       "label": "MIKU EXPO id2014 官方历届主视觉",
       "credit": "Art by KEI / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-id2014.png",
       "checkedAt": "2026-11-18",
-      "sha256": "230ed8e8c0450080322b670204533305ead2671908db06b5ac9f587ff155c5fa",
+      "sha256": "68aec68c4403062eab6993455b9c2fd61d8319e5aec06df4a77b76ba95f314ad",
       "width": 640,
-      "height": 564
+      "height": 394
     },
     "expo-europe2026": {
       "imageUrl": "https://mikuexpo.com/europe2026/images/hero_chara.webp",
@@ -26604,7 +26593,6 @@
       "label": "MIKU EXPO 2026 EUROPE 官方主视觉",
       "credit": "Art by suzunosuke / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/expo-europe2026.png",
       "checkedAt": "2026-11-18",
@@ -26618,7 +26606,6 @@
       "label": "SNOW MIKU 2015 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "采用同年度 SNOW MIKU 官方活动主视觉，不声称为 Live 单独绘制。",
       "file": "covers/snow-2015.png",
       "checkedAt": "2026-11-18",
@@ -26632,12 +26619,11 @@
       "label": "SNOW MIKU 2018 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "采用同年度 SNOW MIKU 官方活动主视觉。",
       "file": "covers/snow-2018.png",
       "checkedAt": "2026-11-18",
-      "sha256": "f08cf7e2cd760ae56173f6f5055b07cf8a0adbe7f06bfe87abe29e3beb68409c",
-      "width": 471,
+      "sha256": "badec58894a63f9e5ca655983287b10e88a861380f8d4c22bbd9cb3619fdf91f",
+      "width": 519,
       "height": 640
     },
     "snow-2019": {
@@ -26646,7 +26632,6 @@
       "label": "SNOW MIKU 2019 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "采用同年度 SNOW MIKU 官方活动主视觉。",
       "file": "covers/snow-2019.png",
       "checkedAt": "2026-11-18",
@@ -26660,12 +26645,11 @@
       "label": "SNOW MIKU 2027 官方主视觉",
       "credit": "Art by さくらしおり / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "Live 页面未标示独立主视觉；采用同年度 SNOW MIKU 活动主视觉。",
       "file": "covers/snow-2027.png",
       "checkedAt": "2026-11-18",
-      "sha256": "a25e6be4059bb9b3a5233555475b6b7d243d70e2ee3e64a6a253908dab8a6a98",
-      "width": 533,
+      "sha256": "24d7e6ec99968f89540e4469d5ff37337293fb4943caf8c0cce17e3f7086758a",
+      "width": 535,
       "height": 640
     },
     "blooming-2025": {
@@ -26674,13 +26658,12 @@
       "label": "BLOOMING 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/blooming-2025.png",
       "checkedAt": "2026-11-18",
-      "sha256": "9018a3ed84a686ea9829c1bb4f195ce9aa06abbd36e0ef40da8f381c80051050",
+      "sha256": "2285e8143d42314a83c3c1c1d02ef9a2b988aa04e0d48b3a35b6a89ae937cd42",
       "width": 640,
-      "height": 586
+      "height": 475
     },
     "thunderbolt-2023": {
       "imageUrl": "https://piapro.net/japantour2023/images/theme_visual.png",
@@ -26688,12 +26671,11 @@
       "label": "THUNDERBOLT 官方主视觉",
       "credit": "Art by 秋赤音 / © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/thunderbolt-2023.png",
       "checkedAt": "2026-11-18",
-      "sha256": "3708c6756e5fdc76d7f4a5c2a3fa1ef54dd7ff1500d719fda6927857d43aa31b",
-      "width": 599,
+      "sha256": "cf6dd58a0f519e0dc2295ce39c5c0aaf56063ffd7d74f5d9d1612af2fd1e17ea",
+      "width": 596,
       "height": 640
     },
     "decomiku-2026": {
@@ -26702,7 +26684,6 @@
       "label": "デコミク LIVE 2026 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/decomiku-2026.png",
       "checkedAt": "2026-11-18",
@@ -26716,12 +26697,11 @@
       "label": "VOLTAGE Live! 官方主视觉",
       "credit": "© Pokémon. © Crypton Future Media, INC.",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/voltage-2026.png",
       "checkedAt": "2026-11-18",
-      "sha256": "740ec6d0ceda55ad3a6f2029a4bfee5fcb4a0b857c06f6d4b0a5ae8178f9f915",
-      "width": 419,
+      "sha256": "20c289940cd2004616aada7a7bb9b61b4f8228454032e5685c148f2df1873c86",
+      "width": 501,
       "height": 640
     },
     "mikufes-2024": {
@@ -26730,13 +26710,17 @@
       "label": "MIKU FES’24 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "85% 20%",
       "note": "",
       "file": "covers/mikufes-2024.png",
       "checkedAt": "2026-11-18",
       "sha256": "c7edf91e2296b836b53660fb242f38134a8a0666e72c2333e6746d9806aa250d",
       "width": 640,
-      "height": 389
+      "height": 389,
+      "frame": {
+        "x": -23,
+        "y": 16,
+        "zoom": 1.4
+      }
     },
     "sekai-symphony-2021": {
       "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2021/img/main.png",
@@ -26744,11 +26728,10 @@
       "label": "セカイシンフォニー 2021 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/sekai-symphony-2021.png",
       "checkedAt": "2026-11-18",
-      "sha256": "01f8a1b1c56f625ac937b7cabf7a12fff9e13ba8dd14f2a145fc62f2539e5f0e",
+      "sha256": "b98796ce1fd6694ae9715ea6d523a86c5ef6436fe992469efee8dd32dcf7622b",
       "width": 617,
       "height": 640
     },
@@ -26758,13 +26741,12 @@
       "label": "セカイシンフォニー 2022 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/sekai-symphony-2022.png",
       "checkedAt": "2026-11-18",
-      "sha256": "908c12f9e3fcd069d7f833b89eb269f999546740d7f21e39928c7b54288bf769",
+      "sha256": "5607e5e1f192d295a094ea4c79c4e9e307670081607b8d328c17fbde420f8f38",
       "width": 640,
-      "height": 620
+      "height": 526
     },
     "sekai-symphony-2023": {
       "imageUrl": "https://pjsekai.sega.jp/sekaisymphony/2023/img/main.jpg",
@@ -26772,7 +26754,6 @@
       "label": "セカイシンフォニー 2023 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/sekai-symphony-2023.png",
       "checkedAt": "2026-11-18",
@@ -26786,7 +26767,6 @@
       "label": "セカイシンフォニー 2024 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/sekai-symphony-2024.png",
       "checkedAt": "2026-11-18",
@@ -26800,12 +26780,11 @@
       "label": "COLORFUL LIVE 1st-link 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/colorful-1st-link.png",
       "checkedAt": "2026-11-18",
-      "sha256": "d6cb7498f21b9ac0ba518d6d2d8288f2a757287b8e9b904da99f0a7979b877dd",
-      "width": 534,
+      "sha256": "2ed94f097d2242689b89f9b6ec8120be535e7a3c4c8664f4cf6db973210878df",
+      "width": 535,
       "height": 640
     },
     "colorful-2nd-will": {
@@ -26814,13 +26793,12 @@
       "label": "COLORFUL LIVE 2nd-will 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/colorful-2nd-will.png",
       "checkedAt": "2026-11-18",
-      "sha256": "5c1c5d86b3bbe147b8eb4e3dc8e15c6a97fcad9e28b2cae70659aa0af365f7a6",
-      "width": 366,
-      "height": 640
+      "sha256": "478a496457cc51e0d5afbf0e6f77acab98c88269cbbaf1355e7c870f3d557e37",
+      "width": 640,
+      "height": 468
     },
     "colorful-3rd-evolve": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/3rd-evolve/images/kv-chara.png",
@@ -26828,19 +26806,12 @@
       "label": "COLORFUL LIVE 3rd-evolve 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/colorful-3rd-evolve.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.33,
-        0,
-        0.31,
-        1
-      ],
-      "sha256": "e8aeb607a8751bf238a294bb64dedb314c9f2b0be88cfc74c53f02fe9fa06d02",
-      "width": 281,
-      "height": 640
+      "sha256": "016d1dfebff2bc0a772b413743133c5c1b61fb692ae2dbd3ebe92ebc5494cb99",
+      "width": 640,
+      "height": 451
     },
     "colorful-4th-unison": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/4th-unison/assets/images/pc/top/kv_character.webp",
@@ -26848,19 +26819,17 @@
       "label": "COLORFUL LIVE 4th-unison 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/colorful-4th-unison.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.43,
-        0.43,
-        0.3,
-        0.57
-      ],
-      "sha256": "202d804ce0f913c39e86e34d4ae26fcfa4d82104acb6dd74b9db4427ebb57e36",
-      "width": 523,
-      "height": 640
+      "sha256": "d860db5d0e6258131e1c7ef8aebb7e3c8fcdb917768e6c44a747c513407de15b",
+      "width": 640,
+      "height": 411,
+      "frame": {
+        "x": -9,
+        "y": -9,
+        "zoom": 1.35
+      }
     },
     "mwy-2024": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2024/06/zh2406141.jpg",
@@ -26868,19 +26837,17 @@
       "label": "未来有你 2024 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "Art by 影依望远镜 / © Crypton Future Media, INC. www.piapro.net",
-      "position": "50% 15%",
       "note": "历届页面配图印有 2023 年份，已排除；采用 Crypton 2024 年正式官宣并明确标注作者的主视觉。",
       "file": "covers/mwy-2024.png",
       "checkedAt": "2026-11-18",
-      "sha256": "f4cc00164325e8ba35b437bc91629e9815ba6f9b696eb043179e8dc545538bd9",
-      "width": 390,
-      "height": 424,
-      "focus": [
-        0.1,
-        0.2,
-        0.78,
-        0.6
-      ]
+      "sha256": "f9e36764db2a2ae613b45b1dd9e0881e96db1fa4ffaaa9d1f46f64d033b197a8",
+      "width": 452,
+      "height": 640,
+      "frame": {
+        "x": 10,
+        "y": 8,
+        "zoom": 1.45
+      }
     },
     "mwy-2020": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250424/20250424133631_6809cddfdeee1.jpg",
@@ -26888,7 +26855,6 @@
       "label": "未来有你 2020 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mwy-2020.png",
       "checkedAt": "2026-11-18",
@@ -26902,7 +26868,6 @@
       "label": "未来有你 2018 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mwy-2018.png",
       "checkedAt": "2026-11-18",
@@ -26916,13 +26881,17 @@
       "label": "galaxy-2020 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 55%",
       "note": "",
       "file": "covers/galaxy-2020.png",
       "checkedAt": "2026-11-18",
       "sha256": "b8716883ee6ef0e6f83b71ee2e74d8f0f9b96517c2b8eb31f176ae657b071060",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "frame": {
+        "x": 0,
+        "y": -4,
+        "zoom": 1.4
+      }
     },
     "galaxy-2021": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2021/09/a2109171-2-1.png",
@@ -26930,13 +26899,17 @@
       "label": "galaxy-2021 官方主视觉",
       "credit": "图片来源：活动官网 / 主办方；权利归原作者及相关权利方所有",
       "kind": "mainvisual",
-      "position": "50% 55%",
       "note": "",
       "file": "covers/galaxy-2021.png",
       "checkedAt": "2026-11-18",
       "sha256": "abe50ded87da7b3cf8d6f2593774d59ab366b8b13fbd47e3200b720b059a0a5a",
       "width": 375,
-      "height": 500
+      "height": 500,
+      "frame": {
+        "x": 0,
+        "y": 5,
+        "zoom": 1.4
+      }
     },
     "colorful-5th-frontier": {
       "imageUrl": "https://pjsekai.sega.jp/colorfullive/5th-frontier/assets/images/pc/top/chara@0.5x.webp",
@@ -26944,19 +26917,17 @@
       "label": "COLORFUL LIVE 5th 官方主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/colorful-5th-frontier.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.25,
-        0.52,
-        0.5,
-        0.48
-      ],
-      "sha256": "73111d47a3df0285274213441358b94d8a8f2e24e1b7f84f0316c400556b91f0",
-      "width": 567,
-      "height": 390
+      "sha256": "93d7d7562cd77924a076ffa2b2038dcf0eee45504973b9602548f56dc876ee75",
+      "width": 640,
+      "height": 458,
+      "frame": {
+        "x": 3,
+        "y": -22,
+        "zoom": 1.5
+      }
     },
     "mwy-2025": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250911/20250911122403_68c24ee3810bf.jpg",
@@ -26964,13 +26935,17 @@
       "label": "未来有你 2025 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mwy-2025.png",
       "checkedAt": "2026-11-18",
       "sha256": "76608a72681026b22b1805cc864700f0a1cfe82c5895df60abda66d189612050",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "frame": {
+        "x": -8,
+        "y": 26,
+        "zoom": 1.6
+      }
     },
     "mwy-2021": {
       "imageUrl": "https://www.scla.com.cn/Public/Uploads/uploadfile/images/20250423/20250423163119_6808a55714270.jpg",
@@ -26978,7 +26953,6 @@
       "label": "未来有你 2021 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mwy-2021.png",
       "checkedAt": "2026-11-18",
@@ -26992,7 +26966,6 @@
       "label": "未来有你 2019 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mwy-2019.png",
       "checkedAt": "2026-11-18",
@@ -27006,7 +26979,6 @@
       "label": "未来有你 2017 官方年度主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/mwy-2017.png",
       "checkedAt": "2026-11-18",
@@ -27020,13 +26992,17 @@
       "label": "未来有你 2026 官方单人插画",
       "kind": "eventvisual",
       "credit": "© Crypton Future Media, INC. www.piapro.net；插画署名详见官方原图",
-      "position": "50% 30%",
       "note": "采用主办方“六人等身插画＆立绘公开”页面发布的初音单人插画。",
       "file": "covers/mwy-2026.png",
       "checkedAt": "2026-11-18",
       "sha256": "cc426982ccda173703cb305361c74016c3745a116d999864b15596a1b3a46f01",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "frame": {
+        "x": 0,
+        "y": 19,
+        "zoom": 1.6
+      }
     },
     "symphony-2016": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2016/05/g1605314.jpg",
@@ -27034,19 +27010,17 @@
       "label": "symphony-2016 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by KEI / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2016.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.63,
-        0.04,
-        0.37,
-        0.94
-      ],
-      "sha256": "e0e5487b4b36b7912aa5215525b50002f0d780102da4b3a42dfb17550536ac9d",
-      "width": 185,
-      "height": 213
+      "sha256": "f6d1420d28c6c53f6904a82721539fa0656b7e59e69bd820d20fae34c8fe6d9b",
+      "width": 500,
+      "height": 227,
+      "frame": {
+        "x": -30,
+        "y": 12,
+        "zoom": 1.35
+      }
     },
     "symphony-2017": {
       "imageUrl": "https://prod-v2-assets.wmg.jp/artist/mikusymphony/others/20170831_mikusymphony_s.jpg",
@@ -27054,19 +27028,17 @@
       "label": "symphony-2017 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by KEI / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2017.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.62,
-        0,
-        0.38,
-        0.98
-      ],
-      "sha256": "295762346c663f8d9d86de0614488a828bda14738333faccbc65e87b0233f03e",
-      "width": 133,
-      "height": 214
+      "sha256": "6c09c7d1b9b2933fc97956e4d5ab4f9c14c9b3968769d5fbbc0401426ad0e2b7",
+      "width": 350,
+      "height": 219,
+      "frame": {
+        "x": -32,
+        "y": 12,
+        "zoom": 1.5
+      }
     },
     "symphony-2018": {
       "imageUrl": "https://prod-v2-assets.wmg.jp/uploads/pictures/64/content_20180604_mikusymphony_main.jpg",
@@ -27074,7 +27046,6 @@
       "label": "symphony-2018 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2018.png",
       "checkedAt": "2026-11-18",
@@ -27088,7 +27059,6 @@
       "label": "symphony-2019 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2019.png",
       "checkedAt": "2026-11-18",
@@ -27102,19 +27072,17 @@
       "label": "symphony-2021 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2021.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.37,
-        0.14,
-        0.3,
-        0.53
-      ],
-      "sha256": "900439d54046c811228a4ca88a3ed67705585eaf9b01447d97c923bcda7c56fd",
-      "width": 240,
-      "height": 300
+      "sha256": "70c73ce881d4e583e0ea1dd14e5859e4f81f550c8abd6994e41f063c5220ae50",
+      "width": 640,
+      "height": 453,
+      "frame": {
+        "x": 0,
+        "y": 18,
+        "zoom": 1.5
+      }
     },
     "symphony-2020-yokohama": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2020/08/U200831_001.jpg",
@@ -27122,7 +27090,6 @@
       "label": "symphony-2020-yokohama 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2020-yokohama.png",
       "checkedAt": "2026-11-18",
@@ -27136,7 +27103,6 @@
       "label": "symphony-2020-osaka 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2020-osaka.png",
       "checkedAt": "2026-11-18",
@@ -27150,7 +27116,6 @@
       "label": "symphony-2022-tokyo 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2022-tokyo.png",
       "checkedAt": "2026-11-18",
@@ -27164,7 +27129,6 @@
       "label": "symphony-2022-yokohama 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2022-yokohama.png",
       "checkedAt": "2026-11-18",
@@ -27178,19 +27142,17 @@
       "label": "symphony-2025-sapporo 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2025-sapporo.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.06,
-        0.02,
-        0.4,
-        0.96
-      ],
-      "sha256": "e295d54d0065d6e42a58b028d63524cbcc3f16e68b21a12794927645f7d95d81",
-      "width": 474,
-      "height": 640
+      "sha256": "d07f348cf2165841bf95768b1c3834f2fac2120a786930d05ff74b6717da2fe7",
+      "width": 640,
+      "height": 360,
+      "frame": {
+        "x": 35,
+        "y": 2,
+        "zoom": 1.5
+      }
     },
     "symphony-2025-tokyo": {
       "imageUrl": "https://blog.piapro.net/wp-content/uploads/2026/02/IM25021302.png",
@@ -27198,7 +27160,6 @@
       "label": "symphony-2025-tokyo 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2025-tokyo.png",
       "checkedAt": "2026-11-18",
@@ -27212,7 +27173,6 @@
       "label": "初音ミクシンフォニー2023 东京公演 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "采用主办方在该年度项目页面发布的主视觉；仅用于已确认适用的东京场，其他城市未套用。",
       "file": "covers/symphony-2023.png",
       "checkedAt": "2026-11-18",
@@ -27226,7 +27186,6 @@
       "label": "初音ミクシンフォニー2026 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2026.png",
       "checkedAt": "2026-11-18",
@@ -27240,13 +27199,17 @@
       "label": "kodo-2023 官方主视觉",
       "kind": "mainvisual",
       "credit": "图片来源：官网 / 主办方；权利归原作者及相关权利方所有",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/kodo-2023.png",
       "checkedAt": "2026-11-18",
       "sha256": "7453c85f997c1aea9a768530950b5634896ac7cb794252e33d1d6a5123c1c716",
       "width": 500,
-      "height": 636
+      "height": 636,
+      "frame": {
+        "x": 0,
+        "y": 8,
+        "zoom": 1.55
+      }
     },
     "lawson-2026": {
       "imageUrl": "https://prcdn.freetls.fastly.net/release_image/52709/539/52709-539-9506960a3193ae9fb82f1e8d392cb860-500x707.jpg?width=1950&height=1350&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&bg-color=fff",
@@ -27254,13 +27217,17 @@
       "label": "LAWSON 50th 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by はねこと / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/lawson-2026.png",
       "checkedAt": "2026-11-18",
       "sha256": "2183b1aba30be6b495a656d3185e14c059d2cbd162baa6a732e51ae1eec7dff8",
       "width": 452,
-      "height": 640
+      "height": 640,
+      "frame": {
+        "x": 0,
+        "y": 20,
+        "zoom": 1.42
+      }
     },
     "symphony-2024-tokyo": {
       "imageUrl": "https://www.promax.co.jp/backyard/wp-content/uploads/2024/01/MIKU2024_%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB.jpg",
@@ -27268,7 +27235,6 @@
       "label": "初音ミクシンフォニー2024 東京公演 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by Rella / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "采用主办方在该年度项目页面发布的主视觉；仅用于已确认适用的东京场，其他城市未套用。",
       "file": "covers/symphony-2024-tokyo.png",
       "checkedAt": "2026-11-18",
@@ -27282,19 +27248,17 @@
       "label": "ミクの日感謝祭 2010 官方页面形象",
       "kind": "eventvisual",
       "credit": "© Crypton Future Media, INC. / SEGA",
-      "position": "50% 0%",
       "note": "官方页面使用形象，未另行声称为独立绘制主视觉。",
       "file": "covers/giving-2010.png",
       "checkedAt": "2026-11-18",
-      "focus": [
-        0.42,
-        0,
-        0.58,
-        0.34
-      ],
-      "sha256": "f67f6e252101fad6c6897c3276dfb54491c54f81b9f797b1a1acf0e17655758a",
-      "width": 250,
-      "height": 640
+      "sha256": "838f985ad3d6f601451a97e78c2edac81fab85d6fb6dc52fae5d81309cb1fd35",
+      "width": 155,
+      "height": 640,
+      "frame": {
+        "x": -12,
+        "y": 67,
+        "zoom": 1.75
+      }
     },
     "mikunopolis-2011": {
       "imageUrl": "https://miku.sega.jp/39/img/la/bg_la_miku.png",
@@ -27302,13 +27266,17 @@
       "label": "MIKUNOPOLIS 官方页面形象",
       "kind": "eventvisual",
       "credit": "© Crypton Future Media, INC. / SEGA",
-      "position": "50% 0%",
       "note": "官方页面使用形象，未另行声称为独立绘制主视觉。",
       "file": "covers/mikunopolis-2011.png",
       "checkedAt": "2026-11-18",
-      "sha256": "f55fdbaa633c40cc7dbccdc1c23e911772a6eae2a2fd6e5e1f770e072f4351ad",
-      "width": 491,
-      "height": 640
+      "sha256": "4121fd76a4efbd06bceae2a9b42617aa056f1e6c92be5dee20fece16575d10c4",
+      "width": 640,
+      "height": 590,
+      "frame": {
+        "x": -29,
+        "y": 31,
+        "zoom": 1.45
+      }
     },
     "symphony-2026-yokohama": {
       "imageUrl": "https://sp.wmg.jp/mikusymphony/images/2027/main0911.jpg",
@@ -27316,7 +27284,6 @@
       "label": "初音ミクシンフォニー2026–2027 官方主视觉",
       "kind": "mainvisual",
       "credit": "Art by 泉彩 / © Crypton Future Media, INC.",
-      "position": "50% 0%",
       "note": "",
       "file": "covers/symphony-2026-yokohama.png",
       "checkedAt": "2026-11-18",

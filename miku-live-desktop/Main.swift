@@ -1,7 +1,7 @@
 import Cocoa
 import WebKit
 
-final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, WKScriptMessageHandler {
+final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKScriptMessageHandlerWithReply {
     var window: NSWindow!
     var web: WKWebView!
     var pendingImport: String?
@@ -11,6 +11,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         let config = WKWebViewConfiguration()
         config.websiteDataStore = CommandLine.arguments.contains("--self-test") ? .nonPersistent() : .default()
         config.userContentController.add(self, name: "archive")
+        config.userContentController.addScriptMessageHandler(self, contentWorld: .page, name: "coverDownload")
         web = WKWebView(frame: .zero, configuration: config)
         web.navigationDelegate = self
         web.uiDelegate = self
@@ -315,6 +316,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
           if(!document.querySelector('progress')) throw Error('series progress');
           view='all';render();
           setMode(true);atlasView='cards';render();document.getElementById('atlas').scrollIntoView({block:'start'});
+          if(\(CommandLine.arguments.contains("--preview-cover-editor") ? "true" : "false")){showAtlasEvent('primary-14--hamamatsu');document.getElementById('detail-edit-cover').click();}
           const previewTheme=\(CommandLine.arguments.contains("--preview-dark") ? "'dark'" : CommandLine.arguments.contains("--preview-auto") ? "'auto'" : "'light'");
           clearUndo();updateSettings({theme:previewTheme,textSize:\(CommandLine.arguments.contains("--preview-large") ? "'large'" : "'standard'")});
           const previewCover='\(previewCover)';
@@ -330,7 +332,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         })()
         """) { value, error in
             if let error = error { print("FAIL: \(error.localizedDescription) \((error as NSError).userInfo)"); exit(1) }
-            if CommandLine.arguments.contains("--test-cover-upload") {self.checkCoverFileUpload();return}
+            if CommandLine.arguments.contains("--test-cover-upload") || CommandLine.arguments.contains("--test-cover-remote") {self.checkCoverFileUpload();return}
             if CommandLine.arguments.contains("--test-restart") && self.settingsReloadPhase == 0 {
                 self.settingsReloadPhase = 1
                 self.web.evaluateJavaScript("""
@@ -364,8 +366,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         const original=currentArchiveState(),id=atlasCatalog.events[0].id;
         const png='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a5XcAAAAASUVORK5CYII=';
         editCatalogEvent(id);
-        const fileInput=document.getElementById('catalog-cover-file');
-        const select=async file=>{const dt=new DataTransfer();dt.items.add(file);fileInput.files=dt.files;await fileInput.onchange({target:fileInput});};
+        const select=async file=>{const fileInput=document.getElementById('catalog-cover-file');const dt=new DataTransfer();dt.items.add(file);fileInput.files=dt.files;await fileInput.onchange({target:fileInput});};
         const bytes=Uint8Array.from(atob(png),c=>c.charCodeAt(0));
         await select(new File([bytes],'cover.png',{type:'image/png'}));
         if(!catalogPendingCover.startsWith('data:image/jpeg;base64,')||catalogPendingCover.length>12288||catalogCoverReading)throw Error('file reader/image decoder');
@@ -377,12 +378,29 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         await select(new File([new Uint8Array(maxCoverBytes+1)],'huge.png',{type:'image/png'}));
         if(catalogPendingCover!==savedCover||!document.getElementById('catalog-cover-status').textContent.includes('2 MB'))throw Error('oversized image replaced cover');
         document.getElementById('catalog-cover-url').value='https://example.com/cover.png';document.getElementById('catalog-cover-url').dispatchEvent(new Event('input'));
-        if(catalogPendingCover)throw Error('URL failed to replace local cover');
+        if(catalogPendingCover!==savedCover)throw Error('typing a link discarded the saved cover');
+        const x=document.getElementById('cover-x');x.value=22;x.dispatchEvent(new Event('input'));
+        if(catalogCoverFrame.x!==22)throw Error('cover position not reflected in preview');
         document.getElementById('catalog-close').click();
         if(atlasEdits[id].coverUrl!==savedCover)throw Error('cancel changed saved cover');
+        editCatalogEvent(id);
+        const y=document.getElementById('cover-y');y.value=17;y.dispatchEvent(new Event('input'));
+        document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
+        const coverBackup=JSON.parse(JSON.stringify(createBackup()));
+        commitArchiveState(original);mergeBackup(coverBackup);
+        if(atlasEdits[id].coverFrame.y!==17||atlasEdits[id].coverUrl!==savedCover)throw Error('cover image and crop backup');
+        if (verifyRemote) {
+          editCatalogEvent(id);
+          const link=document.getElementById('catalog-cover-url');
+          link.value='https://piapro.net/images/ch_img_miku.png';
+          await document.getElementById('catalog-cover-fetch').onclick();
+          if(!catalogPendingCover.startsWith('data:image/jpeg;base64,')||catalogPendingCover===savedCover)throw Error(document.getElementById('catalog-cover-status').textContent);
+          document.getElementById('catalog-form').requestSubmit();document.getElementById('atlas-detail').close();
+          if(!atlasEdits[id].coverUrl.startsWith('data:')||atlasEdits[id].coverSourceUrl!==link.value)throw Error('official URL offline snapshot persistence');
+        }
         commitArchiveState(original);
         return 'PASS: all bundled cover images decoded offline; actual FileReader/image decode, upload/save, broken and oversized file rejection, URL replacement and cancel';
-        """,arguments:[:],in:nil,in:.page) { result in
+        """,arguments:["verifyRemote": CommandLine.arguments.contains("--test-cover-remote")],in:nil,in:.page) { result in
             switch result {case .success(let value): print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
         }
     }
@@ -411,6 +429,54 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             if !CommandLine.arguments.contains("--self-test") {UserDefaults.standard.set(value,forKey:"archiveTheme")}
         }
     }
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage, replyHandler: @escaping (Any?, String?) -> Void) {
+        guard message.name == "coverDownload", message.frameInfo.isMainFrame,
+              message.frameInfo.request.url?.isFileURL == true,
+              let link = message.body as? String, let url = URL(string: link),
+              let scheme = url.scheme?.lowercased(), ["http", "https"].contains(scheme),
+              url.host != nil, url.user == nil, url.password == nil else {
+            replyHandler(nil, "图片直链无效。")
+            return
+        }
+        var request = URLRequest(url: url, timeoutInterval: 25)
+        request.setValue("image/png,image/jpeg,image/webp", forHTTPHeaderField: "Accept")
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.httpShouldSetCookies = false
+        configuration.timeoutIntervalForResource = 35
+        let session = URLSession(configuration: configuration)
+        session.downloadTask(with: request) { file, response, error in
+            let result: (String?, String?)
+            if let file = file, let http = response as? HTTPURLResponse,
+               error == nil, (200..<300).contains(http.statusCode) {
+                result = Self.coverDownloadData(file)
+            } else {
+                result = (nil, "无法下载图片。请确认地址可直接打开图片，或下载文件后上传。")
+            }
+            DispatchQueue.main.async { replyHandler(result.0, result.1) }
+        }.resume()
+        session.finishTasksAndInvalidate()
+    }
+    private static func coverDownloadData(_ file: URL) -> (String?, String?) {
+        guard let size = try? file.resourceValues(forKeys: [.fileSizeKey]).fileSize,
+              size > 0, size <= 16 * 1024 * 1024,
+              let data = try? Data(contentsOf: file) else {
+            return (nil, "无法读取图片，直链图片最大支持 16 MB。")
+        }
+        let header = Array(data.prefix(12))
+        let type: String
+        if header.starts(with: [137, 80, 78, 71, 13, 10, 26, 10]) {
+            type = "png"
+        } else if header.starts(with: [255, 216, 255]) {
+            type = "jpeg"
+        } else if header.count == 12, header.starts(with: [82, 73, 70, 70]),
+                  Array(header.suffix(4)) == [87, 69, 66, 80] {
+            type = "webp"
+        } else {
+            return (nil, "直链必须指向 JPG、PNG 或 WebP 图片。")
+        }
+        return ("data:image/\(type);base64,\(data.base64EncodedString())", nil)
+    }
+
     @objc func exportBackup() { web.evaluateJavaScript("document.getElementById('export').click()") }
     func writeBackup(_ text: String) {
         let panel = NSSavePanel(); panel.title = "导出收藏备份"; panel.nameFieldStringValue = "miku-archive-\(ISO8601DateFormatter().string(from: Date()).prefix(10)).json"

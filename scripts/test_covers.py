@@ -18,8 +18,9 @@ for key,a in m['assets'].items():
  assert data.startswith(b'\x89PNG\r\n\x1a\n') and hashlib.sha256(data).hexdigest()==a['sha256'],key
  w,h=struct.unpack('>II',data[16:24]);assert 0<w<=640 and 0<h<=640,(key,w,h)
  assert (w,h)==(a['width'],a['height'])
- if 'focus' in a:
-  x,y,w,h=a['focus'];assert min(x,y)>=0 and w>0 and h>0 and x+w<=1.001 and y+h<=1.001
+ assert 'focus' not in a, 'Bundled images must retain their original composition'
+ if 'frame' in a:
+  frame=a['frame'];assert abs(frame['x'])<=100 and abs(frame['y'])<=100 and .75<=frame['zoom']<=3
 for e in rows:
  assert e['coverKey'] in m['assets']
  if e['coverKey']=='miku-kei':assert e['coverNote'],e['id']

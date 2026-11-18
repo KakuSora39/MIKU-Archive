@@ -718,10 +718,15 @@ aside nav button {font-size:calc(11px + var(--type-step)*1px);}
 #settings-text-size {width:100%;padding:0;height:24px;accent-color:var(--mint);cursor:pointer;}
 .size-ticks {display:flex;justify-content:space-between;color:var(--muted);font-size:11px;}
 .atlas-cover>span:not(.atlas-art),.atlas-cover>b,.atlas-cover>small {position:relative;z-index:1;max-width:62%;text-align:left;}
-.atlas-art {position:absolute;inset:0 0 0 34%;pointer-events:none;mask-image:linear-gradient(to right,transparent 0%,#000 45%);-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 45%);}
-.atlas-art img {position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;}
-.atlas-art .atlas-art-blur {filter:blur(12px);transform:scale(1.12);opacity:.65;}
-.atlas-art .atlas-art-image {mask-image:linear-gradient(to right,transparent 5%,#000 45%);-webkit-mask-image:linear-gradient(to right,transparent 5%,#000 45%);}
+/* The same square frame is used at every card width and in the editor. */
+.atlas-art {position:absolute;inset:0 0 0 38%;pointer-events:none;mask-image:linear-gradient(to right,transparent,#000 35%);}
+.atlas-art-blur {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:blur(18px);transform:scale(1.16);opacity:.46;}
+.atlas-art .atlas-art-frame {position:absolute;top:0;left:50%;translate:-50% 0;height:100%;width:140px;overflow:hidden;mask-image:linear-gradient(to right,transparent,#000 11%,#000 89%,transparent);}
+.atlas-art-image {display:block;width:100%;height:100%;object-fit:contain;transform:translate(var(--frame-x),var(--frame-y)) scale(var(--frame-zoom));}
+#catalog-cover-preview .atlas-art {pointer-events:auto;touch-action:none;cursor:grab;}
+#catalog-cover-preview .atlas-art:active {cursor:grabbing;}
+.cover-controls {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.cover-controls input {padding:0;accent-color:var(--mint);}
 .cover-editor {grid-column:1/-1;border-top:1px solid var(--line);padding-top:16px;}
 .cover-editor label {display:flex;flex-direction:column;gap:8px;margin:14px 0;}
 .cover-editor input {width:100%;}
@@ -729,6 +734,7 @@ aside nav button {font-size:calc(11px + var(--type-step)*1px);}
 #catalog-cover-status {color:var(--mint);font-size:12px;overflow-wrap:anywhere;}
 @media(max-width:700px){#undo-toast{left:16px;right:16px;transform:none;max-width:none;flex-wrap:wrap;}:root[data-text-size="4"] .atlas-grid,:root[data-text-size="5"] .atlas-grid{grid-template-columns:1fr;}.size-slider{width:100%;}}
 
-.atlas-art img {object-position:var(--cover-position,50% 18%);}
 .cover-attribution {border-top:1px solid var(--line);padding-top:12px;margin-top:16px;}
 .cover-attribution p {font-size:calc(12px + var(--type-step)*1px);line-height:1.7;overflow-wrap:anywhere;}
+
+@media(max-width:700px){.atlas-art .atlas-art-frame {width:110px;}}

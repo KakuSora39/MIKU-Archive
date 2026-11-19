@@ -67,14 +67,14 @@ function syncSettingsControls() {
 function openSettings() {
   syncSettingsControls();document.getElementById('settings-status').textContent='更改立即生效，设置保存在本机。';
   refreshBackupStatus();
-  syncArtworkSettings();
+  if(DEVELOPER_EDITION)syncArtworkSettings();
   const dialog=document.getElementById('settings-dialog');if(!dialog.open)dialog.showModal();
 }
 function initSettings() {
   const $id=id=>document.getElementById(id);
   $id('settings-open').onclick=openSettings;$id('settings-close').onclick=()=>$id('settings-dialog').close();
   initArchiveActions();
-  initArtworkSettings();
+  if(DEVELOPER_EDITION)initArtworkSettings();
   $id('settings-text-size').oninput=e=>updateSettings({textSize:Number(e.target.value)});
   $id('settings-theme').onchange=e=>updateSettings({theme:e.target.value});
   $id('settings-remember').onchange=e=>updateSettings({remember:e.target.checked});
@@ -83,7 +83,7 @@ function initSettings() {
   $id('settings-export').onclick=()=>$id('export').click();
   $id('settings-import').onclick=()=>{$id('settings-dialog').close();$id('import').click();};
   document.querySelectorAll('[data-app-version]').forEach(e=>e.textContent=APP_INFO.version);
-  $id('settings-version').textContent=APP_INFO.version+'（构建 '+APP_INFO.build+'）';
+  $id('settings-version').textContent=APP_INFO.version+(DEVELOPER_EDITION?' · 开发版':'')+'（构建 '+APP_INFO.build+'）';
   $id('settings-data-date').textContent=atlasCatalog.updated;
   $id('settings-changes').innerHTML=[{version:APP_INFO.version,date:APP_INFO.releasedAt,changes:APP_INFO.changes},...(APP_INFO.history||[]).filter(release=>release.version!==APP_INFO.version)].map(release=>`<details class="release-note" ${release.version===APP_INFO.version?'open':''}><summary>${esc(release.version)}${release.date?' · '+esc(release.date):''}</summary><ul>${release.changes.map(change=>'<li>'+esc(change)+'</li>').join('')}</ul></details>`).join('');
   const saved=restoreBrowseState();

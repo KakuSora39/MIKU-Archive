@@ -10,11 +10,13 @@ function saveAtlas() {
   try { localStorage.setItem(atlasKey, JSON.stringify(atlasProgress)); $('save').textContent = '● 图鉴标记已保存到本机'; notifyArchiveChanged(); return true; }
   catch { $('save').textContent = '保存失败，请导出备份'; return false; }
 }
-function createBackup() { return {schema:1, appVersion:APP_INFO.version, preference:'只收藏完整 Live，不单独收集单曲字幕封装',exportedAt:new Date().toISOString(),records:data,atlasProgress,atlasEdits,catalogVersion:atlasCatalog?.version}; }
+function createBackup() { return {schema:1, appVersion:APP_INFO.version, preference:'只收藏完整 Live，不单独收集单曲字幕封装',exportedAt:new Date().toISOString(),records:data,atlasProgress,...(DEVELOPER_EDITION?{atlasEdits}:{}),catalogVersion:atlasCatalog?.version}; }
 async function exportArchiveJSON() {
   const backup=cloneArchive(createBackup());
-  ensureBackupMedia(backup.atlasEdits);
-  backup.artworkMedia=await ArtworkMedia.exportAll();
+  if(DEVELOPER_EDITION){
+    ensureBackupMedia(backup.atlasEdits);
+    backup.artworkMedia=await ArtworkMedia.exportAll();
+  }
   return JSON.stringify(backup,null,2);
 }
 function ensureBackupMedia(edits) {
@@ -44,7 +46,7 @@ function setMode(value) {
 }
 function initAtlas() {
   atlasProgress=readAtlasProgress();
-  initCatalogEditing();
+  if(DEVELOPER_EDITION)initCatalogEditing();
   refreshAtlasOptions();
   for(const id of ['atlas-personal','atlas-sort']) $(id).onchange=render;
   $('atlas-search').oninput=render;
@@ -138,8 +140,8 @@ function safeSource(url,label){try{const u=new URL(url);if(!['https:','http:'].i
 function showAtlasEvent(id) {
   const e=[...atlasCatalog.events,...atlasCatalog.projects].find(e=>e.id===id);if(!e)return;
   const mark=atlasProgress[id]||{},linked=e.collectionIds.map(id=>data.find(r=>r.id===id)).filter(Boolean);
-  $('atlas-detail-body').innerHTML=`<div class="eyebrow">LIVE ENCYCLOPEDIA / ${esc(e.year)}</div><h2 id="detail-title">${renderAtlasName(e)}</h2><div class="atlas-badges"><span class="badge">${esc(e.series)}</span><span class="badge unknown">${esc(e.verification)}</span></div><dl class="atlas-facts"><dt>官方演出名称</dt><dd>${e.officialName?esc(e.officialName):'待核实'}${e.officialNameSource?` · ${safeSource(e.officialNameSource,'名称依据')}`:''}${e.nameStatus==='本机命名'?'<small class="muted"> · 显示名称已本机修改</small>':''}</dd>${e.sessionLabel?`<dt>场次</dt><dd>${esc(e.sessionLabel)}</dd>`:''}<dt>举办日期</dt><dd>${esc(e.date)}</dd><dt>城市 / 地区</dt><dd>${esc(e.city)}</dd><dt>场馆</dt><dd>${esc(e.venue)}</dd><dt>演出形式</dt><dd>${esc(e.kind)}</dd><dt>收录层级</dt><dd>${esc(e.level||'年度 / 项目')}${e.sourceIndex?' · 原表 #'+e.sourceIndex:''}${e.vocaIndex?' · Vocawiki #'+e.vocaIndex:''}</dd><dt>官网</dt><dd>${renderOfficialLinks(e)}</dd><dt>官方资料 / 公告</dt><dd>${renderOfficialEvidence(e)}</dd><dt>检索来源</dt><dd>${renderResearchLinks(e)}</dd></dl>${renderEventRelations(e)}${eventEvidence(e)}${renderEventSchedule(e)}${renderCoverAttribution(e)}${e.notes?`<p class="muted">${esc(e.notes)}</p>`:''}<button id="detail-edit-event">编辑演出资料</button><h3>我的图鉴记录</h3><p class="muted">观看标记不代表已到场；参展与票根功能留待后续扩展。</p><div class="atlas-marks"><label><input type="checkbox" id="detail-watched" ${mark.watched?'checked':''}> 已看过</label><label><input type="checkbox" id="detail-wishlist" ${mark.wishlist?'checked':''}> 想看</label></div><label class="atlas-note-label">个人备注<textarea id="detail-notes" placeholder="记下你对这场 Live 的印象…">${esc(mark.notes||'')}</textarea></label><button id="detail-save" class="primary">保存图鉴标记</button><h3>BD / 正式影像</h3><p class="muted">以下是关联年度或项目的影像档案，不代表该城市站、该场次独立发行 BD。演出是否收录与是否发行影像分别维护。</p>${linked.length?linked.map(r=>`<div class="atlas-linked"><strong>${esc(r.name)}</strong><p>BD：${esc(r.bd)} · ${esc(r.release)} · ${esc(r.collected)}</p><small>${esc(r.version)}</small><br><button class="edit" data-record="${esc(r.id)}">编辑影像档案 ↗</button></div>`).join(''):'<p class="muted">待核实：尚未建立关联影像档案。</p>'}`;
-  $('detail-edit-event').onclick=()=>editCatalogEvent(id);
+  $('atlas-detail-body').innerHTML=`<div class="eyebrow">LIVE ENCYCLOPEDIA / ${esc(e.year)}</div><h2 id="detail-title">${renderAtlasName(e)}</h2><div class="atlas-badges"><span class="badge">${esc(e.series)}</span><span class="badge unknown">${esc(e.verification)}</span></div><dl class="atlas-facts"><dt>官方演出名称</dt><dd>${e.officialName?esc(e.officialName):'待核实'}${e.officialNameSource?` · ${safeSource(e.officialNameSource,'名称依据')}`:''}${e.nameStatus==='本机命名'?'<small class="muted"> · 显示名称已本机修改</small>':''}</dd>${e.sessionLabel?`<dt>场次</dt><dd>${esc(e.sessionLabel)}</dd>`:''}<dt>举办日期</dt><dd>${esc(e.date)}</dd><dt>城市 / 地区</dt><dd>${esc(e.city)}</dd><dt>场馆</dt><dd>${esc(e.venue)}</dd><dt>演出形式</dt><dd>${esc(e.kind)}</dd><dt>收录层级</dt><dd>${esc(e.level||'年度 / 项目')}${e.sourceIndex?' · 原表 #'+e.sourceIndex:''}${e.vocaIndex?' · Vocawiki #'+e.vocaIndex:''}</dd><dt>官网</dt><dd>${renderOfficialLinks(e)}</dd><dt>官方资料 / 公告</dt><dd>${renderOfficialEvidence(e)}</dd><dt>检索来源</dt><dd>${renderResearchLinks(e)}</dd></dl>${renderEventRelations(e)}${eventEvidence(e)}${renderEventSchedule(e)}${renderCoverAttribution(e)}${e.notes?`<p class="muted">${esc(e.notes)}</p>`:''}${DEVELOPER_EDITION?'<button id="detail-edit-event">编辑演出资料</button>':''}<h3>我的图鉴记录</h3><p class="muted">观看标记不代表已到场；参展与票根功能留待后续扩展。</p><div class="atlas-marks"><label><input type="checkbox" id="detail-watched" ${mark.watched?'checked':''}> 已看过</label><label><input type="checkbox" id="detail-wishlist" ${mark.wishlist?'checked':''}> 想看</label></div><label class="atlas-note-label">个人备注<textarea id="detail-notes" placeholder="记下你对这场 Live 的印象…">${esc(mark.notes||'')}</textarea></label><button id="detail-save" class="primary">保存图鉴标记</button><h3>BD / 正式影像</h3><p class="muted">以下是关联年度或项目的影像档案，不代表该城市站、该场次独立发行 BD。演出是否收录与是否发行影像分别维护。</p>${linked.length?linked.map(r=>`<div class="atlas-linked"><strong>${esc(r.name)}</strong><p>BD：${esc(r.bd)} · ${esc(r.release)} · ${esc(r.collected)}</p><small>${esc(r.version)}</small><br><button class="edit" data-record="${esc(r.id)}">编辑影像档案 ↗</button></div>`).join(''):'<p class="muted">待核实：尚未建立关联影像档案。</p>'}`;
+  if(DEVELOPER_EDITION)$('detail-edit-event').onclick=()=>editCatalogEvent(id);
   const editCover=$('detail-edit-cover');
   if(editCover)editCover.onclick=()=>editCatalogEvent(id,true);
   $('detail-save').onclick=()=>{if(changeAtlasMark(id,{watched:$('detail-watched').checked,wishlist:$('detail-wishlist').checked,notes:$('detail-notes').value})){render();$('atlas-detail').close()}};
@@ -148,7 +150,7 @@ function showAtlasEvent(id) {
   $('atlas-detail').showModal();
 }
 function showAtlasSources() {
-  $('atlas-detail-body').innerHTML=`<h2 id="detail-title">资料来源与收录范围</h2><p>${esc(atlasCatalog.coverage)}</p><p>第三方检索顺序：VocaDB → Vocaloid Wiki → 萌娘百科 → 其他第三方。检索入口与已匹配条目分开标记；没有读取成功的条目不声称已验证。官网和主办方资料独立列出，系列入口也明确注明。当前以审阅的 CSV 为目录底稿；已知城市站独立建档，年度 / 巡演资料与尚无站点清单的线索保留在“项目资料”。同站连续日期合并维护，不将项目和城市站重复计数。官网链接是参考入口，不代表所有字段已完成官方核实。演出资料可以本机编辑或新增，并随完整备份导入导出。</p><ul>${atlasCatalog.sources.map(s=>`<li>${safeSource(s.url,s.label)}</li>`).join('')}</ul><p>事实索引整理自萌娘百科、Vocawiki、MikuTime / talisein 的公开演出记录；本项目仅使用名称、日期、城市、场馆等事实并标注来源，不收录百科说明正文或图片。内置封面优先使用对应演出的官方主视觉 / 活动形象；未确认的条目显示统一占位封面，详情保留图片来源、署名与替代说明。内置图片随应用离线提供，自选封面可在演出资料中上传或填写链接。</p><p>已看、想看、演出资料修订及新增记录保存在本机，备份同时包含这些内容与原有 BD 记录。完整 Live 收藏偏好继续用于影像模块。</p>`;$('atlas-detail').showModal();
+  $('atlas-detail-body').innerHTML=`<h2 id="detail-title">资料来源与收录范围</h2><p>${esc(atlasCatalog.coverage)}</p><p>第三方检索顺序：VocaDB → Vocaloid Wiki → 萌娘百科 → 其他第三方。检索入口与已匹配条目分开标记；没有读取成功的条目不声称已验证。官网和主办方资料独立列出，系列入口也明确注明。当前以审阅的 CSV 为目录底稿；已知城市站独立建档，年度 / 巡演资料与尚无站点清单的线索保留在“项目资料”。同站连续日期合并维护，不将项目和城市站重复计数。官网链接是参考入口，不代表所有字段已完成官方核实。${DEVELOPER_EDITION?'开发版可在本机编辑或新增演出资料，并随完整备份导入导出。':'演出资料与封面随版本更新。'}</p><ul>${atlasCatalog.sources.map(s=>`<li>${safeSource(s.url,s.label)}</li>`).join('')}</ul><p>事实索引整理自萌娘百科、Vocawiki、MikuTime / talisein 的公开演出记录；本项目仅使用名称、日期、城市、场馆等事实并标注来源，不收录百科说明正文或图片。内置封面优先使用对应演出的官方主视觉 / 活动形象；未确认的条目使用占位或原创档案封面，详情保留图片来源、署名与替代说明。内置图片随应用离线提供。${DEVELOPER_EDITION?'自选封面可在演出资料中上传或填写链接。':''}</p><p>已看、想看与个人备注保存在本机，可与 BD 收藏记录一起备份。完整 Live 收藏偏好继续用于影像模块。</p>`;$('atlas-detail').showModal();
 }
 
 // Keep tour dates alongside city dates rather than silently replacing them.

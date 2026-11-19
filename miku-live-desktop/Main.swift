@@ -1,26 +1,40 @@
 import Cocoa
 import WebKit
 
-final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKScriptMessageHandlerWithReply {
+final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, WKScriptMessageHandler {
     var window: NSWindow!
     var web: WKWebView!
     var pendingImport: String?
     var settingsReloadPhase = 0
+    #if MIKU_DEV
     private var coverCapture: CoverCaptureWindow?
+    let appName = "MIKU Archive Dev"
+    #else
     let appName = "MIKU Archive"
+    #endif
     func applicationDidFinishLaunching(_ notification: Notification) {
         let config = WKWebViewConfiguration()
         config.websiteDataStore = CommandLine.arguments.contains("--self-test") ? .nonPersistent() : .default()
         config.userContentController.add(self, name: "archive")
+        #if MIKU_DEV
         config.userContentController.addScriptMessageHandler(self, contentWorld: .page, name: "coverDownload")
         config.userContentController.addScriptMessageHandler(self, contentWorld: .page, name: "coverCapture")
+        #else
+        if CommandLine.arguments.contains("--self-test") {
+            let legacy = """
+            localStorage.setItem('miku-atlas-edits-v1', '{"primary-14--hamamatsu":{"name":"legacy override","coverUrl":"https://example.invalid/old.png"}}');
+            localStorage.setItem('miku-artwork-defaults-v1', '{"mode":"archive","ratio":"4:3"}');
+            """
+            config.userContentController.addUserScript(WKUserScript(source: legacy, injectionTime:.atDocumentStart, forMainFrameOnly:true))
+        }
+        #endif
         web = WKWebView(frame: .zero, configuration: config)
         web.navigationDelegate = self
         web.uiDelegate = self
         web.allowsBackForwardNavigationGestures = false
         if !CommandLine.arguments.contains("--self-test") { setAppearance(UserDefaults.standard.string(forKey:"archiveTheme") ?? "auto") }
         window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1320, height: 900), styleMask: [.titled, .closable, .miniaturizable, .resizable], backing: .buffered, defer: false)
-        window.title = "MIKU Archive · Live 图鉴"
+        window.title = "\(appName) · Live 图鉴"
         window.minSize = NSSize(width: 720, height: 580)
         window.contentView = web
         if !CommandLine.arguments.contains("--self-test") { window.setFrameAutosaveName("MikuArchiveWindow") }
@@ -38,7 +52,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         let menu = NSMenu()
         let appItem = NSMenuItem(); menu.addItem(appItem)
         let appMenu = NSMenu(); appItem.submenu = appMenu
-        appMenu.addItem(withTitle: "关于 MIKU Archive", action: #selector(about), keyEquivalent: "")
+        appMenu.addItem(withTitle: "关于 \(appName)", action: #selector(about), keyEquivalent: "")
         appMenu.addItem(withTitle: "设置…", action: #selector(settings), keyEquivalent: ",")
         appMenu.addItem(.separator())
         appMenu.addItem(withTitle: "隐藏 MIKU Archive", action: #selector(NSApplication.hide(_:)), keyEquivalent: "h")
@@ -67,7 +81,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         let info=Bundle.main.infoDictionary ?? [:]
         let version=info["CFBundleShortVersionString"] as? String ?? ""
         let build=info["CFBundleVersion"] as? String ?? ""
-        alert("MIKU Archive \(version)", "构建 \(build)\n初音未来 Live 图鉴与影像档案\n离线可用 · 非官方个人工具")
+        alert("\(appName) \(version)", "构建 \(build)\n初音未来 Live 图鉴与影像档案\n离线可用 · 非官方个人工具")
     }
     @objc func helpInfo() { alert("收藏与备份", "图鉴观看标记与收藏修改自动保存在本应用中，与网页版独立。\n\n从网页迁入：在网页导出 JSON，再通过本应用的「文件 → 导入收藏备份」合并。\n\n建议定期导出备份。删除应用数据或更换 Mac 前请备份。\n\n资料更新需手动核实；官方来源链接将在浏览器中打开。未确认正式 BD 的演出保留「待核实」。") }
     @objc func zoomIn() { web.pageZoom = min(1.8, web.pageZoom + 0.1) }
@@ -88,8 +102,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             return true;
             """, arguments: [:], in:nil, in:.page) {result in
                 if case .failure(let error)=result {print("FAIL: \(error)");exit(1)}
+                #if MIKU_DEV
                 if self.settingsReloadPhase==1 {self.checkSettingsAfterReload()}
                 else {self.runSelfTest()}
+                #else
+                self.runReleaseSelfTest()
+                #endif
             }
         }
         web.evaluateJavaScript("""
@@ -105,6 +123,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         document.querySelector('footer small').textContent = '离线桌面版 · 演出图鉴与影像收藏独立维护 · 文件菜单备份包含图鉴标记 · 资料需手动核实';
         """)
     }
+    #if MIKU_DEV
     func runSelfTest() {
         if CommandLine.arguments.contains("--preview-artwork-narrow") {
             window.setContentSize(NSSize(width: 820, height: 900))
@@ -563,6 +582,42 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             switch result {case .success(let value): print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
         }
     }
+    #else
+    func runReleaseSelfTest() {
+        web.callAsyncJavaScript("""
+        if(DEVELOPER_EDITION||typeof editCatalogEvent!=='undefined'||typeof ArtworkMedia!=='undefined')throw Error('developer resource in release');
+        if(window.webkit.messageHandlers.coverDownload||window.webkit.messageHandlers.coverCapture)throw Error('developer native bridge in release');
+        if(document.querySelector('#catalog-editor,#atlas-add,#settings-artwork'))throw Error('developer controls in release');
+        const event=atlasCatalog.events.find(row=>row.id==='primary-14--hamamatsu');
+        const builtInName=event.name;
+        const oldEdits=localStorage.getItem('miku-atlas-edits-v1');
+        if(builtInName==='legacy override'||resolvedCover(event)?.src!=='covers/mirai-2026.png'||ArtworkRenderer.describe(event).config.ratio!=='16:9')throw Error('legacy override applied at startup');
+        const missing=atlasCatalog.events.find(row=>row.coverKey===atlasCatalog.defaultCover);
+        if(!missing||ArtworkRenderer.describe(missing).mode!=='archive')throw Error('archive fallback');
+        showAtlasEvent(event.id);
+        if(document.querySelector('#detail-edit-event,#detail-edit-cover')||!document.getElementById('detail-save'))throw Error('release detail editing boundary');
+        document.getElementById('detail-watched').checked=true;
+        document.getElementById('detail-save').click();
+        if(!atlasProgress[event.id]?.watched||!undoLastAction()||atlasProgress[event.id]?.watched)throw Error('personal marks and undo');
+        openSettings();document.getElementById('settings-dialog').close();
+        const backup={schema:1,records:[{...data[0],name:'legacy collection'}],
+          atlasProgress:{[event.id]:{watched:true,notes:'legacy note'}},
+          atlasEdits:{[event.id]:{name:'imported override'},'custom-release-test':{_custom:true,name:'Custom',series:'Live',year:2026}},
+          artworkMedia:[{data:'developer attachment'}]};
+        previewBackup(backup);
+        if(!document.getElementById('backup-preview-body').textContent.includes('可在开发版恢复'))throw Error('legacy import notice');
+        if(!confirmBackupImport()||atlasProgress[event.id]?.notes!=='legacy note'||data[0].name!=='legacy collection')throw Error('personal backup import');
+        if(atlasCatalog.events.find(row=>row.id===event.id).name!==builtInName||atlasCatalog.events.some(row=>row.id==='custom-release-test'))throw Error('released catalog changed on import');
+        if(localStorage.getItem('miku-atlas-edits-v1')!==oldEdits)throw Error('legacy on-device data was overwritten');
+        const exported=JSON.parse(await exportArchiveJSON());
+        if(exported.artworkMedia||exported.atlasEdits||exported.atlasProgress[event.id]?.notes!=='legacy note')throw Error('release backup contents');
+        if(!recordBackupExport(exported)||!document.getElementById('backup-state').textContent.includes('一致'))throw Error('release backup state');
+        return 'PASS: release controls and native bridges omitted; legacy local data preserved; read-only catalog, archive cover, personal marks/undo and legacy backup import/export';
+        """,arguments:[:],in:nil,in:.page) {result in
+            switch result {case .success(let value):print(value);exit(0);case .failure(let error):print("FAIL: \(error)");exit(1)}
+        }
+    }
+    #endif
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         guard let body = message.body as? [String: Any], let action = body["action"] as? String else { return }
         if action == "export", let payload = body["payload"] as? String, let fingerprint = body["fingerprint"] as? String { writeBackup(payload, fingerprint: fingerprint) }
@@ -572,6 +627,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
             if !CommandLine.arguments.contains("--self-test") {UserDefaults.standard.set(value,forKey:"archiveTheme")}
         }
     }
+    #if MIKU_DEV
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage, replyHandler: @escaping (Any?, String?) -> Void) {
         if message.name == "coverCapture" {
             guard message.frameInfo.isMainFrame, message.frameInfo.request.url?.isFileURL == true,
@@ -637,6 +693,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         return ("data:image/\(type);base64,\(data.base64EncodedString())", nil)
     }
 
+    #endif
+
     @objc func exportBackup() { web.evaluateJavaScript("document.getElementById('export').click()") }
     func writeBackup(_ text: String, fingerprint: String) {
         let panel = NSSavePanel(); panel.title = "导出收藏备份"; panel.nameFieldStringValue = "miku-archive-\(ISO8601DateFormatter().string(from: Date()).prefix(10)).json"
@@ -674,6 +732,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         let a = NSAlert(); a.messageText = message; a.addButton(withTitle: "确认"); a.addButton(withTitle: "取消"); completionHandler(a.runModal() == .alertFirstButtonReturn)
     }
 }
+#if MIKU_DEV
+extension AppDelegate: WKScriptMessageHandlerWithReply {}
+#endif
+
 extension AppDelegate: WKUIDelegate {
     // WKWebView delegates file inputs to a native chooser on macOS.
     func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenPanelParameters, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping ([URL]?) -> Void) {

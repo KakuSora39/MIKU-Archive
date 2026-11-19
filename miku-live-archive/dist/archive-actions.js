@@ -2,7 +2,7 @@
 const backupMetaKey='miku-backup-meta-v1';
 let pendingUndo=null,undoTimer=null,pendingImport=null;
 const cloneArchive=value=>JSON.parse(JSON.stringify(value));
-function currentArchiveState() {return {records:cloneArchive(data),atlasProgress:cloneArchive(atlasProgress),atlasEdits:cloneArchive(atlasEdits)};}
+function currentArchiveState() {return {records:cloneArchive(data),atlasProgress:cloneArchive(atlasProgress),...(DEVELOPER_EDITION?{atlasEdits:cloneArchive(atlasEdits)}:{})};}
 function canonicalArchive(value) {
   if(Array.isArray(value))return value.map(canonicalArchive);
   if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonicalArchive(value[k])]));
@@ -20,11 +20,11 @@ function refreshBackupStatus() {
   const meta=readLocalJSON(backupMetaKey,null);
   if(!meta?.exportedAt||!Number.isFinite(Date.parse(meta.exportedAt))||!meta.fingerprint){time.textContent='尚未导出备份';state.textContent='建议导出一份备份，保存当前记录。';return;}
   time.textContent=new Date(meta.exportedAt).toLocaleString('zh-CN')+(meta.channel==='browser'?'（已发起下载）':'');
-  state.textContent=meta.fingerprint===archiveFingerprint({...currentArchiveState(),artworkSignature:ArtworkMedia.signature()})?'当前数据与上次导出内容一致。':'上次导出后有数据修改，建议重新备份。';
+  state.textContent=meta.fingerprint===archiveFingerprint({...currentArchiveState(),artworkSignature:DEVELOPER_EDITION?ArtworkMedia.signature():[]})?'当前数据与上次导出内容一致。':'上次导出后有数据修改，建议重新备份。';
 }
 function notifyArchiveChanged() {refreshBackupStatus();}
 function backupSnapshotFingerprint(snapshot) {
-  const artworkSignature=snapshot.artworkMedia?.map(({id,source,credit})=>({id,source,credit})).sort((a,b)=>a.id.localeCompare(b.id))||ArtworkMedia.signature();
+  const artworkSignature=DEVELOPER_EDITION?(snapshot.artworkMedia?.map(({id,source,credit})=>({id,source,credit})).sort((a,b)=>a.id.localeCompare(b.id))||ArtworkMedia.signature()):[];
   return archiveFingerprint({...snapshot,artworkSignature});
 }
 function recordBackupExport(snapshot,channel='native') {
@@ -45,7 +45,7 @@ function undoLastAction() {
   if(!pendingUndo||Date.now()>=pendingUndo.expiresAt){clearUndo();return false;}
   try {
     pendingUndo.restore();clearUndo();
-    for(const id of ['atlas-detail','catalog-editor','editor'])document.getElementById(id).close();
+    for(const id of ['atlas-detail','catalog-editor','editor'])document.getElementById(id)?.close();
     options();refreshAtlasOptions();render();document.getElementById('save').textContent='● 已撤销上一次操作';return true;
   } catch {document.getElementById('undo-message').textContent='撤销未能保存，请重试或导出备份。';return false;}
 }
@@ -64,12 +64,15 @@ function changeMissingMark(id,missing) {
   offerUndo('缺失标记已更新',()=>{const row=data.find(r=>r.id===id);if(!row)throw Error('记录不存在');const current=row.missing;row.missing=previous;if(!save()){row.missing=current;throw Error('保存失败');}});return true;
 }
 function commitArchiveState(next) {
-  const normalized={records:cloneArchive(next.records),atlasProgress:cloneArchive(next.atlasProgress),atlasEdits:normalizeCatalogEdits(next.atlasEdits)};
-  const writes=[[key,JSON.stringify(normalized.records)],[atlasKey,JSON.stringify(normalized.atlasProgress)],[atlasEditsKey,JSON.stringify(normalized.atlasEdits)]];
+  const normalized={records:cloneArchive(next.records),atlasProgress:cloneArchive(next.atlasProgress),...(DEVELOPER_EDITION?{atlasEdits:normalizeCatalogEdits(next.atlasEdits)}:{})};
+  const writes=[[key,JSON.stringify(normalized.records)],[atlasKey,JSON.stringify(normalized.atlasProgress)]];
+  if(DEVELOPER_EDITION)writes.push([atlasEditsKey,JSON.stringify(normalized.atlasEdits)]);
   const previous=writes.map(([key])=>[key,localStorage.getItem(key)]);
   try {for(const [key,value] of writes)localStorage.setItem(key,value);}
   catch(error){for(const [key,value] of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value);}catch{}}throw error;}
-  data=normalized.records;atlasProgress=normalized.atlasProgress;atlasEdits=normalized.atlasEdits;applyCatalogEdits();notifyArchiveChanged();
+  data=normalized.records;atlasProgress=normalized.atlasProgress;
+  if(DEVELOPER_EDITION){atlasEdits=normalized.atlasEdits;applyCatalogEdits();}
+  notifyArchiveChanged();
 }
 function removeCustomEvent(id) {
   if(!atlasEdits[id]?._custom)throw Error('只能删除自建演出');
@@ -79,7 +82,11 @@ function removeCustomEvent(id) {
 }
 function validateBackup(input) {
   if(!input||input.schema!==1||!Array.isArray(input.records))throw Error('备份格式无效');
-  const obj=cloneArchive(input),seen=new Set();
+  // Release imports only personal data, even when a legacy backup contains developer fields.
+  const obj=cloneArchive(DEVELOPER_EDITION?input:{
+    schema:input.schema,appVersion:input.appVersion,exportedAt:input.exportedAt,
+    records:input.records,atlasProgress:input.atlasProgress
+  }),seen=new Set();
   for(const row of obj.records){if(!row||typeof row.id!=='string'||!row.id||seen.has(row.id)||typeof row.name!=='string'||typeof row.series!=='string'||!Number.isInteger(Number(row.year))||Number(row.year)<2000||Number(row.year)>2100)throw Error('影像记录格式无效或编号重复');row.year=Number(row.year);seen.add(row.id);}
   if(obj.atlasEdits!==undefined)obj.atlasEdits=normalizeCatalogEdits(obj.atlasEdits);
   if(obj.artworkMedia!==undefined)obj.artworkMedia=ArtworkMedia.normalizeBackup(obj.artworkMedia);
@@ -98,8 +105,11 @@ function backupSummary(input) {
 }
 function previewBackup(input) {
   const obj=validateBackup(input),summary=backupSummary(obj);pendingImport=obj;
+  const developerDetails=DEVELOPER_EDITION?`<dt>素材原图</dt><dd>${obj.artworkMedia?.length||0} 张</dd><dt>内置资料修订</dt><dd>${summary.edits} 条</dd><dt>自建演出</dt><dd>${summary.custom} 条</dd>`:'';
+  const hasDeveloperData=input.atlasEdits&&Object.keys(input.atlasEdits).length||input.artworkMedia?.length;
+  const skipped=!DEVELOPER_EDITION&&hasDeveloperData?'<p class="muted">此备份还包含演出修订、自建演出或封面素材。发行版只导入收藏、观看标记与个人备注。请保留原备份，可在开发版恢复其余内容。</p>':'';
   const date=typeof obj.exportedAt==='string'&&Number.isFinite(Date.parse(obj.exportedAt))?new Date(obj.exportedAt).toLocaleString('zh-CN'):'未知（旧备份）';
-  document.getElementById('backup-preview-body').innerHTML=`<p>导出时间：${esc(date)}</p><p>应用版本：${esc(obj.appVersion||'未知（旧备份）')}</p><dl class="settings-about"><dt>影像记录</dt><dd>${summary.records} 条（${summary.conflicts} 条同编号将替换）</dd><dt>观看标记 / 备注</dt><dd>${summary.marks} 条</dd><dt>素材原图</dt><dd>${obj.artworkMedia?.length||0} 张</dd><dt>内置资料修订</dt><dd>${summary.edits} 条</dd><dt>自建演出</dt><dd>${summary.custom} 条</dd></dl><p class="muted">确认后按编号合并；同编号内容以备份为准，其他现有记录保留。备份中没有的图鉴字段不会清除现有内容。设置与备份状态不随导入覆盖。</p>`;
+  document.getElementById('backup-preview-body').innerHTML=`<p>导出时间：${esc(date)}</p><p>应用版本：${esc(obj.appVersion||'未知（旧备份）')}</p><dl class="settings-about"><dt>影像记录</dt><dd>${summary.records} 条（${summary.conflicts} 条同编号将替换）</dd><dt>观看标记 / 备注</dt><dd>${summary.marks} 条</dd>${developerDetails}</dl>${skipped}<p class="muted">确认后按编号合并；同编号内容以备份为准，其他现有记录保留。备份中没有的图鉴字段不会清除现有内容。设置与备份状态不随导入覆盖。</p>`;
   document.getElementById('backup-preview-error').textContent='';const dialog=document.getElementById('backup-preview');if(!dialog.open)dialog.showModal();return summary;
 }
 function confirmBackupImport() {

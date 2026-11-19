@@ -10,7 +10,7 @@ const ArtworkRenderer = (() => {
   };
   const defaults={
     mode:'auto',ratio:'16:9',backgroundTreatment:'template',backgroundStrategy:'series',backgroundColor:'#5b7978',
-    missing:'placeholder',archiveStyle:'archive',blur:32,saturation:0.75,brightness:0.88,
+    missing:DEVELOPER_EDITION?'placeholder':'archive',archiveStyle:'archive',blur:32,saturation:0.75,brightness:0.88,
     edgeBlend:1.2,transitionHeight:24,transitionStrength:1,focalPoint:{x:50,y:50}
   };
   const settingsKey='miku-artwork-defaults-v1';
@@ -100,6 +100,7 @@ const ArtworkRenderer = (() => {
   }
 
   function globalDefaults() {
+    if(!DEVELOPER_EDITION)return {...defaults};
     if(!globalConfig){
       try{globalConfig=normalizeConfig(readLocalJSON(settingsKey,{}))||{};}catch{globalConfig={};}
     }
@@ -151,7 +152,7 @@ const ArtworkRenderer = (() => {
     const known=value=>String(value||'').trim().match(/^(?:待|未知|不明|未公布|TBC|TBD|Unknown|[-—–]+$)/i)?'':String(value||'').trim();
     const title=known(event.nameStatus==='本机命名'?event.name:event.officialName||event.name);
     const facts=[known(event.date)||known(event.year),known(event.city)].filter(Boolean);
-    const logo=config.logoSource&&ArtworkMedia.get(config.logoId);
+    const logo=DEVELOPER_EDITION&&config.logoSource&&ArtworkMedia.get(config.logoId);
     return `<div class="artwork-archive" data-archive-style="${config.archiveStyle}">
       <span class="artwork-archive-label">原创档案封面</span>
       ${logo?`<img class="artwork-logo" alt="" ${imageSource(logo)} loading="lazy">`:''}

@@ -88,21 +88,22 @@ function bundledCover(key) {
   return asset&&/^covers\/[a-z0-9-]+\.png$/.test(asset.file||'')?{...asset,src:asset.file}:null;
 }
 function resolvedCover(event) {
-  const selected=ArtworkMedia.get(event.artworkAssetId);
+  const selected=DEVELOPER_EDITION&&ArtworkMedia.get(event.artworkAssetId);
   if(selected)return {...selected,kind:'custom',label:selected.name,assetId:selected.id,
     credit:event.coverCredit||selected.credit,sourceUrl:event.coverSourceUrl||selected.source};
-  if(event.coverUrl){try{return {src:normalizeCover(event.coverUrl),kind:'custom',label:'自选封面',credit:event.coverCredit||'',frame:event.coverFrame,sourceUrl:event.coverSourceUrl};}catch{}}
+  if(DEVELOPER_EDITION&&event.coverUrl){try{return {src:normalizeCover(event.coverUrl),kind:'custom',label:'自选封面',credit:event.coverCredit||'',frame:event.coverFrame,sourceUrl:event.coverSourceUrl};}catch{}}
   const cover = bundledCover(event.coverKey)||bundledCover(atlasCatalog?.defaultCover);
   return cover && {...cover,frame:event.coverFrame || cover.frame};
 }
 function renderCoverAttribution(event) {
   const cover=resolvedCover(event);
   const {mode,config}=ArtworkRenderer.describe(event);
-  if(mode==='archive')return `<section class="cover-attribution"><h3>卡片封面</h3><p>原创档案封面 ${safeSource(config.logoSource,'官方 Logo 来源')}</p><button id="detail-edit-cover" type="button">编辑封面</button></section>`;
+  const editButton=DEVELOPER_EDITION?'<button id="detail-edit-cover" type="button">编辑封面</button>':'';
+  if(mode==='archive')return `<section class="cover-attribution"><h3>卡片封面</h3><p>原创档案封面 ${safeSource(config.logoSource,'官方 Logo 来源')}</p>${editButton}</section>`;
   if(!cover)return '';
-  if(cover.kind==='custom')return `<section class="cover-attribution"><h3>卡片封面</h3><p>自选封面${cover.credit?' · '+esc(cover.credit):''}${cover.sourceUrl?' · '+safeSource(cover.sourceUrl,'封面来源'):''}</p><button id="detail-edit-cover" type="button">编辑封面</button></section>`;
+  if(cover.kind==='custom')return `<section class="cover-attribution"><h3>卡片封面</h3><p>自选封面${cover.credit?' · '+esc(cover.credit):''}${cover.sourceUrl?' · '+safeSource(cover.sourceUrl,'封面来源'):''}</p>${editButton}</section>`;
   const status=cover.kind==='generic'?'该场主视觉待核实 · 卡片使用占位封面':cover.kind==='eventvisual'?'官方活动形象':'官方主视觉';
-  return `<section class="cover-attribution"><h3>卡片封面</h3><p>${esc(status)} · ${esc(cover.label)}</p><p>${esc(cover.credit)}</p><p>${safeSource(cover.sourceUrl,'查看官方图片来源')}</p>${event.coverNote||cover.note?'<p class="muted">'+esc(event.coverNote||cover.note)+'</p>':''}<button id="detail-edit-cover" type="button">编辑封面</button></section>`;
+  return `<section class="cover-attribution"><h3>卡片封面</h3><p>${esc(status)} · ${esc(cover.label)}</p><p>${esc(cover.credit)}</p><p>${safeSource(cover.sourceUrl,'查看官方图片来源')}</p>${event.coverNote||cover.note?'<p class="muted">'+esc(event.coverNote||cover.note)+'</p>':''}${editButton}</section>`;
 }
 // Reserved contract only: no import, search or playlist player in this release.
 // A null setlist means not entered; an empty songs array means entered but empty.

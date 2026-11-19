@@ -4,7 +4,7 @@
     name="viewport"
     content="width=device-width,initial-scale=1"
   /><title>MIKU ARCHIVE · 我的 Live 收藏馆</title
-  ><script src="app-info.js"></script><script src="settings.js"></script><link rel="stylesheet" href="style.css" />
+  ><script src="edition.js"></script><script src="app-info.js"></script><script src="settings.js"></script><link rel="stylesheet" href="style.css" />
   <body>
     <aside>
       <a class="brand" href="#"
@@ -80,7 +80,7 @@
       </section>
       <div class="workspace-switch" role="group" aria-label="功能切换"><button id="mode-atlas" class="primary">✳ Live 图鉴</button><button id="mode-collection">▣ BD / 影像收藏</button></div>
       <section id="atlas" aria-label="Live 演出图鉴">
-        <div class="section-top"><div><h2>每一场 Live，都有自己的位置。</h2><p class="muted">专场、巡演、线上与联动 · 以演出为中心，不以是否发行 BD 为收录条件</p></div><div class="actions"><button id="atlas-add" class="primary">＋ 新增 Live</button><button id="atlas-export">↓ 导出全部记录</button><button id="atlas-sources">资料来源与范围</button></div></div>
+        <div class="section-top"><div><h2>每一场 Live，都有自己的位置。</h2><p class="muted">专场、巡演、线上与联动 · 以演出为中心，不以是否发行 BD 为收录条件</p></div><div class="actions"><!-- dev-only --><button id="atlas-add" class="primary">＋ 新增 Live</button><!-- /dev-only --><button id="atlas-export">↓ 导出全部记录</button><button id="atlas-sources">资料来源与范围</button></div></div>
         <div class="filters"><input id="atlas-search" placeholder="搜索演出、城市、场馆…" aria-label="搜索图鉴"><select id="atlas-year" aria-label="图鉴年份"></select><select id="atlas-series" aria-label="图鉴系列"></select><select id="atlas-kind" aria-label="演出形式"></select><select id="atlas-personal" aria-label="我的图鉴标记"><option value="">所有标记</option><option value="wishlist">想看</option><option value="watched">已看</option><option value="unmarked">未标记</option></select><select id="atlas-sort" aria-label="排序（按首场日期，日期待核实的条目列于同年末尾）"><option value="new">时间从新到旧</option><option value="old">时间从旧到新</option></select></div>
         <div class="tabs"><button data-atlas-view="cards" class="selected">演出卡片</button><button data-atlas-view="timeline">年份年表</button><button data-atlas-view="series">系列总览</button><button data-atlas-view="projects">项目资料</button><span id="atlas-result" aria-live="polite"></span></div><p class="muted" id="atlas-scope"></p><div id="atlas-content"></div>
       </section>
@@ -161,19 +161,19 @@
     </dialog>
     <input id="file" type="file" accept="application/json" hidden />
     <dialog id="atlas-detail" aria-labelledby="detail-title"><div id="atlas-detail-body"></div><div class="actions"><button id="detail-close">关闭</button></div></dialog>
-    <dialog id="catalog-editor" aria-labelledby="catalog-editor-title"><form id="catalog-form"><h2 id="catalog-editor-title">编辑演出资料</h2><p class="muted">资料修订保存在本机，与个人观看备注、BD 收藏分别保存。导出备份可迁移到其他设备。</p><div id="catalog-fields"></div><p id="catalog-error" role="alert"></p><div class="actions"><button type="button" id="catalog-close">取消</button><button type="button" id="catalog-reset">恢复 CSV 资料</button><button type="submit" class="primary">保存演出资料</button></div></form></dialog>
+    <!-- dev-only --><dialog id="catalog-editor" aria-labelledby="catalog-editor-title"><form id="catalog-form"><h2 id="catalog-editor-title">编辑演出资料</h2><p class="muted">资料修订保存在本机，与个人观看备注、BD 收藏分别保存。导出备份可迁移到其他设备。</p><div id="catalog-fields"></div><p id="catalog-error" role="alert"></p><div class="actions"><button type="button" id="catalog-close">取消</button><button type="button" id="catalog-reset">恢复 CSV 资料</button><button type="submit" class="primary">保存演出资料</button></div></form></dialog><!-- /dev-only -->
 
     <dialog id="settings-dialog" aria-labelledby="settings-title">
       <div class="section-top"><h2 id="settings-title">设置</h2><button id="settings-close" aria-label="关闭设置">关闭</button></div>
       <section class="settings-section"><h3>外观</h3><label class="settings-row"><span>色彩模式<small>自动模式跟随系统外观</small></span><select id="settings-theme"><option value="auto">自动</option><option value="light">浅色</option><option value="dark">深色</option></select></label><label class="settings-row"><span>界面字号<small>调整卡片、资料与控件文字大小</small></span><span class="size-slider"><output id="text-size-value" for="settings-text-size"></output><input id="settings-text-size" type="range" min="1" max="5" step="1" value="2" aria-label="界面字号"><span class="size-ticks" aria-hidden="true"><span>紧凑</span><span>标准</span><span>舒适</span><span>较大</span><span>特大</span></span></span></label></section>
       <section class="settings-section"><h3>浏览</h3><label class="settings-row"><span>记住上次浏览状态<small>恢复视图、筛选、搜索、排序与浏览位置</small></span><input type="checkbox" id="settings-remember"></label><label class="settings-row"><span>默认图鉴视图<small>没有已保存状态或关闭记忆时使用</small></span><select id="settings-view"><option value="cards">演出卡片</option><option value="timeline">年份年表</option><option value="series">系列总览</option><option value="projects">项目资料</option></select></label><label class="settings-row"><span>默认排序</span><select id="settings-sort"><option value="new">时间从新到旧</option><option value="old">时间从旧到新</option></select></label></section>
-      <section class="settings-section" id="settings-artwork"><h3>主视觉与素材</h3></section>
-      <section class="settings-section"><h3>数据与备份</h3><dl class="settings-about"><dt>上次导出</dt><dd id="backup-time"></dd><dt>备份状态</dt><dd id="backup-state" role="status"></dd></dl><p class="muted">观看标记、资料修订与影像收藏保存在本机。建议定期导出备份；设置独立保存在当前设备。</p><div class="actions"><button id="settings-export">导出备份</button><button id="settings-import">导入备份</button></div></section>
+      <!-- dev-only --><section class="settings-section" id="settings-artwork"><h3>主视觉与素材</h3></section><!-- /dev-only -->
+      <section class="settings-section"><h3>数据与备份</h3><dl class="settings-about"><dt>上次导出</dt><dd id="backup-time"></dd><dt>备份状态</dt><dd id="backup-state" role="status"></dd></dl><p class="muted">观看标记、个人备注与影像收藏保存在本机。建议定期导出备份；设置独立保存在当前设备。</p><div class="actions"><button id="settings-export">导出备份</button><button id="settings-import">导入备份</button></div></section>
       <section class="settings-section"><h3>关于 MIKU Archive</h3><dl class="settings-about"><dt>应用版本</dt><dd id="settings-version"></dd><dt>图鉴数据更新</dt><dd id="settings-data-date"></dd></dl><p class="muted">非官方个人 Live 图鉴与影像档案工具 · 离线可用<br>版本规则：重大功能 . 小功能 . Bug 修复</p><h4>更新记录</h4><div id="settings-changes"></div></section>
       <p id="settings-status" role="status"></p>
     </dialog>
     <div id="undo-toast" hidden><span id="undo-message" role="status"></span><button id="undo-action">撤销</button><button id="undo-dismiss" aria-label="关闭撤销提示">✕</button></div>
     <dialog id="backup-preview" aria-labelledby="backup-preview-title"><h2 id="backup-preview-title">导入备份预览</h2><div id="backup-preview-body"></div><p id="backup-preview-error" role="alert"></p><div class="actions"><button id="backup-preview-cancel">取消</button><button id="backup-preview-confirm" class="primary">确认合并</button></div></dialog>
-    <script src="live-assets.js"></script><script src="artwork.js"></script><script src="artwork-media.js"></script><script src="atlas.js"></script><script src="catalog-editor.js"></script><script src="archive-actions.js"></script><script src="app.js"></script>
+    <script src="live-assets.js"></script><script src="artwork.js"></script><!-- dev-only --><script src="artwork-media.js"></script><!-- /dev-only --><script src="atlas.js"></script><!-- dev-only --><script src="catalog-editor.js"></script><!-- /dev-only --><script src="archive-actions.js"></script><script src="app.js"></script>
   </body>
 </html>

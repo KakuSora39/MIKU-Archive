@@ -259,7 +259,9 @@ async function init() {
       ? JSON.parse(stored)
       : await (await fetch("seed.json")).json();
     atlasCatalog = await loadCatalog();
-    try {await ArtworkMedia.init();} catch(error) {console.error(error);}
+    if(DEVELOPER_EDITION){
+      try {await ArtworkMedia.init();} catch(error) {console.error(error);}
+    }
     initAtlas();
     options();
     initSettings();

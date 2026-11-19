@@ -293,3 +293,41 @@ python3 -m http.server 8391 --directory miku-live-archive/dist
 - 新素材按原始字节的 SHA-256 去重。IndexedDB 分开保存素材信息、原始文件和可清理的缩略图。《演出资料》的 `artworkMediaIds` 保存关联列表，`artworkAssetId` 保存当前图片，`artworkConfig` 保存模板、背景、标准化裁剪与 Archive 样式，`coverFrame` 保留位置和缩放。旧记录的 `coverUrl`、`coverSourceUrl` 与构图字段继续读取。旧版若只保存了缩略图，能保留的仍是该缩略图。
 - 官网框选截图的原图是选区得到的截图文件。导入新素材后，原图已进入素材库，取消单场编辑只撤销演出关联和构图。自选素材来源可在单场表单中填写，也可用「保存为素材来源」供其他场次复用。
 - 完整 JSON 备份可携带本机图片原图及引用。导入预览会列出原图数量。全局设置保存在当前设备。内置素材随应用提供，使用缩略图资源，可通过官方直链重新获取更高分辨率的图片。
+
+## 1.12.0 开发版与发行版
+
+在项目根目录运行对应命令。发行版为默认构建，开发版需要显式加 `--dev`。
+
+| 目标 | 构建命令 | 输出 |
+| --- | --- | --- |
+| macOS 发行版 | `python3 miku-live-desktop/build.py` | `build/MIKU Archive.app` |
+| macOS 开发版 | `python3 miku-live-desktop/build.py --dev` | `build/MIKU Archive Dev.app` |
+| 网页发行版 | `python3 scripts/build_web.py` | `build/web-release/` |
+| 网页开发版 | `python3 scripts/build_web.py --dev` | `build/web-dev/` |
+
+网页开发版可用 `python3 -m http.server 8001 --bind 127.0.0.1 --directory build/web-dev` 启动，浏览器打开 `http://127.0.0.1:8001/`。发行预览可在另一个端口启动 `build/web-release/`。部署时上传 `build/web-release/` 的内容。源码目录 `miku-live-archive/dist/` 用于本地开发，包含编辑器。重新部署时替换旧站点文件，避免服务器残留旧编辑器资源。桌面构建产物使用本机临时签名。
+
+### 备份与升级
+
+- 发行版展示随构建发布的演出目录、主视觉和来源。缺少专属主视觉时显示原创档案封面。个人收藏、观看标记和备注支持编辑及备份。
+- macOS 发行版沿用应用标识 `local.sora.mikuarchive`，开发版使用 `local.sora.mikuarchive.dev`。网页按站点地址存储，建议为开发预览使用专用本地端口。两版之间用 JSON 备份迁移。
+- 从 1.11.0 或更早版本升级时，如需保留自建演出、资料修订和自选主视觉，请先在旧版导出完整 JSON，再在开发版导入。发行版的导入预览会提示开发版专用内容，确认后只合并个人收藏、观看标记及备注。升级保留同一存储中的旧修订，发行版导出的 JSON 仅包含个人数据。若升级前没有完整备份，可以在原设备用旧版本打开原来的应用数据并导出。
+
+### 开发者更新内置封面
+
+1. 在开发版的单场编辑器试图、裁剪和预览。保存会写入开发版的本机素材库；发布仍走下面的源码流程。
+2. 将核对过的 PNG 放到 `miku-live-archive/dist/covers/`，文件名使用小写英文、数字和连字符。按现有素材规范生成最长边不超过 640 像素的副本。用 `sips -g pixelWidth -g pixelHeight 图片路径` 查看尺寸，用 `shasum -a 256 图片路径` 计算 SHA-256。
+3. 在 `scripts/references/event-covers.json` 的 `assets` 登记相对路径、来源、署名、尺寸和 SHA-256，并在 `events` 中把该演出的 ID 关联到素材键。可参考 `mirai-2013` 的条目。没有合适封面的场次可继续使用既有缺图标记，发行版会生成档案封面。
+4. 执行以下命令，在发行版预览核对后再分发。编译只打包目录已登记的封面。演出资料变更应写入对应的目录底稿并重新生成。
+
+   ```bash
+   python3 scripts/build_catalog.py
+   python3 scripts/test_catalog.py
+   python3 scripts/test_covers.py
+   python3 scripts/build_web.py
+   python3 miku-live-desktop/build.py
+   ```
+
+### 自检
+
+`"./build/MIKU Archive.app/Contents/MacOS/MIKUArchive" --self-test` 检查只读图鉴、个人标记与旧备份处理。开发版用对应的 `build/MIKU Archive Dev.app` 下的二进制运行 `--self-test`、`--self-test --test-cover-upload` 或 `--self-test --test-restart`。

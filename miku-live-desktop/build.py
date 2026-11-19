@@ -2,20 +2,21 @@
 Run: python3 miku-live-desktop/build.py
 Requires macOS, Python 3 and Apple's Command Line Tools; no Python packages.
 """
-from pathlib import Path
-import json
+import argparse
 import hashlib
+import json
+from pathlib import Path
 import plistlib
-import shutil
+import re
 import subprocess
+import sys
 import tempfile
 
 BASE = Path(__file__).resolve().parent
 ROOT = BASE.parent
-APP = ROOT / 'build' / 'MIKU Archive.app'
-CONTENTS = APP / 'Contents'
-RESOURCES = CONTENTS / 'Resources'
-BINARY = CONTENTS / 'MacOS'
+sys.path.insert(0, str(ROOT / 'scripts'))
+from build_web import build_web
+
 # A migrated compiler cache embeds absolute paths; use a location-specific cache.
 CACHE = ROOT / 'build' / ('ModuleCache-' + hashlib.sha256(str(ROOT).encode()).hexdigest()[:10])
 
@@ -25,18 +26,18 @@ def run(*args):
 
 
 def main():
-    app_info = json.loads((ROOT / 'app-info.json').read_text(encoding='utf-8'))
-    import re
-    if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', app_info['version']):
-        raise ValueError('App version must use X.X.X')
-    (ROOT / 'miku-live-archive/dist/app-info.js').write_text('// Generated from app-info.json; edit the root manifest.\nconst APP_INFO = ' + json.dumps(app_info, ensure_ascii=False) + ';\n', encoding='utf-8')
-    BINARY.mkdir(parents=True, exist_ok=True)
-    RESOURCES.mkdir(parents=True, exist_ok=True)
-    web = RESOURCES / 'Web'
-    # Copy readable web source; embed seed data for file:// offline loading.
-    shutil.copytree(ROOT / 'miku-live-archive' / 'dist', web, dirs_exist_ok=True)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--dev', action='store_true', help='build the catalog maintenance edition')
+    args = parser.parse_args()
+    name = 'MIKU Archive Dev' if args.dev else 'MIKU Archive'
+    app = ROOT / 'build' / f'{name}.app'
+    contents = app / 'Contents'
+    resources = contents / 'Resources'
+    binary = contents / 'MacOS'
+    binary.mkdir(parents=True, exist_ok=True)
+    web = resources / 'Web'
+    app_info = build_web(web, developer=args.dev)
     # Embed each catalog into its generated script for offline file:// loading.
-    import re
     for json_name, script_name in [('seed.json', 'app.js'), ('catalog.json', 'atlas.js')]:
         payload = json.loads((web / json_name).read_text(encoding='utf-8'))
         script_path = web / script_name
@@ -53,9 +54,9 @@ def main():
     css = css.replace("'Noto Sans SC',sans-serif", '-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif')
     css_path.write_text(css, encoding='utf-8')
     info = {
-        'CFBundleName': 'MIKU Archive',
-        'CFBundleDisplayName': 'MIKU Archive',
-        'CFBundleIdentifier': 'local.sora.mikuarchive',
+        'CFBundleName': name,
+        'CFBundleDisplayName': name,
+        'CFBundleIdentifier': 'local.sora.mikuarchive.dev' if args.dev else 'local.sora.mikuarchive',
         'CFBundleExecutable': 'MIKUArchive',
         'CFBundlePackageType': 'APPL',
         'CFBundleShortVersionString': app_info['version'],
@@ -65,10 +66,11 @@ def main():
         'CFBundleIconFile': 'AppIcon',
         'NSHumanReadableCopyright': 'Unofficial personal collection manager.',
     }
-    with (CONTENTS / 'Info.plist').open('wb') as file:
+    with (contents / 'Info.plist').open('wb') as file:
         plistlib.dump(info, file)
-    run('xcrun', 'swiftc', '-module-cache-path', CACHE, '-O', '-target', 'arm64-apple-macos13.0',
-        BASE / 'Main.swift', BASE / 'CoverCapture.swift', '-o', BINARY / 'MIKUArchive',
+    developer_sources = ['-D', 'MIKU_DEV', BASE / 'CoverCapture.swift'] if args.dev else []
+    run('xcrun', 'swiftc', '-parse-as-library', '-module-cache-path', CACHE, '-O', '-target', 'arm64-apple-macos13.0',
+        BASE / 'Main.swift', *developer_sources, '-o', binary / 'MIKUArchive',
         '-framework', 'Cocoa', '-framework', 'WebKit')
     with tempfile.TemporaryDirectory(prefix='miku-icon-') as temporary:
         temp = Path(temporary)
@@ -81,12 +83,12 @@ def main():
                 suffix = '@2x' if scale == 2 else ''
                 run('sips', '-z', size * scale, size * scale, png,
                     '--out', iconset / f'icon_{size}x{size}{suffix}.png')
-        run('iconutil', '-c', 'icns', iconset, '-o', RESOURCES / 'AppIcon.icns')
+        run('iconutil', '-c', 'icns', iconset, '-o', resources / 'AppIcon.icns')
     # Local ad-hoc signature; distribution notarization is a separate step.
-    run('xattr', '-cr', APP)
-    run('codesign', '--force', '--deep', '--sign', '-', APP)
-    run('codesign', '--verify', '--deep', '--strict', APP)
-    print(f'Built: {APP}')
+    run('xattr', '-cr', app)
+    run('codesign', '--force', '--deep', '--sign', '-', app)
+    run('codesign', '--verify', '--deep', '--strict', app)
+    print(f'Built: {app}')
 
 
 if __name__ == '__main__':
